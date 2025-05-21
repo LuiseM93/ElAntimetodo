@@ -1,23 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
+  <meta charset="UTF-8">
   <title>{{ page.title | default: site.title }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ site.description }}">
   <style>
+    :root {
+      --primary-color: #2c3e50;
+      --secondary-color: #3498db;
+      --background-color: #f9f9f9;
+      --text-color: #333;
+      --border-color: #eee;
+    }
+    
     body {
       font-family: 'Arial', sans-serif;
       max-width: 800px;
       margin: 0 auto;
       padding: 20px;
       line-height: 1.6;
-      color: #333;
+      color: var(--text-color);
+      background-color: var(--background-color);
     }
-    h1, h2 { color: #2c3e50; border-bottom: 1px solid #eee; }
-    a { color: #3498db; text-decoration: none; }
-    a:hover { text-decoration: underline; }
+    
+    h1, h2, h3 {
+      color: var(--primary-color);
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 0.3em;
+    }
+    
+    a {
+      color: var(--secondary-color);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    
+    a:hover {
+      color: #2980b9;
+      text-decoration: underline;
+    }
+    
+    /* Footer estilo profesional */
+    footer {
+      margin-top: 4rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border-color);
+      text-align: center;
+      color: #777;
+      font-size: 0.9rem;
+    }
+    
+    /* Clase para botones */
+    .btn {
+      display: inline-block;
+      background-color: var(--secondary-color);
+      color: white !important;
+      padding: 0.6rem 1.2rem;
+      border-radius: 4px;
+      margin: 0.5rem 0;
+      font-weight: bold;
+    }
+    
+    .btn:hover {
+      background-color: #2980b9;
+      text-decoration: none;
+    }
   </style>
 </head>
 <body>
   {{ content }}
+  
+  <footer>
+    <p>© 2025 <strong>El Antimétodo</strong> - Adquiere idiomas de manera fácil, efectiva, natural y divertida</p>
+    <p>Por José Luis Hernández Ramírez</p>
+  </footer>
 </body>
 </html>
