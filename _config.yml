@@ -1,3 +1,7 @@
 title: El Antimétodo
 description: Revolucionario método para aprender idiomas sin gramática
 theme: jekyll-theme-cayman
+plugins: [jekyll-seo-tag]
+cayman:
+  show_downloads: false # Oculta botones de descarga
+  show_sidebar: false   # Oculta sidebar
