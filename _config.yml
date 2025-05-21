@@ -1,3 +1,6 @@
 title: El Antimétodo
 description: Revolucionario método para aprender idiomas de forma natural, efectiva y divertida
 theme: jekyll-theme-merlot
+
+plugins:
+  - jekyll-sass-converter
