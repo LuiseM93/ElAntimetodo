@@ -58,7 +58,7 @@ Durante mi experiencia en la adquisición de idiomas aprendí que no tiene que s
      style="
        display: block;
        margin: 1.5em auto;
-       max-width: 50%;
+       max-width: 90%;
        height: auto;
        border: 3px solid #d1c4e9;
        border-radius: 8px;
