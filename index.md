@@ -136,4 +136,4 @@ Aquí empieza esa transición. Si bien existen casos documentados de personas qu
 
 ## Recursos
 
-EN CONSTRUCCIÓN***
+![EN CONSTRUCIÓN](https://st3.depositphotos.com/7863750/16494/i/450/depositphotos_164949208-stock-photo-cat-architect-with-house-model.jpg)
