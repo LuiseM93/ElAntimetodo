@@ -4,71 +4,47 @@ title: El Antimétodo
 description: Aprende idiomas de forma natural con el enfoque del input comprensible
 ---
 
-<section class="hero-banner" style="
-  position: relative;
-  background: linear-gradient(rgba(74, 20, 140, 0.8), rgba(74, 20, 140, 0.8)), 
-              url('assets/banner.png') center/cover no-repeat;
-  height: 80vh;
-  min-height: 500px;
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(74, 20, 140, 0.3);
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 2em;
-  margin-bottom: 2em;
-  overflow: hidden;
-">
-  <h1 style="
-    font-size: 3em;
-    margin-bottom: 0.5em;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-  ">El Antimétodo</h1>
-  
-  <p class="subtitle" style="
-    font-size: 1.5em;
-    max-width: 700px;
-    margin: 0 auto 1.5em;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
-  ">Aprende idiomas <strong>sin gramática</strong>, de forma <strong>natural y divertida</strong></p>
-  
-  <div class="hero-cards" style="
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
-    max-width: 900px;
-  ">
-    <div class="card" style="
-      background: rgba(255,255,255,0.9);
-      padding: 25px;
-      border-radius: 10px;
-      width: 250px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-      transition: all 0.3s ease;
-      color: #333;
-    ">
-      <h2 style="color: #7b1fa2;">🎯 Sin Estrés</h2>
+<div class="hero">
+  <h1>El Antimétodo</h1>
+  <p class="subtitle">Aprende idiomas <strong>sin gramática</strong>, de forma <strong>natural y divertida</strong></p>
+  <div class="hero-cards">
+    <div class="card">
+      <h2>🎯 Sin Estrés</h2>
       <p>Olvida ejercicios aburridos - aprende con contenido que disfrutas</p>
     </div>
-    
-    <div class="card" style="
-      background: rgba(255,255,255,0.9);
-      padding: 25px;
-      border-radius: 10px;
-      width: 250px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-      transition: all 0.3s ease;
-      color: #333;
-    ">
-      <h2 style="color: #7b1fa2;">⏱️ A Tu Ritmo</h2>
+    <div class="card">
+      <h2>⏱️ A Tu Ritmo</h2>
       <p>Usa tu tiempo libre: series, música, videojuegos</p>
     </div>
   </div>
-</section>
+</div>
+
+<style>
+.hero {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.subtitle {
+  font-size: 1.2em;
+  color: var(--secondary-color);
+}
+.hero-cards {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+}
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  flex: 1;
+}
+.card:hover {
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+}
+</style>
 
 # ¿Qué es el Antimétodo?
 
@@ -205,29 +181,3 @@ En construcción...
     alt="Gato arquitecto" 
     style="width: 300px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); margin-top: 20px;">
 </p>
-
-<style>
-  /* Efecto hover para las cards */
-  .card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-  }
-  
-  /* Responsive */
-  @media (max-width: 768px) {
-    .hero-banner {
-      height: auto;
-      padding: 3em 1em;
-    }
-    .hero-banner h1 {
-      font-size: 2.2em;
-    }
-    .subtitle {
-      font-size: 1.2em;
-    }
-    .card {
-      width: 100%;
-      max-width: 300px;
-    }
-  }
-</style>
