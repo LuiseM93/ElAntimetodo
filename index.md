@@ -19,6 +19,30 @@ description: Aprende idiomas de forma natural con el enfoque del input comprensi
   </div>
 </div>
 
+[🚀 **Comenzar Aquí**](#etapa1){: .btn-comenzar}
+
+<style>
+.hero {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.hero-cards {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+}
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  flex: 1;
+}
+.card:hover {
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+}
+</style>
 <style>
 .hero {
   text-align: center;
@@ -46,27 +70,13 @@ description: Aprende idiomas de forma natural con el enfoque del input comprensi
 }
 </style>
 
-# ¿Qué es el Antimétodo?
+# ¿Qué es el Antimétodo? 
 
 El Antimétodo es un enfoque revolucionario para aprender idiomas basado en la teoría del input comprensible de Stephen Krashen. A diferencia de los métodos tradicionales, que se centran en la memorización de reglas gramaticales, traducciones y ejercicios formales, el Antimétodo propone aprender un idioma de manera natural, intuitiva y personalizada. Permitiendo que cualquier persona pueda avanzar hasta la fluidez a su propio ritmo, usando herramientas gratuitas y contenido real en el idioma. Todo mientras el estudiante autodidacta hace cosas que le gustan, como ver series, películas, videojuegos. Sin sufrir en el proceso, de manera fácil, placentera, efectiva y natural.
 
 La idea central es que el aprendizaje ocurre cuando te expones de forma constante y masiva a contenido real y comprensible en el idioma que quieres aprender. De esta forma, el idioma se adquiere igual que aprendimos nuestra lengua materna: entendiendo mensajes, disfrutando el proceso y sin presión por producir desde el principio.
 
-[🚀 **Comenzar Aquí**](#etapa1){: .btn-comenzar}
-
-<style>
-  .btn-comenzar {
-    background: linear-gradient(to right, #ff8a00, #da1b60);
-    color: white !important;
-    padding: 12px 25px;
-    border-radius: 30px;
-    font-weight: bold;
-    display: inline-block;
-    margin: 20px 0;
-  }
-</style>
-
-## ¿Por qué funciona?
+## ¿Por qué funciona? {#teoria}
 
 ### Hipótesis de la adquisición y aprendizaje de idiomas
 
@@ -106,6 +116,7 @@ Es cuando se presta una atención parcial al idioma, pueden ser podcast o audios
 ### Estudio activo
 Este es realmente opcional para nosotros pero puede tener grandes beneficios, abarca actividades como estudiar la fonética, vocabulario con anki y estudiar el sistema de escritura, en la mayoría de idiomas aprender la fonética y el sistema de escritura te pueden tomar menos de una semana de aprender.
 
+<div id="etapa1">
 ## Primera etapa: preparación previa
 
 El objetivo de esto es utilizarla como una rampa de acceso para lanzarnos más fácilmente al input real, porque es mucho mas eficaz que lanzarnos a la inmersión de una, porque el input debe de ser una parte comprensible.
@@ -119,7 +130,9 @@ Para este paso recomendamos empezar aprendiendo vocabulario mediante una aplicac
 **¿Es la gramática necesaria?** Nosotros no recomendamos en absoluto el uso de la gramática y sostenemos fuertemente que puedes aprender fácilmente cualquier idioma sin haber tocado nunca la gramática, pero si disfrutes de aprender gramática puedes aprender gramática básica para la primera etapa de primming para adquirirla más rápido y entender oraciones completas o en la ultima etapa de output para refinar detalles.
 
 Es demasiado importante poner énfasis y recomendamos absolutamente el uso de Refold tracker, es una aplicación que te permitirá registrar el tiempo que pasas en tu idioma y las actividades en las que pasas tiempo, creará el hábito fácilmente y sabrás con facilidad cuantas horas pasas en tu idioma.
+</div>
 
+<div id="etapa2">
 ## Segunda etapa: "Inmersión total en el idioma"
 
 Inmersión total en el idioma, en esta etapa consumiremos contenido autentico en el idioma, esto incluye películas, series, libros, videojuegos. En un comienzo no vas a entender cada una de las palabras que dicen, lo importante y lo que vas a hacer es tratar de entender el mensaje, entender lo que está sucediendo en la pantalla, por ejemplo si estuvieras viendo un show de comedia no deberías de tratar cada una de las palabras que dicen de los chistes, si no buscar entender el chiste, al principio tenemos que poner énfasis en consumir contenido fácil, tenemos que encontrarnos en el punto en donde entendamos y no lo que estamos consumiendo y debemos de estar disfrutando y de encontrar el contenido interesante. En estos momentos recomendamos absolutamente activar los subtítulos (CC) en el mismo idioma meta, al ser un contenido audiovisual contaremos con lo que está pasando en la pantalla (gestos, acciones) y los subtítulos nos ayudan en este punto a mejorar muchísimo nuestra comprensión y aprender cómo se escribe el idioma en relación a como se escucha. Para encontrar contenido recomendamos plataformas de streaming como youtube, Netflix, prime video.
@@ -133,12 +146,15 @@ En promedio, las personas en México consumen diariamente 2.3 horas para ver can
 La Encuesta Nacional sobre Disponibilidad y Uso de Tecnologías de la Información en los Hogares (ENDUTIH) del INEGI revela que, en promedio durante 2023, los jóvenes adultos de 18 a 24 años registran el más alto de uso de internet en el país con 5.9 horas diarias; es decir, pasan más de dos mil 100 horas anualmente frente a las pantallas de sus smartphones o computadoras. – Informador
 
 Nuestro enfoque propone sustituir una parte de ese tiempo por una actividad que, si bien es formativa, también resulta placentera: el aprendizaje de idiomas. En nuestro caso, aprender idiomas no se vive como una obligación pesada, sino como un pasatiempo. Además, el impacto de dos horas al día durante semanas o meses es exponencial. No es una carga, es una inversión. Lo que para algunos puede parecer "mucho tiempo", para nosotros es simplemente el tiempo necesario para transformar un pasatiempo en resultados extraordinarios.
+</div>
 
-## Tercera etapa: Free Flow auditivo
+<div id="etapa3">
+## Tercera etapa: Free Flow Listening
 
 Después de haber pasado un cierto tiempo nos daremos cuenta que entendemos bastante bien el idioma, en este punto aprenderemos a independizarnos de los subtítulos para entender sin necesidad de ellos. Para este paso recomendamos el freeflow listening, es básicamente consumir el contenido sin subtítulos junto con (opcional) intensive listening, este demanda mucha energía y puede llegar a ser hasta aburrido, consiste en escuchar un mismo dialogo hasta 3 veces analizando las voces para en la cuarta leer lo que dicen y escuchar una vez más.
 
 En esta etapa entenderemos muy bien y probablemente haya varias oraciones i+1 donde haya una palabra que desconozcamos en el mismo enunciado, el minado de oraciones consiste en minar la oración completa i+1 en anki, creando una tarjeta con la imagen del contenido que estemos viendo con la oración completa traducida al español, para entender el significado de la palabra en ese contexto en específico, no recomendamos en lo absoluto minar solo la palabra ya que suelen cambiar de significado según el contexto.
+</div>
 
 ## Cuarta etapa: "Producción del idioma"
 
@@ -149,3 +165,6 @@ Y entonces sucede algo mágico: esa misma máquina, que parecía creada solo par
 Aquí empieza esa transición. Si bien existen casos documentados de personas que fueron fluidas solo con recibir input ese no es el caso con la mayoría, y tenemos que practicar mucho para llegar a la fluidez, Para lograr esto tenemos que primero diferencias entre lo que podemos lograr con escribir y hablar. El speaking ayuda más que nada a hablar más de manera fluida, pero tiene sus problemas, notaras muy fácilmente tus errores y el problema es de que no tendrás el tiempo de solucionarlos, en la escritura en cambio tendremos más tiempo para buscar algo que no recordamos como decir, activando el input en output, y teniendo más tiempo para corregir fácilmente, recomendamos como actividades escribir y hacer llamadas con inteligencia artificial, haciendo énfasis en hacer una conversación fluida, donde te corrija y siga el flujo de la conversación a la vez, será muy fácil corregir los errores ya que con las horas de input serán obvios los errores. Otra de las actividades es simplemente hablar consigo mismo puede ser mentalmente o en voz alta, o llevar un diario. Aquí recomendamos 1 hora de output (producir el idioma) y una hora de input.
 
 El verdadero objetivo de aprender un idioma no es sonar como nativo, sino lograr una pronunciación lo suficientemente clara y precisa como para que los demás te entiendan sin esfuerzo. Ahora lo que debes buscar es sonar como UN nativo no como nativo, porque todos los nativos hablan de manera diferente, recomendamos elegir un pariente de idioma, alguien que te guste su manera de hablar para buscar imitarlo, aquí incluye el shadowing que es imitar lo que alguien esta diciendo mientras ves el contenido, buscando sonar de la manera mas parecida posible. Otras de las actividades que recomendamos es la lectura en voz alta, este se puede hacer antes de la tercera etapa para mejorar la habilidad oral.
+
+### Recursos {#recursos}
+En construción***
