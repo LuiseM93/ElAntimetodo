@@ -4,63 +4,47 @@ title: El Antimétodo
 description: Aprende idiomas de forma natural con el enfoque del input comprensible
 ---
 
-<!-- HERO SECTION -->
-<div style="
-  background: linear-gradient(135deg, #4a148c, #7b1fa2);
-  color: white;
-  padding: 4rem 1rem;
-  border-radius: 12px;
-  text-align: center;
-  margin-bottom: 3rem;
-  box-shadow: 0 10px 30px rgba(74, 20, 140, 0.3);
-">
-  <h1 style="
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
-  ">El Antimétodo</h1>
-  
-  <p style="
-    font-size: 1.3rem;
-    max-width: 700px;
-    margin: 0 auto 2rem;
-  ">Aprende idiomas <strong>sin gramática</strong>, de forma <strong>natural y divertida</strong></p>
-  
-  <div style="
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    flex-wrap: wrap;
-    max-width: 900px;
-    margin: 0 auto;
-  ">
-    <div style="
-      background: rgba(255,255,255,0.9);
-      color: #333;
-      padding: 1.5rem;
-      border-radius: 10px;
-      width: 250px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-      transition: all 0.3s ease;
-    ">
-      <h2 style="color: #7b1fa2; margin-top: 0; font-size: 1.3rem;">🎯 Sin Estrés</h2>
+<div class="hero">
+  <h1>El Antimétodo</h1>
+  <p class="subtitle">Aprende idiomas <strong>sin gramática</strong>, de forma <strong>natural y divertida</strong></p>
+  <div class="hero-cards">
+    <div class="card">
+      <h2>🎯 Sin Estrés</h2>
       <p>Olvida ejercicios aburridos - aprende con contenido que disfrutas</p>
     </div>
-    
-    <div style="
-      background: rgba(255,255,255,0.9);
-      color: #333;
-      padding: 1.5rem;
-      border-radius: 10px;
-      width: 250px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-      transition: all 0.3s ease;
-    ">
-      <h2 style="color: #7b1fa2; margin-top: 0; font-size: 1.3rem;">⏱️ A Tu Ritmo</h2>
+    <div class="card">
+      <h2>⏱️ A Tu Ritmo</h2>
       <p>Usa tu tiempo libre: series, música, videojuegos</p>
     </div>
   </div>
 </div>
+
+<style>
+.hero {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.subtitle {
+  font-size: 1.2em;
+  color: var(--secondary-color);
+}
+.hero-cards {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+}
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  flex: 1;
+}
+.card:hover {
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+}
+</style>
 
 <!-- CONTENIDO PRINCIPAL -->
 <main style="max-width: 800px; margin: 0 auto; padding: 0 1rem;">
