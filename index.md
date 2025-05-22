@@ -5,60 +5,137 @@ description: Aprende idiomas de forma natural con el enfoque del input comprensi
 ---
 
 <div class="hero">
-  <h1>El Antimétodo</h1>
-  <p class="subtitle">Aprende idiomas <strong>sin gramática</strong>, de forma <strong>natural y divertida</strong></p>
-  <div class="hero-cards">
-    <div class="card">
-      <h2>🎯 Sin Estrés</h2>
-      <p>Olvida ejercicios aburridos - aprende con contenido que disfrutas</p>
-    </div>
-    <div class="card">
-      <h2>⏱️ A Tu Ritmo</h2>
-      <p>Usa tu tiempo libre: series, música, videojuegos</p>
+  <div class="hero-content">
+    <h1>El Antimétodo</h1>
+    <p class="subtitle">Aprende idiomas <strong>sin gramática</strong>, de forma <strong>natural y divertida</strong></p>
+    
+    <div class="hero-cards">
+      <div class="hero-card">
+        <div class="card-icon">🎯</div>
+        <h3>Sin Estrés</h3>
+        <p>Olvida ejercicios aburridos - aprende con contenido que disfrutas</p>
+      </div>
+      
+      <div class="hero-card">
+        <div class="card-icon">⏱️</div>
+        <h3>A Tu Ritmo</h3>
+        <p>Usa tu tiempo libre: series, música, videojuegos</p>
+      </div>
     </div>
   </div>
 </div>
 
 <style>
 .hero {
-  background: linear-gradient(135deg, #4a148c 0%, #7b1fa2 100%);
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
   color: white;
-  padding: 80px 20px 60px;
+  padding: 5rem 1rem;
   text-align: center;
-  margin-bottom: 40px;
+  position: relative;
+  overflow: hidden;
   border-radius: 0 0 30px 30px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.15);
 }
-.hero h1 {
-  font-size: 2.8em;
-  margin-bottom: 10px;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%);
+  transform: rotate(30deg);
 }
-.subtitle {
-  font-size: 1.4em;
-  opacity: 0.9;
-  max-width: 700px;
+
+.hero-content {
+  max-width: 1200px;
   margin: 0 auto;
+  position: relative;
+  z-index: 2;
 }
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin: 0;
+  letter-spacing: -1px;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
 .subtitle {
-  font-size: 1.2em;
-  color: var(--secondary-color);
+  font-size: 1.5rem;
+  max-width: 700px;
+  margin: 1rem auto 3rem;
+  opacity: 0.9;
+  line-height: 1.4;
 }
+
 .hero-cards {
   display: flex;
-  gap: 20px;
-  margin-top: 30px;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 3rem;
 }
-.card {
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-  flex: 1;
+
+.hero-card {
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 16px;
+  padding: 2rem;
+  width: 300px;
+  transition: all 0.4s ease;
 }
-.card:hover {
-  transform: translateY(-5px);
-  transition: all 0.3s ease;
+
+.hero-card:hover {
+  transform: translateY(-10px);
+  background: rgba(255,255,255,0.25);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.card-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-card h3 {
+  margin: 0 0 1rem;
+  font-size: 1.5rem;
+}
+
+.hero-card p {
+  margin: 0;
+  opacity: 0.9;
+  font-size: 1.1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    padding: 3rem 1rem;
+    border-radius: 0 0 20px 20px;
+  }
+  
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    margin: 1rem auto 2rem;
+  }
+  
+  .hero-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .hero-card {
+    width: 100%;
+    max-width: 350px;
+    padding: 1.5rem;
+  }
 }
 </style>
 
