@@ -297,7 +297,7 @@ description: Aprende idiomas de forma natural con el enfoque del input comprensi
       color: #4a148c;
       border-bottom: 2px solid #d1c4e9;
       padding-bottom: 0.5rem;
-    ">Tercera etapa: Free Flow auditivo</h2>
+    ">Tercera etapa: Free Flow Listening</h2>
     
     <p>Después de haber pasado un cierto tiempo nos daremos cuenta que entendemos bastante bien el idioma, en este punto aprenderemos a independizarnos de los subtítulos para entender sin necesidad de ellos. Para este paso recomendamos el freeflow listening, es básicamente consumir el contenido sin subtítulos junto con (opcional) intensive listening, este demanda mucha energía y puede llegar a ser hasta aburrido, consiste en escuchar un mismo dialogo hasta 3 veces analizando las voces para en la cuarta leer lo que dicen y escuchar una vez más.</p>
     
