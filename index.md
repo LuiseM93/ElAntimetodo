@@ -46,6 +46,44 @@ description: Aprende idiomas de forma natural con el enfoque del input comprensi
 }
 </style>
 
+<div class="banner-container" style="
+  width: 100%;
+  max-width: 1536px;
+  height: auto;
+  margin: 2em auto;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(74, 20, 140, 0.3);
+  border: 4px solid #d1c4e9;
+">
+  <img src="assets/banner.png" alt="El Antimétodo - Aprende idiomas naturalmente" style="
+    width: 100%;
+    display: block;
+  ">
+  <div class="banner-overlay" style="
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(74, 20, 140, 0.9), transparent);
+    padding: 2em;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+  ">
+    <h2 style="
+      color: white;
+      font-size: 2.2em;
+      margin: 0;
+      border-bottom: none;
+    ">Domina idiomas sin estudiar gramática</h2>
+    <p style="
+      font-size: 1.2em;
+      margin: 0.5em 0 0;
+    ">La revolución del input comprensible</p>
+  </div>
+</div>
+
 # ¿Qué es el Antimétodo?
 
 El Antimétodo es un enfoque revolucionario para aprender idiomas basado en la teoría del input comprensible de Stephen Krashen. A diferencia de los métodos tradicionales, que se centran en la memorización de reglas gramaticales, traducciones y ejercicios formales, el Antimétodo propone aprender un idioma de manera natural, intuitiva y personalizada. Permitiendo que cualquier persona pueda avanzar hasta la fluidez a su propio ritmo, usando herramientas gratuitas y contenido real en el idioma. Todo mientras el estudiante autodidacta hace cosas que le gustan, como ver series, películas, videojuegos. Sin sufrir en el proceso, de manera fácil, placentera, efectiva y natural.
