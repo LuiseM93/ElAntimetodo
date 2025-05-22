@@ -4,20 +4,55 @@ title: El Antimétodo
 description: Aprende idiomas de forma natural con el enfoque del input comprensible
 ---
 
-<div id="inicio" style="text-align: center; margin-bottom: 40px;">
+<div class="hero">
   <h1>El Antimétodo</h1>
-  <p style="font-size: 1.2em; color: #4A148C;">
-    Aprende idiomas <strong>sin gramática</strong>, de forma <strong>natural y divertida</strong>
-  </p>
+  <p class="subtitle">Aprende idiomas <strong>sin gramática</strong>, de forma <strong>natural y divertida</strong></p>
+  <div class="hero-cards">
+    <div class="card">
+      <h2>🎯 Sin Estrés</h2>
+      <p>Olvida ejercicios aburridos - aprende con contenido que disfrutas</p>
+    </div>
+    <div class="card">
+      <h2>⏱️ A Tu Ritmo</h2>
+      <p>Usa tu tiempo libre: series, música, videojuegos</p>
+    </div>
+  </div>
 </div>
 
-# ¿Qué es el Antimétodo? {#metodo}
+<style>
+.hero {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.subtitle {
+  font-size: 1.2em;
+  color: var(--secondary-color);
+}
+.hero-cards {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+}
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  flex: 1;
+}
+.card:hover {
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+}
+</style>
+
+# ¿Qué es el Antimétodo?
 
 El Antimétodo es un enfoque revolucionario para aprender idiomas basado en la teoría del input comprensible de Stephen Krashen. A diferencia de los métodos tradicionales, que se centran en la memorización de reglas gramaticales, traducciones y ejercicios formales, el Antimétodo propone aprender un idioma de manera natural, intuitiva y personalizada. Permitiendo que cualquier persona pueda avanzar hasta la fluidez a su propio ritmo, usando herramientas gratuitas y contenido real en el idioma. Todo mientras el estudiante autodidacta hace cosas que le gustan, como ver series, películas, videojuegos. Sin sufrir en el proceso, de manera fácil, placentera, efectiva y natural.
 
 La idea central es que el aprendizaje ocurre cuando te expones de forma constante y masiva a contenido real y comprensible en el idioma que quieres aprender. De esta forma, el idioma se adquiere igual que aprendimos nuestra lengua materna: entendiendo mensajes, disfrutando el proceso y sin presión por producir desde el principio.
 
-## ¿Por qué funciona? {#teoria}
+## ¿Por qué funciona?
 
 ### Hipótesis de la adquisición y aprendizaje de idiomas
 
@@ -57,7 +92,6 @@ Es cuando se presta una atención parcial al idioma, pueden ser podcast o audios
 ### Estudio activo
 Este es realmente opcional para nosotros pero puede tener grandes beneficios, abarca actividades como estudiar la fonética, vocabulario con anki y estudiar el sistema de escritura, en la mayoría de idiomas aprender la fonética y el sistema de escritura te pueden tomar menos de una semana de aprender.
 
-<div id="etapa1">
 ## Primera etapa: preparación previa
 
 El objetivo de esto es utilizarla como una rampa de acceso para lanzarnos más fácilmente al input real, porque es mucho mas eficaz que lanzarnos a la inmersión de una, porque el input debe de ser una parte comprensible.
@@ -71,9 +105,7 @@ Para este paso recomendamos empezar aprendiendo vocabulario mediante una aplicac
 **¿Es la gramática necesaria?** Nosotros no recomendamos en absoluto el uso de la gramática y sostenemos fuertemente que puedes aprender fácilmente cualquier idioma sin haber tocado nunca la gramática, pero si disfrutes de aprender gramática puedes aprender gramática básica para la primera etapa de primming para adquirirla más rápido y entender oraciones completas o en la ultima etapa de output para refinar detalles.
 
 Es demasiado importante poner énfasis y recomendamos absolutamente el uso de Refold tracker, es una aplicación que te permitirá registrar el tiempo que pasas en tu idioma y las actividades en las que pasas tiempo, creará el hábito fácilmente y sabrás con facilidad cuantas horas pasas en tu idioma.
-</div>
 
-<div id="etapa2">
 ## Segunda etapa: "Inmersión total en el idioma"
 
 Inmersión total en el idioma, en esta etapa consumiremos contenido autentico en el idioma, esto incluye películas, series, libros, videojuegos. En un comienzo no vas a entender cada una de las palabras que dicen, lo importante y lo que vas a hacer es tratar de entender el mensaje, entender lo que está sucediendo en la pantalla, por ejemplo si estuvieras viendo un show de comedia no deberías de tratar cada una de las palabras que dicen de los chistes, si no buscar entender el chiste, al principio tenemos que poner énfasis en consumir contenido fácil, tenemos que encontrarnos en el punto en donde entendamos y no lo que estamos consumiendo y debemos de estar disfrutando y de encontrar el contenido interesante. En estos momentos recomendamos absolutamente activar los subtítulos (CC) en el mismo idioma meta, al ser un contenido audiovisual contaremos con lo que está pasando en la pantalla (gestos, acciones) y los subtítulos nos ayudan en este punto a mejorar muchísimo nuestra comprensión y aprender cómo se escribe el idioma en relación a como se escucha. Para encontrar contenido recomendamos plataformas de streaming como youtube, Netflix, prime video.
@@ -87,15 +119,12 @@ En promedio, las personas en México consumen diariamente 2.3 horas para ver can
 La Encuesta Nacional sobre Disponibilidad y Uso de Tecnologías de la Información en los Hogares (ENDUTIH) del INEGI revela que, en promedio durante 2023, los jóvenes adultos de 18 a 24 años registran el más alto de uso de internet en el país con 5.9 horas diarias; es decir, pasan más de dos mil 100 horas anualmente frente a las pantallas de sus smartphones o computadoras. – Informador
 
 Nuestro enfoque propone sustituir una parte de ese tiempo por una actividad que, si bien es formativa, también resulta placentera: el aprendizaje de idiomas. En nuestro caso, aprender idiomas no se vive como una obligación pesada, sino como un pasatiempo. Además, el impacto de dos horas al día durante semanas o meses es exponencial. No es una carga, es una inversión. Lo que para algunos puede parecer "mucho tiempo", para nosotros es simplemente el tiempo necesario para transformar un pasatiempo en resultados extraordinarios.
-</div>
 
-<div id="etapa3">
-## Tercera etapa: Free Flow Listening
+## Tercera etapa: Free Flow auditivo
 
 Después de haber pasado un cierto tiempo nos daremos cuenta que entendemos bastante bien el idioma, en este punto aprenderemos a independizarnos de los subtítulos para entender sin necesidad de ellos. Para este paso recomendamos el freeflow listening, es básicamente consumir el contenido sin subtítulos junto con (opcional) intensive listening, este demanda mucha energía y puede llegar a ser hasta aburrido, consiste en escuchar un mismo dialogo hasta 3 veces analizando las voces para en la cuarta leer lo que dicen y escuchar una vez más.
 
 En esta etapa entenderemos muy bien y probablemente haya varias oraciones i+1 donde haya una palabra que desconozcamos en el mismo enunciado, el minado de oraciones consiste en minar la oración completa i+1 en anki, creando una tarjeta con la imagen del contenido que estemos viendo con la oración completa traducida al español, para entender el significado de la palabra en ese contexto en específico, no recomendamos en lo absoluto minar solo la palabra ya que suelen cambiar de significado según el contexto.
-</div>
 
 ## Cuarta etapa: "Producción del idioma"
 
@@ -105,7 +134,125 @@ Y entonces sucede algo mágico: esa misma máquina, que parecía creada solo par
 
 Aquí empieza esa transición. Si bien existen casos documentados de personas que fueron fluidas solo con recibir input ese no es el caso con la mayoría, y tenemos que practicar mucho para llegar a la fluidez, Para lograr esto tenemos que primero diferencias entre lo que podemos lograr con escribir y hablar. El speaking ayuda más que nada a hablar más de manera fluida, pero tiene sus problemas, notaras muy fácilmente tus errores y el problema es de que no tendrás el tiempo de solucionarlos, en la escritura en cambio tendremos más tiempo para buscar algo que no recordamos como decir, activando el input en output, y teniendo más tiempo para corregir fácilmente, recomendamos como actividades escribir y hacer llamadas con inteligencia artificial, haciendo énfasis en hacer una conversación fluida, donde te corrija y siga el flujo de la conversación a la vez, será muy fácil corregir los errores ya que con las horas de input serán obvios los errores. Otra de las actividades es simplemente hablar consigo mismo puede ser mentalmente o en voz alta, o llevar un diario. Aquí recomendamos 1 hora de output (producir el idioma) y una hora de input.
 
-El verdadero objetivo de aprender un idioma no es sonar como nativo, sino lograr una pronunciación lo suficientemente clara y precisa como para que los demás te entiendan sin esfuerzo. Ahora lo que debes buscar es sonar como UN nativo no como nativo, porque todos los nativos hablan de manera diferente, recomendamos elegir un pariente de idioma, alguien que te guste su manera de hablar para buscar imitarlo, aquí incluye el shadowing que es imitar lo que alguien esta diciendo mientras ves el contenido, buscando sonar de la manera mas parecida posible. Otras de las actividades que recomendamos es la lectura en voz alta, este se puede hacer antes de la tercera etapa para mejorar la habilidad oral.
+config yml 
+title: El Antimétodo
+description: Adquiere idiomas de manera fácil, eficiente, natural y divertida 
 
-### Recursos {#recursos}
-En construción***
+layouts
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title | default: site.title }}</title>
+  <meta property="og:title" content="El Antimétodo - Aprende idiomas naturalmente">
+  <meta property="og:description" content="Método revolucionario basado en input comprensible">
+  <meta property="og:image" content="https://luisem93.github.io/ElAntimetodo/assets/logo-social.jpg">
+  <meta property="og:url" content="https://luisem93.github.io/ElAntimetodo/">
+  <meta property="og:type" content="website">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ site.description }}">
+  <link rel="icon" href="assets/favicon.ico?v=2">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png?v=2">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png?v=2">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png?v=2">
+  <style>
+    :root {
+      --primary-color: #4a148c;     /* Títulos morados */
+      --secondary-color: #7b1fa2;   /* Botones morados */
+      --background-color: #f9f9f9;  /* Fondo gris claro */
+      --text-color: #333;          /* Texto oscuro */
+      --border-color: #d1c4e9;     /* Bordes morado claro */
+      --instagram-color: #E1306C;  /* Color de Instagram */
+    }
+    
+    body {
+      font-family: 'Arial', sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      line-height: 1.6;
+      color: var(--text-color);
+      background-color: var(--background-color);
+    }
+    
+    h1, h2, h3 {
+      color: var(--primary-color);
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 0.3em;
+    }
+    
+    a {
+      color: var(--secondary-color);
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+    
+    a:hover {
+      color: #5e35b1;
+      text-decoration: underline;
+    }
+    
+    /* Footer estilo profesional */
+    footer {
+      margin-top: 4rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border-color);
+      text-align: center;
+      color: #666;
+      font-size: 0.9rem;
+    }
+    
+    /* Clase para botones */
+    .btn {
+      display: inline-block;
+      background-color: var(--secondary-color);
+      color: white !important;
+      padding: 0.6rem 1.2rem;
+      border-radius: 4px;
+      margin: 0.5rem 0;
+      font-weight: bold;
+      transition: background-color 0.2s;
+    }
+    
+    .btn:hover {
+      background-color: #5e35b1;
+      text-decoration: none;
+    }
+    
+    /* Estilo específico para Instagram */
+    .instagram-link {
+      color: var(--instagram-color);
+      font-weight: bold;
+    }
+    
+    .instagram-link:hover {
+      color: #c13584;
+    }
+    
+    .instagram-icon {
+      width: 18px;
+      height: 18px;
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+  </style>
+</head>
+<body>
+  {{ content }}
+  
+  <footer>
+    <p>© 2025 <strong>El Antimétodo</strong> - Adquiere idiomas de manera fácil, efectiva, natural y divertida</p>
+    <p>Por José Luis Hernández Ramírez</p>
+    <p style="margin-top: 1rem;">
+      <a href="https://www.instagram.com/joseluis.hdz.3/" class="instagram-link" target="_blank">
+        <svg class="instagram-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+        </svg>
+        Mi instagram
+      </a>
+    </p>
+  </footer>
+</body>
+</html>
