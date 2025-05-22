@@ -4,6 +4,33 @@ title: El Antimétodo
 description: Aprende idiomas de forma natural con el enfoque del input comprensible
 ---
 
+<section style="
+  position: relative;
+  background: url('assets/banner.png') center/cover no-repeat;
+  height: 350px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(74, 20, 140, 0.3);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1.5em;
+  margin-bottom: 3em;
+">
+  <div style="
+    background: rgba(74, 20, 140, 0.7);
+    padding: 1em 2em;
+    border-radius: 10px;
+    max-width: 700px;
+  ">
+    <h1 style="font-size: 2.5em; margin-bottom: 0.3em;">El Antimétodo</h1>
+    <h2 style="font-size: 1.6em; margin-bottom: 0.5em;">Domina idiomas sin estudiar gramática</h2>
+    <p style="font-size: 1.2em;">La revolución del input comprensible</p>
+  </div>
+</section>
+
 <div class="hero">
   <h1>El Antimétodo</h1>
   <p class="subtitle">Aprende idiomas <strong>sin gramática</strong>, de forma <strong>natural y divertida</strong></p>
@@ -32,57 +59,32 @@ description: Aprende idiomas de forma natural con el enfoque del input comprensi
   display: flex;
   gap: 20px;
   margin-top: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .card {
   background: white;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-  flex: 1;
+  flex: 1 1 250px;
+  max-width: 350px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
 }
 .card:hover {
   transform: translateY(-5px);
-  transition: all 0.3s ease;
+}
+@media (max-width: 600px) {
+  .hero-cards {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .card {
+    max-width: 100%;
+  }
 }
 </style>
-
-<div class="banner-container" style="
-  width: 100%;
-  max-width: 1536px;
-  height: auto;
-  margin: 2em auto;
-  position: relative;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 10px 30px rgba(74, 20, 140, 0.3);
-  border: 4px solid #d1c4e9;
-">
-  <img src="assets/banner.png" alt="El Antimétodo - Aprende idiomas naturalmente" style="
-    width: 100%;
-    display: block;
-  ">
-  <div class="banner-overlay" style="
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: linear-gradient(to top, rgba(74, 20, 140, 0.9), transparent);
-    padding: 2em;
-    color: white;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
-  ">
-    <h2 style="
-      color: white;
-      font-size: 2.2em;
-      margin: 0;
-      border-bottom: none;
-    ">Domina idiomas sin estudiar gramática</h2>
-    <p style="
-      font-size: 1.2em;
-      margin: 0.5em 0 0;
-    ">La revolución del input comprensible</p>
-  </div>
-</div>
 
 # ¿Qué es el Antimétodo?
 
