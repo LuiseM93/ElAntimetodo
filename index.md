@@ -6,11 +6,9 @@ description: Aprende idiomas de forma natural con el enfoque del input comprensi
 
 <div id="inicio" style="text-align: center; margin-bottom: 40px;">
   <h1>El Antimétodo</h1>
-  <p style="font-size: 1.2em; color: #6A1B9A;">
+  <p style="font-size: 1.2em; color: #4A148C;">
     Aprende idiomas <strong>sin gramática</strong>, de forma <strong>natural y divertida</strong>
   </p>
-  
-  [🚀 Comenzar Ahora](#metodo){: .btn-destacado}
 </div>
 
 # ¿Qué es el Antimétodo? {#metodo}
