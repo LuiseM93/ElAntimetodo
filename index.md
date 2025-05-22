@@ -159,6 +159,18 @@ Y entonces sucede algo mágico: esa misma máquina, que parecía creada solo par
 
 Aquí empieza esa transición. Si bien existen casos documentados de personas que fueron fluidas solo con recibir input ese no es el caso con la mayoría, y tenemos que practicar mucho para llegar a la fluidez, Para lograr esto tenemos que primero diferencias entre lo que podemos lograr con escribir y hablar. El speaking ayuda más que nada a hablar más de manera fluida, pero tiene sus problemas, notaras muy fácilmente tus errores y el problema es de que no tendrás el tiempo de solucionarlos, en la escritura en cambio tendremos más tiempo para buscar algo que no recordamos como decir, activando el input en output, y teniendo más tiempo para corregir fácilmente, recomendamos como actividades escribir y hacer llamadas con inteligencia artificial, haciendo énfasis en hacer una conversación fluida, donde te corrija y siga el flujo de la conversación a la vez, será muy fácil corregir los errores ya que con las horas de input serán obvios los errores. Otra de las actividades es simplemente hablar consigo mismo puede ser mentalmente o en voz alta, o llevar un diario. Aquí recomendamos 1 hora de output (producir el idioma) y una hora de input.
 
+<img src="assets/supremacy.png" alt="The Antimethod Supremacy"
+     width="1024" height="1024"
+     style="
+       display: block;
+       margin: 1.5em auto;
+       max-width: 50%;
+       height: auto;
+       border: 3px solid #d1c4e9;
+       border-radius: 8px;
+       box-shadow: 0 4px 10px rgba(74, 20, 140, 0.2);
+     ">
+     
 ## Recursos
 
 En construcción...
