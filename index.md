@@ -52,6 +52,17 @@ El Antimétodo es un enfoque revolucionario para aprender idiomas basado en la t
 
 La idea central es que el aprendizaje ocurre cuando te expones de forma constante y masiva a contenido real y comprensible en el idioma que quieres aprender. De esta forma, el idioma se adquiere igual que aprendimos nuestra lengua materna: entendiendo mensajes, disfrutando el proceso y sin presión por producir desde el principio.
 
+<img src="assets/inputanti.png" alt="Input comprensible - El Antimétodo"
+     style="
+       display: block;
+       margin: 1.5em auto;
+       max-width: 90%;
+       height: auto;
+       border: 3px solid #d1c4e9;
+       border-radius: 8px;
+       box-shadow: 0 4px 10px rgba(74, 20, 140, 0.2);
+     ">
+     
 ## ¿Por qué funciona?
 
 ### Hipótesis de la adquisición y aprendizaje de idiomas
