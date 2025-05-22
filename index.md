@@ -136,4 +136,11 @@ Aquí empieza esa transición. Si bien existen casos documentados de personas qu
 
 ## Recursos
 
-![EN CONSTRUCIÓN](https://st3.depositphotos.com/7863750/16494/i/450/depositphotos_164949208-stock-photo-cat-architect-with-house-model.jpg)
+En construcción...
+
+<p align="center">
+  <img 
+    src="https://st3.depositphotos.com/7863750/16494/i/450/depositphotos_164949208-stock-photo-cat-architect-with-house-model.jpg" 
+    alt="Gato arquitecto" 
+    style="width: 300px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); margin-top: 20px;">
+</p>
