@@ -89,6 +89,18 @@ Ves que la persona está señalando al perro, y en ese momento entiendes que Hun
 6. **Incluye etapas claras y progresivas**: Desde el priming hasta el free flow auditivo, el proceso está bien definido y fácil de seguir.
 7. **Promueve el autoaprendizaje real**: Formas autodidactas capaces de aprender cualquier idioma por sí mismos.
 
+<img src="assets/welearnthisway.png" alt="We Learn This Way - El Antimétodo"
+     width="1024" height="1024"
+     style="
+       display: block;
+       margin: 1.5em auto;
+       max-width: 50%;
+       height: auto;
+       border: 3px solid #d1c4e9;
+       border-radius: 8px;
+       box-shadow: 0 4px 10px rgba(74, 20, 140, 0.2);
+     ">
+     
 ## El antimétodo
 
 Antes de comenzar tendríamos que saber diferenciar entre las principales actividades que podrías seguir en el método:
