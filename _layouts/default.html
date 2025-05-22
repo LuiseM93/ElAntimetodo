@@ -8,80 +8,99 @@
   <meta property="og:image" content="https://luisem93.github.io/ElAntimetodo/assets/logo-social.jpg">
   <meta property="og:url" content="https://luisem93.github.io/ElAntimetodo/">
   <meta property="og:type" content="website">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="{{ site.description }}">
   <link rel="icon" href="assets/favicon.ico?v=2">
-  
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png?v=2">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png?v=2">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png?v=2">
   <style>
     :root {
-      --morado-oscuro: #4A148C;
-      --morado-claro: #7B1FA2;
-      --gris-claro: #f5f5f5;
+      --primary-color: #4a148c;     /* Títulos morados */
+      --secondary-color: #7b1fa2;   /* Botones morados */
+      --background-color: #f9f9f9;  /* Fondo gris claro */
+      --text-color: #333;          /* Texto oscuro */
+      --border-color: #d1c4e9;     /* Bordes morado claro */
+      --instagram-color: #E1306C;  /* Color de Instagram */
     }
-
+    
     body {
       font-family: 'Arial', sans-serif;
       max-width: 800px;
       margin: 0 auto;
       padding: 20px;
       line-height: 1.6;
-      color: #333;
-      background: white;
-      padding-top: 80px;
+      color: var(--text-color);
+      background-color: var(--background-color);
     }
-
-    .menu {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      background: var(--fondo);
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      padding: 15px 0;
-      z-index: 1000;
-      text-align: center;
-    }
-    .menu a {
-      color: var(--color-primario);
-      font-weight: 600;
-      padding: 10px 15px;
-      margin: 0 5px;
-      border-radius: 4px;
-      transition: all 0.3s;
-    }
-    .menu a:hover {
-      background: #F3E5F5;
-    }
-
-    /* BOTÓN */
-    .btn-destacado {
-      display: inline-block;
-      background: linear-gradient(135deg, #6A1B9A, #9C27B0);
-      color: white !important;
-      padding: 12px 25px;
-      border-radius: 30px;
-      font-weight: bold;
-      margin: 20px 0;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    }
-
-    /* SECCIONES */
+    
     h1, h2, h3 {
-      color: var(--color-primario);
-      margin-top: 30px;
+      color: var(--primary-color);
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 0.3em;
+    }
+    
+    a {
+      color: var(--secondary-color);
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+    
+    a:hover {
+      color: #5e35b1;
+      text-decoration: underline;
+    }
+    
+    /* Footer estilo profesional */
+    footer {
+      margin-top: 4rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border-color);
+      text-align: center;
+      color: #666;
+      font-size: 0.9rem;
+    }
+    
+    /* Clase para botones */
+    .btn {
+      display: inline-block;
+      background-color: var(--secondary-color);
+      color: white !important;
+      padding: 0.6rem 1.2rem;
+      border-radius: 4px;
+      margin: 0.5rem 0;
+      font-weight: bold;
+      transition: background-color 0.2s;
+    }
+    
+    .btn:hover {
+      background-color: #5e35b1;
+      text-decoration: none;
+    }
+    
+    /* Estilo específico para Instagram */
+    .instagram-link {
+      color: var(--instagram-color);
+      font-weight: bold;
+    }
+    
+    .instagram-link:hover {
+      color: #c13584;
+    }
+    
+    .instagram-icon {
+      width: 18px;
+      height: 18px;
+      vertical-align: middle;
+      margin-right: 5px;
     }
   </style>
 </head>
 <body>
-  <!-- Menú minimalista -->
-  <nav class="menu">
-    <a href="#inicio">Inicio</a>
-    <a href="#metodo">Método</a>
-    <a href="#recursos">Recursos</a>
-  </nav>
-
   {{ content }}
-
+  
   <footer>
     <p>© 2025 <strong>El Antimétodo</strong> - Adquiere idiomas de manera fácil, efectiva, natural y divertida</p>
     <p>Por José Luis Hernández Ramírez</p>
@@ -94,8 +113,5 @@
       </a>
     </p>
   </footer>
-</body>
-</html>
-  <!-- FOOTER (mantén el tuyo) -->
 </body>
 </html>
