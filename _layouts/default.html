@@ -8,24 +8,74 @@
   <meta property="og:image" content="https://luisem93.github.io/ElAntimetodo/assets/logo-social.jpg">
   <meta property="og:url" content="https://luisem93.github.io/ElAntimetodo/">
   <meta property="og:type" content="website">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="{{ site.description }}">
   <link rel="icon" href="assets/favicon.ico?v=2">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png?v=2">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png?v=2">
-  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png?v=2">
+  
   <style>
     :root {
-      --primary-color: #4a148c;     /* Títulos morados */
-      --secondary-color: #7b1fa2;   /* Botones morados */
-      --background-color: #f9f9f9;  /* Fondo gris claro */
-      --text-color: #333;          /* Texto oscuro */
-      --border-color: #d1c4e9;     /* Bordes morado claro */
-      --instagram-color: #E1306C;  /* Color de Instagram */
+      --primary-color: #4a148c;
+      --secondary-color: #7b1fa2;
+      --background-color: #f9f9f9;
+      --text-color: #333;
     }
-    
+
+    /* MENÚ FIJO */
+    .menu-fijo {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: white;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      padding: 10px 0;
+      z-index: 1000;
+    }
+    .menu-fijo nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .menu-fijo li {
+      margin: 0 15px;
+      position: relative;
+    }
+    .menu-fijo a {
+      color: var(--primary-color);
+      font-weight: bold;
+    }
+    .desplegable ul {
+      display: none;
+      position: absolute;
+      background: white;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      width: 180px;
+      left: -20px;
+    }
+    .desplegable:hover ul {
+      display: block;
+    }
+
+    /* PIZARRA */
+    .pizarra {
+      background: var(--primary-color);
+      padding: 12px;
+      margin-top: 60px; /* Espacio para el menú fijo */
+      text-align: center;
+    }
+    .pizarra a {
+      color: white;
+      padding: 8px 15px;
+      margin: 0 5px;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+    .pizarra a:hover {
+      background: var(--secondary-color);
+    }
+
+    /* CONTENIDO GENERAL */
     body {
       font-family: 'Arial', sans-serif;
       max-width: 800px;
@@ -34,166 +84,52 @@
       line-height: 1.6;
       color: var(--text-color);
       background-color: var(--background-color);
+      padding-top: 100px; /* Espacio extra para el menú */
     }
-    
     h1, h2, h3 {
       color: var(--primary-color);
-      border-bottom: 1px solid var(--border-color);
+      border-bottom: 1px solid #d1c4e9;
       padding-bottom: 0.3em;
     }
-    
-    a {
-      color: var(--secondary-color);
-      text-decoration: none;
-      transition: all 0.2s ease;
-    }
-    
-    a:hover {
-      color: #5e35b1;
-      text-decoration: underline;
-    }
-    
-    /* Footer estilo profesional */
-    footer {
-      margin-top: 4rem;
-      padding-top: 2rem;
-      border-top: 1px solid var(--border-color);
-      text-align: center;
-      color: #666;
-      font-size: 0.9rem;
-    }
-    
-    /* Clase para botones */
-    .btn {
-      display: inline-block;
-      background-color: var(--secondary-color);
+    .btn-comenzar {
+      background: linear-gradient(to right, #ff8a00, #da1b60);
       color: white !important;
-      padding: 0.6rem 1.2rem;
-      border-radius: 4px;
-      margin: 0.5rem 0;
+      padding: 12px 25px;
+      border-radius: 30px;
       font-weight: bold;
-      transition: background-color 0.2s;
-    }
-    
-    .btn:hover {
-      background-color: #5e35b1;
-      text-decoration: none;
-    }
-    
-    /* Estilo específico para Instagram */
-    .instagram-link {
-      color: var(--instagram-color);
-      font-weight: bold;
-    }
-    
-    .instagram-link:hover {
-      color: #c13584;
-    }
-    
-    .instagram-icon {
-      width: 18px;
-      height: 18px;
-      vertical-align: middle;
-      margin-right: 5px;
+      display: inline-block;
+      margin: 20px 0;
     }
   </style>
 </head>
-  <div class="pizarra">
-  <a href="#inicio" class="active">Inicio</a>
-  <a href="#teoria">Teoría</a>
-  <a href="#recursos">Recursos</a>
-  <a href="#comunidad">Comunidad</a>
-</div>
-
-<style>
-  .pizarra {
-    background: #4a148c;
-    padding: 10px;
-    margin-top: 50px; /* Ajusta según altura del menú fijo */
-  }
-  .pizarra a {
-    color: white;
-    padding: 8px 15px;
-    margin: 0 5px;
-    border-radius: 3px;
-  }
-  .pizarra a:hover {
-    background: #7b1fa2;
-  }
-</style>
 <body>
+  <!-- MENÚ SUPERIOR -->
   <header class="menu-fijo">
-  <nav>
-    <ul>
-      <li><a href="#inicio">Inicio</a></li>
-      <li class="desplegable">
-        <a href="#metodo">Método ▼</a>
-        <ul>
-          <li><a href="#etapa1">Etapa 1: Priming</a></li>
-          <li><a href="#etapa2">Etapa 2: Inmersión</a></li>
-          <li><a href="#etapa3">Etapa 3: Free Flow</a></li>
-        </ul>
-      </li>
-      <li><a href="#recursos">Recursos</a></li>
-      <li><a href="#comunidad">Comunidad</a></li>
-    </ul>
-  </nav>
-</header>
-  <div class="pizarra">
-  <a href="#inicio" class="active">Inicio</a>
-  <a href="#teoria">Teoría</a>
-  <a href="#recursos">Recursos</a>
-  <a href="#comunidad">Comunidad</a>
-</div>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li class="desplegable">
+          <a href="#metodo">Método ▼</a>
+          <ul>
+            <li><a href="#etapa1">Etapa 1: Priming</a></li>
+            <li><a href="#etapa2">Etapa 2: Inmersión</a></li>
+            <li><a href="#etapa3">Etapa 3: Free Flow</a></li>
+          </ul>
+        </li>
+        <li><a href="#recursos">Recursos</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<style>
-  .pizarra {
-    background: #4a148c;
-    padding: 10px;
-    margin-top: 50px; /* Ajusta según altura del menú fijo */
-  }
-  .pizarra a {
-    color: white;
-    padding: 8px 15px;
-    margin: 0 5px;
-    border-radius: 3px;
-  }
-  .pizarra a:hover {
-    background: #7b1fa2;
-  }
-</style>
-<style>
-  .menu-fijo {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: white;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    z-index: 1000;
-  }
-  .desplegable ul {
-    display: none;
-    position: absolute;
-    background: white;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-  }
-  .desplegable:hover ul {
-    display: block;
-  }
-</style>
+  <!-- PESTAÑAS HORIZONTALES -->
+  <div class="pizarra">
+    <a href="#inicio" class="active">Inicio</a>
+    <a href="#teoria">Teoría</a>
+    <a href="#recursos">Recursos</a>
+  </div>
+
   {{ content }}
-  
-  <footer>
-    <p>© 2025 <strong>El Antimétodo</strong> - Adquiere idiomas de manera fácil, efectiva, natural y divertida</p>
-    <p>Por José Luis Hernández Ramírez</p>
-    <p style="margin-top: 1rem;">
-      <a href="https://www.instagram.com/joseluis.hdz.3/" class="instagram-link" target="_blank">
-        <svg class="instagram-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-        </svg>
-        Mi instagram
-      </a>
-    </p>
-  </footer>
+
+  <!-- FOOTER (mantén el tuyo) -->
 </body>
 </html>
