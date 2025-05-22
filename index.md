@@ -216,19 +216,33 @@ description: Aprende idiomas de forma natural con el enfoque del input comprensi
     <h3 style="color: #7b1fa2; margin-top: 1.5rem;">Inmersión pasiva</h3>
     <p>Es cuando se presta una atención parcial al idioma, pueden ser podcast o audios, este tipo de inmersión puede ser increíblemente beneficiosa si es utilizada de manera correcta. Si bien al no prestar mucha atención se pierden muchos de los beneficios al sí hacerlo, puede ayudarte a incrementar muchísimo tu tiempo de exposición al idioma, lo cual ayuda realmente a gente ocupada, no remplaza a la inmersión activa y es completamente opcional, pero puede ayudarte a acelerar el proceso.</p>
 
-    <div style="background-color: #f9f9f9; padding: 1.5rem; border-radius: 8px; margin-top: 1rem; border-left: 5px solid #7b1fa2;">
-  <h4 style="color: #4a148c; margin-bottom: 0.8rem;">¿Te gustó la idea de la inmersión pasiva?</h4>
+  <div style="background-color: #f9f9f9; padding: 1.5rem; border-radius: 8px; margin-top: 1rem; border-left: 5px solid #7b1fa2; box-shadow: 0 4px 10px rgba(74, 20, 140, 0.1);">
+  <h4 style="color: #4a148c; margin-bottom: 1rem;">¿Te gustó la idea de la inmersión pasiva?</h4>
   <p style="margin-bottom: 1rem;">
     Este video puede darte un ejemplo claro de cómo adaptar tu entorno para que el idioma esté siempre presente. 
     Si estás siguiendo el Antimétodo, esto te podría ayudar a aumentar exponencialmente tus horas de exposición al idioma sin esfuerzo adicional.
   </p>
-  <p style="margin-bottom: 1rem;">
+  <p style="margin-bottom: 1.5rem;">
     Recomendamos la inmersión pasiva a partir de la segunda etapa, cuando ya puedas entender una parte de lo que escuchas pasivamente.
     Si bien en la inmersión pasiva no prestas una atención absoluta, te sugerimos dar un poco de atención al contenido para obtener mejores resultados.
   </p>
-  <a href="https://www.youtube.com/watch?v=SSWabajK1Sc" target="_blank" style="display: inline-block; padding: 0.6rem 1.2rem; background-color: #7b1fa2; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">
-    📺 Ver video
-  </a>
+
+  <div style="text-align: center;">
+    <iframe width="100%" height="315" 
+            src="https://www.youtube.com/embed/SSWabajK1Sc" 
+            title="Ejemplo de inmersión pasiva" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen
+            style="
+              max-width: 560px;
+              width: 100%;
+              border: 3px solid #d1c4e9;
+              border-radius: 8px;
+              box-shadow: 0 4px 10px rgba(74, 20, 140, 0.2);
+            ">
+    </iframe>
+  </div>
 </div>
     
     <h3 style="color: #7b1fa2; margin-top: 1.5rem;">Estudio activo</h3>
