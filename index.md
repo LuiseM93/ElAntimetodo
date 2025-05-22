@@ -21,8 +21,24 @@ description: Aprende idiomas de forma natural con el enfoque del input comprensi
 
 <style>
 .hero {
+  background: linear-gradient(135deg, #4a148c 0%, #7b1fa2 100%);
+  color: white;
+  padding: 80px 20px 60px;
   text-align: center;
   margin-bottom: 40px;
+  border-radius: 0 0 30px 30px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+.hero h1 {
+  font-size: 2.8em;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+}
+.subtitle {
+  font-size: 1.4em;
+  opacity: 0.9;
+  max-width: 700px;
+  margin: 0 auto;
 }
 .subtitle {
   font-size: 1.2em;
