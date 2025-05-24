@@ -4,9 +4,6 @@ on:
   repository_dispatch:
     types: [increment_counter]
 
-permissions:
-  contents: write  # Necesario para poder hacer push
-
 jobs:
   update:
     runs-on: ubuntu-latest
