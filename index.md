@@ -7,7 +7,7 @@ description: Aprende idiomas de forma natural con el enfoque del input comprensi
 <div class="hero">
   <h1>El Antimétodo</h1>
   <p class="subtitle">Aprende idiomas <strong>sin gramática</strong>, de forma <strong>natural y divertida</strong></p>
-  <a href="/ElAntimetodo/comunidad/" class="btn-community">
+  <a href="/ElAntimetodo/comunidad" class="btn-community">
   <span>👥 Ver comunidad</span>
   <small>Únete a la revolución</small>
 </a>
