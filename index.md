@@ -6,7 +6,7 @@ description: Aprende idiomas de forma natural con el enfoque del input comprensi
 
 <div class="hero">
   <h1>El Antimétodo</h1>
-  <p class="subtitle">Aprende idiomas <strong>sin gramática</strong>, de forma <strong>natural y divertida</strong></p> 
+  <p class="subtitle">Aprende idiomas <strong>sin gramática</strong>, de forma <strong>natural y divertida</strong></p>
   <div class="hero-cards">
     <div class="card">
       <h2>🎯 Sin Estrés</h2>
@@ -386,8 +386,3 @@ description: Aprende idiomas de forma natural con el enfoque del input comprensi
     }
   }
 </style>
-
-  display: block;
-  font-size: 0.8rem;
-  color: #7b1fa2;
-}
