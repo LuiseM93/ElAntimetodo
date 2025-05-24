@@ -1,0 +1,22 @@
+name: Update Counter
+
+on:
+  repository_dispatch:
+    types: [increment_counter]
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Update counter
+        run: |
+          count=$(($(jq '.count' data/followers.json) + 1))
+          echo '{"count": '$count'}' > data/followers.json
+          
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add data/followers.json
+          git commit -m "🚀 Nuevo seguidor del Antimétodo: Total $count"
+          git push
