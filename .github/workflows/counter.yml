@@ -12,11 +12,17 @@ jobs:
       
       - name: Update counter
         run: |
-          count=$(($(jq '.count' data/followers.json) + 1))
+          # Obtener contador actual
+          count=$(($(curl -s https://raw.githubusercontent.com/LuiseM93/ElAntimetodo/main/data/followers.json | jq '.count') + 1))
+          
+          # Crear nuevo contenido
           echo '{"count": '$count'}' > data/followers.json
           
+          # Configurar git
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
+          
+          # Hacer commit
           git add data/followers.json
-          git commit -m "🚀 Nuevo seguidor del Antimétodo: Total $count"
+          git commit -m "🚀 Nuevo seguidor: Total $count"
           git push
