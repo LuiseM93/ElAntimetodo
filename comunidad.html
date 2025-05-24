@@ -2,101 +2,293 @@
 layout: default
 title: Comunidad Antimétodo
 permalink: /comunidad/
+description: Únete a la revolución del aprendizaje natural de idiomas
 ---
 
+<meta property="og:type" content="website">
+<meta property="og:image" content="/ElAntimetodo/assets/logo-social.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
 <style>
+  :root {
+    --primary: #4a148c;
+    --secondary: #7b1fa2;
+    --accent: #e91e63;
+    --text: #333;
+    --light: #f8f8f8;
+  }
+  
   body {
-    background: rgba(248, 248, 248, 0.95);
+    background: var(--light);
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    line-height: 1.6;
+    color: var(--text);
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    margin: 0;
-    font-family: 'Arial', sans-serif;
   }
   
-  .minimal-counter {
-    width: 280px;
+  .premium-container {
+    width: 100%;
+    max-width: 420px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(74, 20, 140, 0.15);
+    overflow: hidden;
+    margin: 2rem;
+    position: relative;
+  }
+  
+  .counter-header {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: white;
+    padding: 2rem;
     text-align: center;
-    padding: 0;
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+  }
+  
+  .counter-subtitle {
+    display: block;
+    font-style: italic;
+    opacity: 0.9;
+    margin: 0.5rem 0 1rem;
+    font-weight: 300;
+  }
+  
+  .counter-body {
+    padding: 2rem;
+  }
+  
+  .counter-display {
+    text-align: center;
+    margin: 1.5rem 0;
   }
   
   .counter-number {
-    font-size: 3.2rem;
-    font-weight: 300;
-    color: #4a148c;
-    margin: 0;
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: var(--primary);
     line-height: 1;
+    margin: 0.5rem 0;
+    font-family: 'Arial', sans-serif;
   }
   
-  .counter-text {
-    color: #666;
-    margin: 0.5rem 0 1.5rem;
-    font-size: 1rem;
+  .counter-features {
+    margin: 2rem 0;
+  }
+  
+  .feature-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+  }
+  
+  .feature-icon {
+    margin-right: 0.8rem;
+    font-size: 1.3rem;
   }
   
   .join-btn {
-    background: transparent;
-    color: #7b1fa2;
-    border: 1px solid #7b1fa2;
-    padding: 0.6rem 1.5rem;
+    background: var(--accent);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
     border-radius: 50px;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
+    font-weight: 600;
     cursor: pointer;
-    transition: all 0.2s;
     width: 100%;
-    max-width: 180px;
-    margin: 0 auto;
-    display: block;
+    transition: all 0.3s;
+    box-shadow: 0 4px 15px rgba(233, 30, 99, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   .join-btn:hover {
-    background: #7b1fa2;
-    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(233, 30, 99, 0.4);
+    background: #d81b60;
   }
   
-  .footer-note {
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    font-size: 0.7rem;
-    color: #999;
+  .join-btn:active {
+    transform: translateY(0);
+  }
+  
+  .btn-icon {
+    margin-right: 0.5rem;
+  }
+  
+  .counter-footer {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(0,0,0,0.1);
+  }
+  
+  .back-link {
+    color: var(--secondary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .back-link:hover {
+    color: var(--primary);
+    text-decoration: underline;
+  }
+  
+  .counter-message {
+    text-align: center;
+    margin-top: 1rem;
+    color: var(--secondary);
+    font-size: 0.9rem;
+    min-height: 1.5rem;
+  }
+  
+  /* Efectos especiales */
+  .premium-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--accent), var(--secondary));
   }
 </style>
 
-<div class="minimal-counter">
-  <div class="counter-number" id="counter">0</div>
-  <p class="counter-text">seguidores del método</p>
-  <button class="join-btn" id="joinBtn">unirme</button>
-</div>
-
-<div class="footer-note">
-  antimétodo
+<div class="premium-container">
+  <div class="counter-header">
+    <h1>Seguidores del Antimétodo</h1>
+    <small class="counter-subtitle">No estudiamos idiomas. Los vivimos.</small>
+  </div>
+  
+  <div class="counter-body">
+    <p style="text-align: center;">Sé parte de la revolución del aprendizaje de idiomas</p>
+    
+    <div class="counter-display">
+      <div class="counter-number" id="counter">0</div>
+      <p>Personas que siguen el Antimétodo</p>
+    </div>
+    
+    <div class="counter-features">
+      <div class="feature-item">
+        <span class="feature-icon">🌍</span>
+        <span>Método natural y sin libros</span>
+      </div>
+      <div class="feature-item">
+        <span class="feature-icon">🔥</span>
+        <span>Enfoque extremo en input comprensible</span>
+      </div>
+      <div class="feature-item">
+        <span class="feature-icon">🚀</span>
+        <span>Avanza como un autodidacta real</span>
+      </div>
+    </div>
+    
+    <p style="text-align: center; font-weight: bold; color: var(--primary); margin: 1.5rem 0;">
+      💥 Miles ya rompieron las reglas. ¿Y tú?
+    </p>
+    
+    <button class="join-btn" id="joinBtn">
+      <span class="btn-icon">🔥</span>
+      <span>¡Únete a la revolución!</span>
+    </button>
+    
+    <p class="counter-message" id="message"></p>
+    
+    <div class="counter-footer">
+      <a href="/ElAntimetodo" class="back-link">
+        ← Volver al antimétodo
+      </a>
+    </div>
+  </div>
 </div>
 
 <script>
-// Contador simple sin GitHub Actions
-async function updateCounter() {
-  try {
-    const response = await fetch('https://luisem93.github.io/ElAntimetodo/data/followers.json?t=' + Date.now());
-    const data = await response.json();
-    document.getElementById('counter').textContent = data.count;
+// Sistema de contador premium
+class CommunityCounter {
+  constructor() {
+    this.counterEl = document.getElementById('counter');
+    this.joinBtn = document.getElementById('joinBtn');
+    this.messageEl = document.getElementById('message');
+    this.init();
+  }
+  
+  async fetchCount() {
+    try {
+      const response = await fetch('https://luisem93.github.io/ElAntimetodo/data/followers.json?t=' + Date.now());
+      return await response.json();
+    } catch (error) {
+      console.error('Fetch error:', error);
+      return { count: 0 };
+    }
+  }
+  
+  async updateCounter() {
+    const data = await this.fetchCount();
+    this.counterEl.textContent = data.count;
+    this.checkParticipation();
+  }
+  
+  checkParticipation() {
+    if (localStorage.getItem('hasJoined')) {
+      this.joinBtn.disabled = true;
+      this.joinBtn.innerHTML = '<span class="btn-icon">✓</span><span>¡Ya eres parte!</span>';
+      this.joinBtn.style.background = '#4CAF50';
+      this.joinBtn.style.boxShadow = '0 4px 15px rgba(76, 175, 80, 0.3)';
+    }
+  }
+  
+  async joinCommunity() {
+    if (localStorage.getItem('hasJoined')) return;
     
-    document.getElementById('joinBtn').addEventListener('click', () => {
-      if (!localStorage.getItem('hasJoined')) {
-        localStorage.setItem('hasJoined', 'true');
-        document.getElementById('counter').textContent = parseInt(document.getElementById('counter').textContent) + 1;
-        document.getElementById('joinBtn').textContent = '✓ unido';
-        document.getElementById('joinBtn').style.borderColor = '#4CAF50';
-        document.getElementById('joinBtn').style.color = '#4CAF50';
-      }
-    });
+    this.messageEl.textContent = 'Uniéndote a la revolución...';
     
-  } catch (error) {
-    console.error('Error:', error);
-    document.getElementById('counter').textContent = '—';
+    try {
+      const currentData = await this.fetchCount();
+      const newCount = currentData.count + 1;
+      
+      // Aquí iría la conexión con GitHub Actions en una versión completa
+      // Por ahora simulamos el incremento
+      localStorage.setItem('hasJoined', 'true');
+      
+      this.counterEl.textContent = newCount;
+      this.messageEl.textContent = '¡Bienvenido a la comunidad!';
+      this.checkParticipation();
+      
+      // Efecto visual
+      this.counterEl.style.transform = 'scale(1.1)';
+      setTimeout(() => {
+        this.counterEl.style.transform = 'scale(1)';
+      }, 300);
+      
+    } catch (error) {
+      console.error('Join error:', error);
+      this.messageEl.textContent = 'Error al unirse. Intenta nuevamente.';
+    }
+  }
+  
+  init() {
+    this.updateCounter();
+    this.joinBtn.addEventListener('click', () => this.joinCommunity());
   }
 }
 
-updateCounter();
+// Iniciar
+new CommunityCounter();
 </script>
