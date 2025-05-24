@@ -47,6 +47,15 @@ description: Aprende idiomas de forma natural con el enfoque del input comprensi
   margin-top: 0.3rem;
   opacity: 0.9;
 }
+@media (max-width: 768px) {
+  .btn-community {
+    padding: 0.7rem 1.2rem;
+    margin: 0.3rem;
+  }
+  .btn-community span {
+    font-size: 1rem;
+  }
+}
 </style>
   <div class="hero-cards">
     <div class="card">
