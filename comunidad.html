@@ -254,6 +254,7 @@ description: Únete a la revolución del aprendizaje natural de idiomas
 </div>
 
 <script>
+
 // Sistema mejorado de contador con GitHub API
 document.addEventListener('DOMContentLoaded', function() {
   const counterEl = document.getElementById('counter');
@@ -300,13 +301,12 @@ document.addEventListener('DOMContentLoaded', function() {
     
     messageEl.textContent = 'Uniéndote a la comunidad...';
     
-    // Llamada a la API de GitHub
+    // Llamada a la API de GitHub SIN TOKEN (usa el secreto del workflow)
     fetch('https://api.github.com/repos/LuiseM93/ElAntimetodo/dispatches', {
       method: 'POST',
       headers: {
         'Accept': 'application/vnd.github.v3+json',
-        'Content-Type': 'application/json',
-        'Authorization': 'token TU_TOKEN_GITHUB' // Reemplazar con token real
+        'Content-Type': 'application/json'
       },
       body: JSON.stringify({
         event_type: 'increment_counter'
@@ -320,7 +320,7 @@ document.addEventListener('DOMContentLoaded', function() {
         joinBtn.style.boxShadow = '0 4px 15px rgba(76, 175, 80, 0.3)';
         joinBtn.disabled = true;
         
-        // Actualizar contador después de 2 segundos (tiempo para que se ejecute el workflow)
+        // Actualizar contador después de 2 segundos
         setTimeout(() => {
           fetch('https://luisem93.github.io/ElAntimetodo/data/followers.json?t=' + Date.now())
             .then(response => response.json())
@@ -339,4 +339,3 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
-</script>
