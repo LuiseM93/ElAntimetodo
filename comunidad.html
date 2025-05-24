@@ -6,45 +6,60 @@ permalink: /comunidad/
 
 <style>
   body {
-    background: linear-gradient(rgba(74, 20, 140, 0.8), rgba(74, 20, 140, 0.8)), 
+    background: linear-gradient(rgba(74, 20, 140, 0.85), rgba(74, 20, 140, 0.85)), 
                 url('/ElAntimetodo/assets/background-counter.jpg');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
-    color: white;
-    font-family: 'Arial', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
   }
   
-  .community-box {
-    background: rgba(255, 255, 255, 0.9);
-    width: 90%;
-    max-width: 450px;
+  .elegant-counter {
+    background: white;
+    width: 320px;
     padding: 2.5rem;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
     text-align: center;
-    border: 1px solid #d1c4e9;
+    position: relative;
+    overflow: hidden;
+    border: none;
   }
   
-  h1 {
+  .logo-header {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 1.5rem;
+    display: block;
+  }
+  
+  .counter-title {
     color: #4a148c;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+  
+  .counter-number {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #7b1fa2;
+    margin: 0.5rem 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .counter-subtitle {
+    color: #666;
+    font-size: 0.9rem;
     margin-bottom: 1.5rem;
   }
   
-  .counter {
-    font-size: 3.5rem;
-    font-weight: bold;
-    color: #7b1fa2;
-    margin: 1rem 0;
-  }
-  
-  .btn-join {
+  .join-btn {
     background: #7b1fa2;
     color: white;
     border: none;
@@ -52,84 +67,108 @@ permalink: /comunidad/
     border-radius: 50px;
     font-size: 1rem;
     cursor: pointer;
-    margin-top: 1.5rem;
     transition: all 0.3s;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+    display: block;
+    font-weight: 500;
   }
   
-  .btn-join:hover {
+  .join-btn:hover {
     background: #4a148c;
-    transform: translateY(-3px);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(123, 31, 162, 0.3);
   }
   
-  #message {
-    margin-top: 1rem;
-    min-height: 1.5rem;
+  .counter-message {
+    margin-top: 1.2rem;
+    font-size: 0.85rem;
     color: #7b1fa2;
+    min-height: 1.2rem;
+  }
+  
+  .back-link {
+    display: inline-block;
+    margin-top: 1.5rem;
+    color: #7b1fa2;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+  }
+  
+  .back-link:hover {
+    text-decoration: underline;
   }
 </style>
 
-<div class="community-box">
-  <h1>Comunidad Antimétodo</h1>
-  <p>Únete a miles aprendiendo idiomas naturalmente</p>
+<div class="elegant-counter">
+  <img src="/ElAntimetodo/assets/logo-social.jpg" alt="Logo Antimétodo" class="logo-header">
   
-  <div class="counter" id="counter">0</div>
-  <p>Seguidores del método</p>
+  <h2 class="counter-title">Comunidad Antimétodo</h2>
+  <div class="counter-number" id="counter">0</div>
+  <p class="counter-subtitle">Personas aprendiendo naturalmente</p>
   
-  <button class="btn-join" id="joinBtn">¡Quiero unirme!</button>
-  <p id="message"></p>
+  <button class="join-btn" id="joinBtn">Únete</button>
+  <p class="counter-message" id="message"></p>
+  
+  <a href="/ElAntimetodo/" class="back-link">← Volver al método</a>
 </div>
 
 <script>
-// Solución definitiva para el contador
-async function updateCounter() {
+// Sistema de contador mejorado
+async function handleCounter() {
   try {
-    // 1. Obtener contador actual
+    // 1. Cargar contador actual
     const response = await fetch('https://luisem93.github.io/ElAntimetodo/data/followers.json?t=' + Date.now());
     const data = await response.json();
     document.getElementById('counter').textContent = data.count;
     
-    // 2. Manejar el botón
+    // 2. Configurar botón
     document.getElementById('joinBtn').addEventListener('click', async () => {
       if (localStorage.getItem('hasJoined')) {
-        document.getElementById('message').textContent = '¡Ya eres parte de la comunidad!';
+        document.getElementById('message').textContent = '¡Ya eres parte!';
         return;
       }
       
       try {
-        const response = await fetch('https://api.github.com/repos/LuiseM93/ElAntimetodo/dispatches', {
+        document.getElementById('message').textContent = 'Procesando...';
+        
+        // Disparar GitHub Action
+        const actionResponse = await fetch('https://api.github.com/repos/LuiseM93/ElAntimetodo/dispatches', {
           method: 'POST',
           headers: {
             'Accept': 'application/vnd.github.v3+json',
-            'Content-Type': 'application/json',
-            'Authorization': 'token ' + 'TU_TOKEN_AQUI' // Solo si usas token
+            'Content-Type': 'application/json'
           },
           body: JSON.stringify({
             event_type: 'increment_counter'
           })
         });
         
-        if (response.ok) {
+        if (actionResponse.ok) {
           localStorage.setItem('hasJoined', 'true');
-          document.getElementById('message').textContent = '¡Bienvenido! Actualizando...';
+          document.getElementById('message').textContent = '¡Bienvenido!';
           
-          // Esperar y actualizar
+          // Actualizar visualización
           setTimeout(async () => {
             const newData = await fetch('https://luisem93.github.io/ElAntimetodo/data/followers.json?t=' + Date.now());
-            const { count } = await newData.json();
-            document.getElementById('counter').textContent = count;
-          }, 2000);
+            const updated = await newData.json();
+            document.getElementById('counter').textContent = updated.count;
+          }, 1500);
         }
       } catch (error) {
         console.error('Error:', error);
-        document.getElementById('message').textContent = 'Error al conectar. Intenta más tarde.';
+        document.getElementById('message').textContent = 'Error al conectar';
       }
     });
     
   } catch (error) {
     console.error('Error cargando contador:', error);
-    document.getElementById('counter').textContent = '---';
+    document.getElementById('counter').textContent = '--';
   }
 }
 
-updateCounter();
+// Iniciar
+handleCounter();
 </script>
