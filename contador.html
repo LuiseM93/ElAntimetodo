@@ -1,0 +1,71 @@
+---
+layout: default
+title: Seguidores del Antimétodo
+permalink: /contador/
+---
+
+<div class="counter-container">
+  <div class="counter-box">
+    <h2>Comunidad del Antimétodo</h2>
+    <div class="counter-display">
+      <span id="counter">0</span>
+      <p>personas aprendiendo naturalmente</p>
+    </div>
+    <a href="/ElAntimetodo/comunidad.html" class="counter-btn">Ver más</a>
+  </div>
+</div>
+
+<style>
+.counter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  padding: 2rem;
+}
+
+.counter-box {
+  background: white;
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  max-width: 350px;
+  width: 100%;
+  border: 1px solid #d1c4e9;
+}
+
+.counter-display span {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #4a148c;
+  display: block;
+}
+
+.counter-btn {
+  display: inline-block;
+  background: #7b1fa2;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border-radius: 50px;
+  text-decoration: none;
+  margin-top: 1.5rem;
+  transition: all 0.3s;
+}
+
+.counter-btn:hover {
+  background: #4a148c;
+  transform: translateY(-2px);
+}
+</style>
+
+<script>
+fetch('https://raw.githubusercontent.com/LuiseM93/ElAntimetodo/main/data/followers.json')
+  .then(response => response.json())
+  .then(data => {
+    document.getElementById('counter').textContent = data.count;
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });
+</script>
