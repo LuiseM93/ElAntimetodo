@@ -12,11 +12,11 @@ description: Únete a la revolución del aprendizaje natural de idiomas
 <meta property="og:image:height" content="630">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- Favicons -->
-<link rel="icon" href="/ElAntimetodo/assets/favicon.ico?v=2">
-<link rel="icon" type="image/png" sizes="32x32" href="/ElAntimetodo/assets/favicon-32x32.png?v=2">
-<link rel="icon" type="image/png" sizes="16x16" href="/ElAntimetodo/assets/favicon-16x16.png?v=2">
-<link rel="apple-touch-icon" href="/ElAntimetodo/assets/apple-touch-icon.png?v=2">
+<!-- Favicons (versión corregida) -->
+<link rel="icon" href="/ElAntimetodo/assets/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/ElAntimetodo/assets/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/ElAntimetodo/assets/favicon-16x16.png">
+<link rel="apple-touch-icon" href="/ElAntimetodo/assets/apple-touch-icon.png">
 
 <style>
   :root {
@@ -28,7 +28,11 @@ description: Únete a la revolución del aprendizaje natural de idiomas
   }
   
   body {
-    background: #f5f5f7;
+    background: linear-gradient(rgba(74, 20, 140, 0.85), rgba(74, 20, 140, 0.85)), 
+                url('/ElAntimetodo/assets/background-counter.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     line-height: 1.6;
     color: var(--text);
@@ -39,7 +43,6 @@ description: Únete a la revolución del aprendizaje natural de idiomas
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    position: relative;
   }
   
   .community-card {
@@ -47,11 +50,11 @@ description: Únete a la revolución del aprendizaje natural de idiomas
     max-width: 380px;
     background: white;
     border-radius: 12px;
-    box-shadow: 0 8px 30px rgba(74, 20, 140, 0.1);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
     overflow: hidden;
     margin: 2rem 1rem;
     position: relative;
-    border: 1px solid #e0e0e0;
+    border: 1px solid rgba(0,0,0,0.1);
   }
   
   .card-header {
@@ -170,24 +173,6 @@ description: Únete a la revolución del aprendizaje natural de idiomas
     min-height: 1.2rem;
   }
   
-  .footer {
-    text-align: center;
-    padding: 1.5rem;
-    margin-top: auto;
-    width: 100%;
-    color: #666;
-    font-size: 0.85rem;
-  }
-  
-  .footer a {
-    color: var(--secondary);
-    text-decoration: none;
-  }
-  
-  .footer a:hover {
-    text-decoration: underline;
-  }
-  
   /* Efectos especiales */
   .community-card::after {
     content: '';
@@ -197,6 +182,31 @@ description: Únete a la revolución del aprendizaje natural de idiomas
     right: 0;
     height: 4px;
     background: linear-gradient(90deg, var(--accent), var(--secondary));
+  }
+  
+  /* Responsive para móviles */
+  @media (max-width: 480px) {
+    body {
+      background-attachment: scroll;
+      padding: 1rem;
+    }
+    
+    .community-card {
+      margin: 1rem 0;
+      border-radius: 10px;
+    }
+    
+    h1 {
+      font-size: 1.4rem;
+    }
+    
+    .counter-number {
+      font-size: 2.8rem;
+    }
+    
+    .join-btn {
+      padding: 0.8rem 1.5rem;
+    }
   }
 </style>
 
@@ -242,15 +252,8 @@ description: Únete a la revolución del aprendizaje natural de idiomas
   </div>
 </div>
 
-<footer class="footer">
-  <div>© 2025 El Antimétodo - Aprende idiomas de forma natural</div>
-  <div style="margin-top: 0.5rem;">
-    <a href="https://www.instagram.com/joseluis.hdz.3/" target="_blank">@joseluis.hdz.3</a>
-  </div>
-</footer>
-
 <script>
-// Sistema mejorado de contador
+// Sistema mejorado de contador con GitHub API
 document.addEventListener('DOMContentLoaded', function() {
   const counterEl = document.getElementById('counter');
   const joinBtn = document.getElementById('joinBtn');
@@ -290,27 +293,49 @@ document.addEventListener('DOMContentLoaded', function() {
       counterEl.textContent = '---';
     });
   
-  // Manejar clic en unirse
+  // Manejar clic en unirse (versión con GitHub API)
   joinBtn.addEventListener('click', function() {
     if (localStorage.getItem('hasJoined')) return;
     
     messageEl.textContent = 'Uniéndote a la comunidad...';
     
-    // Simular actualización (en producción usarías GitHub API)
-    setTimeout(() => {
-      const currentCount = parseInt(counterEl.textContent);
-      const newCount = currentCount + 1;
-      
-      animateCounter(counterEl, newCount);
-      
-      localStorage.setItem('hasJoined', 'true');
-      joinBtn.innerHTML = '<span class="btn-icon">✓</span><span>¡Ya eres parte!</span>';
-      joinBtn.style.background = 'linear-gradient(135deg, #4CAF50, #2E7D32)';
-      joinBtn.style.boxShadow = '0 4px 15px rgba(76, 175, 80, 0.3)';
-      joinBtn.disabled = true;
-      
-      messageEl.textContent = '¡Bienvenido a la comunidad!';
-    }, 800);
+    // Llamada a la API de GitHub
+    fetch('https://api.github.com/repos/LuiseM93/ElAntimetodo/dispatches', {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/vnd.github.v3+json',
+        'Content-Type': 'application/json',
+        'Authorization': 'token TU_TOKEN_GITHUB' // Reemplazar con token real
+      },
+      body: JSON.stringify({
+        event_type: 'increment_counter'
+      })
+    })
+    .then(response => {
+      if (response.ok) {
+        localStorage.setItem('hasJoined', 'true');
+        joinBtn.innerHTML = '<span class="btn-icon">✓</span><span>¡Ya eres parte!</span>';
+        joinBtn.style.background = 'linear-gradient(135deg, #4CAF50, #2E7D32)';
+        joinBtn.style.boxShadow = '0 4px 15px rgba(76, 175, 80, 0.3)';
+        joinBtn.disabled = true;
+        
+        // Actualizar contador después de 2 segundos (tiempo para que se ejecute el workflow)
+        setTimeout(() => {
+          fetch('https://luisem93.github.io/ElAntimetodo/data/followers.json?t=' + Date.now())
+            .then(response => response.json())
+            .then(data => {
+              animateCounter(counterEl, data.count);
+              messageEl.textContent = '¡Bienvenido a la comunidad!';
+            });
+        }, 2000);
+      } else {
+        messageEl.textContent = 'Error al unirse. Intenta nuevamente.';
+      }
+    })
+    .catch(error => {
+      console.error('Error:', error);
+      messageEl.textContent = 'Error de conexión. Intenta más tarde.';
+    });
   });
 });
 </script>
