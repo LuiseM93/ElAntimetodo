@@ -1,0 +1,179 @@
+---
+layout: default
+title: Comunidad Antimétodo
+description: Se parte de la revolución
+---
+
+<style>
+  body {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/background-counter.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
+  
+  .counter-box {
+    background: rgba(74, 20, 140, 0.85);
+    max-width: 600px;
+    margin: 5rem auto;
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    backdrop-filter: blur(5px);
+    border: 1px solid #d1c4e9;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  }
+  
+  .counter-number {
+    font-size: 5rem;
+    font-weight: bold;
+    margin: 1rem 0;
+    color: #f8f8f8;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  .join-btn {
+    background: #f8f8f8;
+    color: #4a148c;
+    border: none;
+    padding: 1rem 2.5rem;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    font-weight: bold;
+    transition: all 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .join-btn:hover {
+    background: #e0e0e0;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .join-btn:active {
+    transform: translateY(1px);
+  }
+  
+  .message {
+    margin-top: 1.5rem;
+    min-height: 1.5rem;
+    font-style: italic;
+  }
+  
+  .back-link {
+    display: inline-block;
+    margin-top: 2rem;
+    color: #d1c4e9;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .back-link:hover {
+    color: white;
+    text-decoration: underline;
+  }
+</style>
+
+<div class="counter-box">
+  <h1>Seguidores del Antimétodo</h1>
+  <small style="display:block; margin-bottom:1rem; font-style:italic; color:#e0e0e0;">
+    No estudiamos idiomas. Los vivimos.
+  </small>
+  <p>Se parte de la revolución del aprendizaje de idiomas</p>
+  
+  <div class="counter-number" id="counter">0</div>
+  <p>Personas que siguen el Antimétodo</p>
+
+  <p style="margin-top: 1.5rem; font-weight: bold; color: #fff;">💥 Miles ya rompieron las reglas. ¿Y tú?</p>
+  
+  <ul style="list-style: none; padding: 0; margin-top: 1.5rem; margin-bottom: 1rem;">
+    <li>🌍 Método natural y sin libros</li>
+    <li>🔥 Enfoque extremo en input comprensible</li>
+    <li>🚀 Avanza como un autodidacta real</li>
+  </ul>
+
+  <button class="join-btn" id="joinBtn">🔥 ¡Únete a la revolución!</button>
+  <p class="message" id="message"></p>
+  
+  <a href="/ElAntimetodo" class="back-link">← Volver al antimétodo</a>
+</div>
+
+<script>
+// Configuración - REEMPLAZA CON TUS DATOS
+const REPO_OWNER = 'LuiseM93';
+const REPO_NAME = 'ElAntimetodo';
+const FILE_PATH = 'data/followers.json';
+const TOKEN = 'AQUI_PEGA_TU_TOKEN'; // Reemplaza esto con tu token
+
+async function updateCounter() {
+  try {
+    // 1. Obtener el conteo actual
+    const response = await fetch(
+      `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${FILE_PATH}`,
+      {
+        headers: {
+          'Authorization': `token ${TOKEN}`,
+          'Accept': 'application/vnd.github.v3+json'
+        }
+      }
+    );
+    
+    const data = await response.json();
+    const currentContent = JSON.parse(atob(data.content));
+    document.getElementById('counter').textContent = currentContent.count;
+    
+    // 2. Manejar el botón de unirse
+    document.getElementById('joinBtn').addEventListener('click', async () => {
+      if (localStorage.getItem('hasJoined')) {
+        document.getElementById('message').textContent = '¡Ya eres parte de esta comunidad!';
+        return;
+      }
+      
+      const newCount = currentContent.count + 1;
+      const updateResponse = await fetch(
+        `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${FILE_PATH}`,
+        {
+          method: 'PUT',
+          headers: {
+            'Authorization': `token ${TOKEN}`,
+            'Accept': 'application/vnd.github.v3+json'
+          },
+          body: JSON.stringify({
+            message: 'Nuevo seguidor del Antimétodo',
+            content: btoa(JSON.stringify({ count: newCount })),
+            sha: data.sha
+          })
+        }
+      );
+      
+      if (updateResponse.ok) {
+        document.getElementById('counter').textContent = newCount;
+        document.getElementById('message').textContent = '¡Bienvenido a la comunidad!';
+        localStorage.setItem('hasJoined', 'true');
+      } else {
+        document.getElementById('message').textContent = 'Error al actualizar. Intenta nuevamente.';
+      }
+    });
+    
+  } catch (error) {
+    console.error('Error:', error);
+    document.getElementById('message').textContent = 'Cargando datos...';
+  }
+}
+
+// Iniciar
+updateCounter();
+</script>
