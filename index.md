@@ -7,6 +7,34 @@ description: Aprende idiomas de forma natural con el enfoque del input comprensi
 <div class="hero">
   <h1>El Antimétodo</h1>
   <p class="subtitle">Aprende idiomas <strong>sin gramática</strong>, de forma <strong>natural y divertida</strong></p>
+  <a href="/ElAntimetodo/contador.html" class="btn-community">
+  <span>👥 Ver comunidad</span>
+  <small>Únete a la revolución</small>
+</a>
+
+<style>
+.btn-community {
+  display: inline-block;
+  background: rgba(123, 31, 162, 0.1);
+  border: 2px solid #7b1fa2;
+  color: #4a148c;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s;
+  margin: 0.5rem;
+}
+.btn-community:hover {
+  background: rgba(123, 31, 162, 0.2);
+  transform: translateY(-2px);
+}
+.btn-community small {
+  display: block;
+  font-size: 0.8rem;
+  color: #7b1fa2;
+}
+</style>
   <div class="hero-cards">
     <div class="card">
       <h2>🎯 Sin Estrés</h2>
@@ -386,3 +414,25 @@ description: Aprende idiomas de forma natural con el enfoque del input comprensi
     }
   }
 </style>
+/* Estilos para el botón de comunidad */
+.btn-community {
+  display: inline-block;
+  background: rgba(123, 31, 162, 0.1);
+  border: 2px solid #7b1fa2;
+  color: #4a148c;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s;
+  margin: 0.5rem;
+}
+.btn-community:hover {
+  background: rgba(123, 31, 162, 0.2);
+  transform: translateY(-2px);
+}
+.btn-community small {
+  display: block;
+  font-size: 0.8rem;
+  color: #7b1fa2;
+}
