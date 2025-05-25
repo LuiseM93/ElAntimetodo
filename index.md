@@ -260,7 +260,7 @@ description: Aprende idiomas de forma natural con el enfoque del input comprensi
   
   <p>El objetivo de esto es utilizarla como una rampa de acceso para lanzarnos más fácilmente al input real, porque es mucho más eficaz que lanzarnos a la inmersión de una, ya que el input debe ser en parte comprensible.</p>
   
-  <p>Para este paso recomendamos empezar aprendiendo vocabulario mediante una aplicación de repetición espaciada (Anki) con un mazo de 1000 palabras más comunes (NO BÁSICAS) en el idioma. Para esto recomendamos los <a href="https://refold.la/es/category/decks/" target="_blank">mazos de Refold</a>. El objetivo no es aprender el idioma ni adquirir las palabras todavía, sino aprenderlas a corto plazo para poder reconocerlas durante la inmersión y así adquirirlas más fácilmente. Esto acelera muchísimo el proceso. Recomendamos estudiar 15 palabras diarias, ya que se acumulan rápidamente. También puedes explorar otros mazos populares en <a href="https://ankiweb.net/shared/decks" target="_blank">AnkiWeb</a>.</p>
+  <p>Para este paso recomendamos empezar aprendiendo vocabulario mediante una aplicación de repetición espaciada (Anki) con un mazo de 1000 palabras más comunes (NO BÁSICAS) en el idioma. Para esto recomendamos los <a href="https://refold.la/es/category/decks/" target="_blank">mazos de Refold</a>. Ten en cuenta que estos mazos tienen un costo. Si buscas opciones gratuitas, puedes explorar cientos de mazos populares creados por la comunidad en <a href="https://ankiweb.net/shared/decks" target="_blank">AnkiWeb</a>.</p>
   
   <p><strong>Utilizar aplicaciones de idiomas:</strong> estas aplicaciones no te pueden llevar a un nivel avanzado ni a la fluidez, pero pueden ayudarte a construir las bases. Recomendamos especialmente <strong>Busuu</strong>.</p>
   
@@ -268,7 +268,7 @@ description: Aprende idiomas de forma natural con el enfoque del input comprensi
   
   <p><strong>¿Es la gramática necesaria?</strong> No recomendamos el estudio formal de gramática en esta etapa, y sostenemos que puedes aprender cualquier idioma sin tocarla. Sin embargo, si disfrutas estudiar gramática, puedes usarla como apoyo básico en esta primera etapa de preparación para comprender mejor las estructuras, o más adelante en la etapa de output para refinar detalles.</p>
   
-  <p>Recomendamos firmemente el uso de <strong>Refold Tracker</strong>. Es una aplicación que te permite registrar el tiempo que pasas en tu idioma y en qué actividades. Te ayudará a crear el hábito y a tener claridad sobre tus horas reales de exposición.</p>
+  <p>Recomendamos firmemente el uso de <a href="https://play.google.com/store/apps/details?id=com.refoldla.habitsmobile&hl=en" target="_blank"><strong>Refold Tracker</strong></a>. Es una aplicación que te permite registrar el tiempo que pasas en tu idioma y en qué actividades. Te ayudará a crear el hábito y a tener claridad sobre tus horas reales de exposición.</p>
 </section>
 
 
