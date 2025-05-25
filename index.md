@@ -250,46 +250,27 @@ description: Aprende idiomas de forma natural con el enfoque del input comprensi
   </section>
 
   <!-- SECCIÓN ETAPAS -->
-  <section style="margin-bottom: 3rem;">
-    <h2 style="
-      color: #4a148c;
-      border-bottom: 2px solid #d1c4e9;
-      padding-bottom: 0.5rem;
-    ">Primera etapa: preparación previa</h2>
-    
-    <p>El objetivo de esto es utilizarla como una rampa de acceso para lanzarnos más fácilmente al input real, porque es mucho mas eficaz que lanzarnos a la inmersión de una, porque el input debe de ser una parte comprensible.</p>
-    
-    <p>Para este paso recomendamos empezar aprendiendo vocabulario mediante una aplicación de repetición espaciada (Anki) con un mazo de 1000 palabras más comunes (NO BASICAS) en el idioma para esto recomendamos los mazos de refold, el objetivo de esto no es aprender el idioma ni adquirir las palabras, el objetivo es aprender las palabras a corto plazo para poder reconocerlas en la inmersión y adquirirlas, lo cual acelera muchísimo el proceso, recomendamos 15 palabras diarias por día porque se acumulan.</p>
-    
-    <p><strong>Utilizar aplicaciones de idiomas:</strong> estas aplicaciones de idiomas no te pueden llevar a un nivel avanzado ni llevarte a la fluidez, pero pueden ayudarte para hacer las bases en un idioma, podemos utilizar busuu (que es lo más recomendamos).</p>
-    
-    <p><strong>Otras alternativas:</strong> Es importante saber que son opcionales y que hacer esto realmente depende de cada uno, la piedra del angular de este método es que lo disfrutes y hagas actividades que disfrutes: Fonética, gramática, Cursos de idiomas.</p>
-    
-    <p><strong>¿Es la gramática necesaria?</strong> Nosotros no recomendamos en absoluto el uso de la gramática y sostenemos fuertemente que puedes aprender fácilmente cualquier idioma sin haber tocado nunca la gramática, pero si disfrutes de aprender gramática puedes aprender gramática básica para la primera etapa de primming para adquirirla más rápido y entender oraciones completas o en la ultima etapa de output para refinar detalles.</p>
-    
-    <p>Es demasiado importante poner énfasis y recomendamos absolutamente el uso de Refold tracker, es una aplicación que te permitirá registrar el tiempo que pasas en tu idioma y las actividades en las que pasas tiempo, creará el hábito fácilmente y sabrás con facilidad cuantas horas pasas en tu idioma.</p>
-  </section>
+  
+<section style="margin-bottom: 3rem;">
+  <h2 style="
+    color: #4a148c;
+    border-bottom: 2px solid #d1c4e9;
+    padding-bottom: 0.5rem;
+  ">Primera etapa: preparación previa</h2>
+  
+  <p>El objetivo de esto es utilizarla como una rampa de acceso para lanzarnos más fácilmente al input real, porque es mucho más eficaz que lanzarnos a la inmersión de una, ya que el input debe ser en parte comprensible.</p>
+  
+  <p>Para este paso recomendamos empezar aprendiendo vocabulario mediante una aplicación de repetición espaciada (Anki) con un mazo de 1000 palabras más comunes (NO BÁSICAS) en el idioma. Para esto recomendamos los <a href="https://refold.la/es/category/decks/" target="_blank">mazos de Refold</a>. El objetivo no es aprender el idioma ni adquirir las palabras todavía, sino aprenderlas a corto plazo para poder reconocerlas durante la inmersión y así adquirirlas más fácilmente. Esto acelera muchísimo el proceso. Recomendamos estudiar 15 palabras diarias, ya que se acumulan rápidamente. También puedes explorar otros mazos populares en <a href="https://ankiweb.net/shared/decks" target="_blank">AnkiWeb</a>.</p>
+  
+  <p><strong>Utilizar aplicaciones de idiomas:</strong> estas aplicaciones no te pueden llevar a un nivel avanzado ni a la fluidez, pero pueden ayudarte a construir las bases. Recomendamos especialmente <strong>Busuu</strong>.</p>
+  
+  <p><strong>Otras alternativas:</strong> Son totalmente opcionales y dependen de cada persona. La piedra angular de este método es que lo disfrutes y hagas actividades que te gusten: fonética, gramática, cursos de idiomas, etc.</p>
+  
+  <p><strong>¿Es la gramática necesaria?</strong> No recomendamos el estudio formal de gramática en esta etapa, y sostenemos que puedes aprender cualquier idioma sin tocarla. Sin embargo, si disfrutas estudiar gramática, puedes usarla como apoyo básico en esta primera etapa de preparación para comprender mejor las estructuras, o más adelante en la etapa de output para refinar detalles.</p>
+  
+  <p>Recomendamos firmemente el uso de <strong>Refold Tracker</strong>. Es una aplicación que te permite registrar el tiempo que pasas en tu idioma y en qué actividades. Te ayudará a crear el hábito y a tener claridad sobre tus horas reales de exposición.</p>
+</section>
 
-  <!-- SECCIÓN INMERSIÓN -->
-  <section style="margin-bottom: 3rem;">
-    <h2 style="
-      color: #4a148c;
-      border-bottom: 2px solid #d1c4e9;
-      padding-bottom: 0.5rem;
-    ">Segunda etapa: Inmersión total en el idioma</h2>
-    
-    <p>Inmersión total en el idioma, en esta etapa consumiremos contenido autentico en el idioma, esto incluye películas, series, libros, videojuegos. En un comienzo no vas a entender cada una de las palabras que dicen, lo importante y lo que vas a hacer es tratar de entender el mensaje, entender lo que está sucediendo en la pantalla, por ejemplo si estuvieras viendo un show de comedia no deberías de tratar cada una de las palabras que dicen de los chistes, si no buscar entender el chiste, al principio tenemos que poner énfasis en consumir contenido fácil, tenemos que encontrarnos en el punto en donde entendamos y no lo que estamos consumiendo y debemos de estar disfrutando y de encontrar el contenido interesante. En estos momentos recomendamos absolutamente activar los subtítulos (CC) en el mismo idioma meta, al ser un contenido audiovisual contaremos con lo que está pasando en la pantalla (gestos, acciones) y los subtítulos nos ayudan en este punto a mejorar muchísimo nuestra comprensión y aprender cómo se escribe el idioma en relación a como se escucha. Para encontrar contenido recomendamos plataformas de streaming como youtube, Netflix, prime video.</p>
-    
-    <p>Es importante estar en contacto todos los días con el idioma, a la vez que consumimos contenido usar también anki para aprender nuevas palabras recomendamos 2 horas al día en inmersión activa con la inmersión pasiva como extra opcional, esto nos permite notar progreso de forma rápida y evidente, lo cual nos mantendrá con una motivación alta. Además al tratarse de un método que se compone de actividades agradables las dos horas serán no solo sostenibles, sino que también placenteras.</p>
-    
-    <h3 style="color: #7b1fa2; margin-top: 1.5rem;">¿Es demasiado dedicar dos horas al día?</h3>
-    
-    <p>En promedio, las personas en México consumen diariamente 2.3 horas para ver canales de televisión abierta y 3 horas para consumir contenidos audiovisuales por internet. – ENCCA 2024</p>
-    
-    <p>La Encuesta Nacional sobre Disponibilidad y Uso de Tecnologías de la Información en los Hogares (ENDUTIH) del INEGI revela que, en promedio durante 2023, los jóvenes adultos de 18 a 24 años registran el más alto de uso de internet en el país con 5.9 horas diarias; es decir, pasan más de dos mil 100 horas anualmente frente a las pantallas de sus smartphones o computadoras. – Informador</p>
-    
-    <p>Nuestro enfoque propone sustituir una parte de ese tiempo por una actividad que, si bien es formativa, también resulta placentera: el aprendizaje de idiomas. En nuestro caso, aprender idiomas no se vive como una obligación pesada, sino como un pasatiempo. Además, el impacto de dos horas al día durante semanas o meses es exponencial. No es una carga, es una inversión. Lo que para algunos puede parecer "mucho tiempo", para nosotros es simplemente el tiempo necesario para transformar un pasatiempo en resultados extraordinarios.</p>
-  </section>
 
   <!-- SECCIÓN FREE FLOW -->
   <section style="margin-bottom: 3rem;">
