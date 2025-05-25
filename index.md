@@ -317,9 +317,9 @@ description: Aprende idiomas de forma natural con el enfoque del input comprensi
       color: #4a148c;
       border-bottom: 2px solid #d1c4e9;
       padding-bottom: 0.5rem;
-    ">Recursos</h2>
+    ">Proximamente...</h2>
     
-    <p style="text-align: center;">En construcción...</p>
+    <p style="text-align: center;">Esta es solo la primera versión del Antimétodo. Apenas estamos comenzando. La página está en pleno desarrollo y aún faltan muchos recursos, herramientas, ejemplos y guías prácticas que iremos construyendo poco a poco. Lo que acabas de leer es solo el inicio de algo mucho más grande. Se vienen cosas importantes, y esto apenas comienza.</p>
     
     <div style="text-align: center; margin-top: 2rem;">
       <img src="https://st3.depositphotos.com/7863750/16494/i/450/depositphotos_164949208-stock-photo-cat-architect-with-house-model.jpg" 
