@@ -325,7 +325,7 @@ description: Aprende idiomas de forma natural con el enfoque del input comprensi
 
 <p><strong>Resultados esperados:</strong> fluidez real y un alto nivel en el idioma, comprensión a nivel nativo y hablar desde el instinto.</p>
 
-    <p>-Para dudas, recursos y más del Antimétodo. Favor de mandar dm al instagram personal del creador del Antimétodo<p>
+    <p></strong>-Para dudas, recursos y más del Antimétodo.</strong> Favor de mandar dm al instagram personal del creador del Antimétodo<p>
     
     <div style="margin-top: 2rem; text-align: center;">
       <img src="https://st3.depositphotos.com/7863750/16494/i/450/depositphotos_164949208-stock-photo-cat-architect-with-house-model.jpg" 
