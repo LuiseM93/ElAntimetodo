@@ -319,8 +319,9 @@ description: Aprende idiomas de forma natural con el enfoque del input comprensi
       padding-bottom: 0.5rem;
     ">Proximamente...</h2>
     
-    <p>Esta es solo la primera versión del sitio web del Antimétodo. Apenas estamos comenzando. La página está en pleno desarrollo y aún faltan muchos recursos, herramientas, ejemplos y guías prácticas que iremos construyendo poco a poco. Lo que acabas de leer es solo el inicio de algo mucho más grande. Se vienen cosas importantes, y esto apenas comienza.
-    -Para dudas, recursos y más del Antimétodo. Favor de mandar dm a instagram</p>
+    <p>Esta es solo la primera versión del sitio web del Antimétodo. Apenas estamos comenzando. La página está en pleno desarrollo y aún faltan muchos recursos, herramientas, ejemplos y guías prácticas que iremos construyendo poco a poco. Lo que acabas de leer es solo el inicio de algo mucho más grande. Se vienen cosas importantes, y esto apenas comienza.</p>
+
+    <p>-Para dudas, recursos y más del Antimétodo. Favor de mandar dm al instagram personal del creador del Antimétodo<p>
     
     <div style="margin-top: 2rem; text-align: center;">
       <img src="https://st3.depositphotos.com/7863750/16494/i/450/depositphotos_164949208-stock-photo-cat-architect-with-house-model.jpg" 
