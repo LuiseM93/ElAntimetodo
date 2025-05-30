@@ -17,23 +17,31 @@ description: Aprende idiomas de forma natural con el enfoque del input comprensi
       <p>Usa tu tiempo libre: series, música, videojuegos</p>
     </div>
   </div>
+
+  <!-- Imagen supremacy.jpg movida aquí DENTRO del div.hero -->
+  <div style="text-align: center; margin-top: 30px; margin-bottom: 10px;"> <!-- Ajustado margen inferior -->
+    <img src="{{ '/assets/supremacy.jpg' | relative_url }}" alt="Supremacía del Antimétodo"
+         style="
+           max-width: 65%; /* Reducido el tamaño, ajusta este valor según prefieras */
+           height: auto; 
+           border-radius: 8px; /* Un poco menos redondeado para que encaje mejor */
+           border: 2px solid var(--grey-border-color); /* Borde gris más delgado */
+           box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+         ">
+  </div>
 </div>
 
-<!-- Imagen supremacy.jpg añadida aquí -->
-<div style="text-align: center; margin: 30px 0;">
-  <img src="{{ '/assets/supremacy.jpg' | relative_url }}" alt="Supremacía del Antimétodo"
-       style="
-         max-width: 80%; /* Ajusta según prefieras, 80% del contenedor */
-         height: auto; /* Para mantener la proporción */
-         border-radius: 10px; /* Bordes redondeados */
-         border: 3px solid var(--grey-border-color); /* Borde gris claro */
-         box-shadow: 0 5px 15px rgba(0,0,0,0.15); /* Sombra sutil */
-       ">
-</div>
 
 <style>
 /* Estilos específicos para el Hero Section de esta página */
-.hero { text-align: center; padding: 2rem 1rem; margin-bottom: 20px; /* Reducido el margen inferior del hero */ background-color: var(--card-background); border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+.hero { 
+    text-align: center; 
+    padding: 2rem 1rem 1.5rem 1rem; /* Ajustado padding inferior para la imagen */ 
+    margin-bottom: 40px; /* Margen original del hero */ 
+    background-color: var(--card-background); 
+    border-radius: 10px; 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); 
+}
 .hero h1 { border-bottom: none; font-size: 2.8em; margin-bottom: 0.5rem; }
 .subtitle { font-size: 1.3em; color: var(--secondary-color); margin-bottom: 2rem; }
 .hero-cards { display: flex; gap: 20px; margin-top: 30px; justify-content: center; }
@@ -46,7 +54,7 @@ description: Aprende idiomas de forma natural con el enfoque del input comprensi
 </style>
 
 <!-- CONTENIDO PRINCIPAL -->
-<main style="max-width: 800px; margin: 0 auto; /* Ajustado margen superior del main */ padding: 0 1rem;">
+<main style="max-width: 800px; margin: 0 auto; padding: 0 1rem;">
 
   <section style="margin-bottom: 3rem; padding: 2rem; background-color: var(--card-background); border-radius: 8px; box-shadow: 0 3px 10px rgba(0,0,0,0.05);">
     <h2 style="color: var(--primary-color); border-bottom: 2px solid var(--light-purple-color); padding-bottom: 0.5rem; display: block; text-align: center;">Bienvenido al Antimétodo</h2>
