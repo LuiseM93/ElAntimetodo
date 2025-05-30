@@ -24,12 +24,15 @@
       --background-color: #f9f9f9;  /* Fondo gris claro */
       --text-color: #333;          /* Texto oscuro */
       --card-background: #ffffff;   /* Fondo de tarjetas */
-      --instagram-color: #E1306C;  /* Color de Instagram */
+      --navbar-text-color: #ffffff; /* Texto del navbar */
+      --navbar-hover-bg: var(--secondary-color);
+      --navbar-active-bg: var(--secondary-color);
+      --instagram-color: #E1306C;
     }
     
     body {
       font-family: 'Arial', sans-serif;
-      margin: 0; /* Reset margin for full-width navbar */
+      margin: 0;
       padding: 0;
       line-height: 1.6;
       color: var(--text-color);
@@ -38,25 +41,23 @@
 
     .content-wrapper {
       max-width: 800px;
-      margin: 0 auto;
+      margin: 20px auto; /* Reducido el margen superior para que el navbar no deje tanto espacio */
       padding: 20px;
     }
     
-    h1, h2, h3, h4 { /* Added h4 for consistency */
+    h1, h2, h3, h4 {
       color: var(--primary-color);
-      /* border-bottom: 1px solid var(--light-purple-color); */ /* Removed default bottom border for more control */
-      /* padding-bottom: 0.3em; */
     }
     
-    h2 { /* Specific style for main section titles */
+    h2 {
         border-bottom: 2px solid var(--light-purple-color);
         padding-bottom: 0.5rem;
-        margin-top: 2.5rem; /* Add some space above H2s */
-        margin-bottom: 1.5rem; /* Add some space below H2s */
+        margin-top: 2.5rem;
+        margin-bottom: 1.5rem;
     }
 
     h3 {
-        color: var(--secondary-color); /* Using secondary for H3 for differentiation */
+        color: var(--secondary-color);
         margin-top: 2rem;
         margin-bottom: 1rem;
     }
@@ -68,138 +69,170 @@
     }
     
     a:hover {
-      color: #5e35b1; /* Darker shade of secondary */
+      color: #5e35b1;
       text-decoration: underline;
     }
 
-    /* Navbar Styles */
+    /* Navbar Styles - Estilo Tatsumoto */
     .navbar {
       background-color: var(--primary-color);
-      padding: 0.5rem 1rem;
-      text-align: center;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 0 1rem; /* Padding horizontal */
+      display: flex;
+      align-items: center; /* Centrar verticalmente los items */
+      justify-content: space-between; /* Espacio entre logo/título y menú */
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      height: 60px; /* Altura fija para el navbar */
+      position: sticky; /* Hacer el navbar pegajoso */
+      top: 0;
+      z-index: 1000; /* Asegurar que esté por encima de otro contenido */
     }
-    .navbar ul {
+
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+      color: var(--navbar-text-color);
+      text-decoration: none;
+      font-size: 1.5em; /* Tamaño del título del sitio */
+      font-weight: bold;
+    }
+
+    .navbar-brand img {
+      height: 32px; /* Tamaño del favicon/logo */
+      width: 32px;
+      margin-right: 10px;
+      border-radius: 4px; /* Opcional: para redondear el logo si es cuadrado */
+    }
+
+    .navbar-menu {
+      display: flex;
       list-style-type: none;
       margin: 0;
       padding: 0;
-      display: flex;
-      flex-wrap: wrap; /* Allow items to wrap on smaller screens */
-      justify-content: center;
     }
-    .navbar li {
-      margin: 0.5rem 0.3rem; /* Adjusted margin for better wrapping */
+
+    .navbar-menu li {
+      margin-left: 5px; /* Espacio entre items del menú */
     }
-    .navbar a {
-      color: white;
+
+    .navbar-menu a {
+      color: var(--navbar-text-color);
       text-decoration: none;
-      padding: 0.7rem 1rem; /* Increased padding for better touch targets */
+      padding: 0.6rem 0.9rem; /* Padding de los enlaces */
       border-radius: 4px;
       transition: background-color 0.3s ease, color 0.3s ease;
-      font-weight: bold;
-      font-size: 0.9rem; /* Slightly smaller font for more items */
+      font-weight: 500; /* Ligeramente menos bold que el título */
+      font-size: 0.95rem;
+      display: block; /* Para que el padding funcione bien */
     }
-    .navbar a:hover, .navbar a.active {
-      background-color: var(--secondary-color);
-      color: white;
+
+    .navbar-menu a:hover, 
+    .navbar-menu a.active {
+      background-color: var(--navbar-hover-bg);
+      color: var(--navbar-text-color); /* Asegurar que el texto siga siendo blanco */
+    }
+    
+    .navbar-toggle {
+      display: none; /* Oculto por defecto, se muestra en móviles */
+      background: none;
+      border: none;
+      color: var(--navbar-text-color);
+      font-size: 1.8rem;
+      cursor: pointer;
     }
 
     /* Footer estilo profesional */
     footer {
       margin-top: 4rem;
-      padding: 2rem 1rem; /* Added horizontal padding */
+      padding: 2rem 1rem;
       border-top: 1px solid var(--light-purple-color);
       text-align: center;
       color: #666;
       font-size: 0.9rem;
-      background-color: #f1f1f1; /* Slightly different background for footer */
+      background-color: #f1f1f1;
     }
     
-    /* Clase para botones */
     .btn {
       display: inline-block;
       background-color: var(--secondary-color);
-      color: white !important; /* Ensure text is white */
-      padding: 0.8rem 1.5rem; /* Slightly larger padding */
+      color: white !important;
+      padding: 0.8rem 1.5rem;
       border-radius: 5px;
       margin: 0.5rem 0;
       font-weight: bold;
-      text-decoration: none; /* Remove underline from buttons */
+      text-decoration: none;
       transition: background-color 0.2s ease, transform 0.2s ease;
     }
     
     .btn:hover {
-      background-color: #5e35b1; /* Darker shade */
+      background-color: #5e35b1;
       text-decoration: none;
       transform: translateY(-2px);
     }
     
-    /* Estilo específico para Instagram */
-    .instagram-link {
-      color: var(--instagram-color);
-      font-weight: bold;
-    }
-    
-    .instagram-link:hover {
-      color: #c13584;
-    }
-    
-    .instagram-icon {
-      width: 18px;
-      height: 18px;
-      vertical-align: middle;
-      margin-right: 5px;
-    }
+    .instagram-link { color: var(--instagram-color); font-weight: bold; }
+    .instagram-link:hover { color: #c13584; }
+    .instagram-icon { width: 18px; height: 18px; vertical-align: middle; margin-right: 5px; }
 
-    /* ESTILOS ADICIONALES (movidos de index.md) */
-    /* Efectos hover para tarjetas genéricas (si se usan en otras páginas) */
-    div[style*="box-shadow"] { /* General selector for elements with box-shadow */
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    div[style*="box-shadow"]:hover {
-        transform: translateY(-5px);
-        /* box-shadow: 0 8px 20px rgba(0,0,0,0.15) !important; */ /* Avoid !important if possible, handled by card specific hover */
-    }
+    div[style*="box-shadow"] { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    div[style*="box-shadow"]:hover { transform: translateY(-5px); }
   
     /* Responsive para móviles */
-    @media (max-width: 768px) {
-      .navbar ul {
-        flex-direction: column; /* Stack navbar items vertically */
-      }
-      .navbar li {
-        margin: 0.5rem 0; /* Adjust margin for vertical stacking */
-      }
-      .navbar a {
-        display: block; /* Make links take full width in vertical stack */
-      }
-
-      h1 { font-size: 2rem !important; } /* More specific for H1 from hero */
-      
-      /* Imágenes genéricas */
-      img[style*="max-width: 50%;"] {
-        max-width: 90% !important;
-      }
-      img[style*="max-width: 90%;"] { /* For images that are already large */
-        max-width: 100% !important;
-      }
-
-      /* Hero cards in index.md */
-      .hero-cards {
+    @media (max-width: 860px) { /* Ajustado el breakpoint para el menú */
+      .navbar-menu {
+        display: none; /* Ocultar menú normal */
         flex-direction: column;
+        position: absolute;
+        top: 60px; /* Debajo del navbar */
+        left: 0;
+        right: 0;
+        background-color: var(--primary-color); /* Mismo fondo que el navbar */
+        padding: 1rem 0; /* Padding vertical para el menú desplegado */
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        border-top: 1px solid var(--secondary-color); /* Línea separadora */
       }
+      .navbar-menu.active {
+        display: flex; /* Mostrar menú cuando está activo */
+      }
+      .navbar-menu li {
+        margin: 0;
+        width: 100%;
+        text-align: center;
+      }
+      .navbar-menu a {
+        padding: 0.8rem 1rem; /* Ajustar padding para items verticales */
+        border-bottom: 1px solid rgba(255,255,255,0.1); /* Separador sutil entre items */
+      }
+      .navbar-menu a:last-child {
+        border-bottom: none;
+      }
+      .navbar-toggle {
+        display: block; /* Mostrar el botón hamburguesa */
+      }
+
+      h1 { font-size: 2rem !important; }
+      img[style*="max-width: 50%;"] { max-width: 90% !important; }
+      img[style*="max-width: 90%;"] { max-width: 100% !important; }
+      .hero-cards { flex-direction: column; }
     }
   </style>
 </head>
 <body>
   <nav class="navbar">
-    <ul>
-      <li><a href="{{ '/' | relative_url }}" {% if page.url == "/" %}class="active"{% endif %}>Inicio</a></li>
-      <li><a href="{{ '/fundamentos' | relative_url }}" {% if page.url == "/fundamentos.html" %}class="active"{% endif %}>Fundamentos</a></li>
-      <li><a href="{{ '/etapas' | relative_url }}" {% if page.url == "/etapas.html" %}class="active"{% endif %}>Etapas</a></li>
-      <li><a href="{{ '/beneficios' | relative_url }}" {% if page.url == "/beneficios.html" %}class="active"{% endif %}>Beneficios</a></li>
-      <li><a href="{{ '/recursos' | relative_url }}" {% if page.url == "/recursos.html" %}class="active"{% endif %}>Recursos</a></li>
-      <li><a href="{{ '/faq' | relative_url }}" {% if page.url == "/faq.html" %}class="active"{% endif %}>FAQ</a></li>
-      <li><a href="{{ '/contacto' | relative_url }}" {% if page.url == "/contacto.html" %}class="active"{% endif %}>Contacto</a></li>
+    <a href="{{ '/' | relative_url }}" class="navbar-brand">
+      <img src="{{ '/assets/favicon-32x32.png?v=2' | relative_url }}" alt="Logo El Antimétodo">
+      <span>El Antimétodo</span>
+    </a>
+    <button class="navbar-toggle" aria-label="Toggle navigation">
+      ☰ <!-- Icono de hamburguesa -->
+    </button>
+    <ul class="navbar-menu">
+      <li><a href="{{ '/' | relative_url }}">Inicio</a></li>
+      <li><a href="{{ '/fundamentos' | relative_url }}">Fundamentos</a></li>
+      <li><a href="{{ '/etapas' | relative_url }}">Etapas</a></li>
+      <li><a href="{{ '/beneficios' | relative_url }}">Beneficios</a></li>
+      <li><a href="{{ '/recursos' | relative_url }}">Recursos</a></li>
+      <li><a href="{{ '/faq' | relative_url }}">FAQ</a></li>
+      <li><a href="{{ '/contacto' | relative_url }}">Contacto</a></li>
     </ul>
   </nav>
 
@@ -220,32 +253,48 @@
     </p>
   </footer>
   <script>
-    // Script to highlight active navbar link
+    // Script para el toggle del menú en móviles
+    const navbarToggle = document.querySelector(".navbar-toggle");
+    const navbarMenu = document.querySelector(".navbar-menu");
+
+    if (navbarToggle && navbarMenu) {
+      navbarToggle.addEventListener("click", () => {
+        navbarMenu.classList.toggle("active");
+      });
+    }
+
+    // Script para resaltar el enlace activo del navbar
     document.addEventListener("DOMContentLoaded", function() {
       const currentLocation = window.location.pathname;
-      const navLinks = document.querySelectorAll(".navbar a");
-      const siteBaseUrl = "{{ '/' | relative_url }}"; // Get base URL for GitHub Pages
+      const navLinks = document.querySelectorAll(".navbar-menu a");
+      // Ajuste para GitHub Pages donde la URL base puede tener el nombre del repo
+      const siteBase = "{{ '/' | relative_url }}".replace(/\/$/, ''); // Elimina trailing slash si existe
 
       navLinks.forEach(link => {
-        let linkPath = link.getAttribute("href");
-        // Make linkPath absolute if it's relative, for proper comparison
-        if (linkPath.startsWith('./')) {
-            linkPath = linkPath.substring(1); // remove leading .
+        let linkHref = link.getAttribute("href");
+        // Normalizar href para que coincida con relative_url
+        if (linkHref.startsWith("./")) {
+            linkHref = linkHref.substring(1);
         }
-        if (!linkPath.startsWith('/')) {
-            linkPath = siteBaseUrl + (siteBaseUrl.endsWith('/') || linkPath.startsWith('/') ? '' : '/') + linkPath;
+        if (!linkHref.startsWith("/") && siteBase) {
+            linkHref = siteBase + (linkHref ? '/' + linkHref : '');
+        } else if (!linkHref.startsWith("/") && !siteBase) {
+            linkHref = '/' + linkHref;
         }
-        
-        // Normalize paths for comparison (remove trailing slash if not root)
-        const normalizedCurrentLocation = currentLocation.endsWith('/') && currentLocation.length > 1 ? currentLocation.slice(0, -1) : currentLocation;
-        const normalizedLinkPath = linkPath.endsWith('/') && linkPath.length > 1 ? linkPath.slice(0, -1) : linkPath;
 
-        // Specific check for root (index.html might not be in path)
-        if ( (normalizedLinkPath === siteBaseUrl || normalizedLinkPath === siteBaseUrl + 'index.html' || normalizedLinkPath === siteBaseUrl.slice(0,-1) ) && 
-             (normalizedCurrentLocation === siteBaseUrl || normalizedCurrentLocation === siteBaseUrl + 'index.html' || normalizedCurrentLocation === siteBaseUrl.slice(0,-1) ) ) {
+
+        let normalizedLinkHref = linkHref.replace(/\/$/, ''); // Elimina trailing slash
+        let normalizedCurrentLocation = currentLocation.replace(/\/$/, '');
+
+        // Caso especial para la página de inicio (index.html puede o no estar en la URL)
+        if ( (normalizedLinkHref === siteBase || normalizedLinkHref === siteBase + '/index.html' || (siteBase === "" && normalizedLinkHref === "/index.html")) &&
+             (normalizedCurrentLocation === siteBase || normalizedCurrentLocation === siteBase + '/index.html' || (siteBase === "" && normalizedCurrentLocation === "/index.html")) ) {
             link.classList.add("active");
-        } else if (linkPath !== siteBaseUrl && linkPath !== siteBaseUrl + 'index.html' && normalizedCurrentLocation.startsWith(normalizedLinkPath) && normalizedLinkPath !== siteBaseUrl.slice(0,-1) ) {
-            link.classList.add("active");
+        } else if (normalizedLinkHref !== siteBase && normalizedLinkHref !== siteBase + '/index.html' && normalizedCurrentLocation.startsWith(normalizedLinkHref) && normalizedLinkHref !== "") {
+             // Para otras páginas, verificar si la ubicación actual comienza con el href del enlace
+            if (normalizedLinkHref !== siteBase) { // Evitar que "Inicio" se active en todas las páginas
+                 link.classList.add("active");
+            }
         }
       });
     });
