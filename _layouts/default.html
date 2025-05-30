@@ -18,15 +18,15 @@
   <link rel="apple-touch-icon" href="{{ '/assets/apple-touch-icon.png?v=2' | relative_url }}">
   <style>
     :root {
-      --primary-color: #4a148c;     /* Títulos morados, navbar */
-      --secondary-color: #7b1fa2;   /* Botones morados, hover navbar */
-      --light-purple-color: #d1c4e9; /* Bordes morado claro */
-      --background-color: #f9f9f9;  /* Fondo gris claro */
-      --text-color: #333;          /* Texto oscuro */
-      --card-background: #ffffff;   /* Fondo de tarjetas */
-      --navbar-text-color: #ffffff; /* Texto del navbar */
+      --primary-color: #4a148c;
+      --secondary-color: #7b1fa2;
+      --light-purple-color: #d1c4e9;
+      --background-color: #f9f9f9;
+      --text-color: #333;
+      --card-background: #ffffff;
+      --navbar-text-color: #ffffff;
       --navbar-hover-bg: var(--secondary-color);
-      --navbar-active-bg: var(--secondary-color);
+      --navbar-active-bg: var(--secondary-color); /* Color para el enlace activo */
       --instagram-color: #E1306C;
     }
     
@@ -41,50 +41,29 @@
 
     .content-wrapper {
       max-width: 800px;
-      margin: 20px auto; /* Reducido el margen superior para que el navbar no deje tanto espacio */
+      margin: 20px auto;
       padding: 20px;
     }
     
-    h1, h2, h3, h4 {
-      color: var(--primary-color);
-    }
-    
-    h2 {
-        border-bottom: 2px solid var(--light-purple-color);
-        padding-bottom: 0.5rem;
-        margin-top: 2.5rem;
-        margin-bottom: 1.5rem;
-    }
+    h1, h2, h3, h4 { color: var(--primary-color); }
+    h2 { border-bottom: 2px solid var(--light-purple-color); padding-bottom: 0.5rem; margin-top: 2.5rem; margin-bottom: 1.5rem; }
+    h3 { color: var(--secondary-color); margin-top: 2rem; margin-bottom: 1rem; }
 
-    h3 {
-        color: var(--secondary-color);
-        margin-top: 2rem;
-        margin-bottom: 1rem;
-    }
+    a { color: var(--secondary-color); text-decoration: none; transition: all 0.2s ease; }
+    a:hover { color: #5e35b1; text-decoration: underline; }
 
-    a {
-      color: var(--secondary-color);
-      text-decoration: none;
-      transition: all 0.2s ease;
-    }
-    
-    a:hover {
-      color: #5e35b1;
-      text-decoration: underline;
-    }
-
-    /* Navbar Styles - Estilo Tatsumoto */
+    /* Navbar Styles */
     .navbar {
       background-color: var(--primary-color);
-      padding: 0 1rem; /* Padding horizontal */
+      padding: 0 1rem;
       display: flex;
-      align-items: center; /* Centrar verticalmente los items */
-      justify-content: space-between; /* Espacio entre logo/título y menú */
+      align-items: center;
+      /* justify-content: space-between; QUITAMOS ESTO */
       box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-      height: 60px; /* Altura fija para el navbar */
-      position: sticky; /* Hacer el navbar pegajoso */
+      height: 60px;
+      position: sticky;
       top: 0;
-      z-index: 1000; /* Asegurar que esté por encima de otro contenido */
+      z-index: 1000;
     }
 
     .navbar-brand {
@@ -92,16 +71,29 @@
       align-items: center;
       color: var(--navbar-text-color);
       text-decoration: none;
-      font-size: 1.5em; /* Tamaño del título del sitio */
-      font-weight: bold;
+      font-size: 1.4em; /* Ligeramente más pequeño */
+      font-weight: 500; /* Quitamos negrita, peso normal */
+      margin-right: 20px; /* Espacio entre la marca y el menú */
     }
 
     .navbar-brand img {
-      height: 32px; /* Tamaño del favicon/logo */
-      width: 32px;
-      margin-right: 10px;
-      border-radius: 4px; /* Opcional: para redondear el logo si es cuadrado */
+      height: 30px; /* Ligeramente más pequeño */
+      width: 30px;
+      margin-right: 8px; /* Menos espacio */
+      border-radius: 4px;
     }
+    
+    .navbar-brand span { /* Para asegurar que el texto del brand no sea bold por herencia */
+        font-weight: 500;
+    }
+
+    .navbar-menu-container { /* Nuevo contenedor para el menú y el toggle */
+        display: flex;
+        align-items: center;
+        margin-left: auto; /* Esto empuja el navbar-menu-container a la derecha si el navbar tuviera más espacio */
+                           /* Pero como el navbar no tiene justify-content: space-between, el menú se quedará cerca de la marca */
+    }
+
 
     .navbar-menu {
       display: flex;
@@ -111,103 +103,67 @@
     }
 
     .navbar-menu li {
-      margin-left: 5px; /* Espacio entre items del menú */
+      /* margin-left: 5px; Eliminamos margen izquierdo para que estén más juntos inicialmente */
     }
 
     .navbar-menu a {
       color: var(--navbar-text-color);
       text-decoration: none;
-      padding: 0.6rem 0.9rem; /* Padding de los enlaces */
+      padding: 0.6rem 0.8rem; /* Ajustamos padding para que quepan más items */
       border-radius: 4px;
       transition: background-color 0.3s ease, color 0.3s ease;
-      font-weight: 500; /* Ligeramente menos bold que el título */
-      font-size: 0.95rem;
-      display: block; /* Para que el padding funcione bien */
+      font-weight: 500;
+      font-size: 0.9rem; /* Un poco más pequeño para que quepan */
+      display: block;
+      white-space: nowrap; /* Evita que los nombres de los enlaces se partan */
     }
 
     .navbar-menu a:hover, 
-    .navbar-menu a.active {
-      background-color: var(--navbar-hover-bg);
-      color: var(--navbar-text-color); /* Asegurar que el texto siga siendo blanco */
+    .navbar-menu a.active { /* Estilo para el enlace activo */
+      background-color: var(--navbar-active-bg);
+      color: var(--navbar-text-color);
     }
     
     .navbar-toggle {
-      display: none; /* Oculto por defecto, se muestra en móviles */
+      display: none;
       background: none;
       border: none;
       color: var(--navbar-text-color);
       font-size: 1.8rem;
       cursor: pointer;
+      margin-left: 15px; /* Espacio si el menú está visible y el toggle también */
     }
 
-    /* Footer estilo profesional */
-    footer {
-      margin-top: 4rem;
-      padding: 2rem 1rem;
-      border-top: 1px solid var(--light-purple-color);
-      text-align: center;
-      color: #666;
-      font-size: 0.9rem;
-      background-color: #f1f1f1;
-    }
-    
-    .btn {
-      display: inline-block;
-      background-color: var(--secondary-color);
-      color: white !important;
-      padding: 0.8rem 1.5rem;
-      border-radius: 5px;
-      margin: 0.5rem 0;
-      font-weight: bold;
-      text-decoration: none;
-      transition: background-color 0.2s ease, transform 0.2s ease;
-    }
-    
-    .btn:hover {
-      background-color: #5e35b1;
-      text-decoration: none;
-      transform: translateY(-2px);
-    }
-    
+    footer { margin-top: 4rem; padding: 2rem 1rem; border-top: 1px solid var(--light-purple-color); text-align: center; color: #666; font-size: 0.9rem; background-color: #f1f1f1; }
+    .btn { display: inline-block; background-color: var(--secondary-color); color: white !important; padding: 0.8rem 1.5rem; border-radius: 5px; margin: 0.5rem 0; font-weight: bold; text-decoration: none; transition: background-color 0.2s ease, transform 0.2s ease; }
+    .btn:hover { background-color: #5e35b1; text-decoration: none; transform: translateY(-2px); }
     .instagram-link { color: var(--instagram-color); font-weight: bold; }
     .instagram-link:hover { color: #c13584; }
     .instagram-icon { width: 18px; height: 18px; vertical-align: middle; margin-right: 5px; }
-
     div[style*="box-shadow"] { transition: transform 0.3s ease, box-shadow 0.3s ease; }
     div[style*="box-shadow"]:hover { transform: translateY(-5px); }
   
-    /* Responsive para móviles */
-    @media (max-width: 860px) { /* Ajustado el breakpoint para el menú */
+    @media (max-width: 880px) { /* Ajustado el breakpoint, probar este valor */
+      .navbar-menu-container { /* El contenedor ahora es el que se ajusta */
+          margin-left: auto; /* Mantiene el toggle a la derecha */
+      }
       .navbar-menu {
-        display: none; /* Ocultar menú normal */
+        display: none;
         flex-direction: column;
         position: absolute;
-        top: 60px; /* Debajo del navbar */
+        top: 60px;
         left: 0;
         right: 0;
-        background-color: var(--primary-color); /* Mismo fondo que el navbar */
-        padding: 1rem 0; /* Padding vertical para el menú desplegado */
+        background-color: var(--primary-color);
+        padding: 1rem 0;
         box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-        border-top: 1px solid var(--secondary-color); /* Línea separadora */
+        border-top: 1px solid var(--secondary-color);
       }
-      .navbar-menu.active {
-        display: flex; /* Mostrar menú cuando está activo */
-      }
-      .navbar-menu li {
-        margin: 0;
-        width: 100%;
-        text-align: center;
-      }
-      .navbar-menu a {
-        padding: 0.8rem 1rem; /* Ajustar padding para items verticales */
-        border-bottom: 1px solid rgba(255,255,255,0.1); /* Separador sutil entre items */
-      }
-      .navbar-menu a:last-child {
-        border-bottom: none;
-      }
-      .navbar-toggle {
-        display: block; /* Mostrar el botón hamburguesa */
-      }
+      .navbar-menu.active { display: flex; }
+      .navbar-menu li { margin: 0; width: 100%; text-align: center; }
+      .navbar-menu a { padding: 0.8rem 1rem; border-bottom: 1px solid rgba(255,255,255,0.1); }
+      .navbar-menu a:last-child { border-bottom: none; }
+      .navbar-toggle { display: block; }
 
       h1 { font-size: 2rem !important; }
       img[style*="max-width: 50%;"] { max-width: 90% !important; }
@@ -222,18 +178,21 @@
       <img src="{{ '/assets/favicon-32x32.png?v=2' | relative_url }}" alt="Logo El Antimétodo">
       <span>El Antimétodo</span>
     </a>
-    <button class="navbar-toggle" aria-label="Toggle navigation">
-      ☰ <!-- Icono de hamburguesa -->
-    </button>
-    <ul class="navbar-menu">
-      <li><a href="{{ '/' | relative_url }}">Inicio</a></li>
-      <li><a href="{{ '/fundamentos' | relative_url }}">Fundamentos</a></li>
-      <li><a href="{{ '/etapas' | relative_url }}">Etapas</a></li>
-      <li><a href="{{ '/beneficios' | relative_url }}">Beneficios</a></li>
-      <li><a href="{{ '/recursos' | relative_url }}">Recursos</a></li>
-      <li><a href="{{ '/faq' | relative_url }}">FAQ</a></li>
-      <li><a href="{{ '/contacto' | relative_url }}">Contacto</a></li>
-    </ul>
+    <!-- El toggle se moverá aquí en pantallas pequeñas por el flex-direction del contenedor -->
+    <div class="navbar-menu-container"> 
+        <ul class="navbar-menu">
+            <li><a href="{{ '/' | relative_url }}">Inicio</a></li>
+            <li><a href="{{ '/fundamentos' | relative_url }}">Fundamentos</a></li>
+            <li><a href="{{ '/etapas' | relative_url }}">Etapas</a></li>
+            <li><a href="{{ '/beneficios' | relative_url }}">Beneficios</a></li>
+            <li><a href="{{ '/recursos' | relative_url }}">Recursos</a></li>
+            <li><a href="{{ '/faq' | relative_url }}">FAQ</a></li>
+            <li><a href="{{ '/contacto' | relative_url }}">Contacto</a></li>
+        </ul>
+        <button class="navbar-toggle" aria-label="Toggle navigation">
+            ☰
+        </button>
+    </div>
   </nav>
 
   <div class="content-wrapper">
@@ -253,48 +212,53 @@
     </p>
   </footer>
   <script>
-    // Script para el toggle del menú en móviles
     const navbarToggle = document.querySelector(".navbar-toggle");
     const navbarMenu = document.querySelector(".navbar-menu");
 
     if (navbarToggle && navbarMenu) {
       navbarToggle.addEventListener("click", () => {
         navbarMenu.classList.toggle("active");
+        // Opcional: cambiar el ícono de hamburguesa a 'X' y viceversa
+        if (navbarMenu.classList.contains("active")) {
+          navbarToggle.innerHTML = "✕"; // Símbolo 'X'
+        } else {
+          navbarToggle.innerHTML = "☰"; // Símbolo hamburguesa
+        }
       });
     }
 
-    // Script para resaltar el enlace activo del navbar
     document.addEventListener("DOMContentLoaded", function() {
       const currentLocation = window.location.pathname;
       const navLinks = document.querySelectorAll(".navbar-menu a");
-      // Ajuste para GitHub Pages donde la URL base puede tener el nombre del repo
-      const siteBase = "{{ '/' | relative_url }}".replace(/\/$/, ''); // Elimina trailing slash si existe
+      const siteBase = "{{ '/' | relative_url }}".replace(/\/$/, '');
 
       navLinks.forEach(link => {
         let linkHref = link.getAttribute("href");
-        // Normalizar href para que coincida con relative_url
-        if (linkHref.startsWith("./")) {
-            linkHref = linkHref.substring(1);
+        if (linkHref.startsWith("./")) { linkHref = linkHref.substring(1); }
+        
+        // Construir URL absoluta del enlace para comparación precisa
+        let absoluteLinkHref = "";
+        if (linkHref.startsWith('/')) { // Si ya es absoluto desde la raíz del sitio
+            absoluteLinkHref = (siteBase + linkHref).replace(/\/+/g, '/'); // Evitar doble slash
+        } else { // Si es relativo a la página actual (no debería ser el caso con relative_url)
+            absoluteLinkHref = (siteBase + (siteBase.endsWith('/') ? '' : '/') + linkHref).replace(/\/+/g, '/');
         }
-        if (!linkHref.startsWith("/") && siteBase) {
-            linkHref = siteBase + (linkHref ? '/' + linkHref : '');
-        } else if (!linkHref.startsWith("/") && !siteBase) {
-            linkHref = '/' + linkHref;
+        
+        // Normalizar eliminando 'index.html' y trailing slashes
+        let normalizedLink = absoluteLinkHref.replace(/index\.html$/, '').replace(/\/$/, '');
+        let normalizedLocation = (siteBase + currentLocation).replace(/\/+/g, '/').replace(/index\.html$/, '').replace(/\/$/, '');
+
+        if (normalizedLink === "" && siteBase !== "") { // Caso especial para el enlace de Inicio cuando siteBase existe
+            normalizedLink = siteBase;
+        } else if (normalizedLink === "/" && siteBase === "") { // Caso para Inicio en raíz local
+             // no hacer nada, ya es correcto
         }
 
 
-        let normalizedLinkHref = linkHref.replace(/\/$/, ''); // Elimina trailing slash
-        let normalizedCurrentLocation = currentLocation.replace(/\/$/, '');
-
-        // Caso especial para la página de inicio (index.html puede o no estar en la URL)
-        if ( (normalizedLinkHref === siteBase || normalizedLinkHref === siteBase + '/index.html' || (siteBase === "" && normalizedLinkHref === "/index.html")) &&
-             (normalizedCurrentLocation === siteBase || normalizedCurrentLocation === siteBase + '/index.html' || (siteBase === "" && normalizedCurrentLocation === "/index.html")) ) {
-            link.classList.add("active");
-        } else if (normalizedLinkHref !== siteBase && normalizedLinkHref !== siteBase + '/index.html' && normalizedCurrentLocation.startsWith(normalizedLinkHref) && normalizedLinkHref !== "") {
-             // Para otras páginas, verificar si la ubicación actual comienza con el href del enlace
-            if (normalizedLinkHref !== siteBase) { // Evitar que "Inicio" se active en todas las páginas
-                 link.classList.add("active");
-            }
+        if (normalizedLink === normalizedLocation) {
+          link.classList.add("active");
+        } else if (normalizedLink === siteBase && normalizedLocation === "") { // Caso para página de inicio en raíz de GitHub pages
+          link.classList.add("active");
         }
       });
     });
