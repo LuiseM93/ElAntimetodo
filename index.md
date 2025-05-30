@@ -19,34 +19,41 @@ description: Aprende idiomas de forma natural con el enfoque del input comprensi
   </div>
 </div>
 
+<!-- Imagen supremacy.jpg añadida aquí -->
+<div style="text-align: center; margin: 30px 0;">
+  <img src="{{ '/assets/supremacy.jpg' | relative_url }}" alt="Supremacía del Antimétodo"
+       style="
+         max-width: 80%; /* Ajusta según prefieras, 80% del contenedor */
+         height: auto; /* Para mantener la proporción */
+         border-radius: 10px; /* Bordes redondeados */
+         border: 3px solid var(--grey-border-color); /* Borde gris claro */
+         box-shadow: 0 5px 15px rgba(0,0,0,0.15); /* Sombra sutil */
+       ">
+</div>
+
 <style>
-/* Estos estilos son específicos para el Hero Section de esta página */
-.hero { text-align: center; padding: 2rem 1rem; margin-bottom: 40px; background-color: var(--card-background); border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+/* Estilos específicos para el Hero Section de esta página */
+.hero { text-align: center; padding: 2rem 1rem; margin-bottom: 20px; /* Reducido el margen inferior del hero */ background-color: var(--card-background); border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
 .hero h1 { border-bottom: none; font-size: 2.8em; margin-bottom: 0.5rem; }
 .subtitle { font-size: 1.3em; color: var(--secondary-color); margin-bottom: 2rem; }
 .hero-cards { display: flex; gap: 20px; margin-top: 30px; justify-content: center; }
 .card { background: var(--card-background); padding: 25px; border-radius: 10px; box-shadow: 0 3px 10px rgba(0,0,0,0.1); flex: 1; max-width: 300px; border-top: 4px solid var(--secondary-color); }
 .card h2 { color: var(--primary-color); border-bottom: none; font-size: 1.5em; margin-top: 0; margin-bottom: 0.75rem; }
-.card p { font-size: 1em; line-height: 1.5; } /* Alineación por defecto (izquierda) para el texto de las cards */
+.card p { font-size: 1em; line-height: 1.5; }
 .card:hover { transform: translateY(-5px); box-shadow: 0 8px 20px rgba(0,0,0,0.15); transition: all 0.3s ease; }
 
-/* Estilo para centrar párrafos específicos si es necesario */
-.text-centered p {
-    text-align: center;
-}
-/* Si quieres que solo el H2 esté centrado y los párrafos a la izquierda, no necesitas esta clase para esos párrafos */
+.text-centered p { text-align: center; }
 </style>
 
 <!-- CONTENIDO PRINCIPAL -->
-<main style="max-width: 800px; margin: 40px auto 0 auto; padding: 0 1rem;">
+<main style="max-width: 800px; margin: 0 auto; /* Ajustado margen superior del main */ padding: 0 1rem;">
 
-  <!-- Sección de Bienvenida: Título centrado, párrafos con alineación por defecto (izquierda) -->
   <section style="margin-bottom: 3rem; padding: 2rem; background-color: var(--card-background); border-radius: 8px; box-shadow: 0 3px 10px rgba(0,0,0,0.05);">
     <h2 style="color: var(--primary-color); border-bottom: 2px solid var(--light-purple-color); padding-bottom: 0.5rem; display: block; text-align: center;">Bienvenido al Antimétodo</h2>
-    <p style="font-size: 1.1em; margin-top: 1rem; text-align: center;"> <!-- Párrafos centrados aquí -->
+    <p style="font-size: 1.1em; margin-top: 1rem; text-align: center;"> 
       El Antimétodo es un enfoque revolucionario para aprender idiomas basado en la teoría del <strong>input comprensible</strong>. Olvídate de memorizar reglas gramaticales y ejercicios aburridos. Aquí, aprenderás de manera natural, intuitiva y, sobre todo, ¡disfrutando el proceso!
     </p>
-    <p style="font-size: 1.1em; text-align: center;"> <!-- Párrafos centrados aquí -->
+    <p style="font-size: 1.1em; text-align: center;"> 
       Sumérgete en contenido real como series, música o videojuegos, y adquiere el idioma como aprendiste tu lengua materna.
     </p>
     <div style="text-align: center;">
@@ -83,7 +90,6 @@ description: Aprende idiomas de forma natural con el enfoque del input comprensi
     <a href="{{ '/etapas' | relative_url }}" class="btn" style="margin-top: 1.5rem; background-color: var(--primary-color); color: white !important;">Explora las Etapas del Antimétodo</a>
   </section>
   
-  <!-- Sección Próximamente: Título centrado, párrafos con alineación por defecto (izquierda) -->
   <section style="margin-bottom: 3rem;">
      <h2 style="color: var(--primary-color); border-bottom: 2px solid var(--light-purple-color); padding-bottom: 0.5rem; text-align: center;">Próximamente...</h2>
      <p style="text-align: left;">Esta es solo la primera versión del sitio web del Antimétodo. Apenas estamos comenzando. La página está en pleno desarrollo y aún faltan muchos recursos, herramientas, ejemplos y guías prácticas que iremos construyendo poco a poco. Lo que acabas de leer es solo el inicio de algo mucho más grande. Se vienen cosas importantes, y esto apenas comienza.</p>
