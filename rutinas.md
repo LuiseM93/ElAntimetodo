@@ -12,21 +12,9 @@ description: Ejemplos de rutinas y cómo organizar tu tiempo para aprender idiom
   </section>
 
   <section style="margin-bottom: 3rem; padding: 2rem; background-color: var(--card-background); border-radius: 8px; box-shadow: 0 3px 10px rgba(0,0,0,0.05);">
-    <!-- Imagen Principal de la Revolución -->
-    <div style="text-align: center; margin-bottom: 2rem;">
-        <img src="{{ '/assets/rev.png' | relative_url }}" alt="Únete a la revolución del Antimétodo"
-             style="
-               max-width: 70%; 
-               height: auto;
-               border-radius: 10px;
-               border: 3px solid var(--grey-border-color); /* Mantenemos borde gris para esta imagen principal */
-               box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-             ">
-        <h2 style="color: var(--primary-color); border-bottom: none; margin-top: 1.5rem;">¡Ya estamos aquí, sé parte de la revolución!</h2>
-    </div>
-
+    
     <!-- Sección "En Construcción" -->
-    <h3 style="text-align: center; color: var(--secondary-color); border-bottom: none;">🚧 Página en Construcción 🚧</h3>
+    <h3 style="text-align: center; color: var(--secondary-color); border-bottom: none; margin-bottom:1.5rem;">🚧 Página en Construcción 🚧</h3>
     <p style="text-align: center; font-size: 1.1em; margin-top: 1rem;">
       Estamos preparando ejemplos de rutinas detalladas que podrás adaptar según la etapa del Antimétodo en la que te encuentres y el tiempo que tengas disponible cada día o semana.
     </p>
@@ -43,7 +31,7 @@ description: Ejemplos de rutinas y cómo organizar tu tiempo para aprender idiom
         <img src="{{ '/assets/rev.png' | relative_url }}" 
              alt="Revolución del aprendizaje de idiomas con El Antimétodo" 
              style="
-                max-width: 50%; /* Un poco más pequeña para esta sección */
+                max-width: 60%; /* Puedes ajustar este tamaño si quieres */
                 height: auto;
                 border-radius: 8px;
                 border: 3px solid var(--secondary-color); /* Borde morado secundario */
