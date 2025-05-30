@@ -28,6 +28,7 @@
       --navbar-hover-bg: var(--secondary-color);
       --navbar-active-bg: var(--secondary-color);
       --instagram-color: #E1306C;
+      --grey-border-color: #cccccc; /* Gris para el borde de la imagen */
     }
     
     body {
@@ -58,6 +59,7 @@
       padding: 0 1rem;
       display: flex;
       align-items: center;
+      justify-content: space-between; /* Para separar logo/brand de menu/toggle */
       box-shadow: 0 2px 5px rgba(0,0,0,0.2);
       height: 60px;
       position: sticky;
@@ -71,8 +73,8 @@
       color: var(--navbar-text-color);
       text-decoration: none;
       font-size: 1.4em;
-      font-weight: 500;
-      margin-right: 20px; /* Espacio entre la marca y el inicio del menú */
+      font-weight: 500; 
+      /* margin-right: 20px; Ya no es necesario si usamos space-between */
     }
 
     .navbar-brand img {
@@ -84,9 +86,14 @@
     
     .navbar-brand span { font-weight: 500; }
 
-    /* Contenedor para los enlaces del menú (solo en desktop) */
-    .navbar-links {
-      display: flex; /* Por defecto visible y flex para desktop */
+    .navbar-menu-container { /* Contenedor para el menú de escritorio y el toggle */
+        display: flex;
+        align-items: center;
+        /* margin-left: auto; Ya no es necesario con justify-content: space-between en .navbar */
+    }
+
+    .navbar-links { /* Menú para desktop */
+      display: flex;
       list-style-type: none;
       margin: 0;
       padding: 0;
@@ -110,25 +117,24 @@
       color: var(--navbar-text-color);
     }
     
-    /* Botón Hamburguesa */
-    .navbar-toggle {
-      display: none; /* Oculto en desktop */
+    .navbar-toggle { /* Botón Hamburguesa */
+      display: none;
       background: none;
       border: none;
       color: var(--navbar-text-color);
       font-size: 1.8rem;
       cursor: pointer;
-      margin-left: auto; /* Esto empujará el botón hamburguesa a la derecha */
+      margin-left: 15px; /* Espacio entre el último link y el toggle si ambos fueran visibles */
     }
 
-    /* Menú desplegable para móviles (inicialmente oculto) */
+    /* Menú desplegable para móviles */
     .mobile-menu {
-        display: none; /* Oculto por defecto */
+        display: none; 
         list-style-type: none;
         margin: 0;
         padding: 0;
         position: absolute;
-        top: 60px; /* Debajo del navbar */
+        top: 60px; 
         left: 0;
         right: 0;
         background-color: var(--primary-color);
@@ -137,28 +143,13 @@
         border-top: 1px solid var(--secondary-color);
     }
     .mobile-menu.active {
-        display: flex; /* Se muestra cuando está activo */
+        display: flex; 
         flex-direction: column;
     }
-    .mobile-menu li {
-        width: 100%;
-        text-align: center;
-    }
-    .mobile-menu a {
-        color: var(--navbar-text-color);
-        text-decoration: none;
-        padding: 0.8rem 1rem;
-        display: block;
-        border-bottom: 1px solid rgba(255,255,255,0.1);
-    }
-    .mobile-menu a:last-child {
-        border-bottom: none;
-    }
-    .mobile-menu a:hover,
-    .mobile-menu a.active {
-        background-color: var(--navbar-hover-bg);
-    }
-
+    .mobile-menu li { width: 100%; text-align: center; }
+    .mobile-menu a { color: var(--navbar-text-color); text-decoration: none; padding: 0.8rem 1rem; display: block; border-bottom: 1px solid rgba(255,255,255,0.1); }
+    .mobile-menu a:last-child { border-bottom: none; }
+    .mobile-menu a:hover, .mobile-menu a.active { background-color: var(--navbar-hover-bg); }
 
     footer { margin-top: 4rem; padding: 2rem 1rem; border-top: 1px solid var(--light-purple-color); text-align: center; color: #666; font-size: 0.9rem; background-color: #f1f1f1; }
     .btn { display: inline-block; background-color: var(--secondary-color); color: white !important; padding: 0.8rem 1.5rem; border-radius: 5px; margin: 0.5rem 0; font-weight: bold; text-decoration: none; transition: background-color 0.2s ease, transform 0.2s ease; }
@@ -169,15 +160,10 @@
     div[style*="box-shadow"] { transition: transform 0.3s ease, box-shadow 0.3s ease; }
     div[style*="box-shadow"]:hover { transform: translateY(-5px); }
   
-    @media (max-width: 880px) { /* Ajusta este breakpoint según sea necesario */
-      .navbar-links {
-        display: none; /* Ocultar los links de desktop */
-      }
-      .navbar-toggle {
-        display: block; /* Mostrar el botón hamburguesa */
-      }
-      /* El .mobile-menu ya está configurado para mostrarse con la clase .active */
-
+    @media (max-width: 880px) { 
+      .navbar-links { display: none; }
+      .navbar-toggle { display: block; }
+      /* .navbar-menu-container ahora solo contendrá el toggle en móviles, se alineará bien con space-between */
       h1 { font-size: 2rem !important; }
       img[style*="max-width: 50%;"] { max-width: 90% !important; }
       img[style*="max-width: 90%;"] { max-width: 100% !important; }
@@ -192,23 +178,23 @@
       <span>El Antimétodo</span>
     </a>
     
-    <ul class="navbar-links"> <!-- Estos son los links para desktop -->
-        <li><a href="{{ '/' | relative_url }}">Inicio</a></li>
-        <li><a href="{{ '/fundamentos' | relative_url }}">Fundamentos</a></li>
-        <li><a href="{{ '/etapas' | relative_url }}">Etapas</a></li>
-        <li><a href="{{ '/beneficios' | relative_url }}">Beneficios</a></li>
-        <li><a href="{{ '/recursos' | relative_url }}">Recursos</a></li>
-        <li><a href="{{ '/faq' | relative_url }}">FAQ</a></li>
-        <li><a href="{{ '/contacto' | relative_url }}">Contacto</a></li>
-    </ul>
-    
-    <button class="navbar-toggle" aria-label="Toggle navigation">
-        ☰
-    </button>
+    <div class="navbar-menu-container"> <!-- Este div agrupa el menú de escritorio y el toggle -->
+        <ul class="navbar-links"> 
+            <li><a href="{{ '/' | relative_url }}">Inicio</a></li>
+            <li><a href="{{ '/fundamentos' | relative_url }}">Fundamentos</a></li>
+            <li><a href="{{ '/etapas' | relative_url }}">Etapas</a></li>
+            <li><a href="{{ '/beneficios' | relative_url }}">Beneficios</a></li>
+            <li><a href="{{ '/recursos' | relative_url }}">Recursos</a></li>
+            <li><a href="{{ '/faq' | relative_url }}">FAQ</a></li>
+            <li><a href="{{ '/contacto' | relative_url }}">Contacto</a></li>
+        </ul>
+        <button class="navbar-toggle" aria-label="Toggle navigation">
+            ☰
+        </button>
+    </div>
   </nav>
 
-  <!-- Menú para móviles, fuera del flujo principal del navbar flex -->
-  <ul class="mobile-menu">
+  <ul class="mobile-menu"> <!-- Menú para móviles, fuera del <nav> -->
     <li><a href="{{ '/' | relative_url }}">Inicio</a></li>
     <li><a href="{{ '/fundamentos' | relative_url }}">Fundamentos</a></li>
     <li><a href="{{ '/etapas' | relative_url }}">Etapas</a></li>
@@ -236,11 +222,11 @@
   </footer>
   <script>
     const navbarToggle = document.querySelector(".navbar-toggle");
-    const mobileMenu = document.querySelector(".mobile-menu"); // Referencia al nuevo menú móvil
+    const mobileMenu = document.querySelector(".mobile-menu");
 
     if (navbarToggle && mobileMenu) {
       navbarToggle.addEventListener("click", () => {
-        mobileMenu.classList.toggle("active"); // Alternar la clase .active en .mobile-menu
+        mobileMenu.classList.toggle("active");
         if (mobileMenu.classList.contains("active")) {
           navbarToggle.innerHTML = "✕"; 
         } else {
@@ -251,7 +237,6 @@
 
     document.addEventListener("DOMContentLoaded", function() {
       const currentLocation = window.location.pathname;
-      // Aplicar active a ambos menús si existen los elementos
       const desktopNavLinks = document.querySelectorAll(".navbar-links a");
       const mobileNavLinks = document.querySelectorAll(".mobile-menu a");
       const siteBase = "{{ '/' | relative_url }}".replace(/\/$/, '');
