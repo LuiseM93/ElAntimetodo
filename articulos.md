@@ -1,15 +1,17 @@
 ---
 layout: default
 title: Artículos del Antimétodo - Aprendizaje de Idiomas
-description: Artículos, consejos y reflexiones sobre el aprendizaje de idiomas mediante input comprensible y el método Antimétodo. (En construcción)
+description: Artículos que desafían lo que creías saber sobre aprender idiomas. El Antimétodo expone lo que realmente funciona, sin métodos tradicionales.
 ---
 
 <style>
 .article-card-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */ /* Comentado para que solo una tarjeta ocupe el ancho */
+  grid-template-columns: minmax(0, 1fr); /* Para que una sola tarjeta pueda centrarse o tener un max-width */
   gap: 1.5rem;
   margin-top: 2rem;
+  justify-items: center; /* Centrar la tarjeta si solo hay una */
 }
 .article-card {
   background: var(--card-background);
@@ -21,6 +23,8 @@ description: Artículos, consejos y reflexiones sobre el aprendizaje de idiomas 
   text-decoration: none; 
   color: var(--text-color); 
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 450px; /* Ancho máximo para una sola tarjeta, para que no sea demasiado ancha */
+  width: 100%; /* Asegurar que use el espacio disponible hasta el max-width */
 }
 .article-card:hover {
   transform: translateY(-5px);
@@ -28,7 +32,7 @@ description: Artículos, consejos y reflexiones sobre el aprendizaje de idiomas 
 }
 .article-card img.featured-image {
   width: 100%;
-  height: 180px; 
+  height: 200px; /* Aumentada ligeramente la altura para la imagen destacada */
   object-fit: cover; 
 }
 .article-card-content {
@@ -40,6 +44,7 @@ description: Artículos, consejos y reflexiones sobre el aprendizaje de idiomas 
   margin-bottom: 0.5rem;
   color: var(--primary-color);
   font-size: 1.3em;
+  line-height: 1.3; /* Mejorar espaciado del título si es largo */
 }
 .article-card-content p.excerpt {
   font-size: 0.95em;
@@ -66,58 +71,34 @@ description: Artículos, consejos y reflexiones sobre el aprendizaje de idiomas 
 <main style="max-width: 800px; margin: 0 auto; padding: 0 1rem;">
 
   <section style="text-align: center; padding: 2rem 1rem;">
-    <h1>Artículos del Antimétodo</h1> <!-- CAMBIADO -->
+    <h1>Artículos del Antimétodo</h1>
     <p class="subtitle" style="font-size: 1.2em; color: var(--secondary-color);">Ideas y la ciencia detrás del aprendizaje natural de idiomas.</p>
   </section>
 
   <section style="margin-bottom: 3rem;">
-    <h2 style="text-align: center; color: var(--primary-color);">🚧 ¡Sección de Artículos en Construcción! 🚧</h2> <!-- CAMBIADO -->
-    <p style="text-align: center; font-size: 1.1em; margin-top: 1rem;">
-      ¡Pronto encontrarás aquí artículos fascinantes sobre cómo El Antimétodo puede transformar tu aprendizaje de idiomas!
-      Estamos preparando contenido sobre:
+    <h2 style="text-align: center; color: var(--primary-color);">🚧 ¡Sección de Artículos en Construcción! 🚧</h2>
+    <p style="text-align: center; font-size: 1.1em; margin-top: 1rem; line-height: 1.7;">
+      Muy pronto encontrarás aquí artículos que desafían todo lo que creías saber sobre aprender idiomas. Con un enfoque directo, natural y basado en la experiencia, El Antimétodo expone lo que realmente funciona —sin atajos vacíos, sin promesas falsas, sin métodos tradicionales.
     </p>
-    <ul style="list-style-position: inside; padding-left: 20px; text-align: center; max-width: 500px; margin: 1.5rem auto;">
-        <li>La verdad sobre si los adultos pueden aprender tan bien como los niños.</li>
-        <li>Cómo superar el miedo a hablar.</li>
-        <li>Mitos comunes del aprendizaje de idiomas.</li>
-        <li>Reseñas de recursos y herramientas.</li>
-        <li>¡Y mucho más!</li>
-    </ul>
+    <p style="text-align: center; font-size: 1.1em; margin-top: 0.5rem; line-height: 1.7;">
+      Prepárate para cuestionarlo todo y reaprender desde cero.
+    </p>
 
-    <h3 style="margin-top: 3rem; text-align: center; color: var(--secondary-color);">Próximos Artículos (Ejemplos):</h3>
+    <h3 style="margin-top: 3rem; text-align: center; color: var(--secondary-color);">Próximo Artículo:</h3>
     <div class="article-card-list">
-      <!-- Tarjeta de ejemplo 1 -->
-      <a href="#" class="article-card"> 
-        <img src="https://via.placeholder.com/400x180.png/4a148c/ffffff?text=Articulo+1" alt="Ejemplo de artículo 1" class="featured-image">
+      <!-- Tarjeta de ejemplo 1 actualizada -->
+      <a href="#" class="article-card"> <!-- El href="#" es un placeholder, luego enlazaría al artículo real -->
+        <img src="{{ '/assets/adul.png' | relative_url }}" alt="Adultos aprendiendo idiomas" class="featured-image">
         <div class="article-card-content">
-          <h3>¿Aprenden los adultos idiomas mejor que los niños? La ciencia dice SÍ</h3>
-          <p class="excerpt">Desmontamos un mito popular y exploramos las ventajas cognitivas que los adultos tienen al aprender un nuevo idioma...</p>
-          <span class="read-more">Leer más →</span>
-          <p class="article-meta">Publicado: Próximamente</p>
-        </div>
-      </a>
-
-      <!-- Tarjeta de ejemplo 2 -->
-      <a href="#" class="article-card">
-        <img src="https://via.placeholder.com/400x180.png/7b1fa2/ffffff?text=Articulo+2" alt="Ejemplo de artículo 2" class="featured-image">
-        <div class="article-card-content">
-          <h3>5 Herramientas Esenciales para tu Inmersión con el Antimétodo</h3>
-          <p class="excerpt">Descubre las aplicaciones y extensiones que potenciarán tu input comprensible y acelerarán tu camino a la fluidez...</p>
+          <h3>Los adultos son mejores aprendiendo idiomas que los niños</h3>
+          <p class="excerpt">En contraste con lo que siempre se ha dicho, los adultos pueden aprender un idioma mucho más rápido que un niño. Mientras ellos tardan años sin siquiera saber leer o escribir, tú puedes avanzar en meses aplicando El Antimétodo...</p>
           <span class="read-more">Leer más →</span>
           <p class="article-meta">Publicado: Próximamente</p>
         </div>
       </a>
       
-      <!-- Tarjeta de ejemplo 3 -->
-      <a href="#" class="article-card">
-         <img src="https://via.placeholder.com/400x180.png/d1c4e9/333333?text=Articulo+3" alt="Ejemplo de artículo 3" class="featured-image">
-        <div class="article-card-content">
-          <h3>Del Miedo a la Fluidez: Estrategias para Empezar a Hablar</h3>
-          <p class="excerpt">Consejos prácticos para superar la barrera del habla y comenzar a producir el idioma de forma natural y sin estrés.</p>
-          <span class="read-more">Leer más →</span>
-          <p class="article-meta">Publicado: Próximamente</p>
-        </div>
-      </a>
+      <!-- Aquí podrías añadir más tarjetas de ejemplo en el futuro si quieres mostrar más de uno -->
+
     </div>
   </section>
 
