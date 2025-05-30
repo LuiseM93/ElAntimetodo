@@ -55,7 +55,7 @@
 
     .navbar {
       background-color: var(--primary-color);
-      padding: 0 1rem;
+      padding: 0 0.8rem; 
       display: flex;
       align-items: center;
       justify-content: space-between; 
@@ -71,14 +71,15 @@
       align-items: center;
       color: var(--navbar-text-color);
       text-decoration: none;
-      font-size: 1.4em;
+      font-size: 1.3em; 
       font-weight: 500; 
+      white-space: nowrap; 
     }
 
     .navbar-brand img {
-      height: 30px;
-      width: 30px;
-      margin-right: 8px;
+      height: 28px; 
+      width: 28px;
+      margin-right: 6px; 
       border-radius: 4px;
     }
     
@@ -99,11 +100,11 @@
     .navbar-links a {
       color: var(--navbar-text-color);
       text-decoration: none;
-      padding: 0.6rem 0.7rem; /* Ligeramente menos padding para que quepan más items */
+      padding: 0.5rem 0.6rem; 
       border-radius: 4px;
       transition: background-color 0.3s ease, color 0.3s ease;
       font-weight: 500;
-      font-size: 0.85rem; /* Un poco más pequeño si hay muchos items */
+      font-size: 0.8rem; 
       display: block;
       white-space: nowrap;
     }
@@ -121,7 +122,7 @@
       color: var(--navbar-text-color);
       font-size: 1.8rem;
       cursor: pointer;
-      margin-left: 10px; /* Reducido margen */
+      margin-left: 8px; 
     }
 
     .mobile-menu {
@@ -137,13 +138,14 @@
         padding: 1rem 0;
         box-shadow: 0 2px 5px rgba(0,0,0,0.2);
         border-top: 1px solid var(--secondary-color);
+        z-index: 999; /* Para que esté sobre el contenido pero debajo del navbar fijo */
     }
     .mobile-menu.active {
         display: flex; 
         flex-direction: column;
     }
     .mobile-menu li { width: 100%; text-align: center; }
-    .mobile-menu a { color: var(--navbar-text-color); text-decoration: none; padding: 0.8rem 1rem; display: block; border-bottom: 1px solid rgba(255,255,255,0.1); }
+    .mobile-menu a { color: var(--navbar-text-color); text-decoration: none; padding: 0.8rem 1rem; display: block; border-bottom: 1px solid rgba(255,255,255,0.1); font-size: 0.9rem; }
     .mobile-menu a:last-child { border-bottom: none; }
     .mobile-menu a:hover, .mobile-menu a.active { background-color: var(--navbar-hover-bg); }
 
@@ -156,7 +158,7 @@
     div[style*="box-shadow"] { transition: transform 0.3s ease, box-shadow 0.3s ease; }
     div[style*="box-shadow"]:hover { transform: translateY(-5px); }
   
-    @media (max-width: 960px) { /* Aumentado el breakpoint por si hay muchos items */
+    @media (max-width: 1020px) { 
       .navbar-links { display: none; }
       .navbar-toggle { display: block; }
       h1 { font-size: 2rem !important; }
@@ -178,7 +180,8 @@
             <li><a href="{{ '/' | relative_url }}">Inicio</a></li>
             <li><a href="{{ '/fundamentos' | relative_url }}">Fundamentos</a></li>
             <li><a href="{{ '/etapas' | relative_url }}">Etapas</a></li>
-            <li><a href="{{ '/rutinas' | relative_url }}">Rutinas</a></li> <!-- NUEVO ENLACE -->
+            <li><a href="{{ '/rutinas' | relative_url }}">Rutinas</a></li>
+            <li><a href="{{ '/articulos' | relative_url }}">Artículos</a></li> <!-- CAMBIADO DE BLOG A ARTÍCULOS -->
             <li><a href="{{ '/beneficios' | relative_url }}">Beneficios</a></li>
             <li><a href="{{ '/recursos' | relative_url }}">Recursos</a></li>
             <li><a href="{{ '/faq' | relative_url }}">FAQ</a></li>
@@ -194,7 +197,8 @@
     <li><a href="{{ '/' | relative_url }}">Inicio</a></li>
     <li><a href="{{ '/fundamentos' | relative_url }}">Fundamentos</a></li>
     <li><a href="{{ '/etapas' | relative_url }}">Etapas</a></li>
-    <li><a href="{{ '/rutinas' | relative_url }}">Rutinas</a></li> <!-- NUEVO ENLACE -->
+    <li><a href="{{ '/rutinas' | relative_url }}">Rutinas</a></li>
+    <li><a href="{{ '/articulos' | relative_url }}">Artículos</a></li> <!-- CAMBIADO DE BLOG A ARTÍCULOS -->
     <li><a href="{{ '/beneficios' | relative_url }}">Beneficios</a></li>
     <li><a href="{{ '/recursos' | relative_url }}">Recursos</a></li>
     <li><a href="{{ '/faq' | relative_url }}">FAQ</a></li>
