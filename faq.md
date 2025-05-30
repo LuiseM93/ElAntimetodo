@@ -24,7 +24,7 @@ description: Respuestas a las dudas más comunes sobre El Antimétodo y el apren
       ¡Pronto encontrarás aquí un compendio de respuestas!
     </p>
     <div style="text-align:center; margin-top:2rem;">
-        <img src="https://media.giphy.com/media/3o7bu3XilJ5BOiSGic/giphy.gif" alt="Pensando en preguntas" style="max-width:300px; border-radius:8px;">
+        <img src="https://i.gifer.com/origin/34/34338d26023e5515f6cc8969aa027bca.gif">
     </div>
   </section>
 
