@@ -21,74 +21,37 @@ description: Aprende idiomas de forma natural con el enfoque del input comprensi
 
 <style>
 /* Estos estilos son específicos para el Hero Section de esta página */
-.hero {
-  text-align: center;
-  padding: 2rem 1rem;
-  margin-bottom: 40px;
-  background-color: var(--card-background);
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-.hero h1 {
-    border-bottom: none;
-    font-size: 2.8em;
-    margin-bottom: 0.5rem;
-}
-.subtitle {
-  font-size: 1.3em;
-  color: var(--secondary-color);
-  margin-bottom: 2rem;
-}
-.hero-cards {
-  display: flex;
-  gap: 20px;
-  margin-top: 30px;
-  justify-content: center;
-}
-.card {
-  background: var(--card-background);
-  padding: 25px;
-  border-radius: 10px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-  flex: 1;
-  max-width: 300px;
-  border-top: 4px solid var(--secondary-color);
-}
-.card h2 {
-    color: var(--primary-color);
-    border-bottom: none;
-    font-size: 1.5em;
-    margin-top: 0;
-    margin-bottom: 0.75rem;
-}
-.card p {
-    font-size: 1em;
-    line-height: 1.5;
-}
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-  transition: all 0.3s ease;
-}
+.hero { text-align: center; padding: 2rem 1rem; margin-bottom: 40px; background-color: var(--card-background); border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+.hero h1 { border-bottom: none; font-size: 2.8em; margin-bottom: 0.5rem; }
+.subtitle { font-size: 1.3em; color: var(--secondary-color); margin-bottom: 2rem; }
+.hero-cards { display: flex; gap: 20px; margin-top: 30px; justify-content: center; }
+.card { background: var(--card-background); padding: 25px; border-radius: 10px; box-shadow: 0 3px 10px rgba(0,0,0,0.1); flex: 1; max-width: 300px; border-top: 4px solid var(--secondary-color); }
+.card h2 { color: var(--primary-color); border-bottom: none; font-size: 1.5em; margin-top: 0; margin-bottom: 0.75rem; }
+.card p { font-size: 1em; line-height: 1.5; } /* Alineación por defecto (izquierda) para el texto de las cards */
+.card:hover { transform: translateY(-5px); box-shadow: 0 8px 20px rgba(0,0,0,0.15); transition: all 0.3s ease; }
 
-/* Estilo para justificar texto */
-.justified-text p {
-    text-align: justify;
+/* Estilo para centrar párrafos específicos si es necesario */
+.text-centered p {
+    text-align: center;
 }
+/* Si quieres que solo el H2 esté centrado y los párrafos a la izquierda, no necesitas esta clase para esos párrafos */
 </style>
 
 <!-- CONTENIDO PRINCIPAL -->
 <main style="max-width: 800px; margin: 40px auto 0 auto; padding: 0 1rem;">
 
-  <section class="justified-text" style="margin-bottom: 3rem; text-align: center; padding: 2rem; background-color: var(--card-background); border-radius: 8px; box-shadow: 0 3px 10px rgba(0,0,0,0.05);">
-    <h2 style="color: var(--primary-color); border-bottom: 2px solid var(--light-purple-color); padding-bottom: 0.5rem; display: inline-block;">Bienvenido al Antimétodo</h2>
-    <p style="font-size: 1.1em; margin-top: 1rem;">
+  <!-- Sección de Bienvenida: Título centrado, párrafos con alineación por defecto (izquierda) -->
+  <section style="margin-bottom: 3rem; padding: 2rem; background-color: var(--card-background); border-radius: 8px; box-shadow: 0 3px 10px rgba(0,0,0,0.05);">
+    <h2 style="color: var(--primary-color); border-bottom: 2px solid var(--light-purple-color); padding-bottom: 0.5rem; display: block; text-align: center;">Bienvenido al Antimétodo</h2>
+    <p style="font-size: 1.1em; margin-top: 1rem; text-align: center;"> <!-- Párrafos centrados aquí -->
       El Antimétodo es un enfoque revolucionario para aprender idiomas basado en la teoría del <strong>input comprensible</strong>. Olvídate de memorizar reglas gramaticales y ejercicios aburridos. Aquí, aprenderás de manera natural, intuitiva y, sobre todo, ¡disfrutando el proceso!
     </p>
-    <p style="font-size: 1.1em;">
+    <p style="font-size: 1.1em; text-align: center;"> <!-- Párrafos centrados aquí -->
       Sumérgete en contenido real como series, música o videojuegos, y adquiere el idioma como aprendiste tu lengua materna.
     </p>
-    <a href="{{ '/fundamentos' | relative_url }}" class="btn" style="margin-top: 1.5rem; background-color: var(--primary-color);">Descubre los Fundamentos</a>
+    <div style="text-align: center;">
+      <a href="{{ '/fundamentos' | relative_url }}" class="btn" style="margin-top: 1.5rem; background-color: var(--primary-color);">Descubre los Fundamentos</a>
+    </div>
   </section>
 
   <section style="margin-bottom: 3rem;">
@@ -120,11 +83,12 @@ description: Aprende idiomas de forma natural con el enfoque del input comprensi
     <a href="{{ '/etapas' | relative_url }}" class="btn" style="margin-top: 1.5rem; background-color: var(--primary-color); color: white !important;">Explora las Etapas del Antimétodo</a>
   </section>
   
-  <section class="justified-text" style="margin-bottom: 3rem; text-align: center;">
-     <h2 style="color: var(--primary-color); border-bottom: 2px solid var(--light-purple-color); padding-bottom: 0.5rem;">Próximamente...</h2>
-     <p>Esta es solo la primera versión del sitio web del Antimétodo. Apenas estamos comenzando. La página está en pleno desarrollo y aún faltan muchos recursos, herramientas, ejemplos y guías prácticas que iremos construyendo poco a poco. Lo que acabas de leer es solo el inicio de algo mucho más grande. Se vienen cosas importantes, y esto apenas comienza.</p>
-     <p><strong>Experiencia del autor:</strong> Gracias al antimétodo, ha logrado avances notables en inglés, francés y alemán. En solo 7 meses y 20 días, alcanzó en francés la etapa 3: entiende casi todo al ver series y películas auténticas sin subtítulos, y juega sus videojuegos favoritos en francés. Todo esto disfrutando el proceso y sintiendo el idioma como una segunda lengua materna. Sin clases ni métodos tradicionales… solo resultados. El antimétodo no es una alternativa —es la supremacía del aprendizaje autodidacta.</p>
-     <p><strong>Resultados esperados:</strong> fluidez real y un alto nivel en el idioma, comprensión a nivel nativo y hablar desde el instinto.</p>
+  <!-- Sección Próximamente: Título centrado, párrafos con alineación por defecto (izquierda) -->
+  <section style="margin-bottom: 3rem;">
+     <h2 style="color: var(--primary-color); border-bottom: 2px solid var(--light-purple-color); padding-bottom: 0.5rem; text-align: center;">Próximamente...</h2>
+     <p style="text-align: left;">Esta es solo la primera versión del sitio web del Antimétodo. Apenas estamos comenzando. La página está en pleno desarrollo y aún faltan muchos recursos, herramientas, ejemplos y guías prácticas que iremos construyendo poco a poco. Lo que acabas de leer es solo el inicio de algo mucho más grande. Se vienen cosas importantes, y esto apenas comienza.</p>
+     <p style="text-align: left;"><strong>Experiencia del autor:</strong> Gracias al antimétodo, ha logrado avances notables en inglés, francés y alemán. En solo 7 meses y 20 días, alcanzó en francés la etapa 3: entiende casi todo al ver series y películas auténticas sin subtítulos, y juega sus videojuegos favoritos en francés. Todo esto disfrutando el proceso y sintiendo el idioma como una segunda lengua materna. Sin clases ni métodos tradicionales… solo resultados. El antimétodo no es una alternativa —es la supremacía del aprendizaje autodidacta.</p>
+     <p style="text-align: left;"><strong>Resultados esperados:</strong> fluidez real y un alto nivel en el idioma, comprensión a nivel nativo y hablar desde el instinto.</p>
      <div style="margin-top: 2rem; text-align: center;">
       <img src="{{ '/assets/gato_arquitecto_construccion.jpg' | relative_url }}" 
            alt="Gato arquitecto trabajando en el sitio" 
