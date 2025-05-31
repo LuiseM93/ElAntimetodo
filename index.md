@@ -12,7 +12,13 @@ description: Aprende idiomas de forma natural con el enfoque del input comprensi
   <div class="hero-cards-container">
     <div class="hero-card">
       <div class="hero-card-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="48px" height="48px"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M14.829 14.829a1.994 1.994 0 0 1-2.828 0l-2.414-2.414-2.414 2.414a1.994 1.994 0 0 1-2.828 0L3.172 13.172a1.994 1.994 0 0 1 0-2.828l2.414-2.414-2.414-2.414a1.994 1.994 0 0 1 0-2.828l1.172-1.172a1.994 1.994 0 0 1 2.828 0l2.414 2.414 2.414-2.414a1.994 1.994 0 0 1 2.828 0l1.172 1.172a1.994 1.994 0 0 1 0 2.828l-2.414 2.414 2.414 2.414a1.994 1.994 0 0 1 0 2.828l-1.172 1.172zM9 11.586l-1.293-1.293a.999.999 0 1 0-1.414 1.414L7.586 13l-1.293 1.293a.999.999 0 1 0 1.414 1.414L9 14.414l1.293 1.293a.999.999 0 1 0 1.414-1.414L10.414 13l1.293-1.293a.999.999 0 1 0-1.414-1.414L9 11.586z"></path></svg>
+        <!-- NUEVO ICONO PARA SIN ESTRÉS (Meditación/Relax) -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="48px" height="48px">
+          <path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"/>
+          <path d="M12 6c-1.952 0-3.669 1.255-4.531 3.043-.22.459-.035.99.424 1.21.459.221.99.035 1.21-.424C9.698 8.797 10.789 8 12 8s2.302.797 2.897 1.829c.22.459.751.644 1.21.424.459-.22.644-.751.424-1.21C15.669 7.255 13.952 6 12 6z"/>
+          <path d="M12 13c-1.654 0-3 1.346-3 3s1.346 3 3 3 3-1.346 3-3-1.346-3-3-3zm0 4c-.551 0-1-.449-1-1s.449-1 1-1 1 .449 1 1-.449 1-1 1z"/>
+          <path d="M7.5 11.5c-.275 0-.5-.225-.5-.5s.225-.5.5-.5h9c.275 0 .5.225.5.5s-.225.5-.5.5h-9z"/>
+        </svg>
       </div>
       <h2>Sin Estrés</h2>
       <p>Olvida ejercicios aburridos - aprende con contenido que disfrutas.</p>
@@ -38,18 +44,18 @@ description: Aprende idiomas de forma natural con el enfoque del input comprensi
     padding: 3rem 1rem 2rem 1rem; 
     margin-bottom: 40px; 
     background-color: var(--card-background); 
-    border-radius: 12px; /* Más redondeado */
-    box-shadow: 0 8px 25px rgba(74, 20, 140, 0.1); /* Sombra morada sutil */
-    border: 1px solid var(--light-purple-color); /* Borde muy sutil */
+    border-radius: 12px; 
+    box-shadow: 0 8px 25px rgba(74, 20, 140, 0.1); 
+    border: 1px solid var(--light-purple-color); 
 }
 .hero-content h1 { 
     font-family: var(--font-primary);
     border-bottom: none; 
-    font-size: 3em; /* Un poco más grande */
+    font-size: 3em; 
     margin-bottom: 0.3em; 
     color: var(--primary-color);
     font-weight: 700;
-    letter-spacing: -1px; /* Ligeramente más juntas las letras */
+    letter-spacing: -1px; 
 }
 .hero-content .subtitle { 
     font-family: var(--font-secondary);
@@ -63,10 +69,10 @@ description: Aprende idiomas de forma natural con el enfoque del input comprensi
     gap: 25px; 
     margin-top: 2rem; 
     justify-content: center; 
-    flex-wrap: wrap; /* Para que se adapten en pantallas más pequeñas si es necesario */
+    flex-wrap: wrap; 
 }
 .hero-card { 
-    background: linear-gradient(145deg, var(--card-background), #fdfcff); /* Gradiente sutil */
+    background: linear-gradient(145deg, var(--card-background), #fdfcff); 
     padding: 25px 30px; 
     border-radius: 10px; 
     box-shadow: 0 5px 15px rgba(0,0,0,0.07); 
@@ -76,18 +82,18 @@ description: Aprende idiomas de forma natural con el enfoque del input comprensi
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centrar contenido de la tarjeta */
+    align-items: center; 
 }
 .hero-card:hover { 
     transform: translateY(-8px); 
-    box-shadow: 0 10px 20px rgba(123, 31, 162, 0.15); /* Sombra morada más pronunciada al hover */
+    box-shadow: 0 10px 20px rgba(123, 31, 162, 0.15); 
 }
 .hero-card-icon {
     margin-bottom: 1rem;
-    color: var(--secondary-color); /* Color de los iconos SVG */
+    color: var(--secondary-color); 
 }
 .hero-card-icon svg {
-    width: 40px; /* Tamaño de los iconos SVG */
+    width: 40px; 
     height: 40px;
 }
 .hero-card h2 { 
@@ -104,11 +110,11 @@ description: Aprende idiomas de forma natural con el enfoque del input comprensi
     font-size: 1em; 
     line-height: 1.6;
     color: var(--text-light-color);
-    margin-bottom: 0; /* Quitar margen inferior del párrafo en la card */
+    margin-bottom: 0; 
 }
 
 .hero-image-container {
-    margin-top: 2.5rem; /* Espacio sobre la imagen */
+    margin-top: 2.5rem; 
 }
 .hero-main-image {
     max-width: 70%; 
@@ -118,7 +124,6 @@ description: Aprende idiomas de forma natural con el enfoque del input comprensi
     box-shadow: 0 6px 18px rgba(0,0,0,0.1); 
 }
 
-/* Estilos para secciones generales de contenido, si los necesitas fuera del hero */
 .content-section {
   margin-bottom: 3rem;
   padding: 2rem;
@@ -126,11 +131,11 @@ description: Aprende idiomas de forma natural con el enfoque del input comprensi
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.05);
 }
-.content-section .section-title { /* Para H2 dentro de estas secciones */
+.content-section .section-title { 
     text-align: center;
     margin-bottom: 2rem;
 }
-.content-section .section-subtitle { /* Para un p subtítulo debajo del H2 */
+.content-section .section-subtitle { 
     text-align: center;
     font-size: 1.15em;
     color: var(--text-light-color);
@@ -142,16 +147,16 @@ description: Aprende idiomas de forma natural con el enfoque del input comprensi
     .hero-content h1 { font-size: 2.4em; }
     .hero-content .subtitle { font-size: 1.2em; }
     .hero-cards-container { flex-direction: column; gap: 20px; align-items: center;}
-    .hero-card { max-width: 90%; } /* Que las tarjetas ocupen más en móvil */
+    .hero-card { max-width: 90%; } 
     .hero-main-image { max-width: 90%; }
     .content-section { padding: 1.5rem; }
 }
 </style>
 
 <!-- CONTENIDO PRINCIPAL (El resto de tu index.md) -->
-<main class="content-wrapper"> <!-- Usar la clase global .content-wrapper aquí también -->
+<main class="content-wrapper"> 
 
-  <section class="content-section"> <!-- Ejemplo de cómo usar la nueva clase de sección -->
+  <section class="content-section"> 
     <h2 class="section-title">Bienvenido al Antimétodo</h2>
     <p style="font-size: 1.1em; text-align: center; color: var(--text-light-color); line-height: 1.7;"> 
       El Antimétodo es un enfoque revolucionario para aprender idiomas basado en la teoría del <strong>input comprensible</strong>. Olvídate de memorizar reglas gramaticales y ejercicios aburridos. Aquí, aprenderás de manera natural, intuitiva y, sobre todo, ¡disfrutando el proceso!
@@ -164,14 +169,14 @@ description: Aprende idiomas de forma natural con el enfoque del input comprensi
     </div>
   </section>
 
-  <section> <!-- Esta sección no usa .content-section para variar, podrías aplicarlo si quieres fondo blanco -->
+  <section> 
     <h2>Beneficios Clave del Antimétodo</h2>
     <ul style="list-style-type: none; padding-left: 0; font-size: 1.1em;">
       <li style="margin-bottom: 1rem; padding: 0.8rem 0.8rem 0.8rem 2.5em; position: relative; background-color: var(--card-background); border-radius: 6px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); border-left: 4px solid var(--secondary-color);">
-        <span style="position: absolute; left: 0.8em; top: 50%; transform: translateY(-50%); color: var(--secondary-color); font-weight: bold; font-size:1.2em;">🎯</span> Flexible y personalizado a tus intereses.
+        <span style="position: absolute; left: 0.8em; top: 50%; transform: translateY(-50%); color: var(--secondary-color); font-weight: bold; font-size:1.2em;">🧘</span> Flexible y personalizado a tus intereses. <!-- Emoji de meditación -->
       </li>
       <li style="margin-bottom: 1rem; padding: 0.8rem 0.8rem 0.8rem 2.5em; position: relative; background-color: var(--card-background); border-radius: 6px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); border-left: 4px solid var(--secondary-color);">
-        <span style="position: absolute; left: 0.8em; top: 50%; transform: translateY(-50%); color: var(--secondary-color); font-weight: bold; font-size:1.2em;">⏱️</span> Aprende con contenido que realmente disfrutas.
+        <span style="position: absolute; left: 0.8em; top: 50%; transform: translateY(-50%); color: var(--secondary-color); font-weight: bold; font-size:1.2em;">🎧</span> Aprende con contenido que realmente disfrutas. <!-- Emoji de audífonos -->
       </li>
       <li style="margin-bottom: 1rem; padding: 0.8rem 0.8rem 0.8rem 2.5em; position: relative; background-color: var(--card-background); border-radius: 6px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); border-left: 4px solid var(--secondary-color);">
         <span style="position: absolute; left: 0.8em; top: 50%; transform: translateY(-50%); color: var(--secondary-color); font-weight: bold; font-size:1.2em;">🗣️</span> Desarrolla fluidez natural, sin traducir mentalmente.
@@ -193,7 +198,7 @@ description: Aprende idiomas de forma natural con el enfoque del input comprensi
     <a href="{{ '/etapas' | relative_url }}" class="btn" style="margin-top: 1.5rem; background-color: white; color: var(--primary-color) !important; font-weight: bold;">Explora las Etapas del Antimétodo</a>
   </section>
   
-  <section> <!-- Alineación izquierda para estos párrafos -->
+  <section> 
      <h2 style="text-align: center;">Próximamente...</h2>
      <p style="text-align: left; color: var(--text-light-color);">Esta es solo la primera versión del sitio web del Antimétodo. Apenas estamos comenzando. La página está en pleno desarrollo y aún faltan muchos recursos, herramientas, ejemplos y guías prácticas que iremos construyendo poco a poco. Lo que acabas de leer es solo el inicio de algo mucho más grande. Se vienen cosas importantes, y esto apenas comienza.</p>
      <p style="text-align: left; color: var(--text-light-color);"><strong>Experiencia del autor:</strong> Gracias al antimétodo, ha logrado avances notables en inglés, francés y alemán. En solo 7 meses y 20 días, alcanzó en francés la etapa 3: entiende casi todo al ver series y películas auténticas sin subtítulos, y juega sus videojuegos favoritos en francés. Todo esto disfrutando el proceso y sintiendo el idioma como una segunda lengua materna. Sin clases ni métodos tradicionales… solo resultados. El antimétodo no es una alternativa —es la supremacía del aprendizaje autodidacta.</p>
