@@ -12,7 +12,6 @@ description: Aprende idiomas de forma natural con el enfoque del input comprensi
   <div class="hero-cards-container">
     <div class="hero-card">
       <div class="hero-card-icon">
-        <!-- NUEVO ICONO PARA SIN ESTRÉS (Meditación/Relax) -->
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="48px" height="48px">
           <path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"/>
           <path d="M12 6c-1.952 0-3.669 1.255-4.531 3.043-.22.459-.035.99.424 1.21.459.221.99.035 1.21-.424C9.698 8.797 10.789 8 12 8s2.302.797 2.897 1.829c.22.459.751.644 1.21.424.459-.22.644-.751.424-1.21C15.669 7.255 13.952 6 12 6z"/>
@@ -41,7 +40,7 @@ description: Aprende idiomas de forma natural con el enfoque del input comprensi
 <style>
 .hero-section { 
     text-align: center; 
-    padding: 3rem 1rem 2rem 1rem; 
+    padding: 2.5rem 1rem 1.8rem 1rem; /* Reducido padding vertical */
     margin-bottom: 40px; 
     background-color: var(--card-background); 
     border-radius: 12px; 
@@ -51,33 +50,33 @@ description: Aprende idiomas de forma natural con el enfoque del input comprensi
 .hero-content h1 { 
     font-family: var(--font-primary);
     border-bottom: none; 
-    font-size: 3em; 
-    margin-bottom: 0.3em; 
+    font-size: 2.8em; /* Reducido de 3em */
+    margin-bottom: 0.25em; /* Reducido espacio debajo del H1 */
     color: var(--primary-color);
     font-weight: 700;
     letter-spacing: -1px; 
 }
 .hero-content .subtitle { 
     font-family: var(--font-secondary);
-    font-size: 1.35em; 
+    font-size: 1.25em; /* Reducido de 1.35em */
     color: var(--secondary-color); 
-    margin-bottom: 2.5rem; 
+    margin-bottom: 2.2rem; /* Reducido espacio debajo del subtítulo */
     font-weight: 400;
 }
 .hero-cards-container { 
     display: flex; 
     gap: 25px; 
-    margin-top: 2rem; 
+    margin-top: 1.8rem; /* Reducido espacio sobre las cards */
     justify-content: center; 
     flex-wrap: wrap; 
 }
 .hero-card { 
     background: linear-gradient(145deg, var(--card-background), #fdfcff); 
-    padding: 25px 30px; 
+    padding: 22px 28px; /* Reducido padding de las cards */
     border-radius: 10px; 
     box-shadow: 0 5px 15px rgba(0,0,0,0.07); 
     flex: 1; 
-    max-width: 320px; 
+    max-width: 310px; /* Ligeramente más pequeñas */
     border-top: 4px solid var(--secondary-color); 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
@@ -89,35 +88,35 @@ description: Aprende idiomas de forma natural con el enfoque del input comprensi
     box-shadow: 0 10px 20px rgba(123, 31, 162, 0.15); 
 }
 .hero-card-icon {
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem; /* Menos espacio */
     color: var(--secondary-color); 
 }
 .hero-card-icon svg {
-    width: 40px; 
-    height: 40px;
+    width: 38px; /* Iconos un poco más pequeños */
+    height: 38px;
 }
 .hero-card h2 { 
     font-family: var(--font-primary);
     color: var(--primary-color); 
     border-bottom: none; 
-    font-size: 1.6em; 
+    font-size: 1.5em; /* Reducido */
     margin-top: 0; 
-    margin-bottom: 0.6rem; 
+    margin-bottom: 0.5rem; /* Menos espacio */
     font-weight: 600;
 }
 .hero-card p { 
     font-family: var(--font-secondary);
-    font-size: 1em; 
-    line-height: 1.6;
+    font-size: 0.95em; /* Ligeramente más pequeño */
+    line-height: 1.55; /* Ajustado */
     color: var(--text-light-color);
     margin-bottom: 0; 
 }
 
 .hero-image-container {
-    margin-top: 2.5rem; 
+    margin-top: 2.2rem; /* Reducido espacio sobre la imagen */
 }
 .hero-main-image {
-    max-width: 70%; 
+    max-width: 65%; /* Reducido tamaño de la imagen */
     height: auto; 
     border-radius: 10px; 
     border: 3px solid var(--grey-border-color); 
@@ -144,11 +143,12 @@ description: Aprende idiomas de forma natural con el enfoque del input comprensi
 }
 
 @media (max-width: 768px) {
-    .hero-content h1 { font-size: 2.4em; }
-    .hero-content .subtitle { font-size: 1.2em; }
+    .hero-section { padding: 2rem 1rem 1.5rem 1rem; } /* Ajustar padding en móvil */
+    .hero-content h1 { font-size: 2.2em; } /* Más pequeño en móvil */
+    .hero-content .subtitle { font-size: 1.1em; margin-bottom: 1.8rem; } /* Más pequeño en móvil */
     .hero-cards-container { flex-direction: column; gap: 20px; align-items: center;}
-    .hero-card { max-width: 90%; } 
-    .hero-main-image { max-width: 90%; }
+    .hero-card { max-width: 90%; padding: 20px; } 
+    .hero-main-image { max-width: 85%; } /* Ligeramente más grande en móvil que el 70% de desktop */
     .content-section { padding: 1.5rem; }
 }
 </style>
@@ -173,10 +173,10 @@ description: Aprende idiomas de forma natural con el enfoque del input comprensi
     <h2>Beneficios Clave del Antimétodo</h2>
     <ul style="list-style-type: none; padding-left: 0; font-size: 1.1em;">
       <li style="margin-bottom: 1rem; padding: 0.8rem 0.8rem 0.8rem 2.5em; position: relative; background-color: var(--card-background); border-radius: 6px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); border-left: 4px solid var(--secondary-color);">
-        <span style="position: absolute; left: 0.8em; top: 50%; transform: translateY(-50%); color: var(--secondary-color); font-weight: bold; font-size:1.2em;">🧘</span> Flexible y personalizado a tus intereses. <!-- Emoji de meditación -->
+        <span style="position: absolute; left: 0.8em; top: 50%; transform: translateY(-50%); color: var(--secondary-color); font-weight: bold; font-size:1.2em;">🧘</span> Flexible y personalizado a tus intereses. 
       </li>
       <li style="margin-bottom: 1rem; padding: 0.8rem 0.8rem 0.8rem 2.5em; position: relative; background-color: var(--card-background); border-radius: 6px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); border-left: 4px solid var(--secondary-color);">
-        <span style="position: absolute; left: 0.8em; top: 50%; transform: translateY(-50%); color: var(--secondary-color); font-weight: bold; font-size:1.2em;">🎧</span> Aprende con contenido que realmente disfrutas. <!-- Emoji de audífonos -->
+        <span style="position: absolute; left: 0.8em; top: 50%; transform: translateY(-50%); color: var(--secondary-color); font-weight: bold; font-size:1.2em;">🎧</span> Aprende con contenido que realmente disfrutas. 
       </li>
       <li style="margin-bottom: 1rem; padding: 0.8rem 0.8rem 0.8rem 2.5em; position: relative; background-color: var(--card-background); border-radius: 6px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); border-left: 4px solid var(--secondary-color);">
         <span style="position: absolute; left: 0.8em; top: 50%; transform: translateY(-50%); color: var(--secondary-color); font-weight: bold; font-size:1.2em;">🗣️</span> Desarrolla fluidez natural, sin traducir mentalmente.
