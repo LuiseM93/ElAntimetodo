@@ -110,7 +110,7 @@ description: Herramientas, aplicaciones, mazos de Anki y fuentes de input para a
         <h4>Mazos Recomendados para Anki:</h4>
         <ul>
           <li><a href="https://refold.la/es/category/decks/" target="_blank" rel="noopener noreferrer">Mazos de Refold</a> <span class="price-tag">De pago ($20 USD aprox.)</span> - <em>Excelente calidad, vale completamente la pena.</em></li>
-          <li><a href="{{ '/assets/EN1k.apkg' | relative_url }}" download="EN1k_Antimetodo_Ingles.apkg">Mazo 1000 Palabras Inglés (Antimétodo)</a> <span class="free-tag">Gratis</span> - <em>Descarga directa (.apkg).</em></li>
+          <li><a href="https://refold.link/community-deck-spanish" target="_blank" rel="noopener noreferrer">Mazo 1000 Palabras Inglés (Comunidad Refold)</a> <span class="free-tag">Gratis</span> <span class="warning-tag">⚠️</span> - <em>Mazo de la comunidad, basado en español. Revisar calidad.</em></li>
           <li><a href="https://ankiweb.net/shared/info/539815993" target="_blank" rel="noopener noreferrer">Mazo 1000 Palabras (Inglés a Francés)</a> <span class="free-tag">Gratis</span> <span class="warning-tag">⚠️</span> - <em>Creado por la comunidad, revisar calidad.</em></li>
           <li><a href="https://ankiweb.net/shared/info/1366502789" target="_blank" rel="noopener noreferrer">Mazo Fonética del Francés</a> <span class="free-tag">Gratis</span> - <em>Para practicar los sonidos del francés.</em></li>
         </ul>
@@ -243,7 +243,6 @@ description: Herramientas, aplicaciones, mazos de Anki y fuentes de input para a
                 <li><a href="https://elsaspeak.com/en/" target="_blank" rel="noopener noreferrer">Sitio Web de Elsa Speak</a> <span class="price-tag">De pago (con opción gratuita limitada)</span></li>
             </ul>
         </div>
-        <!-- Aquí podrías añadir recursos de fonética para otros idiomas -->
     </div>
   </section>
 
