@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>{{ page.title | default: site.title }} - {{ site.description }}</title>
+  <title>{{ page.title | default: site.title }} - El Antimétodo</title> <!-- Título OG más conciso -->
   <meta property="og:title" content="{{ page.title | default: site.title }} - El Antimétodo">
   <meta property="og:description" content="{{ page.description | default: site.description }}">
   <meta property="og:image" content="https://luisem93.github.io/ElAntimetodo/assets/logo-social.jpg">
@@ -12,55 +12,108 @@
   <meta property="og:image:height" content="630">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="{{ page.description | default: site.description }}">
+  
   <link rel="icon" href="{{ '/assets/favicon.ico?v=2' | relative_url }}">
   <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/favicon-32x32.png?v=2' | relative_url }}">
   <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/favicon-16x16.png?v=2' | relative_url }}">
   <link rel="apple-touch-icon" href="{{ '/assets/apple-touch-icon.png?v=2' | relative_url }}">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
   <style>
     :root {
-      --primary-color: #4a148c;
-      --secondary-color: #7b1fa2;
-      --light-purple-color: #d1c4e9;
-      --background-color: #f9f9f9;
-      --text-color: #333;
-      --card-background: #ffffff;
+      --primary-color: #4a148c;    /* Morado Principal (más oscuro) */
+      --secondary-color: #7b1fa2;  /* Morado Secundario (más claro) */
+      --accent-color: #9c27b0;     /* Un morado intermedio para acentos si es necesario */
+      --light-purple-color: #d1c4e9;/* Morado Muy Claro (bordes, fondos sutiles) */
+      
+      --background-color: #f8f7fa; /* Un gris muy muy claro, casi blanco con tinte morado sutil */
+      --card-background: #ffffff;   
+      --text-color: #333333;        /* Gris oscuro para texto principal */
+      --text-light-color: #555555; /* Gris más claro para descripciones */
+      
       --navbar-text-color: #ffffff;
       --navbar-hover-bg: var(--secondary-color);
-      --navbar-active-bg: var(--secondary-color);
+      --navbar-active-bg: var(--accent-color); /* Ligeramente diferente para el activo */
+      
       --instagram-color: #E1306C;
-      --grey-border-color: #cccccc; 
+      --grey-border-color: #e0e0e0; /* Gris más claro para bordes sutiles */
+
+      /* Tipografía */
+      --font-primary: 'Poppins', sans-serif;
+      --font-secondary: 'Open Sans', sans-serif;
     }
     
+    *, *::before, *::after {
+        box-sizing: border-box;
+    }
+
     body {
-      font-family: 'Arial', sans-serif;
+      font-family: var(--font-secondary); /* Fuente base para el cuerpo */
       margin: 0;
       padding: 0;
-      line-height: 1.6;
+      line-height: 1.7; /* Ligeramente más interlineado */
       color: var(--text-color);
       background-color: var(--background-color);
+      -webkit-font-smoothing: antialiased; /* Mejor renderizado de fuentes */
+      -moz-osx-font-smoothing: grayscale;
     }
 
     .content-wrapper {
-      max-width: 800px;
-      margin: 20px auto;
+      max-width: 850px; /* Un poco más de ancho para el contenido */
+      margin: 30px auto; /* Más margen superior */
       padding: 20px;
     }
     
-    h1, h2, h3, h4 { color: var(--primary-color); }
-    h2 { border-bottom: 2px solid var(--light-purple-color); padding-bottom: 0.5rem; margin-top: 2.5rem; margin-bottom: 1.5rem; }
-    h3 { color: var(--secondary-color); margin-top: 2rem; margin-bottom: 1rem; }
+    h1, h2, h3, h4 { 
+        font-family: var(--font-primary); /* Fuente para encabezados */
+        color: var(--primary-color); 
+        font-weight: 600; /* Un poco más de peso */
+        line-height: 1.3;
+    }
+    h1 { font-size: 2.5em; margin-bottom: 0.8em; }
+    h2 { 
+        font-size: 1.8em;
+        border-bottom: 3px solid var(--light-purple-color); 
+        padding-bottom: 0.6rem; 
+        margin-top: 3rem; 
+        margin-bottom: 1.8rem; 
+    }
+    h3 { 
+        font-size: 1.4em;
+        color: var(--secondary-color); 
+        margin-top: 2.5rem; 
+        margin-bottom: 1.2rem; 
+        font-weight: 500;
+    }
+    h4 {
+        font-size: 1.15em;
+        color: var(--primary-color);
+        margin-top: 1.5rem;
+        margin-bottom: 0.8rem;
+        font-weight: 500;
+    }
 
-    a { color: var(--secondary-color); text-decoration: none; transition: all 0.2s ease; }
-    a:hover { color: #5e35b1; text-decoration: underline; }
+    p {
+        margin-bottom: 1.2em;
+        color: var(--text-light-color);
+    }
 
+    a { color: var(--secondary-color); text-decoration: none; transition: color 0.2s ease; }
+    a:hover { color: var(--accent-color); text-decoration: none; } /* Quitamos subrayado por defecto en hover general */
+
+    /* Navbar Styles */
     .navbar {
       background-color: var(--primary-color);
-      padding: 0 0.8rem; 
+      padding: 0 1rem; 
       display: flex;
       align-items: center;
       justify-content: space-between; 
-      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-      height: 60px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15); /* Sombra más notable */
+      height: 65px; /* Un poco más alto */
       position: sticky;
       top: 0;
       z-index: 1000;
@@ -71,19 +124,20 @@
       align-items: center;
       color: var(--navbar-text-color);
       text-decoration: none;
-      font-size: 1.3em; 
-      font-weight: 500; 
+      font-family: var(--font-primary);
+      font-size: 1.5em; 
+      font-weight: 600; 
       white-space: nowrap; 
     }
 
     .navbar-brand img {
-      height: 28px; 
-      width: 28px;
-      margin-right: 6px; 
-      border-radius: 4px;
+      height: 32px; 
+      width: 32px;
+      margin-right: 10px; 
+      border-radius: 5px;
     }
     
-    .navbar-brand span { font-weight: 500; }
+    .navbar-brand span { font-weight: 600; }
 
     .navbar-menu-container { 
         display: flex;
@@ -100,19 +154,23 @@
     .navbar-links a {
       color: var(--navbar-text-color);
       text-decoration: none;
-      padding: 0.5rem 0.6rem; 
-      border-radius: 4px;
-      transition: background-color 0.3s ease, color 0.3s ease;
+      padding: 0.7rem 0.9rem; /* Más padding */
+      border-radius: 5px;
+      transition: background-color 0.2s ease, color 0.2s ease;
+      font-family: var(--font-primary);
       font-weight: 500;
-      font-size: 0.8rem; 
+      font-size: 0.9rem; 
       display: block;
       white-space: nowrap;
+      letter-spacing: 0.5px; /* Pequeño espaciado entre letras */
     }
 
-    .navbar-links a:hover, 
+    .navbar-links a:hover {
+      background-color: var(--navbar-hover-bg);
+    }
     .navbar-links a.active {
       background-color: var(--navbar-active-bg);
-      color: var(--navbar-text-color);
+      font-weight: 600; /* Resaltar más el activo */
     }
     
     .navbar-toggle { 
@@ -120,9 +178,10 @@
       background: none;
       border: none;
       color: var(--navbar-text-color);
-      font-size: 1.8rem;
+      font-size: 2rem; /* Más grande */
       cursor: pointer;
-      margin-left: 8px; 
+      margin-left: 10px; 
+      padding: 5px;
     }
 
     .mobile-menu {
@@ -130,41 +189,131 @@
         list-style-type: none;
         margin: 0;
         padding: 0;
-        position: absolute;
-        top: 60px; 
+        position: fixed; /* Cambiado a fixed para que esté sobre todo */
+        top: 65px; 
         left: 0;
         right: 0;
-        background-color: var(--primary-color);
-        padding: 1rem 0;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-        border-top: 1px solid var(--secondary-color);
-        z-index: 999; /* Para que esté sobre el contenido pero debajo del navbar fijo */
+        bottom: 0; /* Ocupar toda la altura restante */
+        background-color: rgba(42, 13, 83, 0.98); /* Fondo del navbar principal con transparencia */
+        backdrop-filter: blur(5px); /* Efecto blur para el fondo */
+        padding-top: 1.5rem; /* Más padding superior */
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        z-index: 999; 
+        overflow-y: auto; /* Permitir scroll si hay muchos items */
     }
     .mobile-menu.active {
         display: flex; 
         flex-direction: column;
+        align-items: center; /* Centrar items */
     }
-    .mobile-menu li { width: 100%; text-align: center; }
-    .mobile-menu a { color: var(--navbar-text-color); text-decoration: none; padding: 0.8rem 1rem; display: block; border-bottom: 1px solid rgba(255,255,255,0.1); font-size: 0.9rem; }
-    .mobile-menu a:last-child { border-bottom: none; }
-    .mobile-menu a:hover, .mobile-menu a.active { background-color: var(--navbar-hover-bg); }
+    .mobile-menu li { width: 80%; text-align: center; margin-bottom: 0.5rem; }
+    .mobile-menu a { 
+        color: var(--navbar-text-color); 
+        text-decoration: none; 
+        padding: 1rem 1.5rem; /* Más padding */
+        display: block; 
+        border-radius: 6px;
+        font-family: var(--font-primary);
+        font-size: 1.1rem; /* Fuente más grande en móvil */
+        font-weight: 500;
+        transition: background-color 0.2s ease;
+    }
+    .mobile-menu a:hover, .mobile-menu a.active { 
+        background-color: var(--navbar-active-bg); 
+    }
 
-    footer { margin-top: 4rem; padding: 2rem 1rem; border-top: 1px solid var(--light-purple-color); text-align: center; color: #666; font-size: 0.9rem; background-color: #f1f1f1; }
-    .btn { display: inline-block; background-color: var(--secondary-color); color: white !important; padding: 0.8rem 1.5rem; border-radius: 5px; margin: 0.5rem 0; font-weight: bold; text-decoration: none; transition: background-color 0.2s ease, transform 0.2s ease; }
-    .btn:hover { background-color: #5e35b1; text-decoration: none; transform: translateY(-2px); }
-    .instagram-link { color: var(--instagram-color); font-weight: bold; }
-    .instagram-link:hover { color: #c13584; }
-    .instagram-icon { width: 18px; height: 18px; vertical-align: middle; margin-right: 5px; }
+    /* Footer */
+    footer { 
+        margin-top: 5rem; /* Más espacio antes del footer */
+        padding: 2.5rem 1rem; 
+        border-top: 1px solid var(--light-purple-color); 
+        text-align: center; 
+        color: var(--text-light-color); 
+        font-size: 0.9em; 
+        background-color: #eceaf0; /* Fondo sutilmente diferente */
+    }
+    footer p {
+        margin-bottom: 0.5em;
+        color: var(--text-light-color);
+    }
+    footer strong {
+        color: var(--primary-color);
+    }
+
+    /* Botones Generales */
+    .btn { 
+        display: inline-block; 
+        background-color: var(--secondary-color); 
+        color: white !important; 
+        padding: 0.9rem 1.8rem; /* Más padding */
+        border-radius: 6px; /* Bordes más redondeados */
+        margin: 0.8rem 0.2rem; 
+        font-family: var(--font-primary);
+        font-weight: 600; 
+        text-decoration: none; 
+        transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+        border: none;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .btn:hover { 
+        background-color: var(--accent-color); 
+        text-decoration: none; 
+        transform: translateY(-3px);
+        box-shadow: 0 4px 10px rgba(123, 31, 162, 0.3); /* Sombra con color del botón */
+    }
+    .btn.btn-primary { /* Botón con color primario */
+        background-color: var(--primary-color);
+    }
+    .btn.btn-primary:hover {
+        background-color: var(--secondary-color); /* Un poco más claro al hacer hover */
+        box-shadow: 0 4px 10px rgba(74, 20, 140, 0.4);
+    }
+
+    /* Instagram Link en Footer */
+    .instagram-link { 
+        display: inline-flex; /* Para alinear icono y texto */
+        align-items: center;
+        color: var(--instagram-color); 
+        font-weight: 600; 
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        transition: background-color 0.2s ease;
+    }
+    .instagram-link:hover { 
+        color: #c13584; 
+        background-color: rgba(225, 48, 108, 0.1);
+        text-decoration: none;
+    }
+    .instagram-icon { 
+        width: 20px; 
+        height: 20px; 
+        vertical-align: middle; 
+        margin-right: 8px; 
+    }
+    
+    /* Utilidades de espaciado */
+    .mt-1 { margin-top: 1rem !important; }
+    .mb-1 { margin-bottom: 1rem !important; }
+    /* ... (puedes añadir más si las necesitas) */
+
+    /* Estilos de transición para tarjetas generales (si se usa) */
     div[style*="box-shadow"] { transition: transform 0.3s ease, box-shadow 0.3s ease; }
     div[style*="box-shadow"]:hover { transform: translateY(-5px); }
   
-    @media (max-width: 1020px) { 
+    @media (max-width: 1050px) { /* Aumentado el breakpoint un poco más */
       .navbar-links { display: none; }
       .navbar-toggle { display: block; }
-      h1 { font-size: 2rem !important; }
-      img[style*="max-width: 50%;"] { max-width: 90% !important; }
+    }
+    @media (max-width: 768px) {
+      h1 { font-size: 2em; }
+      h2 { font-size: 1.6em; }
+      h3 { font-size: 1.3em; }
+      .content-wrapper { padding: 15px; margin-top: 20px; }
+      .btn { padding: 0.8rem 1.5rem; font-size: 0.95em;}
+
+      img[style*="max-width: 50%;"] { max-width: 90% !important; } /* Estos son de tu código original */
       img[style*="max-width: 90%;"] { max-width: 100% !important; }
-      .hero-cards { flex-direction: column; }
+      .hero-cards { flex-direction: column; } /* Específico de index.md, podría ir allí */
     }
   </style>
 </head>
@@ -181,7 +330,7 @@
             <li><a href="{{ '/fundamentos' | relative_url }}">Fundamentos</a></li>
             <li><a href="{{ '/etapas' | relative_url }}">Etapas</a></li>
             <li><a href="{{ '/rutinas' | relative_url }}">Rutinas</a></li>
-            <li><a href="{{ '/articulos' | relative_url }}">Artículos</a></li> <!-- CAMBIADO DE BLOG A ARTÍCULOS -->
+            <li><a href="{{ '/articulos' | relative_url }}">Artículos</a></li> 
             <li><a href="{{ '/beneficios' | relative_url }}">Beneficios</a></li>
             <li><a href="{{ '/recursos' | relative_url }}">Recursos</a></li>
             <li><a href="{{ '/faq' | relative_url }}">FAQ</a></li>
@@ -198,7 +347,7 @@
     <li><a href="{{ '/fundamentos' | relative_url }}">Fundamentos</a></li>
     <li><a href="{{ '/etapas' | relative_url }}">Etapas</a></li>
     <li><a href="{{ '/rutinas' | relative_url }}">Rutinas</a></li>
-    <li><a href="{{ '/articulos' | relative_url }}">Artículos</a></li> <!-- CAMBIADO DE BLOG A ARTÍCULOS -->
+    <li><a href="{{ '/articulos' | relative_url }}">Artículos</a></li>
     <li><a href="{{ '/beneficios' | relative_url }}">Beneficios</a></li>
     <li><a href="{{ '/recursos' | relative_url }}">Recursos</a></li>
     <li><a href="{{ '/faq' | relative_url }}">FAQ</a></li>
@@ -230,8 +379,10 @@
         mobileMenu.classList.toggle("active");
         if (mobileMenu.classList.contains("active")) {
           navbarToggle.innerHTML = "✕"; 
+          document.body.style.overflow = 'hidden'; // Evitar scroll del body cuando el menú móvil está abierto
         } else {
           navbarToggle.innerHTML = "☰"; 
+          document.body.style.overflow = '';
         }
       });
     }
@@ -245,23 +396,24 @@
       function setActiveLink(links) {
         links.forEach(link => {
           let linkHref = link.getAttribute("href");
-          if (linkHref.startsWith("./")) { linkHref = linkHref.substring(1); }
-          
-          let absoluteLinkHref = "";
-          if (linkHref.startsWith('/')) {
-              absoluteLinkHref = (siteBase + linkHref).replace(/\/+/g, '/');
-          } else {
-              absoluteLinkHref = (siteBase + (siteBase.endsWith('/') ? '' : '/') + linkHref).replace(/\/+/g, '/');
+          // Asegurarse de que el linkHref es absoluto desde la raíz del sitio
+          if (!linkHref.startsWith(siteBase) && linkHref.startsWith('/')) {
+            linkHref = siteBase + linkHref;
+          } else if (!linkHref.startsWith('/')) { // Para enlaces como "fundamentos.html"
+            let currentPathDir = currentLocation.substring(0, currentLocation.lastIndexOf('/'));
+            if (currentPathDir === "") currentPathDir = siteBase; // Si está en la raíz
+             // Esta lógica es compleja y puede fallar, es mejor usar {{ '/pagina' | relative_url }} siempre
           }
           
-          let normalizedLink = absoluteLinkHref.replace(/index\.html$/, '').replace(/\/$/, '');
-          let normalizedLocation = (siteBase + currentLocation).replace(/\/+/g, '/').replace(/index\.html$/, '').replace(/\/$/, '');
+          let absoluteLinkHref = link.href; // Usar la propiedad href resuelta por el navegador
 
-          if (normalizedLink === "" && siteBase !== "") { normalizedLink = siteBase; }
+          let normalizedLink = absoluteLinkHref.replace(/\/index\.html$/, '').replace(/\/$/, '');
+          let normalizedLocation = window.location.href.replace(/\/index\.html$/, '').replace(/\/$/, '');
           
-          if (normalizedLink === normalizedLocation) {
-            link.classList.add("active");
-          } else if (normalizedLink === siteBase && normalizedLocation === "") {
+          // Corrección para que el active funcione también en localhost sin nombre de repo
+          if (normalizedLink.endsWith(siteBase) && normalizedLocation.endsWith(siteBase)){ // Inicio en localhost
+             if(link.getAttribute('href') === "{{ '/' | relative_url }}") link.classList.add("active");
+          } else if (normalizedLink === normalizedLocation) {
             link.classList.add("active");
           }
         });
