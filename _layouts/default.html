@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>{{ page.title | default: site.title }} - El Antimétodo</title> <!-- Título OG más conciso -->
+  <title>{{ page.title | default: site.title }} - El Antimétodo</title>
   <meta property="og:title" content="{{ page.title | default: site.title }} - El Antimétodo">
   <meta property="og:description" content="{{ page.description | default: site.description }}">
   <meta property="og:image" content="https://luisem93.github.io/ElAntimetodo/assets/logo-social.jpg">
@@ -18,31 +18,29 @@
   <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/favicon-16x16.png?v=2' | relative_url }}">
   <link rel="apple-touch-icon" href="{{ '/assets/apple-touch-icon.png?v=2' | relative_url }}">
 
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 
   <style>
     :root {
-      --primary-color: #4a148c;    /* Morado Principal (más oscuro) */
-      --secondary-color: #7b1fa2;  /* Morado Secundario (más claro) */
-      --accent-color: #9c27b0;     /* Un morado intermedio para acentos si es necesario */
-      --light-purple-color: #d1c4e9;/* Morado Muy Claro (bordes, fondos sutiles) */
+      --primary-color: #4a148c;    
+      --secondary-color: #7b1fa2;  
+      --accent-color: #9c27b0;     
+      --light-purple-color: #d1c4e9;
       
-      --background-color: #f8f7fa; /* Un gris muy muy claro, casi blanco con tinte morado sutil */
+      --background-color: #f8f7fa; 
       --card-background: #ffffff;   
-      --text-color: #333333;        /* Gris oscuro para texto principal */
-      --text-light-color: #555555; /* Gris más claro para descripciones */
+      --text-color: #333333;        
+      --text-light-color: #555555; 
       
       --navbar-text-color: #ffffff;
       --navbar-hover-bg: var(--secondary-color);
-      --navbar-active-bg: var(--accent-color); /* Ligeramente diferente para el activo */
+      --navbar-active-bg: var(--accent-color); 
       
       --instagram-color: #E1306C;
-      --grey-border-color: #e0e0e0; /* Gris más claro para bordes sutiles */
+      --grey-border-color: #e0e0e0; 
 
-      /* Tipografía */
       --font-primary: 'Poppins', sans-serif;
       --font-secondary: 'Open Sans', sans-serif;
     }
@@ -52,26 +50,26 @@
     }
 
     body {
-      font-family: var(--font-secondary); /* Fuente base para el cuerpo */
+      font-family: var(--font-secondary); 
       margin: 0;
       padding: 0;
-      line-height: 1.7; /* Ligeramente más interlineado */
+      line-height: 1.7; 
       color: var(--text-color);
       background-color: var(--background-color);
-      -webkit-font-smoothing: antialiased; /* Mejor renderizado de fuentes */
+      -webkit-font-smoothing: antialiased; 
       -moz-osx-font-smoothing: grayscale;
     }
 
     .content-wrapper {
-      max-width: 850px; /* Un poco más de ancho para el contenido */
-      margin: 30px auto; /* Más margen superior */
+      max-width: 850px; 
+      margin: 30px auto; 
       padding: 20px;
     }
     
     h1, h2, h3, h4 { 
-        font-family: var(--font-primary); /* Fuente para encabezados */
+        font-family: var(--font-primary); 
         color: var(--primary-color); 
-        font-weight: 600; /* Un poco más de peso */
+        font-weight: 600; 
         line-height: 1.3;
     }
     h1 { font-size: 2.5em; margin-bottom: 0.8em; }
@@ -103,17 +101,16 @@
     }
 
     a { color: var(--secondary-color); text-decoration: none; transition: color 0.2s ease; }
-    a:hover { color: var(--accent-color); text-decoration: none; } /* Quitamos subrayado por defecto en hover general */
+    a:hover { color: var(--accent-color); text-decoration: none; }
 
-    /* Navbar Styles */
     .navbar {
       background-color: var(--primary-color);
       padding: 0 1rem; 
       display: flex;
       align-items: center;
       justify-content: space-between; 
-      box-shadow: 0 2px 8px rgba(0,0,0,0.15); /* Sombra más notable */
-      height: 65px; /* Un poco más alto */
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15); 
+      height: 65px; 
       position: sticky;
       top: 0;
       z-index: 1000;
@@ -126,8 +123,7 @@
       text-decoration: none;
       font-family: var(--font-primary);
       font-size: 1.5em; 
-      font-weight: 600; 
-      white-space: nowrap; 
+      /* font-weight: 600; QUITAMOS EL PESO FUERTE DEL CONTENEDOR GENERAL */
     }
 
     .navbar-brand img {
@@ -137,7 +133,9 @@
       border-radius: 5px;
     }
     
-    .navbar-brand span { font-weight: 600; }
+    .navbar-brand span { 
+        font-weight: 500; /* Peso medio para el texto "El Antimétodo" */
+    }
 
     .navbar-menu-container { 
         display: flex;
@@ -154,7 +152,7 @@
     .navbar-links a {
       color: var(--navbar-text-color);
       text-decoration: none;
-      padding: 0.7rem 0.9rem; /* Más padding */
+      padding: 0.7rem 0.9rem; 
       border-radius: 5px;
       transition: background-color 0.2s ease, color 0.2s ease;
       font-family: var(--font-primary);
@@ -162,7 +160,7 @@
       font-size: 0.9rem; 
       display: block;
       white-space: nowrap;
-      letter-spacing: 0.5px; /* Pequeño espaciado entre letras */
+      letter-spacing: 0.5px; 
     }
 
     .navbar-links a:hover {
@@ -170,7 +168,7 @@
     }
     .navbar-links a.active {
       background-color: var(--navbar-active-bg);
-      font-weight: 600; /* Resaltar más el activo */
+      font-weight: 600; 
     }
     
     .navbar-toggle { 
@@ -178,7 +176,7 @@
       background: none;
       border: none;
       color: var(--navbar-text-color);
-      font-size: 2rem; /* Más grande */
+      font-size: 2rem; 
       cursor: pointer;
       margin-left: 10px; 
       padding: 5px;
@@ -189,32 +187,32 @@
         list-style-type: none;
         margin: 0;
         padding: 0;
-        position: fixed; /* Cambiado a fixed para que esté sobre todo */
+        position: fixed; 
         top: 65px; 
         left: 0;
         right: 0;
-        bottom: 0; /* Ocupar toda la altura restante */
-        background-color: rgba(42, 13, 83, 0.98); /* Fondo del navbar principal con transparencia */
-        backdrop-filter: blur(5px); /* Efecto blur para el fondo */
-        padding-top: 1.5rem; /* Más padding superior */
+        bottom: 0; 
+        background-color: rgba(42, 13, 83, 0.98); 
+        backdrop-filter: blur(5px); 
+        padding-top: 1.5rem; 
         box-shadow: 0 4px 10px rgba(0,0,0,0.2);
         z-index: 999; 
-        overflow-y: auto; /* Permitir scroll si hay muchos items */
+        overflow-y: auto; 
     }
     .mobile-menu.active {
         display: flex; 
         flex-direction: column;
-        align-items: center; /* Centrar items */
+        align-items: center; 
     }
     .mobile-menu li { width: 80%; text-align: center; margin-bottom: 0.5rem; }
     .mobile-menu a { 
         color: var(--navbar-text-color); 
         text-decoration: none; 
-        padding: 1rem 1.5rem; /* Más padding */
+        padding: 1rem 1.5rem; 
         display: block; 
         border-radius: 6px;
         font-family: var(--font-primary);
-        font-size: 1.1rem; /* Fuente más grande en móvil */
+        font-size: 1.1rem; 
         font-weight: 500;
         transition: background-color 0.2s ease;
     }
@@ -222,15 +220,14 @@
         background-color: var(--navbar-active-bg); 
     }
 
-    /* Footer */
     footer { 
-        margin-top: 5rem; /* Más espacio antes del footer */
+        margin-top: 5rem; 
         padding: 2.5rem 1rem; 
         border-top: 1px solid var(--light-purple-color); 
         text-align: center; 
         color: var(--text-light-color); 
         font-size: 0.9em; 
-        background-color: #eceaf0; /* Fondo sutilmente diferente */
+        background-color: #eceaf0; 
     }
     footer p {
         margin-bottom: 0.5em;
@@ -240,13 +237,12 @@
         color: var(--primary-color);
     }
 
-    /* Botones Generales */
     .btn { 
         display: inline-block; 
         background-color: var(--secondary-color); 
         color: white !important; 
-        padding: 0.9rem 1.8rem; /* Más padding */
-        border-radius: 6px; /* Bordes más redondeados */
+        padding: 0.9rem 1.8rem; 
+        border-radius: 6px; 
         margin: 0.8rem 0.2rem; 
         font-family: var(--font-primary);
         font-weight: 600; 
@@ -259,19 +255,18 @@
         background-color: var(--accent-color); 
         text-decoration: none; 
         transform: translateY(-3px);
-        box-shadow: 0 4px 10px rgba(123, 31, 162, 0.3); /* Sombra con color del botón */
+        box-shadow: 0 4px 10px rgba(123, 31, 162, 0.3); 
     }
-    .btn.btn-primary { /* Botón con color primario */
+    .btn.btn-primary { 
         background-color: var(--primary-color);
     }
     .btn.btn-primary:hover {
-        background-color: var(--secondary-color); /* Un poco más claro al hacer hover */
+        background-color: var(--secondary-color); 
         box-shadow: 0 4px 10px rgba(74, 20, 140, 0.4);
     }
 
-    /* Instagram Link en Footer */
     .instagram-link { 
-        display: inline-flex; /* Para alinear icono y texto */
+        display: inline-flex; 
         align-items: center;
         color: var(--instagram-color); 
         font-weight: 600; 
@@ -291,16 +286,10 @@
         margin-right: 8px; 
     }
     
-    /* Utilidades de espaciado */
-    .mt-1 { margin-top: 1rem !important; }
-    .mb-1 { margin-bottom: 1rem !important; }
-    /* ... (puedes añadir más si las necesitas) */
-
-    /* Estilos de transición para tarjetas generales (si se usa) */
     div[style*="box-shadow"] { transition: transform 0.3s ease, box-shadow 0.3s ease; }
     div[style*="box-shadow"]:hover { transform: translateY(-5px); }
   
-    @media (max-width: 1050px) { /* Aumentado el breakpoint un poco más */
+    @media (max-width: 1050px) { 
       .navbar-links { display: none; }
       .navbar-toggle { display: block; }
     }
@@ -311,9 +300,9 @@
       .content-wrapper { padding: 15px; margin-top: 20px; }
       .btn { padding: 0.8rem 1.5rem; font-size: 0.95em;}
 
-      img[style*="max-width: 50%;"] { max-width: 90% !important; } /* Estos son de tu código original */
+      img[style*="max-width: 50%;"] { max-width: 90% !important; } 
       img[style*="max-width: 90%;"] { max-width: 100% !important; }
-      .hero-cards { flex-direction: column; } /* Específico de index.md, podría ir allí */
+      /* .hero-cards { flex-direction: column; } // Movido a index.md ya que es específico */
     }
   </style>
 </head>
@@ -379,7 +368,7 @@
         mobileMenu.classList.toggle("active");
         if (mobileMenu.classList.contains("active")) {
           navbarToggle.innerHTML = "✕"; 
-          document.body.style.overflow = 'hidden'; // Evitar scroll del body cuando el menú móvil está abierto
+          document.body.style.overflow = 'hidden'; 
         } else {
           navbarToggle.innerHTML = "☰"; 
           document.body.style.overflow = '';
@@ -395,23 +384,11 @@
 
       function setActiveLink(links) {
         links.forEach(link => {
-          let linkHref = link.getAttribute("href");
-          // Asegurarse de que el linkHref es absoluto desde la raíz del sitio
-          if (!linkHref.startsWith(siteBase) && linkHref.startsWith('/')) {
-            linkHref = siteBase + linkHref;
-          } else if (!linkHref.startsWith('/')) { // Para enlaces como "fundamentos.html"
-            let currentPathDir = currentLocation.substring(0, currentLocation.lastIndexOf('/'));
-            if (currentPathDir === "") currentPathDir = siteBase; // Si está en la raíz
-             // Esta lógica es compleja y puede fallar, es mejor usar {{ '/pagina' | relative_url }} siempre
-          }
-          
-          let absoluteLinkHref = link.href; // Usar la propiedad href resuelta por el navegador
-
+          let absoluteLinkHref = link.href; 
           let normalizedLink = absoluteLinkHref.replace(/\/index\.html$/, '').replace(/\/$/, '');
           let normalizedLocation = window.location.href.replace(/\/index\.html$/, '').replace(/\/$/, '');
           
-          // Corrección para que el active funcione también en localhost sin nombre de repo
-          if (normalizedLink.endsWith(siteBase) && normalizedLocation.endsWith(siteBase)){ // Inicio en localhost
+          if (normalizedLink.endsWith(siteBase) && normalizedLocation.endsWith(siteBase)){
              if(link.getAttribute('href') === "{{ '/' | relative_url }}") link.classList.add("active");
           } else if (normalizedLink === normalizedLocation) {
             link.classList.add("active");
