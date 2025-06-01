@@ -5,12 +5,15 @@ description: Respuestas a las dudas más comunes sobre El Antimétodo, el aprend
 ---
 
 <style>
-.faq-section {
-  margin-bottom: 2.5rem;
-  /* padding: 1.5rem;
-  background-color: var(--card-background);
+.faq-header-image {
+  display: block;
+  max-width: 250px; /* Ajusta según prefieras */
+  height: auto;
+  margin: 0 auto 1.5rem auto;
   border-radius: 8px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.05); */ /* Quitado el fondo de tarjeta para cada Q&A */
+}
+.faq-section {
+  /* No necesita estilos especiales si cada item tiene su borde */
 }
 .faq-item {
   margin-bottom: 2rem;
@@ -25,7 +28,7 @@ description: Respuestas a las dudas más comunes sobre El Antimétodo, el aprend
 .faq-question {
   font-family: var(--font-primary);
   color: var(--primary-color);
-  font-size: 1.3em; /* Más grande la pregunta */
+  font-size: 1.3em; 
   font-weight: 600;
   margin-bottom: 0.8rem;
   line-height: 1.4;
@@ -33,7 +36,7 @@ description: Respuestas a las dudas más comunes sobre El Antimétodo, el aprend
 .faq-answer p {
   font-family: var(--font-secondary);
   color: var(--text-light-color);
-  font-size: 1em; /* Tamaño de respuesta estándar */
+  font-size: 1em; 
   line-height: 1.7;
   margin-bottom: 1em;
 }
@@ -41,16 +44,25 @@ description: Respuestas a las dudas más comunes sobre El Antimétodo, el aprend
   margin-bottom: 0;
 }
 .faq-answer strong {
-    color: var(--secondary-color); /* Resaltar strong en respuestas */
+    color: var(--secondary-color); 
     font-weight: 600;
+}
+/* Para una imagen dentro de una respuesta del FAQ */
+.faq-answer-image {
+    display: block;
+    max-width: 80%; /* O un valor fijo como 300px */
+    margin: 1rem auto;
+    border-radius: 6px;
+    border: 1px solid var(--grey-border-color);
 }
 </style>
 
-<main class="content-wrapper"> <!-- Usar la clase global -->
+<main class="content-wrapper">
 
   <section style="text-align: center; padding: 2rem 1rem;">
     <h1>Preguntas Frecuentes (FAQ)</h1>
-    <p class="subtitle" style="font-size: 1.2em; color: var(--secondary-color);">Resolvemos tus dudas sobre El Antimétodo.</p>
+    <img src="{{ '/assets/faq-preguntas-respuestas.png' | relative_url }}" alt="Preguntas y Respuestas sobre El Antimétodo" class="faq-header-image">
+    <p class="subtitle" style="font-size: 1.2em; color: var(--secondary-color); margin-top: 0.5rem;">Resolvemos tus dudas sobre El Antimétodo.</p>
   </section>
 
   <section class="faq-section">
@@ -146,13 +158,16 @@ description: Respuestas a las dudas más comunes sobre El Antimétodo, el aprend
       <div class="faq-answer">
         <p>Es una experiencia muy común. Entender (input) y hablar (output) son habilidades relacionadas pero distintas. Con la inmersión, tu cerebro se entrena masivamente para la comprensión. Producir el idioma requiere "activar" ese conocimiento de una manera diferente.</p>
         <p>Aunque entiendas mucho, es normal que al principio hablar no se sienta tan natural. Es como si tuvieras todas las piezas del rompecabezas, pero ahora necesitas aprender a ensamblarlas activamente. Con la práctica específica de output (Etapa 4), esa comodidad y fluidez al hablar irán llegando.</p>
+        <!-- Ejemplo de cómo añadir una imagen dentro de una respuesta:
+        <img src="{{ '/assets/progreso-antes-despues.png' | relative_url }}" alt="Medición de progreso" class="faq-answer-image">
+        -->
       </div>
     </div>
 
     <div class="faq-item">
       <h3 class="faq-question">¿Puedo combinar este enfoque con otros métodos o cursos?</h3>
       <div class="faq-answer">
-        <p>Sí, el Antimétodo puede ser tu enfoque principal y complementarse con otras herramientas o incluso cursos, siempre que estos últimos no contradigan los principios fundamentales: <strong>prioridad al input comprensible masivo y disfrute del proceso.</strong></p>
+        <p>Sí, el Antimétodo puede ser tu enfoque principal y complementarse con otras herramientas o incluso cursos, siempre y cuando estos últimos no contradigan los principios fundamentales: <strong>prioridad al input comprensible masivo y disfrute del proceso.</strong></p>
         <p>Por ejemplo, un curso podría darte estructura inicial o la oportunidad de practicar output guiado, pero si consume todo tu tiempo y te aleja de la inmersión en contenido real que te gusta, podría no ser la mejor combinación. La clave es que cualquier actividad adicional apoye y no obstaculice tu exposición al idioma de forma natural.</p>
       </div>
     </div>
