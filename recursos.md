@@ -20,46 +20,51 @@ description: Herramientas, aplicaciones, mazos de Anki y fuentes de input para a
 }
 .resource-section h3 {
   color: var(--secondary-color);
-  margin-top: 1.8rem; /* Aumentado margen superior para h3 */
+  margin-top: 1.8rem; 
   margin-bottom: 1rem;
   border-bottom: 1px dashed var(--light-purple-color);
-  padding-bottom: 0.4rem; /* Aumentado padding inferior para h3 */
-  font-size: 1.3em; /* Ligeramente más grande h3 */
+  padding-bottom: 0.4rem; 
+  font-size: 1.3em; 
 }
 .resource-section h4 {
     color: var(--primary-color);
-    margin-top: 1.2rem; /* Aumentado margen superior para h4 */
+    margin-top: 1.2rem; 
     margin-bottom: 0.5rem;
-    font-size: 1.15em; /* Ligeramente más grande h4 */
+    font-size: 1.15em; 
+    /* Para alinear con logo si se usa */
+    /* display: flex; */
+    /* align-items: center; */
 }
 .resource-item {
-  margin-bottom: 1.2rem; /* Aumentado margen inferior */
+  margin-bottom: 1.2rem; 
 }
 .resource-item ul {
   list-style-type: disc;
-  padding-left: 25px; /* Más padding para listas */
+  padding-left: 25px; 
   margin-top: 0.5rem;
 }
 .resource-item li {
-  margin-bottom: 0.4rem; /* Más espacio entre ítems de lista */
+  margin-bottom: 0.4rem; 
+  display: flex; /* Para alinear logo dentro del li con el texto */
+  align-items: center;
 }
-.price-tag, .free-tag, .warning-tag, .note-tag { /* Añadido note-tag */
+.price-tag, .free-tag, .warning-tag, .note-tag { 
   display: inline-block;
-  padding: 0.2em 0.6em; /* Ajustado padding */
+  padding: 0.2em 0.6em; 
   font-size: 0.8em;
-  border-radius: 4px; /* Más redondeado */
-  margin-left: 5px;
+  border-radius: 4px; 
+  margin-left: 8px; /* Aumentado margen para tags */
   font-weight: bold;
-  vertical-align: middle; /* Mejor alineación con texto */
+  vertical-align: middle; 
 }
 .price-tag { background-color: #ffe0b2; color: #e65100; border: 1px solid #e65100; }
 .free-tag { background-color: #c8e6c9; color: #2e7d32; border: 1px solid #2e7d32; }
-.warning-tag strong { color: #ef5350; } /* Para el emoji de advertencia */
-.note-tag { background-color: #e3f2fd; color: #0d47a1; border: 1px solid #0d47a1; } /* Para notas/recomendaciones */
+.warning-tag strong { color: #ef5350; } 
+.note-tag { background-color: #e3f2fd; color: #0d47a1; border: 1px solid #0d47a1; }
 
 .resource-item p.description {
     font-size: 0.95em;
-    color: var(--text-light-color); /* Usando variable de color */
+    color: var(--text-light-color); 
     margin-top: 0.3rem;
     margin-bottom: 0.6rem;
     line-height: 1.6;
@@ -69,9 +74,25 @@ description: Herramientas, aplicaciones, mazos de Anki y fuentes de input para a
     color: #777;
     margin-top: 0.2rem;
 }
+
+/* Estilos para Logos en listas y títulos */
+.resource-logo {
+  width: 22px; /* Tamaño estándar para logos en listas */
+  height: 22px;
+  margin-right: 8px;
+  object-fit: contain; 
+  vertical-align: middle; /* Mejor alineación vertical con texto */
+  border-radius: 3px;
+}
+.resource-category > h3 > .resource-logo { /* Para logos en títulos H3 */
+    width: 26px;
+    height: 26px;
+    margin-right: 10px;
+}
+
 </style>
 
-<main class="content-wrapper"> <!-- Usar la clase global -->
+<main class="content-wrapper">
 
   <section style="text-align: center; padding: 2rem 1rem;">
     <h1>Recursos y Herramientas</h1>
@@ -82,8 +103,8 @@ description: Herramientas, aplicaciones, mazos de Anki y fuentes de input para a
   <section class="resource-section">
     <h2>⭐ Seguimiento de Tiempo (¡Esencial!)</h2>
     <div class="resource-item">
-      <h4>Refold Tracker</h4>
-      <p class="description">Aplicación para registrar tu tiempo de inmersión y estudio. ¡Clave para medir tu progreso y mantener la motivación!</p>
+      <h4><img src="{{ '/assets/logo-refold.png' | relative_url }}" alt="Logo Refold" class="resource-logo">Refold Tracker</h4>
+      <p class="description">Aplicación esencial para registrar tu tiempo de inmersión y estudio, ayudándote a medir tu progreso y mantener la motivación.</p>
       <ul>
         <li><a href="https://www.notion.so/refold/Descargar-la-App-de-Refold-ES-16d4fa7e6fbd4a909068c310a36df275" target="_blank" rel="noopener noreferrer">Información y Descarga (Notion de Refold)</a></li>
         <li><a href="https://play.google.com/store/apps/details?id=com.refoldla.habitsmobile&hl=en" target="_blank" rel="noopener noreferrer">Descargar en Play Store (Android)</a></li>
@@ -104,7 +125,7 @@ description: Herramientas, aplicaciones, mazos de Anki y fuentes de input para a
     <h2>Etapa 1: Preparación Previa</h2>
     
     <div class="resource-category">
-      <h3>Anki (Sistema de Repetición Espaciada)</h3>
+      <h3><img src="{{ '/assets/logo-anki.png' | relative_url }}" alt="Logo Anki" class="resource-logo">Anki (Sistema de Repetición Espaciada)</h3>
       <p class="description">Herramienta fundamental para memorizar vocabulario y frases de manera eficiente.</p>
       <div class="resource-item">
         <h4>Descargar Anki:</h4>
@@ -117,16 +138,16 @@ description: Herramientas, aplicaciones, mazos de Anki y fuentes de input para a
       <div class="resource-item">
         <h4>Mazos Recomendados para Anki:</h4>
         <ul>
-          <li><a href="https://refold.la/es/category/decks/" target="_blank" rel="noopener noreferrer">Mazos de Refold</a> <span class="price-tag">De pago ($20 USD aprox.)</span> - <em>Excelente calidad, vale completamente la pena.</em></li>
-          <li><a href="https://refold.link/community-deck-spanish" target="_blank" rel="noopener noreferrer">Mazo 1000 Palabras Inglés (Comunidad Refold)</a> <span class="free-tag">Gratis</span> <span class="warning-tag">⚠️</span> - <em>Mazo de la comunidad, basado en español. Revisar calidad.</em></li>
-          <li><a href="https://ankiweb.net/shared/info/539815993" target="_blank" rel="noopener noreferrer">Mazo 1000 Palabras (Inglés a Francés)</a> <span class="free-tag">Gratis</span> <span class="warning-tag">⚠️</span> - <em>Creado por la comunidad, revisar calidad.</em></li>
-          <li><a href="https://ankiweb.net/shared/info/1366502789" target="_blank" rel="noopener noreferrer">Mazo Fonética del Francés</a> <span class="free-tag">Gratis</span> - <em>Para practicar los sonidos del francés.</em></li>
+          <li><a href="https://refold.la/es/category/decks/" target="_blank" rel="noopener noreferrer"><img src="{{ '/assets/logo-refold.png' | relative_url }}" alt="Logo Refold" class="resource-logo">Mazos de Refold</a> <span class="price-tag">De pago ($20 USD aprox.)</span> - <em>Excelente calidad.</em></li>
+          <li><a href="https://refold.link/community-deck-spanish" target="_blank" rel="noopener noreferrer"><img src="{{ '/assets/logo-refold.png' | relative_url }}" alt="Logo Refold" class="resource-logo">Mazo 1000 Palabras Inglés (Comunidad Refold)</a> <span class="free-tag">Gratis</span> <span class="warning-tag">⚠️</span> - <em>Basado en español. Revisar calidad.</em></li>
+          <li><a href="https://ankiweb.net/shared/info/539815993" target="_blank" rel="noopener noreferrer">Mazo 1000 Palabras (Inglés a Francés)</a> <span class="free-tag">Gratis</span> <span class="warning-tag">⚠️</span> - <em>Comunidad.</em></li>
+          <li><a href="https://ankiweb.net/shared/info/1366502789" target="_blank" rel="noopener noreferrer">Mazo Fonética del Francés</a> <span class="free-tag">Gratis</span></li>
         </ul>
       </div>
     </div>
 
     <div class="resource-category">
-      <h3>Plataformas de Aprendizaje Inicial</h3>
+      <h3><img src="{{ '/assets/logo-busuu.png' | relative_url }}" alt="Logo Busuu" class="resource-logo">Plataformas de Aprendizaje Inicial</h3>
       <div class="resource-item">
         <h4>Busuu <span class="note-tag">Recomendada</span></h4>
         <p class="description">Para construir una base inicial en el idioma. Ofrece lecciones estructuradas.</p>
@@ -144,37 +165,37 @@ description: Herramientas, aplicaciones, mazos de Anki y fuentes de input para a
     <div class="resource-category">
       <h3>Asistentes de Lectura, Video y Contenido</h3>
       <div class="resource-item">
-        <h4>Language Reactor</h4>
-        <p class="description">Extensión para navegadores que añade subtítulos duales, diccionario emergente y más funciones a Netflix, YouTube, etc.</p>
+        <h4><img src="{{ '/assets/logo-language-reactor.png' | relative_url }}" alt="Logo Language Reactor" class="resource-logo">Language Reactor</h4>
+        <p class="description">Extensión para navegadores (Netflix, YouTube, etc.).</p>
         <ul>
           <li><a href="https://www.languagereactor.com" target="_blank" rel="noopener noreferrer">Sitio Web de Language Reactor</a></li>
-          <li>Tutorial de ejemplo por Mr. Salas: <a href="https://www.youtube.com/watch?v=99JDJeCovHs" target="_blank" rel="noopener noreferrer">Ver video</a></li>
+          <li>Tutorial por Mr. Salas: <a href="https://www.youtube.com/watch?v=99JDJeCovHs" target="_blank" rel="noopener noreferrer">Ver video</a></li>
         </ul>
       </div>
        <div class="resource-item">
-        <h4>LingQ</h4>
-        <p class="description">Plataforma para aprender mediante lectura y audio sincronizado. Permite importar contenido y crear "LingQs" (palabras que estás aprendiendo).</p>
+        <h4><img src="{{ '/assets/logo-lingq.png' | relative_url }}" alt="Logo LingQ" class="resource-logo">LingQ</h4>
+        <p class="description">Plataforma de lectura y audio sincronizado.</p>
         <ul>
             <li><a href="https://www.lingq.com/en/" target="_blank" rel="noopener noreferrer">Sitio Web de LingQ</a> <span class="price-tag">De pago (opción gratuita limitada)</span></li>
         </ul>
       </div>
       <div class="resource-item">
         <h4>Readlang</h4>
-        <p class="description">Alternativa a LingQ para lectura, traduce palabras y frases al instante. <span class="warning-tag">⚠️</span> <span class="note-tag">Recurso en exploración (no probado por el autor, pero recomendado).</span></p>
+        <p class="description">Alternativa a LingQ para lectura. <span class="warning-tag">⚠️</span> <span class="note-tag">En exploración.</span></p>
         <ul>
-            <li><a href="https://readlang.com" target="_blank" rel="noopener noreferrer">Sitio Web de Readlang</a> <span class="price-tag">De pago ($6 USD/mes, con versión gratuita limitada)</span></li>
+            <li><a href="https://readlang.com" target="_blank" rel="noopener noreferrer">Sitio Web de Readlang</a> <span class="price-tag">De pago ($6 USD/mes, opción gratuita limitada)</span></li>
         </ul>
       </div>
       <div class="resource-item">
         <h4>Lute (Alternativa Gratuita)</h4>
-        <p class="description">Software de código abierto para lectura intensiva, similar a LingQ. Requiere configuración inicial.</p>
+        <p class="description">Software de código abierto para lectura intensiva.</p>
         <ul>
             <li>Tutorial de Lute por Refold: <a href="https://www.youtube.com/watch?v=mN6kUfrKpvk" target="_blank" rel="noopener noreferrer">Ver video</a></li>
         </ul>
       </div>
       <div class="resource-item">
         <h4>Voracious</h4>
-        <p class="description">Reproductor de video local enfocado en el aprendizaje de idiomas. <span class="warning-tag">⚠️</span> <span class="note-tag">Aún no explorado por el autor, pero recomendado.</span></p>
+        <p class="description">Reproductor de video local para aprendizaje. <span class="warning-tag">⚠️</span> <span class="note-tag">En exploración.</span></p>
         <ul>
             <li><a href="https://voracious.app" target="_blank" rel="noopener noreferrer">Sitio Web de Voracious</a></li>
         </ul>
@@ -183,20 +204,20 @@ description: Herramientas, aplicaciones, mazos de Anki y fuentes de input para a
 
     <div class="resource-category">
         <h3>Plataformas de Streaming</h3>
-        <p class="description">Utiliza estas plataformas para encontrar series, películas y documentales en tu idioma meta.</p>
+        <p class="description">Para encontrar series, películas y documentales.</p>
         <ul>
-            <li><a href="https://www.netflix.com" target="_blank" rel="noopener noreferrer">Netflix</a></li>
+            <li><img src="{{ '/assets/logo-netflix.png' | relative_url }}" alt="Logo Netflix" class="resource-logo"><a href="https://www.netflix.com" target="_blank" rel="noopener noreferrer">Netflix</a></li>
             <li><a href="https://www.primevideo.com" target="_blank" rel="noopener noreferrer">Prime Video</a></li>
             <li><a href="https://www.disneyplus.com" target="_blank" rel="noopener noreferrer">Disney Plus</a></li>
-            <li><a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">YouTube</a> <span class="free-tag">Gratis</span></li>
-            <li><a href="https://www.france.tv" target="_blank" rel="noopener noreferrer">France.tv</a> <span class="free-tag">Gratis</span> - <em>Streaming de Francia (puede requerir VPN).</em></li>
+            <li><img src="{{ '/assets/logo-youtube.png' | relative_url }}" alt="Logo YouTube" class="resource-logo"><a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">YouTube</a> <span class="free-tag">Gratis</span></li>
+            <li><a href="https://www.france.tv" target="_blank" rel="noopener noreferrer">France.tv</a> <span class="free-tag">Gratis</span> - <em>(puede requerir VPN).</em></li>
         </ul>
     </div>
      <div class="resource-category">
         <h3>VPN (Para Acceder a Contenido Geobloqueado)</h3>
         <div class="resource-item">
-            <h4>Urban VPN</h4>
-            <p class="description">Herramienta para cambiar tu ubicación virtual y acceder a catálogos de contenido de otros países.</p>
+            <h4><img src="{{ '/assets/logo-urban-vpn.png' | relative_url }}" alt="Logo Urban VPN" class="resource-logo">Urban VPN</h4>
+            <p class="description">Cambia tu ubicación virtual.</p>
             <ul>
                 <li><a href="https://www.urban-vpn.com" target="_blank" rel="noopener noreferrer">Sitio Web de Urban VPN</a> <span class="free-tag">Gratis (con opciones de pago)</span></li>
             </ul>
@@ -206,8 +227,8 @@ description: Herramientas, aplicaciones, mazos de Anki y fuentes de input para a
     <div class="resource-category">
         <h3>Consejos de Inmersión Adicionales</h3>
         <ul>
-            <li>Crea una cuenta de YouTube nueva y configúrala para tu idioma y país meta para que el algoritmo te recomiende contenido relevante.</li>
-            <li>Cambia el idioma de tu cuenta de Netflix, teléfono y otros dispositivos al idioma meta.</li>
+            <li>Crea una cuenta de YouTube nueva para tu idioma meta.</li>
+            <li>Cambia el idioma de Netflix, teléfono y otros dispositivos.</li>
         </ul>
     </div>
   </section>
@@ -219,24 +240,22 @@ description: Herramientas, aplicaciones, mazos de Anki y fuentes de input para a
       <h3>Técnicas y Herramientas de Estudio Avanzado</h3>
       <div class="resource-item">
         <h4>Intensive Listening</h4>
-        <p class="description">Técnica para mejorar la comprensión auditiva detallada.</p>
         <ul>
           <li>Tutorial de Refold: <a href="https://www.youtube.com/watch?v=o8857j-RwhA" target="_blank" rel="noopener noreferrer">Ver video</a></li>
         </ul>
       </div>
       <div class="resource-item">
         <h4>Minado de Oraciones (Sentence Mining)</h4>
-        <p class="description">Proceso de extraer oraciones con una palabra desconocida (i+1) para estudiarlas en Anki.</p>
         <ul>
-          <li>Tutorial de ejemplo (manual): <a href="https://www.youtube.com/watch?v=0TKEytorfdY" target="_blank" rel="noopener noreferrer">Ver video</a></li>
-          <li><strong>Importante:</strong> Mina solo oraciones i+1. Traduce la oración completa (puedes usar IA para contexto) y no palabras aisladas.</li>
+          <li>Tutorial manual: <a href="https://www.youtube.com/watch?v=0TKEytorfdY" target="_blank" rel="noopener noreferrer">Ver video</a></li>
+          <li><strong>Importante:</strong> Mina solo oraciones i+1. Traduce la oración completa.</li>
         </ul>
       </div>
       <div class="resource-item">
         <h4>Herramientas para Minado Asistido/Automático:</h4>
         <ul>
-            <li><a href="https://migaku.com" target="_blank" rel="noopener noreferrer">Migaku</a> <span class="price-tag">De pago ($10 USD/mes aprox.)</span> - <em>Minado automático con video y audio.</em></li>
-            <li><a href="https://yomitan.wiki" target="_blank" rel="noopener noreferrer">Yomitan (Extensión)</a> <span class="free-tag">Gratis</span> <span class="warning-tag">⚠️</span> - <em>Mina palabras con definiciones, pero para el Antimétodo es mejor minar oraciones completas manualmente para el contexto.</em></li>
+            <li><a href="https://migaku.com" target="_blank" rel="noopener noreferrer">Migaku</a> <span class="price-tag">De pago</span></li>
+            <li><a href="https://yomitan.wiki" target="_blank" rel="noopener noreferrer">Yomitan (Extensión)</a> <span class="free-tag">Gratis</span> <span class="warning-tag">⚠️</span> - <em>Para Antimétodo, mejor minar oraciones completas.</em></li>
         </ul>
       </div>
     </div>
@@ -245,11 +264,10 @@ description: Herramientas, aplicaciones, mazos de Anki y fuentes de input para a
   <!-- INMERSIÓN PASIVA -->
   <section class="resource-section">
     <h2>Inmersión Pasiva (Recomendada desde Etapa 2)</h2>
-    <p class="description">Escucha contenido en tu idioma meta mientras realizas otras actividades.</p>
     <div class="resource-item">
       <h4>Plataformas de Podcasts:</h4>
       <ul>
-        <li>Spotify: Amplia variedad de podcasts en múltiples idiomas.</li>
+        <li><img src="{{ '/assets/logo-spotify.png' | relative_url }}" alt="Logo Spotify" class="resource-logo"><a href="https://www.spotify.com" target="_blank" rel="noopener noreferrer">Spotify</a></li>
         <li><a href="https://play.google.com/store/apps/details?id=com.bambuna.podcastaddict&hl=en" target="_blank" rel="noopener noreferrer">Podcast Addict (Android)</a> <span class="free-tag">Gratis</span></li>
         <li>Apple Podcasts (iOS) <span class="free-tag">Gratis</span></li>
       </ul>
@@ -257,8 +275,8 @@ description: Herramientas, aplicaciones, mazos de Anki y fuentes de input para a
     <div class="resource-item">
         <h4>Radio Online:</h4>
         <ul>
-            <li><a href="https://www.radiofrance.fr" target="_blank" rel="noopener noreferrer">Radio France</a> <span class="free-tag">Gratis</span> - <em>Emisoras de radio francesas.</em></li>
-            <li class="platforms">Aplicaciones disponibles en Play Store y App Store.</li>
+            <li><a href="https://www.radiofrance.fr" target="_blank" rel="noopener noreferrer">Radio France</a> <span class="free-tag">Gratis</span></li>
+            <li class="platforms" style="list-style-type:none; margin-left:-20px;"><em>(Aplicaciones disponibles en Play Store y App Store)</em></li>
         </ul>
     </div>
   </section>
@@ -271,30 +289,29 @@ description: Herramientas, aplicaciones, mazos de Anki y fuentes de input para a
        <div class="resource-item">
         <h4>Inteligencia Artificial (IA) para Conversar:</h4>
         <ul>
-          <li><a href="https://chatgpt.com" target="_blank" rel="noopener noreferrer">ChatGPT</a> - <em>Ideal para práctica escrita y algunas funciones de voz.</em></li>
-          <li><a href="https://character.ai" target="_blank" rel="noopener noreferrer">Character.ai</a> - <em>Conversa con personajes de IA en diferentes roles.</em></li>
+          <li><img src="{{ '/assets/logo-chatgpt.png' | relative_url }}" alt="Logo ChatGPT" class="resource-logo"><a href="https://chatgpt.com" target="_blank" rel="noopener noreferrer">ChatGPT</a></li>
+          <li><a href="https://character.ai" target="_blank" rel="noopener noreferrer">Character.ai</a></li>
           <li><a href="https://www.issen.com/es/" target="_blank" rel="noopener noreferrer">Issen (Tutor IA)</a> <span class="price-tag">De pago</span></li>
         </ul>
       </div>
       <div class="resource-item">
         <h4>Intercambio de Idiomas con Nativos <span class="free-tag">Gratis</span></h4>
-        <p class="description">Plataformas para conectar y hablar con hablantes nativos de tu idioma meta.</p>
         <ul>
-          <li><a href="https://tandem.net/es" target="_blank" rel="noopener noreferrer">Tandem</a></li>
+          <li><img src="{{ '/assets/logo-tandem.png' | relative_url }}" alt="Logo Tandem" class="resource-logo"><a href="https://tandem.net/es" target="_blank" rel="noopener noreferrer">Tandem</a></li>
           <li><a href="https://www.hellotalk.com" target="_blank" rel="noopener noreferrer">HelloTalk</a></li>
-          <li><a href="https://www.episoden.com" target="_blank" rel="noopener noreferrer">Episoden</a> - <em>Conversaciones grupales.</em></li>
-          <li><a href="https://www.speaky.com" target="_blank" rel="noopener noreferrer">Speaky</a> <span class="warning-tag">⚠️</span> <span class="note-tag">Aún no explorado por el autor, pero recomendado.</span></li>
-          <li><a href="https://www.lingbe.com" target="_blank" rel="noopener noreferrer">Lingbe</a> - <em>Llamadas con nativos.</em> (Apps en Play Store y App Store)</li>
+          <li><a href="https://www.episoden.com" target="_blank" rel="noopener noreferrer">Episoden</a></li>
+          <li><a href="https://www.speaky.com" target="_blank" rel="noopener noreferrer">Speaky</a> <span class="warning-tag">⚠️</span> <span class="note-tag">En exploración.</span></li>
+          <li><a href="https://www.lingbe.com" target="_blank" rel="noopener noreferrer">Lingbe</a> (Apps disponibles)</li>
           <li><a href="https://www.conversationexchange.com" target="_blank" rel="noopener noreferrer">Conversation Exchange</a></li>
           <li><a href="https://language.exchange" target="_blank" rel="noopener noreferrer">Language.exchange</a></li>
-          <li>Discord: Busca servidores dedicados al aprendizaje de tu idioma meta.</li>
+          <li>Discord: Busca servidores dedicados.</li>
         </ul>
       </div>
       <div class="resource-item">
         <h4>Clases y Tutores <span class="price-tag">De Pago</span></h4>
         <ul>
-          <li><a href="https://www.italki.com/es" target="_blank" rel="noopener noreferrer">italki</a> - <em>Encuentra tutores y profesores nativos.</em></li>
-          <li><a href="https://www.cambly.com/english?lang=es" target="_blank" rel="noopener noreferrer">Cambly</a> - <em>Clases de inglés con tutores nativos.</em></li>
+          <li><img src="{{ '/assets/logo-italki.png' | relative_url }}" alt="Logo italki" class="resource-logo"><a href="https://www.italki.com/es" target="_blank" rel="noopener noreferrer">italki</a></li>
+          <li><a href="https://www.cambly.com/english?lang=es" target="_blank" rel="noopener noreferrer">Cambly</a></li>
         </ul>
       </div>
     </div>
@@ -303,16 +320,16 @@ description: Herramientas, aplicaciones, mazos de Anki y fuentes de input para a
         <div class="resource-item">
             <h4>Recursos Generales de Pronunciación:</h4>
             <ul>
-                <li><a href="https://youglish.com" target="_blank" rel="noopener noreferrer">Youglish</a> - <em>Revisa pronunciación de palabras en videos reales de YouTube.</em></li>
-                <li><a href="https://forvo.com" target="_blank" rel="noopener noreferrer">Forvo</a> - <em>Escucha palabras pronunciadas por nativos de todo el mundo.</em></li>
+                <li><a href="https://youglish.com" target="_blank" rel="noopener noreferrer">Youglish</a></li>
+                <li><a href="https://forvo.com" target="_blank" rel="noopener noreferrer">Forvo</a></li>
             </ul>
         </div>
         <div class="resource-item">
             <h4>Aplicaciones y Técnicas Específicas:</h4>
             <ul>
-                <li><a href="https://elsaspeak.com/en/" target="_blank" rel="noopener noreferrer">Elsa Speak (Inglés)</a> <span class="price-tag">De pago (opción gratuita limitada)</span> - <em>App con IA para mejorar pronunciación en inglés.</em></li>
-                <li>Flow-verlapping (Técnica): <a href="https://www.youtube.com/watch?v=17Z0qMuMOzA" target="_blank" rel="noopener noreferrer">Tutorial por Mr. Salas</a> - <em>Graba fragmentos y repite para mejorar.</em></li>
-                <li>Shadowing (Técnica): <a href="https://www.youtube.com/watch?v=8qx_hnAGc-k" target="_blank" rel="noopener noreferrer">Setup y Tutorial Óptimo</a> - <em>Imita el habla nativa en tiempo real.</em></li>
+                <li><a href="https://elsaspeak.com/en/" target="_blank" rel="noopener noreferrer">Elsa Speak (Inglés)</a> <span class="price-tag">De pago (opción gratuita limitada)</span></li>
+                <li>Flow-verlapping: <a href="https://www.youtube.com/watch?v=17Z0qMuMOzA" target="_blank" rel="noopener noreferrer">Tutorial por Mr. Salas</a></li>
+                <li>Shadowing: <a href="https://www.youtube.com/watch?v=8qx_hnAGc-k" target="_blank" rel="noopener noreferrer">Setup y Tutorial Óptimo</a></li>
             </ul>
         </div>
     </div>
@@ -322,25 +339,24 @@ description: Herramientas, aplicaciones, mazos de Anki y fuentes de input para a
   <section class="resource-section">
     <h2>💡 Apoyo Extra y Guías Adicionales</h2>
     <div class="resource-item">
-      <h4>Guías de Idiomas de Refold</h4>
-      <p class="description">Guías detalladas y hojas de ruta para aprender idiomas específicos con el enfoque de Refold (similar al Antimétodo).</p>
+      <h4><img src="{{ '/assets/logo-refold.png' | relative_url }}" alt="Logo Refold" class="resource-logo">Guías de Idiomas de Refold</h4>
       <ul>
         <li><a href="https://refold.la/es/get-started/" target="_blank" rel="noopener noreferrer">Ver Guías en Refold.la</a></li>
       </ul>
     </div>
     <div class="resource-item">
       <h4>AJATT (All Japanese All The Time)</h4>
-      <p class="description">Método de inmersión profunda, especialmente para japonés. <span class="warning-tag">⚠️</span> <em>Enfoque muy intensivo (más de 5 horas/día).</em></p>
+      <p class="description"><span class="warning-tag">⚠️</span> <em>Enfoque muy intensivo.</em></p>
       <ul>
-        <li><a href="https://tatsumoto-ren.github.io/blog/whats-ajatt.html" target="_blank" rel="noopener noreferrer">¿Qué es AJATT? (Explicación en Tatsumoto Ren)</a></li>
+        <li><a href="https://tatsumoto-ren.github.io/blog/whats-ajatt.html" target="_blank" rel="noopener noreferrer">¿Qué es AJATT?</a></li>
       </ul>
     </div>
      <div class="resource-item">
-      <h4>Canales de YouTube sobre Inmersión y Aprendizaje de Idiomas:</h4>
+      <h4>Canales de YouTube sobre Inmersión:</h4>
       <ul>
         <li><a href="https://www.youtube.com/@MrSalas" target="_blank" rel="noopener noreferrer">Mr. Salas</a></li>
         <li><a href="https://www.youtube.com/@mattvsjapan" target="_blank" rel="noopener noreferrer">Matt vs Japan</a></li>
-        <li><a href="https://www.youtube.com/@Refold" target="_blank" rel="noopener noreferrer">Refold</a></li>
+        <li><img src="{{ '/assets/logo-refold.png' | relative_url }}" alt="Logo Refold" class="resource-logo"><a href="https://www.youtube.com/@Refold" target="_blank" rel="noopener noreferrer">Refold</a></li>
       </ul>
     </div>
   </section>
