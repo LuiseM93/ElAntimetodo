@@ -31,7 +31,7 @@ description: Ejemplos de rutinas y una herramienta interactiva para diseñar tu 
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 .principles-list img.principle-icon {
-  width: 32px; /* Tamaño de iconos de principios */
+  width: 32px; 
   height: 32px;
   margin-right: 12px;
   object-fit: contain;
@@ -49,7 +49,7 @@ description: Ejemplos de rutinas y una herramienta interactiva para diseñar tu 
   border: 1px solid var(--light-purple-color);
 }
 .accordion-item input[type="checkbox"] {
-  display: none; /* Ocultar el checkbox real */
+  display: none; 
 }
 .accordion-title {
   display: flex;
@@ -57,32 +57,34 @@ description: Ejemplos de rutinas y una herramienta interactiva para diseñar tu 
   padding: 1rem 1.2rem;
   cursor: pointer;
   font-family: var(--font-primary);
-  font-size: 1.3em;
+  font-size: 1.25em; /* Ligeramente más pequeño para nombres largos */
   font-weight: 600;
   color: var(--primary-color);
   transition: background-color 0.2s ease;
-  border-radius: 8px 8px 0 0; /* Redondeo solo arriba si no está expandido */
+  border-radius: 8px 8px 0 0; 
 }
 .accordion-title:hover {
-  background-color: #f0e6f6; /* Morado muy pálido al hover */
+  background-color: #f0e6f6; 
 }
 .accordion-title img.routine-icon {
-  width: 40px; /* Iconos para cada rutina */
-  height: 40px;
-  margin-right: 15px;
+  width: 36px; /* Ajustado tamaño de iconos de rutina */
+  height: 36px;
+  margin-right: 12px; /* Menos margen */
   object-fit: contain;
+  border-radius: 4px; /* Pequeño redondeo si la imagen tiene fondo */
 }
-.accordion-title::after { /* Flecha del acordeón */
-  content: '\\25BC'; /* Flecha hacia abajo ▼ */
+.accordion-title::after { 
+  content: '▼'; /* Flecha hacia abajo */
   font-size: 0.9em;
   margin-left: auto;
   transition: transform 0.3s ease;
+  padding-left: 10px; /* Espacio para la flecha */
 }
 .accordion-item input[type="checkbox"]:checked ~ .accordion-title::after {
-  transform: rotate(180deg); /* Flecha hacia arriba ▲ */
+  transform: rotate(180deg); 
 }
 .accordion-item input[type="checkbox"]:checked ~ .accordion-title {
-    background-color: var(--light-purple-color); /* Fondo más oscuro cuando está activo */
+    background-color: var(--light-purple-color); 
     color: var(--primary-color);
     border-bottom: 1px solid var(--primary-color);
     border-radius: 8px 8px 0 0;
@@ -92,12 +94,12 @@ description: Ejemplos de rutinas y una herramienta interactiva para diseñar tu 
   overflow: hidden;
   padding: 0 1.5rem;
   transition: max-height 0.4s ease-out, padding 0.3s ease-out;
-  background-color: white; /* Fondo del contenido */
+  background-color: white; 
   border-top: 1px solid var(--light-purple-color);
   border-radius: 0 0 8px 8px;
 }
 .accordion-item input[type="checkbox"]:checked ~ .accordion-content {
-  max-height: 2000px; /* Altura suficiente para el contenido */
+  max-height: 2000px; 
   padding: 1.5rem;
 }
 .accordion-content h4 {
@@ -110,12 +112,13 @@ description: Ejemplos de rutinas y una herramienta interactiva para diseñar tu 
     padding-left: 5px;
 }
 .accordion-content .warning-text {
-    color: #c0392b; /* Rojo para advertencias */
+    color: #c0392b; 
     font-weight: bold;
     background-color: #fadbd8;
     padding: 0.5rem;
     border-radius: 4px;
     border-left: 3px solid #c0392b;
+    margin-top: 1rem;
 }
 
 /* Estilos para la Herramienta IA */
@@ -150,14 +153,14 @@ description: Ejemplos de rutinas y una herramienta interactiva para diseñar tu 
   margin-right: 12px;
 }
 .ia-tool-section .prompt-box {
-  background-color: #2d2d2d; /* Fondo oscuro para el prompt */
+  background-color: #2d2d2d; 
   color: #f0f0f0;
   padding: 1rem 1.5rem;
   border-radius: 6px;
   font-family: 'Courier New', Courier, monospace;
   font-size: 0.9em;
   line-height: 1.6;
-  white-space: pre-wrap; /* Para respetar saltos de línea y espacios */
+  white-space: pre-wrap; 
   word-wrap: break-word;
   margin-top: 1rem;
   position: relative;
@@ -211,8 +214,8 @@ description: Ejemplos de rutinas y una herramienta interactiva para diseñar tu 
       <div class="accordion-item">
         <input type="checkbox" id="accordion-optima" name="accordion-group">
         <label for="accordion-optima" class="accordion-title">
-          <img src="{{ '/assets/etapa1-preparacion-cerebro.png' | relative_url }}" alt="Rutina Óptima" class="routine-icon"> <!-- Reemplazar con rutina-optima-antimetodo.png si la tienes -->
-          A. Rutina "El Camino Óptimo Antimétodo"
+          <img src="{{ '/assets/rutinas-principio-disfrute.png' | relative_url }}" alt="Rutina Óptima" class="routine-icon"> <!-- IMAGEN ACTUALIZADA -->
+          A. "La Rutina Óptima para El Antimétodo" <!-- NOMBRE ACTUALIZADO -->
         </label>
         <div class="accordion-content">
           <h4>El equilibrio ideal para un progreso sólido, sostenible y disfrutable.</h4>
@@ -249,15 +252,15 @@ description: Ejemplos de rutinas y una herramienta interactiva para diseñar tu 
         </div>
       </div>
 
-      <!-- Rutina B: Guerrero del Tiempo Limitado -->
+      <!-- Rutina B: Compacta -->
       <div class="accordion-item">
-        <input type="checkbox" id="accordion-ocupado" name="accordion-group">
-        <label for="accordion-ocupado" class="accordion-title">
-          <img src="{{ '/assets/etapa2-inmersion-audifonos.png' | relative_url }}" alt="Rutina Tiempo Limitado" class="routine-icon"> <!-- Reemplazar con rutina-tiempo-limitado.png si la tienes -->
-          B. Rutina "Guerrero del Tiempo Limitado"
+        <input type="checkbox" id="accordion-compacta" name="accordion-group">
+        <label for="accordion-compacta" class="accordion-title">
+          <img src="{{ '/assets/rutina-supremacia-compacta.png' | relative_url }}" alt="Rutina Compacta" class="routine-icon"> <!-- IMAGEN ACTUALIZADA -->
+          B. "Tiempo Justo, Resultados Máximos: La Supremacía del Antimétodo" <!-- NOMBRE ACTUALIZADO -->
         </label>
         <div class="accordion-content">
-          <h4>Maximizando cada minuto. Ideal si tu agenda es apretada.</h4>
+          <h4>Maximizando cada minuto. Ideal si tu agenda es apretada pero tu determinación es grande.</h4>
           <p><strong>Para quién es:</strong> Estudiantes, profesionales ocupados, padres, etc., con solo 30-60 minutos activos al día.</p>
           <p><strong>Enfoque Principal:</strong> Maximizar eficiencia del input activo de calidad. Integrar inmersión pasiva inteligentemente. Calidad sobre cantidad en el input activo.</p>
           <h4>Ejemplo de Distribución (30-60 minutos activos + pasivo):</h4>
@@ -275,21 +278,19 @@ description: Ejemplos de rutinas y una herramienta interactiva para diseñar tu 
       <div class="accordion-item">
         <input type="checkbox" id="accordion-extrema" name="accordion-group">
         <label for="accordion-extrema" class="accordion-title">
-          <img src="{{ '/assets/etapa3-freeflow-ondas.png' | relative_url }}" alt="Rutina Inmersión Extrema" class="routine-icon"> <!-- Reemplazar con rutina-inmersion-extrema.png si la tienes -->
+          <img src="{{ '/assets/rutina-inmersion-extrema.png' | relative_url }}" alt="Rutina Inmersión Extrema" class="routine-icon"> <!-- IMAGEN ACTUALIZADA -->
           C. Rutina "Inmersión Total Extrema (Estilo AJATT)"
         </label>
         <div class="accordion-content">
           <p class="warning-text"><strong>⚠️ ADVERTENCIA:</strong> Este enfoque es extremadamente demandante, no para todos, y puede llevar al burnout. Es para casos muy específicos con mucho tiempo libre y alta motivación.</p>
-          <h4>Para los más dedicados y con circunstancias especiales.</h4>
+          <h4>Para los más dedicados y con circunstancias especiales: Es literalmente vivir en el idioma.</h4> <!-- DESCRIPCIÓN ACTUALIZADA -->
           <p><strong>Para quién es:</strong> Personas con masivo tiempo libre (5-8h+ diarias) dispuestas a hacer del idioma su foco principal.</p>
-          <p><strong>Enfoque Principal:</strong> "Todo el día, todos los días". Maximizar exposición.</p>
+          <p><strong>Enfoque Principal:</strong> "Todo el día, todos los días". Maximizar exposición. Cambiar el idioma de todos tus dispositivos, consumir TODO el entretenimiento en el idioma meta, pensar activamente en el idioma. El idioma se vuelve el aire que respiras.</p>
           <h4>Ejemplo de Distribución:</h4>
           <ul>
             <li>Bloques Largos de Inmersión Activa: Múltiples episodios, películas, horas de videojuegos, lectura extensiva.</li>
             <li>Minado Intensivo de Oraciones para Anki.</li>
             <li>Inmersión Pasiva Constante: Audio de fondo casi todo el tiempo.</li>
-            <li>Cambio del Entorno: Teléfono, PC, redes sociales, todo en idioma meta.</li>
-            <li>Pensar en el Idioma Meta: Narrar el día, diálogos internos.</li>
           </ul>
           <h4>Consejos Específicos:</h4>
           <p>Varía el contenido, descansa, escucha a tu cuerpo/mente, busca comunidad de apoyo. Entiende que es un "sprint" dentro de un maratón.</p>
@@ -325,25 +326,37 @@ description: Ejemplos de rutinas y una herramienta interactiva para diseñar tu 
       <p>Una vez tengas tus respuestas, copia el siguiente comando y pégalo en ChatGPT (o una IA similar), reemplazando la información <strong>[ENTRE CORCHETES AZULES Y MAYÚSCULAS]</strong> con TUS respuestas del Paso 1.</p>
       <div class="prompt-box">
         <button class="copy-button" onclick="copyPromptToClipboard()">Copiar</button>
-        <span id="promptToCopy">Hola ChatGPT, quiero que me ayudes a diseñar un horario semanal detallado para aprender <strong>[IDIOMA META]</strong> utilizando "El Antimétodo". Actualmente estoy en la <strong>[ETAPA ACTUAL DEL ANTIMÉTODO]</strong>. Mi objetivo es dedicar al menos <strong>[TIEMPO DE INMERSIÓN ACTIVA DIARIO/SEMANAL]</strong> a la inmersión activa.
+        <span id="promptToCopy">Hola ChatGPT, necesito tu ayuda para diseñar un horario semanal DETALLADO y ESTRUCTURADO para aprender <strong>[IDIOMA META]</strong> utilizando los principios de "El Antimétodo". Actualmente me encuentro en la <strong>[ETAPA ACTUAL DEL ANTIMÉTODO: Ej. Etapa 1, Etapa 2, Etapa 3 o Etapa 4]</strong>. Mi objetivo principal es dedicar aproximadamente <strong>[NÚMERO DE HORAS]</strong> horas diarias a la Inmersión Activa, lo que suma <strong>[NÚMERO DE HORAS TOTALES]</strong> horas semanales.
 
-El Antimétodo se basa en el input comprensible masivo a través de contenido que disfruto, como <strong>[MIS TIPOS DE CONTENIDO PREFERIDO]</strong>. También puedo usar Anki y realizar inmersión pasiva.
+**Principios Clave del Antimétodo a Considerar:**
+1.  **Inmersión Activa:** Es el bloque de tiempo más importante. Aquí consumo contenido que disfruto y que es comprensible para mí (series, películas, YouTube, podcasts, audiolibros, videojuegos, lectura). **En el horario, solo etiqueta estos bloques como "Inmersión Activa (Contenido a elección)" sin especificar el tipo de contenido.**
+2.  **Anki:** Para repasar vocabulario o frases minadas. Es un bloque corto.
+3.  **Inmersión Pasiva:** Escuchar el idioma de fondo mientras realizo otras actividades. Etiqueta estos bloques como "Inmersión Pasiva".
+4.  **(Solo si estoy en Etapa 4) Producción:** Práctica de habla o escritura. Etiqueta estos bloques como "Práctica de Producción".
 
-Aquí está mi disponibilidad y preferencias:
-1. Bloques para Inmersión Activa Concentrada: <strong>[RESPUESTA PREGUNTA 4]</strong>
-2. Momentos para Anki/Estudio Ligero: <strong>[RESPUESTA PREGUNTA 5]</strong>
-3. Momentos para Inmersión Pasiva: <strong>[RESPUESTA PREGUNTA 6]</strong>
-4. Días de Descanso o Imposibles: <strong>[RESPUESTA PREGUNTA 7]</strong>
-5. (Opcional) Mi Horario General: <strong>[RESPUESTA PREGUNTA 8]</strong>
+**Mi Disponibilidad y Preferencias:**
+1.  Bloques de tiempo donde puedo realizar **Inmersión Activa Concentrada** (sin interrupciones, con acceso a dispositivo): <strong>[RESPUESTA PREGUNTA 4]</strong>
+2.  Momentos ideales para **Anki** (bloques cortos de 10-20 minutos): <strong>[RESPUESTA PREGUNTA 5]</strong>
+3.  Momentos donde puedo realizar **Inmersión Pasiva**: <strong>[RESPUESTA PREGUNTA 6]</strong>
+4.  Días de la semana que son imposibles para estudiar o que designo como descanso total: <strong>[RESPUESTA PREGUNTA 7]</strong>
+5.  (Opcional) Mi horario general de compromisos fijos (trabajo, estudio, etc.): <strong>[RESPUESTA PREGUNTA 8]</strong>
 
-Por favor, organiza esta información en una tabla de horario semanal (Lunes a Domingo). La tabla debe mostrar las horas y las actividades específicas del Antimétodo asignadas a cada bloque de tiempo. Prioriza la inmersión activa con el contenido que me gusta. Incluye Anki y sugiere momentos para la inmersión pasiva. Si estoy en Etapa 4, incluye también bloques para producción. Asegúrate de que el total de tiempo de inmersión activa se acerque a mi objetivo. Dame el horario en formato de tabla Markdown.</span>
+**Instrucciones Específicas para la Tabla del Horario:**
+*   Organiza la información en una tabla de horario semanal (Lunes a Domingo).
+*   La primera columna debe ser la "Hora" (ej. 7:00-8:00, 8:00-9:00, etc.). Las siguientes columnas serán los días de la semana.
+*   **Asigna las horas de Inmersión Activa DENTRO de los bloques de tiempo que te indiqué para ello, intentando alcanzar mi objetivo diario/semanal.**
+*   Si un bloque de tiempo designado para Inmersión Activa es más largo que mi objetivo diario, etiqueta el tiempo sobrante como "Tiempo Libre / Proyectos Personales" o déjalo en blanco.
+*   Incluye los bloques de "Anki" y "Inmersión Pasiva" en los momentos que te indiqué.
+*   Si estoy en Etapa 4, incluye "Práctica de Producción".
+*   **NO detalles el tipo de contenido para la Inmersión Activa (NO pongas "ver Netflix" o "escuchar podcast X"). Usa únicamente la etiqueta genérica: "Inmersión Activa (Contenido a elección)".**
+*   La tabla debe ser clara, fácil de leer y estar en formato Markdown.
+*   Al final, indica el total de horas de "Inmersión Activa" programadas para la semana.</span>
       </div>
     </div>
 
     <div class="step">
       <h3 class="step-title"><img src="{{ '/assets/rutinas-paso3-revisar-adaptar.png' | relative_url }}" alt="Paso 3" class="step-icon">Paso 3: Revisa y Adapta tu Rutina Generada</h3>
       <p>ChatGPT te dará un borrador. ¡Revísalo! ¿Se siente realista? ¿Te entusiasma? Ajústalo hasta que tengas un plan que realmente te motive y puedas seguir. ¡Recuerda que esta es <strong>TU rutina</strong>!</p>
-      <!-- Aquí podrías poner una imagen de ejemplo de tabla de rutina -->
     </div>
   </section>
 
@@ -355,8 +368,20 @@ function copyPromptToClipboard() {
   navigator.clipboard.writeText(promptText).then(() => {
     alert('¡Prompt copiado al portapapeles!');
   }).catch(err => {
-    alert('Error al copiar el prompt. Por favor, cópialo manualmente.');
-    console.error('Error al copiar: ', err);
+    // Fallback para navegadores que no soportan clipboard.writeText o por permisos
+    const textArea = document.createElement("textarea");
+    textArea.value = promptText;
+    document.body.appendChild(textArea);
+    textArea.focus();
+    textArea.select();
+    try {
+      document.execCommand('copy');
+      alert('¡Prompt copiado al portapapeles! (fallback)');
+    } catch (e) {
+      alert('Error al copiar el prompt. Por favor, cópialo manualmente.');
+      console.error('Error al copiar con fallback: ', e);
+    }
+    document.body.removeChild(textArea);
   });
 }
 </script>
