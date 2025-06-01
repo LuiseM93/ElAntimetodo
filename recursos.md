@@ -210,7 +210,8 @@ description: Herramientas, aplicaciones, mazos de Anki y fuentes de input para a
             <li><a href="https://www.primevideo.com" target="_blank" rel="noopener noreferrer">Prime Video</a></li>
             <li><a href="https://www.disneyplus.com" target="_blank" rel="noopener noreferrer">Disney Plus</a></li>
             <li><img src="{{ '/assets/logo-youtube.png' | relative_url }}" alt="Logo YouTube" class="resource-logo"><a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">YouTube</a> <span class="free-tag">Gratis</span></li>
-            <li><a href="https://www.france.tv" target="_blank" rel="noopener noreferrer">France.tv</a> <span class="free-tag">Gratis</span> - <em>Sitio de streaming para ver contenido en francés (De Francia).</em></li>
+            <li><a href="https://www.france.tv" target="_blank" rel="noopener noreferrer">France.tv</a> <span class="free-tag">Gratis</span> - <em>Sitio de streaming para ver contenido en francés (De Francia - puede requerir VPN de Francia).</em></li>
+            <li><a href="https://tubitv.com" target="_blank" rel="noopener noreferrer">Tubi TV</a> <span class="free-tag">Gratis</span> - <em>Sitio de streaming para ver contenido en inglés (De Estados Unidos - puede requerir VPN de Estados Unidos).</em></li>
         </ul>
     </div>
      <div class="resource-category">
