@@ -104,7 +104,7 @@ description: Herramientas, aplicaciones, mazos de Anki y fuentes de input para a
   <section class="resource-section">
     <h2>⭐ Seguimiento de Tiempo (¡Esencial!)</h2>
     <div class="resource-item">
-      <h4><img src="{{ '/assets/logo-refold.png' | relative_url }}" alt="Logo Refold" class="resource-logo">Refold Tracker <span class="note-tag">Recomendado para El Antimétodo</span></h4>
+      <h4><img src="{{ '/assets/logo-refold.png' | relative_url }}" alt="Logo Refold" class="resource-logo">Refold Tracker <span class="note-tag">Recomendada para El Antimétodo</span></h4>
       <p class="description">Aplicación esencial para registrar tu tiempo de inmersión y estudio, ayudándote a medir tu progreso y mantener la motivación.</p>
       <ul>
         <li><a href="https://www.notion.so/refold/Descargar-la-App-de-Refold-ES-16d4fa7e6fbd4a909068c310a36df275" target="_blank" rel="noopener noreferrer">Información y Descarga (Notion de Refold)</a></li>
