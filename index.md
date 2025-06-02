@@ -116,11 +116,11 @@ description: Aprende idiomas de forma natural con el enfoque del input comprensi
     margin-top: 2.2rem; /* Reducido espacio sobre la imagen */
 }
 .hero-main-image {
-    max-width: 40%; /* Reducido tamaño de la imagen */
+    max-width: 65%; /* Reducido tamaño de la imagen */
     height: auto; 
     border-radius: 10px; 
     border: 3px solid var(--grey-border-color); 
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1); 
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1); 
 }
 
 .content-section {
