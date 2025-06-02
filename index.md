@@ -7,7 +7,7 @@ description: Aprende idiomas de forma natural con el enfoque del input comprensi
 <div class="hero-section">
   <div class="hero-content">
     <h1>El Antimétodo</h1>
-    <p class="subtitle">Aprende idiomas <strong>sin gramática</strong>, de forma <strong>natural y divertida</strong></p>
+    <p class="subtitle">Aprende idiomas <strong>sin gramática</strong>, de forma <strong>natural, divertida y eficiente</strong></p>
   </div>
   <div class="hero-cards-container">
     <div class="hero-card">
@@ -159,7 +159,7 @@ description: Aprende idiomas de forma natural con el enfoque del input comprensi
   <section class="content-section"> 
     <h2 class="section-title">Bienvenido al Antimétodo</h2>
     <p style="font-size: 1.1em; text-align: center; color: var(--text-light-color); line-height: 1.7;"> 
-      El Antimétodo es un enfoque revolucionario para aprender idiomas basado en la teoría del <strong>input comprensible</strong>. Olvídate de memorizar reglas gramaticales y ejercicios aburridos. Aquí, aprenderás de manera natural, intuitiva y, sobre todo, ¡disfrutando el proceso!
+      El Antimétodo es un enfoque revolucionario para aprender idiomas basado en las hipótesis del <strong>input comprensible</strong>. Olvídate de memorizar reglas gramaticales y ejercicios aburridos. Aquí, aprenderás de manera natural, intuitiva, <strong>altamente eficiente</strong> y, sobre todo, ¡disfrutando el proceso!
     </p>
     <p style="font-size: 1.1em; text-align: center; color: var(--text-light-color); line-height: 1.7;"> 
       Sumérgete en contenido real como series, música o videojuegos, y adquiere el idioma como aprendiste tu lengua materna.
@@ -214,6 +214,9 @@ description: Aprende idiomas de forma natural con el enfoque del input comprensi
            ">
         <p style="font-size:0.85em; color: #777; margin-top: 0.5rem;"><em>Paciencia, estamos construyendo algo genial...</em></p>
     </div>
+    <p style="text-align: center; font-size: 0.9em; color: #888; margin-top: 3rem; border-top: 1px dashed var(--light-purple-color); padding-top: 1rem;">
+   <em>Última actualización del sitio: 01 de Junio de 2025</em>
+ </p>
   </section>
 
 </main>
