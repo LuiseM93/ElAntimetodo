@@ -32,7 +32,7 @@ description: Aprende idiomas de forma natural con el enfoque del input comprensi
   </div>
 
   <div class="hero-image-container">
-    <img src="{{ '/assets/antimetodo-supremacy-epic.png' | relative_url }}" alt="La Supremacía del Antimétodo es Real - Ilustración Épica" class="hero-main-image">
+    <img src="{{ '/assets/supremacy.jpg' | relative_url }}" alt="Supremacía del Antimétodo" class="hero-main-image">
   </div>
 </div>
 
