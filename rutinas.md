@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Rutinas Flexibles - El Antimétodo
-description: Ejemplos de rutinas y una herramienta interactiva para diseñar tu plan de estudio personalizado con El Antimétodo y la IA.
+description: Ejemplos de rutinas y una herramienta interactiva para diseñar tu plan de estudio personalizado con El Antimétodo y la IA, de forma eficiente.
 ---
 
 <style>
@@ -57,7 +57,7 @@ description: Ejemplos de rutinas y una herramienta interactiva para diseñar tu 
   padding: 1rem 1.2rem;
   cursor: pointer;
   font-family: var(--font-primary);
-  font-size: 1.25em; /* Ligeramente más pequeño para nombres largos */
+  font-size: 1.25em; 
   font-weight: 600;
   color: var(--primary-color);
   transition: background-color 0.2s ease;
@@ -67,18 +67,18 @@ description: Ejemplos de rutinas y una herramienta interactiva para diseñar tu 
   background-color: #f0e6f6; 
 }
 .accordion-title img.routine-icon {
-  width: 36px; /* Ajustado tamaño de iconos de rutina */
+  width: 36px; 
   height: 36px;
-  margin-right: 12px; /* Menos margen */
+  margin-right: 12px; 
   object-fit: contain;
-  border-radius: 4px; /* Pequeño redondeo si la imagen tiene fondo */
+  border-radius: 4px; 
 }
 .accordion-title::after { 
-  content: '▼'; /* Flecha hacia abajo */
+  content: '▼'; 
   font-size: 0.9em;
   margin-left: auto;
   transition: transform 0.3s ease;
-  padding-left: 10px; /* Espacio para la flecha */
+  padding-left: 10px; 
 }
 .accordion-item input[type="checkbox"]:checked ~ .accordion-title::after {
   transform: rotate(180deg); 
@@ -191,7 +191,7 @@ description: Ejemplos de rutinas y una herramienta interactiva para diseñar tu 
     <h1>Rutinas Flexibles con El Antimétodo</h1>
     <img src="{{ '/assets/rutinas-planificacion-general.png' | relative_url }}" alt="Planificando tu aprendizaje de idiomas" class="rutinas-intro-image">
     <p class="subtitle" style="font-size: 1.2em; color: var(--secondary-color);">Tu Plan Personalizado hacia la Fluidez.</p>
-    <p style="font-size:1.1em; color: var(--text-light-color);">Tener una rutina te da consistencia y crea hábitos poderosos. Aquí te ofrecemos ejemplos y una herramienta para que diseñes <strong>tu rutina ideal</strong>, adaptada a tus gustos, tiempo y al idioma que aprendes. ¡Recuerda que disfrutar el contenido es clave!</p>
+    <p style="font-size:1.1em; color: var(--text-light-color);">Tener una rutina te da consistencia y crea hábitos poderosos. Aquí encontrarás ejemplos y herramientas para estructurar tu aprendizaje de una forma que no solo sea placentera y natural, sino también <strong>altamente eficiente</strong>. Diseña <strong>tu rutina ideal</strong>, adaptada a tus gustos, tiempo y al idioma que aprendes. ¡Recuerda que disfrutar el contenido es clave!</p> <!-- MODIFICADO -->
   </section>
 
   <section class="content-section" style="padding-bottom: 1rem;">
@@ -214,12 +214,12 @@ description: Ejemplos de rutinas y una herramienta interactiva para diseñar tu 
       <div class="accordion-item">
         <input type="checkbox" id="accordion-optima" name="accordion-group">
         <label for="accordion-optima" class="accordion-title">
-          <img src="{{ '/assets/rutinas-principio-disfrute.png' | relative_url }}" alt="Rutina Óptima" class="routine-icon"> <!-- IMAGEN ACTUALIZADA -->
-          A. "La Rutina Óptima para El Antimétodo" <!-- NOMBRE ACTUALIZADO -->
+          <img src="{{ '/assets/rutinas-principio-disfrute.png' | relative_url }}" alt="Rutina Óptima" class="routine-icon">
+          A. "La Rutina Óptima para El Antimétodo"
         </label>
         <div class="accordion-content">
-          <h4>El equilibrio ideal para un progreso sólido, sostenible y disfrutable.</h4>
-          <p><strong>Para quién es:</strong> Personas que pueden dedicar un tiempo consistente (ej. 1.5 - 2.5 horas diarias, <strong>2 horas óptimas</strong>) y buscan un progreso natural. Ideal para quienes buscan convertir el aprendizaje en un estilo de vida placentero.</p>
+          <h4>El equilibrio ideal para un progreso sólido, sostenible, disfrutable y <strong>muy eficiente.</strong></h4> <!-- MODIFICADO -->
+          <p><strong>Para quién es:</strong> Personas que pueden dedicar un tiempo consistente (ej. 1.5 - 2.5 horas diarias, <strong>2 horas óptimas</strong>) y buscan un camino de <strong>máxima eficiencia</strong> hacia la fluidez natural, convirtiendo el aprendizaje en un estilo de vida placentero.</p> <!-- MODIFICADO -->
           
           <h4>Distribución Sugerida por Etapa:</h4>
           <p><strong>Etapa 1 (Preparación Inicial - aprox. 30m a 1h diaria):</strong></p>
@@ -256,8 +256,8 @@ description: Ejemplos de rutinas y una herramienta interactiva para diseñar tu 
       <div class="accordion-item">
         <input type="checkbox" id="accordion-compacta" name="accordion-group">
         <label for="accordion-compacta" class="accordion-title">
-          <img src="{{ '/assets/rutina-supremacia-compacta.png' | relative_url }}" alt="Rutina Compacta" class="routine-icon"> <!-- IMAGEN ACTUALIZADA -->
-          B. "Tiempo Justo, Resultados Máximos: La Supremacía del Antimétodo" <!-- NOMBRE ACTUALIZADO -->
+          <img src="{{ '/assets/rutina-supremacia-compacta.png' | relative_url }}" alt="Rutina Compacta" class="routine-icon">
+          B. "Tiempo Justo, Resultados Máximos: La Supremacía del Antimétodo"
         </label>
         <div class="accordion-content">
           <h4>Maximizando cada minuto. Ideal si tu agenda es apretada pero tu determinación es grande.</h4>
@@ -278,12 +278,12 @@ description: Ejemplos de rutinas y una herramienta interactiva para diseñar tu 
       <div class="accordion-item">
         <input type="checkbox" id="accordion-extrema" name="accordion-group">
         <label for="accordion-extrema" class="accordion-title">
-          <img src="{{ '/assets/rutina-inmersion-extrema.png' | relative_url }}" alt="Rutina Inmersión Extrema" class="routine-icon"> <!-- IMAGEN ACTUALIZADA -->
+          <img src="{{ '/assets/rutina-inmersion-extrema.png' | relative_url }}" alt="Rutina Inmersión Extrema" class="routine-icon">
           C. Rutina "Inmersión Total Extrema (Estilo AJATT)"
         </label>
         <div class="accordion-content">
           <p class="warning-text"><strong>⚠️ ADVERTENCIA:</strong> Este enfoque es extremadamente demandante, no para todos, y puede llevar al burnout. Es para casos muy específicos con mucho tiempo libre y alta motivación.</p>
-          <h4>Para los más dedicados y con circunstancias especiales: Es literalmente vivir en el idioma.</h4> <!-- DESCRIPCIÓN ACTUALIZADA -->
+          <h4>Para los más dedicados y con circunstancias especiales: Es literalmente vivir en el idioma.</h4>
           <p><strong>Para quién es:</strong> Personas con masivo tiempo libre (5-8h+ diarias) dispuestas a hacer del idioma su foco principal.</p>
           <p><strong>Enfoque Principal:</strong> "Todo el día, todos los días". Maximizar exposición. Cambiar el idioma de todos tus dispositivos, consumir TODO el entretenimiento en el idioma meta, pensar activamente en el idioma. El idioma se vuelve el aire que respiras.</p>
           <h4>Ejemplo de Distribución:</h4>
@@ -368,7 +368,6 @@ function copyPromptToClipboard() {
   navigator.clipboard.writeText(promptText).then(() => {
     alert('¡Prompt copiado al portapapeles!');
   }).catch(err => {
-    // Fallback para navegadores que no soportan clipboard.writeText o por permisos
     const textArea = document.createElement("textarea");
     textArea.value = promptText;
     document.body.appendChild(textArea);
