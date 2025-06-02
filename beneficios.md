@@ -7,56 +7,56 @@ description: Descubre las ventajas de aprender idiomas con el Antimétodo, como 
 <style>
   .benefit-card-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
-    gap: 1.8rem; /* Un poco más de espacio */
-    margin: 2.5rem 0; /* Más margen vertical */
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); /* Reducido minmax un poco */
+    gap: 1.5rem; /* Reducido gap */
+    margin: 2rem 0; /* Reducido margen vertical */
   }
   .benefit-card {
     background: var(--card-background);
-    padding: 1.8rem; /* Más padding interno */
-    border-radius: 10px; /* Bordes más redondeados */
-    box-shadow: 0 5px 15px rgba(0,0,0,0.08); /* Sombra un poco más pronunciada */
-    border-left: 5px solid var(--secondary-color); 
+    padding: 1.5rem; /* Reducido padding interno */
+    border-radius: 8px; /* Ligeramente menos redondeado */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.07); /* Sombra ajustada */
+    border-left: 4px solid var(--secondary-color); 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    display: flex; /* Para alinear icono y texto verticalmente si se añade icono */
+    display: flex; 
     flex-direction: column;
   }
   .benefit-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 8px 20px rgba(123, 31, 162, 0.12);
+    transform: translateY(-5px); /* Efecto hover un poco más sutil */
+    box-shadow: 0 6px 18px rgba(123, 31, 162, 0.1);
   }
-  .benefit-card .card-icon { /* Estilo para un posible icono */
-    font-size: 2.5em; /* Tamaño del emoji/icono */
-    margin-bottom: 0.8rem;
+  .benefit-card .card-icon { 
+    font-size: 2.2em; /* Icono un poco más pequeño */
+    margin-bottom: 0.7rem; /* Menos margen debajo del icono */
     color: var(--secondary-color);
-    text-align: center; /* Centrar el icono si es un bloque */
+    text-align: center; 
   }
   .benefit-card h3 {
     font-family: var(--font-primary);
     color: var(--primary-color); 
     margin-top: 0;
-    margin-bottom: 0.6rem;
+    margin-bottom: 0.5rem; /* Menos margen debajo del H3 */
     border-bottom: none; 
-    font-size: 1.35em; /* Tamaño de H3 en tarjeta */
+    font-size: 1.25em; /* H3 un poco más pequeño */
   }
   .benefit-card p {
     font-family: var(--font-secondary);
     color: var(--text-light-color);
-    font-size: 0.95em;
-    line-height: 1.6;
-    flex-grow: 1; /* Para que todos los párrafos ocupen el mismo espacio si las tarjetas tienen alturas diferentes */
+    font-size: 0.9em; /* Texto del párrafo un poco más pequeño */
+    line-height: 1.55; /* Ajustado interlineado */
+    flex-grow: 1; 
   }
 </style>
 
 <main class="content-wrapper">
 
-  <section> <!-- Quité el margin-bottom: 3rem; de la section para controlar el espaciado con la lista -->
+  <section> 
     <h1 style="text-align:center;">Beneficios del Antimétodo</h1>
     <p class="subtitle" style="font-size: 1.2em; color: var(--secondary-color); text-align:center;">Más que un método, una forma natural, divertida y altamente efectiva de adquirir idiomas.</p>
     
     <div class="benefit-card-list">
       <div class="benefit-card">
-        <div class="card-icon">🚀</div> <!-- NUEVO ICONO -->
+        <div class="card-icon">🚀</div> 
         <h3>Máxima Eficiencia</h3>
         <p>Aprovecha cada minuto con input comprensible, el camino más directo y efectivo hacia la fluidez real.</p>
       </div>
@@ -68,7 +68,7 @@ description: Descubre las ventajas de aprender idiomas con el Antimétodo, como 
       </div>
       
       <div class="benefit-card">
-        <div class="card-icon">⏱️</div> <!-- Cambiado icono por uno más genérico de tiempo/ritmo -->
+        <div class="card-icon">⏱️</div> 
         <h3>Aprovecha Tu Tiempo</h3>
         <p>Sustituye tiempo muerto o en redes sociales por un aprendizaje placentero y productivo con el contenido que amas.</p>
       </div>
@@ -86,19 +86,19 @@ description: Descubre las ventajas de aprender idiomas con el Antimétodo, como 
       </div>
       
       <div class="benefit-card">
-        <div class="card-icon">💪</div> <!-- Icono de hábito/disciplina -->
+        <div class="card-icon">💪</div> 
         <h3>Hábitos Sostenibles</h3>
         <p>Construye disciplina y constancia sin depender de la motivación pasajera, ya que el método es inherentemente disfrutable y efectivo.</p>
       </div>
       
       <div class="benefit-card">
-        <div class="card-icon">🗺️</div> <!-- Icono de mapa/camino -->
+        <div class="card-icon">🗺️</div> 
         <h3>Etapas Claras y Lógicas</h3>
         <p>Un proceso bien definido y fácil de seguir, que te guía de forma eficiente desde cero hasta niveles avanzados de competencia.</p>
       </div>
       
       <div class="benefit-card">
-        <div class="card-icon">🔑</div> <!-- Icono de llave/autonomía -->
+        <div class="card-icon">🔑</div> 
         <h3>Autoaprendizaje Real</h3>
         <p>Te empodera con la capacidad de aprender cualquier idioma por ti mismo, de manera eficiente y adaptada a tus necesidades.</p>
       </div>
