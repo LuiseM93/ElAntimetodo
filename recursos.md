@@ -358,6 +358,13 @@ description: Herramientas, aplicaciones, mazos de Anki y fuentes de input para a
         <li><a href="https://www.youtube.com/@mattvsjapan" target="_blank" rel="noopener noreferrer">Matt vs Japan</a></li>
         <li><img src="{{ '/assets/logo-refold.png' | relative_url }}" alt="Logo Refold" class="resource-logo"><a href="https://www.youtube.com/@Refold" target="_blank" rel="noopener noreferrer">Refold</a></li>
       </ul>
+       <div style="text-align: center; margin-top: 3rem; padding-top: 2rem; border-top: 1px dashed var(--light-purple-color);">
+    <img src="{{ '/assets/recursos-viajero-antimetodo.png' | relative_url }}" 
+         alt="Tu viaje de aprendizaje de idiomas con las herramientas del Antimétodo" 
+         style="max-width: 500px; width: 100%; height: auto; border-radius: 10px; box-shadow: 0 6px 15px rgba(0,0,0,0.1); border: 2px solid var(--light-purple-color);">
+    <p style="font-size: 0.9em; color: var(--text-light-color); margin-top: 0.8rem; font-style: italic;">
+      Con las herramientas adecuadas y El Antimétodo, ¡tu aventura lingüística te espera!
+    </p>
     </div>
   </section>
 
