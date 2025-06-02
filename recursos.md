@@ -90,19 +90,7 @@ description: Herramientas, aplicaciones, mazos de Anki y fuentes de input para a
     height: 24px;
     margin-right: 8px;
 }
-/* NUEVO ESTILO PARA LA IMAGEN DE CABECERA DE RECURSOS */
-.recursos-header-image-container {
-  text-align: center;
-  margin-bottom: 2.5rem; /* Espacio debajo de la imagen y antes de la primera sección de recursos */
-}
-.recursos-header-image {
-  max-width: 600px; /* Ancho máximo para la imagen, ajústalo si es necesario */
-  width: 100%; /* Para que sea responsive hasta ese máximo */
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-  border: 2px solid var(--light-purple-color); /* Borde sutil */
-}
+
 </style>
 
 <main class="content-wrapper">
@@ -111,10 +99,7 @@ description: Herramientas, aplicaciones, mazos de Anki y fuentes de input para a
     <h1>Recursos y Herramientas</h1>
     <p class="subtitle" style="font-size: 1.2em; color: var(--secondary-color);">Tu arsenal para conquistar cualquier idioma con El Antimétodo.</p>
   </section>
-<!-- NUEVA IMAGEN DEL VIAJERO AQUÍ -->
-<div class="recursos-header-image-container">
-  <img src="{{ '/assets/recursos-viajero-antimetodo.png' | relative_url }}" alt="Explorador de idiomas con herramientas del Antimétodo" class="recursos-header-image">
-</div>
+
     <!-- SECCIÓN IMPORTANTE: SEGUIMIENTO DE TIEMPO -->
   <section class="resource-section">
     <h2>⭐ Seguimiento de Tiempo (¡Esencial!)</h2>
