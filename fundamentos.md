@@ -42,7 +42,7 @@ description: Descubre la base teórica del Antimétodo, incluyendo el input comp
 .flashcard-container {
   display: flex;
   justify-content: space-around;
-  align-items: flex-start; /* Alinea arriba si tienen diferente altura */
+  align-items: flex-start; 
   flex-wrap: wrap;
   gap: 1rem;
   margin: 1.5rem 0;
@@ -53,13 +53,13 @@ description: Descubre la base teórica del Antimétodo, incluyendo el input comp
   border-radius: 8px;
   padding: 1rem;
   text-align: center;
-  width: 120px; /* Ancho fijo para flashcards */
+  width: 120px; 
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 .flashcard img {
-  max-width: 80px; /* Tamaño de imagen en flashcard */
-  height: 80px;   /* Altura fija para consistencia */
-  object-fit: contain; /* Para que la imagen quepa sin deformarse */
+  max-width: 80px; 
+  height: 80px;   
+  object-fit: contain; 
   margin-bottom: 0.5rem;
 }
 .flashcard .word {
@@ -153,10 +153,16 @@ description: Descubre la base teórica del Antimétodo, incluyendo el input comp
     <h2 style="text-align:center;">¿Por qué funciona?</h2>
     
     <h3>Hipótesis de la adquisición y aprendizaje de idiomas</h3>
+    <p>Esta hipótesis es crucial porque distingue dos vías para desarrollar la competencia en un idioma: 'adquisición' y 'aprendizaje'. La <strong>adquisición</strong> es un proceso subconsciente, similar a como los niños aprenden su lengua materna, que ocurre al exponernos a grandes cantidades de input comprensible. Este es el camino que prioriza El Antimétodo, ya que resulta ser <strong>mucho más eficiente y natural para desarrollar la fluidez real</strong> que el 'aprendizaje' consciente. El aprendizaje formal, centrado en reglas gramaticales explícitas y corrección de errores, puede tener un rol limitado como 'monitor', pero no es el motor principal de la adquisición y, de hecho, puede obstaculizar un desarrollo eficiente si se le da demasiada importancia.</p>
+    <p>Si te dicen esta palabra "hund" probablemente no vayas a saber qué es, pero si ves por ejemplo a una persona que está en un parque caminando con su perro. De repente, se acerca un amigo y dice:</p>
+    <div style="background: #f5f5f5; border-left: 5px solid var(--secondary-color); padding: 1.2rem 1.8rem; margin: 2rem 0; font-style: italic; border-radius: 0 6px 6px 0; box-shadow: 2px 2px 8px rgba(0,0,0,0.05);">
+      « Dein Hund ist wirklich süß! »
+    </div>
+    <p>Ves que la persona está señalando al perro, y en ese momento entiendes que Hund significa perro en alemán, aunque aún no sabías la palabra. Eso es adquisición a través de input comprensible.</p>
 
-    <!-- ACTIVIDAD INTERACTIVA 1: APFEL -->
+    <!-- ACTIVIDAD INTERACTIVA 1: APFEL - UBICACIÓN CORREGIDA -->
     <div class="interactive-activity">
-      <h4>Input Comprensible en Acción: Aprendiendo "Apfel"</h4>
+      <h4>Aprende Vocabulario con Input Comprensible</h4> <!-- TÍTULO CAMBIADO -->
       <p>Imagina que estás aprendiendo alemán y te encuentras con la siguiente frase. No sabes nada de alemán aún.</p>
       <div class="german-phrase" id="germanPhrase1">Ich esse einen Apfel.</div>
       <p class="question-prompt"><strong>Pregunta 1:</strong> ¿Qué porcentaje de esta oración entiendes ahora mismo? ¿Qué palabra nueva (si alguna) crees haber aprendido solo con verla?</p>
@@ -192,15 +198,10 @@ description: Descubre la base teórica del Antimétodo, incluyendo el input comp
         <p class="conclusion-text" id="apfelConclusion" style="display:none;">¡Exacto! "Apfel" significa manzana. Lo aprendiste porque el input (la frase + la imagen) se volvió <strong>comprensible</strong> gracias al contexto y al vocabulario que ya "conocías". Así funciona el i+1.</p>
       </div>
     </div>
-
-    <p>Esta hipótesis es crucial porque distingue dos vías para desarrollar la competencia en un idioma: 'adquisición' y 'aprendizaje'. La <strong>adquisición</strong> es un proceso subconsciente, similar a como los niños aprenden su lengua materna, que ocurre al exponernos a grandes cantidades de input comprensible. Este es el camino que prioriza El Antimétodo, ya que resulta ser <strong>mucho más eficiente y natural para desarrollar la fluidez real</strong> que el 'aprendizaje' consciente. El aprendizaje formal, centrado en reglas gramaticales explícitas y corrección de errores, puede tener un rol limitado como 'monitor', pero no es el motor principal de la adquisición y, de hecho, puede obstaculizar un desarrollo eficiente si se le da demasiada importancia.</p>
-    <p>Si te dicen esta palabra "hund" probablemente no vayas a saber qué es, pero si ves por ejemplo a una persona que está en un parque caminando con su perro. De repente, se acerca un amigo y dice:</p>
-    <div style="background: #f5f5f5; border-left: 5px solid var(--secondary-color); padding: 1.2rem 1.8rem; margin: 2rem 0; font-style: italic; border-radius: 0 6px 6px 0; box-shadow: 2px 2px 8px rgba(0,0,0,0.05);">
-      « Dein Hund ist wirklich süß! »
-    </div>
-    <p>Ves que la persona está señalando al perro, y en ese momento entiendes que Hund significa perro en alemán, aunque aún no sabías la palabra. Eso es adquisición a través de input comprensible.</p>
     
-    <!-- ACTIVIDAD INTERACTIVA 2: MONITOR -->
+    <h3>La hipótesis del monitor</h3>
+    
+    <!-- ACTIVIDAD INTERACTIVA 2: MONITOR - UBICACIÓN CORREGIDA -->
     <div class="interactive-activity fill-in-blank-activity">
         <h4>Tu Instinto Lingüístico: El Monitor Adquirido</h4>
         <p>Muchas veces "sentimos" que algo está bien o mal en nuestro idioma nativo sin pensar en reglas gramaticales. Intenta completar la siguiente frase en español:</p>
@@ -215,7 +216,6 @@ description: Descubre la base teórica del Antimétodo, incluyendo el input comp
         </div>
     </div>
 
-    <h3>La hipótesis del monitor</h3>
     <p>"Cuando yo era pequeño me gustaba jugar los juguetes". Si leíste esta oración probablemente veas algo mal con ella, que le falta una "a" para que sea correcta gramaticalmente, a pesar de no tener idea de la gramática del español. Esto es gracias al monitor adquirido; sentimos que está mal a pesar de no saber qué es o por qué. En comparación, el monitor aprendido de manera consciente (el que se desarrolla mediante el estudio formal de gramática) aunque puede ayudar a corregir errores al escribir o al hablar pausadamente, no resulta tan útil en el habla espontánea, ya que interfiere con la fluidez. Esto se debe a que para usarlo necesitas conocer las reglas (incluso los expertos no las conocen todas), tiempo para pensar (que no tienes en una conversación normal), y enfocar tu atención en la forma y el significado simultáneamente. Esto convierte el hablar en un proceso tedioso, a menudo traduciendo desde tu idioma natal.</p>
     <p>En cambio, el monitor adquirido de forma natural a través de input comprensible y repetido se activa de manera automática, permitiendo correcciones más intuitivas sin obstaculizar la comunicación. Este monitor "implícito" mejora con el tiempo y la exposición constante, y refleja un conocimiento más profundo, funcional y <strong>eficiente</strong> del idioma.</p>
   </section>
@@ -226,14 +226,12 @@ description: Descubre la base teórica del Antimétodo, incluyendo el input comp
 function revealClues() {
   const cluesSection = document.getElementById('cluesSection');
   cluesSection.style.display = 'block';
-  // Pequeño delay para mostrar la conclusión, simulando la reflexión
   setTimeout(() => {
     const apfelConclusion = document.getElementById('apfelConclusion');
     if (apfelConclusion) {
       apfelConclusion.style.display = 'block';
     }
-  }, 1500); // Muestra después de 1.5 segundos
-  // Opcional: ocultar el botón después de hacer clic
+  }, 1500); 
   const button = document.querySelector('.interactive-button[onclick="revealClues()"]');
   if (button) {
     button.style.display = 'none';
