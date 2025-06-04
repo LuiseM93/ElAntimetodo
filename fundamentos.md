@@ -7,14 +7,14 @@ description: Descubre la base teórica del Antimétodo, incluyendo el input comp
 <style>
 /* Estilos para las Actividades Interactivas */
 .interactive-activity {
-  background-color: #f0e6f6; /* Un morado muy pálido */
+  background-color: #f0e6f6; 
   border: 1px solid var(--light-purple-color);
   border-radius: 8px;
   padding: 1.5rem;
   margin: 2.5rem 0;
   box-shadow: 0 4px 10px rgba(74, 20, 140, 0.1);
 }
-.interactive-activity h4 { /* Título de la actividad */
+.interactive-activity h4 { 
   color: var(--primary-color);
   margin-top: 0;
   margin-bottom: 1rem;
@@ -28,7 +28,7 @@ description: Descubre la base teórica del Antimétodo, incluyendo el input comp
   font-size: 1.05em;
   margin-bottom: 0.8rem;
 }
-.german-phrase {
+.german-phrase { /* Para la frase inicial "Ich esse einen Apfel" */
   font-size: 1.5em;
   font-weight: bold;
   color: var(--secondary-color);
@@ -71,15 +71,42 @@ description: Descubre la base teórica del Antimétodo, incluyendo el input comp
   font-size: 0.9em;
   color: var(--text-light-color);
 }
-.apple-image-container {
+
+/* ESTILOS PARA LA FRASE CON MANZANA INLINE */
+.german-phrase-with-image {
+  font-size: 1.5em; /* Mantenemos tamaño base */
+  /* font-weight: bold; quitamos bold general, se aplica a Apfel */
+  color: var(--secondary-color);
   text-align: center;
   margin: 1.5rem 0;
+  padding: 0.8rem;
+  background-color: white;
+  border-radius: 6px;
+  border: 1px dashed var(--primary-color);
+  line-height: 2; /* Aumentar interlineado para acomodar imagen */
 }
-.apple-image-container img {
-  max-width: 150px;
-  border-radius: 8px;
-  border: 2px solid var(--secondary-color);
+.highlighted-word-container {
+  display: inline-flex; 
+  align-items: center; /* Centrar verticalmente la palabra y la imagen */
+  background-color: #fffacd; /* Amarillo pálido para resaltar */
+  padding: 0.1em 0.4em;
+  border-radius: 4px;
+  /* border: 1px solid #ffe082; Opcional: borde para el contenedor resaltado */
 }
+.highlighted-word-container strong { /* Para la palabra Apfel */
+  color: var(--primary-color); /* O un color que resalte más */
+  font-weight: bold;
+  margin-right: 5px; /* Espacio entre Apfel y la imagen */
+}
+.inline-apple-image {
+  width: 28px; /* Tamaño de la imagen de manzana inline */
+  height: 28px;
+  object-fit: contain;
+  vertical-align: middle; /* Alinear bien con el texto */
+  /* No necesita borde si la imagen ya es clara */
+}
+/* FIN DE ESTILOS PARA FRASE CON MANZANA INLINE */
+
 .interactive-button {
   display: block;
   margin: 1.5rem auto 0 auto;
@@ -132,8 +159,8 @@ description: Descubre la base teórica del Antimétodo, incluyendo el input comp
   font-weight: bold;
   text-align: center;
 }
-.feedback-message.correct { color: #2e7d32; /* Verde */ }
-.feedback-message.incorrect { color: #c0392b; /* Rojo */ }
+.feedback-message.correct { color: #2e7d32; }
+.feedback-message.incorrect { color: #c0392b; }
 
 </style>
 
@@ -160,17 +187,17 @@ description: Descubre la base teórica del Antimétodo, incluyendo el input comp
     </div>
     <p>Ves que la persona está señalando al perro, y en ese momento entiendes que Hund significa perro en alemán, aunque aún no sabías la palabra. Eso es adquisición a través de input comprensible.</p>
 
-    <!-- ACTIVIDAD INTERACTIVA 1: APFEL - UBICACIÓN CORREGIDA -->
+    <!-- ACTIVIDAD INTERACTIVA 1: APFEL -->
     <div class="interactive-activity">
-      <h4>Aprende Vocabulario con Input Comprensible</h4> <!-- TÍTULO CAMBIADO -->
+      <h4>Aprende Vocabulario con Input Comprensible</h4>
       <p>Imagina que estás aprendiendo alemán y te encuentras con la siguiente frase. No sabes nada de alemán aún.</p>
       <div class="german-phrase" id="germanPhrase1">Ich esse einen Apfel.</div>
       <p class="question-prompt"><strong>Pregunta 1:</strong> ¿Qué porcentaje de esta oración entiendes ahora mismo? ¿Qué palabra nueva (si alguna) crees haber aprendido solo con verla?</p>
       <p style="text-align:center; font-style:italic;">(Probablemente entiendas muy poco o nada, ¿verdad? El input no fue comprensible.)</p>
       
-      <button class="interactive-button" onclick="revealClues()">Mostrar Pistas (Vocabulario Conocido)</button>
+      <button class="interactive-button" onclick="revealCluesApfel()">Mostrar Pistas (Vocabulario Conocido)</button>
       
-      <div id="cluesSection" class="hidden-content">
+      <div id="cluesSectionApfel" class="hidden-content">
         <p>Ahora, imagina que ya conoces estas palabras de antes (quizás de tu preparación en Etapa 1):</p>
         <div class="flashcard-container">
           <div class="flashcard">
@@ -189,10 +216,9 @@ description: Descubre la base teórica del Antimétodo, incluyendo el input comp
             <div class="translation">(un)</div>
           </div>
         </div>
-        <p>Conociendo estas tres palabras, vuelves a ver la frase, y además, alguien te muestra esto mientras la dice:</p>
-        <div class="german-phrase" id="germanPhrase2">Ich esse einen <strong>Apfel</strong>.</div>
-        <div class="apple-image-container">
-          <img src="{{ '/assets/manzana.png' | relative_url }}" alt="Una manzana">
+        <p>Conociendo estas tres palabras, vuelves a ver la frase. Observa la palabra resaltada y la imagen directamente asociada:</p>
+        <div class="german-phrase-with-image"> <!-- CONTENEDOR PARA LA FRASE CON IMAGEN INLINE -->
+            Ich esse einen <span class="highlighted-word-container"><strong>Apfel</strong><img src="{{ '/assets/manzana.png' | relative_url }}" alt="Una manzana" class="inline-apple-image"></span>.
         </div>
         <p class="question-prompt"><strong>Pregunta 2:</strong> Ahora, con las pistas y la imagen, ¿qué palabra nueva aprendiste? ¿Qué significa "Apfel"?</p>
         <p class="conclusion-text" id="apfelConclusion" style="display:none;">¡Exacto! "Apfel" significa manzana. Lo aprendiste porque el input (la frase + la imagen) se volvió <strong>comprensible</strong> gracias al contexto y al vocabulario que ya "conocías". Así funciona el i+1.</p>
@@ -200,15 +226,14 @@ description: Descubre la base teórica del Antimétodo, incluyendo el input comp
     </div>
     
     <h3>La hipótesis del monitor</h3>
-    
-    <!-- ACTIVIDAD INTERACTIVA 2: MONITOR - UBICACIÓN CORREGIDA -->
+    <!-- ACTIVIDAD INTERACTIVA 2: MONITOR - Ahora ANTES del párrafo explicativo -->
     <div class="interactive-activity fill-in-blank-activity">
         <h4>Tu Instinto Lingüístico: El Monitor Adquirido</h4>
         <p>Muchas veces "sentimos" que algo está bien o mal en nuestro idioma nativo sin pensar en reglas gramaticales. Intenta completar la siguiente frase en español:</p>
         <p style="text-align:center; font-size: 1.2em; margin: 1rem 0;">
-            Yo voy <input type="text" id="blankWord" maxlength="1" size="1" oninput="checkAnswer(this.value)"> la casa.
+            Yo voy <input type="text" id="blankWord" maxlength="1" size="1" oninput="checkAnswerMonitor(this.value)"> la casa.
         </p>
-        <div id="feedbackMsg" class="feedback-message"></div>
+        <div id="feedbackMsgMonitor" class="feedback-message"></div>
         <div id="monitorExplanation" class="hidden-content">
             <p>Si pusiste "a", ¡felicidades! Lo más probable es que no hayas pensado: "Necesito la preposición 'a' porque indica dirección hacia un lugar". Simplemente <strong>sonaba correcto</strong>.</p>
             <p>Ese "sentir" es tu <strong>monitor adquirido</strong> en acción. Se desarrolla naturalmente a través de la exposición masiva al idioma (input comprensible).</p>
@@ -223,8 +248,8 @@ description: Descubre la base teórica del Antimétodo, incluyendo el input comp
 </main>
 
 <script>
-function revealClues() {
-  const cluesSection = document.getElementById('cluesSection');
+function revealCluesApfel() { // Renombrada para evitar conflictos
+  const cluesSection = document.getElementById('cluesSectionApfel'); // ID único
   cluesSection.style.display = 'block';
   setTimeout(() => {
     const apfelConclusion = document.getElementById('apfelConclusion');
@@ -232,14 +257,14 @@ function revealClues() {
       apfelConclusion.style.display = 'block';
     }
   }, 1500); 
-  const button = document.querySelector('.interactive-button[onclick="revealClues()"]');
+  const button = document.querySelector('.interactive-button[onclick="revealCluesApfel()"]'); // Ajustar selector
   if (button) {
     button.style.display = 'none';
   }
 }
 
-function checkAnswer(value) {
-  const feedbackMsg = document.getElementById('feedbackMsg');
+function checkAnswerMonitor(value) { // Renombrada para evitar conflictos
+  const feedbackMsg = document.getElementById('feedbackMsgMonitor'); // ID único
   const monitorExplanation = document.getElementById('monitorExplanation');
   if (value.toLowerCase() === 'a') {
     feedbackMsg.textContent = '¡Correcto! "Yo voy a la casa."';
