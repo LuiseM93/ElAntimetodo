@@ -71,20 +71,21 @@ description: Descubre la base teórica del Antimétodo, incluyendo el input comp
   font-size: 0.9em;
   color: var(--text-light-color);
 }
-.apple-image-container { /* Contenedor para la imagen de la manzana (grande) */
+.apple-image-container { 
   text-align: center;
-  margin: 1.5rem 0 0.5rem 0; /* Ajustado margen para el texto de abajo */
+  margin: 1.5rem 0 0.2rem 0; /* Reducido margen inferior para acercar caption */
 }
 .apple-image-container img {
-  max-width: 150px; /* Tamaño de la imagen de manzana grande */
+  max-width: 150px; 
   border-radius: 8px;
   border: 2px solid var(--secondary-color);
 }
-.apple-caption { /* Estilo para el texto "Esto es un Apfel" */
+.apple-caption { 
   text-align: center;
   font-style: italic;
   color: var(--secondary-color);
   margin-bottom: 1.5rem;
+  font-size: 1.1em; /* Un poco más grande para el caption */
 }
 
 .interactive-button {
@@ -159,12 +160,11 @@ description: Descubre la base teórica del Antimétodo, incluyendo el input comp
     <h2 style="text-align:center;">¿Por qué funciona?</h2>
     
     <h3>Hipótesis de la adquisición y aprendizaje de idiomas</h3>
-    <!-- TU TEXTO ORIGINAL RESTAURADO AQUÍ -->
-    <p>Esta hipótesis busca describir que existen dos maneras de desarrollar habilidades en el idioma, mediante adquisición y aprendizaje, la adquisición es un proceso inconsciente en el que no nos damos cuenta que está pasando, sucede cuando estamos expuestos con el idioma recibiendo input comprensible (input es todo lo que recibimos del idioma), no se trata solamente de estar expuestos al idioma si no de poder entender una parte del input y estar respaldados de un contexto que nos permita deducir el significado. Si te dicen esta palabra "hund" probablemente no vayas a saber que es, pero si ves por ejemplo a una persona que está en un parque caminando con su perro. De repente, se acerca un amigo y dice:</p>
+    <p>Esta hipótesis busca describir que existen <strong>dos maneras</strong> de desarrollar habilidades en el idioma, mediante <strong>adquisición</strong> y <strong>aprendizaje</strong>. La adquisición es un <strong>proceso inconsciente</strong> en el que no nos damos cuenta que está pasando; sucede cuando estamos expuestos con el idioma recibiendo <strong>input comprensible</strong> (input es todo lo que recibimos del idioma). No se trata solamente de estar expuestos al idioma, si no de poder <strong>entender una parte del input</strong> y estar respaldados de un <strong>contexto que nos permita deducir el significado</strong>. Si te dicen esta palabra "hund" probablemente no vayas a saber qué es, pero si ves por ejemplo a una persona que está en un parque caminando con su perro. De repente, se acerca un amigo y dice:</p>
     <div style="background: #f5f5f5; border-left: 5px solid var(--secondary-color); padding: 1.2rem 1.8rem; margin: 2rem 0; font-style: italic; border-radius: 0 6px 6px 0; box-shadow: 2px 2px 8px rgba(0,0,0,0.05);">
       « Dein Hund ist wirklich süß! »
     </div>
-    <p>Ves que la persona está señalando al perro, y en ese momento entiendes que Hund significa perro en alemán, aunque aún no sabías la palabra. Eso es adquisición a través de input comprensible.</p>
+    <p>Ves que la persona está señalando al perro, y en ese momento entiendes que Hund significa perro en alemán, aunque aún no sabías la palabra. Eso es <strong>adquisición a través de input comprensible</strong>.</p>
 
     <!-- ACTIVIDAD INTERACTIVA 1: APFEL -->
     <div class="interactive-activity">
@@ -195,14 +195,14 @@ description: Descubre la base teórica del Antimétodo, incluyendo el input comp
             <div class="translation">(un)</div>
           </div>
         </div>
-        <p>Conociendo estas tres palabras, vuelves a ver la frase. Observa la palabra resaltada:</p>
+        <p>Conociendo estas tres palabras, vuelves a ver la frase. Observa la palabra resaltada y la imagen:</p>
         <div class="german-phrase" id="germanPhrase2_Apfel">Ich esse einen <strong>Apfel</strong>.</div>
-        <div class="apple-image-container"> <!-- Contenedor para la imagen de manzana grande -->
+        <div class="apple-image-container">
           <img src="{{ '/assets/manzana.png' | relative_url }}" alt="Una manzana">
         </div>
-        <p class="apple-caption">Esto es un <strong>Apfel</strong>.</p> <!-- Texto para relacionar -->
+        <p class="apple-caption"><strong>Apfel</strong>.</p> <!-- CAPTION AJUSTADO -->
         <p class="question-prompt"><strong>Pregunta 2:</strong> Ahora, con las pistas y la imagen, ¿qué palabra nueva aprendiste? ¿Qué significa "Apfel"?</p>
-        <p class="conclusion-text" id="apfelConclusion" style="display:none;">¡Exacto! "Apfel" significa manzana. Lo aprendiste porque el input (la frase + la imagen + la pista "Esto es un Apfel") se volvió <strong>comprensible</strong> gracias al contexto y al vocabulario que ya "conocías". Así funciona el i+1.</p>
+        <p class="conclusion-text" id="apfelConclusion" style="display:none;">¡Exacto! "Apfel" significa manzana. Lo aprendiste porque el input (la frase + la imagen + la pista "Apfel.") se volvió <strong>comprensible</strong> gracias al contexto y al vocabulario que ya "conocías". Así funciona el i+1.</p>
       </div>
     </div>
     
@@ -222,7 +222,6 @@ description: Descubre la base teórica del Antimétodo, incluyendo el input comp
         </div>
     </div>
 
-    <!-- TU TEXTO ORIGINAL RESTAURADO AQUÍ -->
     <p>"Cuando yo era pequeño me gustaba jugar los juguetes". Si leíste esta oración probablemente veas algo mal con ella, que le falta una "a" para que sea correcta gramaticalmente, a pesar de no tener idea de la gramática del español. Esto es gracias al monitor adquirido; sentimos que está mal a pesar de no saber qué es o por qué. En comparación, el monitor aprendido de manera consciente (el que se desarrolla mediante el estudio formal de gramática) aunque puede ayudar a corregir errores al escribir o al hablar pausadamente, no resulta tan útil en el habla espontánea, ya que interfiere con la fluidez. Esto se debe a que para usarlo necesitas conocer las reglas (incluso los expertos no las conocen todas), tiempo para pensar (que no tienes en una conversación normal), y enfocar tu atención en la forma y el significado simultáneamente. Esto convierte el hablar en un proceso tedioso, a menudo traduciendo desde tu idioma natal.</p>
     <p>En cambio, el monitor adquirido de forma natural a través de input comprensible y repetido se activa de manera automática, permitiendo correcciones más intuitivas sin obstaculizar la comunicación. Este monitor "implícito" mejora con el tiempo y la exposición constante, y refleja un conocimiento más profundo, funcional y <strong>eficiente</strong> del idioma.</p>
   </section>
@@ -248,7 +247,6 @@ function revealCluesApfel() {
 function checkAnswerMonitor(value) { 
   const feedbackMsg = document.getElementById('feedbackMsgMonitor'); 
   const monitorExplanation = document.getElementById('monitorExplanation');
-  // Asegurarse de que los elementos existen antes de manipularlos
   if (!feedbackMsg || !monitorExplanation) {
       console.error("Error: Elementos de feedback o explicación del monitor no encontrados.");
       return;
