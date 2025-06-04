@@ -28,7 +28,7 @@ description: Descubre la base teórica del Antimétodo, incluyendo el input comp
   font-size: 1.05em;
   margin-bottom: 0.8rem;
 }
-.german-phrase { /* Para la frase inicial "Ich esse einen Apfel" */
+.german-phrase { 
   font-size: 1.5em;
   font-weight: bold;
   color: var(--secondary-color);
@@ -71,41 +71,21 @@ description: Descubre la base teórica del Antimétodo, incluyendo el input comp
   font-size: 0.9em;
   color: var(--text-light-color);
 }
-
-/* ESTILOS PARA LA FRASE CON MANZANA INLINE */
-.german-phrase-with-image {
-  font-size: 1.5em; /* Mantenemos tamaño base */
-  /* font-weight: bold; quitamos bold general, se aplica a Apfel */
-  color: var(--secondary-color);
+.apple-image-container { /* Contenedor para la imagen de la manzana (grande) */
   text-align: center;
-  margin: 1.5rem 0;
-  padding: 0.8rem;
-  background-color: white;
-  border-radius: 6px;
-  border: 1px dashed var(--primary-color);
-  line-height: 2; /* Aumentar interlineado para acomodar imagen */
+  margin: 1.5rem 0 0.5rem 0; /* Ajustado margen para el texto de abajo */
 }
-.highlighted-word-container {
-  display: inline-flex; 
-  align-items: center; /* Centrar verticalmente la palabra y la imagen */
-  background-color: #fffacd; /* Amarillo pálido para resaltar */
-  padding: 0.1em 0.4em;
-  border-radius: 4px;
-  /* border: 1px solid #ffe082; Opcional: borde para el contenedor resaltado */
+.apple-image-container img {
+  max-width: 150px; /* Tamaño de la imagen de manzana grande */
+  border-radius: 8px;
+  border: 2px solid var(--secondary-color);
 }
-.highlighted-word-container strong { /* Para la palabra Apfel */
-  color: var(--primary-color); /* O un color que resalte más */
-  font-weight: bold;
-  margin-right: 5px; /* Espacio entre Apfel y la imagen */
+.apple-caption { /* Estilo para el texto "Esto es un Apfel" */
+  text-align: center;
+  font-style: italic;
+  color: var(--secondary-color);
+  margin-bottom: 1.5rem;
 }
-.inline-apple-image {
-  width: 28px; /* Tamaño de la imagen de manzana inline */
-  height: 28px;
-  object-fit: contain;
-  vertical-align: middle; /* Alinear bien con el texto */
-  /* No necesita borde si la imagen ya es clara */
-}
-/* FIN DE ESTILOS PARA FRASE CON MANZANA INLINE */
 
 .interactive-button {
   display: block;
@@ -138,7 +118,6 @@ description: Descubre la base teórica del Antimétodo, incluyendo el input comp
   font-size: 1.1em;
 }
 
-/* Estilos para la actividad del Monitor */
 .fill-in-blank-activity input[type="text"] {
   border: 2px solid var(--light-purple-color);
   border-radius: 4px;
@@ -180,8 +159,8 @@ description: Descubre la base teórica del Antimétodo, incluyendo el input comp
     <h2 style="text-align:center;">¿Por qué funciona?</h2>
     
     <h3>Hipótesis de la adquisición y aprendizaje de idiomas</h3>
-    <p>Esta hipótesis es crucial porque distingue dos vías para desarrollar la competencia en un idioma: 'adquisición' y 'aprendizaje'. La <strong>adquisición</strong> es un proceso subconsciente, similar a como los niños aprenden su lengua materna, que ocurre al exponernos a grandes cantidades de input comprensible. Este es el camino que prioriza El Antimétodo, ya que resulta ser <strong>mucho más eficiente y natural para desarrollar la fluidez real</strong> que el 'aprendizaje' consciente. El aprendizaje formal, centrado en reglas gramaticales explícitas y corrección de errores, puede tener un rol limitado como 'monitor', pero no es el motor principal de la adquisición y, de hecho, puede obstaculizar un desarrollo eficiente si se le da demasiada importancia.</p>
-    <p>Si te dicen esta palabra "hund" probablemente no vayas a saber qué es, pero si ves por ejemplo a una persona que está en un parque caminando con su perro. De repente, se acerca un amigo y dice:</p>
+    <!-- TU TEXTO ORIGINAL RESTAURADO AQUÍ -->
+    <p>Esta hipótesis busca describir que existen dos maneras de desarrollar habilidades en el idioma, mediante adquisición y aprendizaje, la adquisición es un proceso inconsciente en el que no nos damos cuenta que está pasando, sucede cuando estamos expuestos con el idioma recibiendo input comprensible (input es todo lo que recibimos del idioma), no se trata solamente de estar expuestos al idioma si no de poder entender una parte del input y estar respaldados de un contexto que nos permita deducir el significado. Si te dicen esta palabra "hund" probablemente no vayas a saber que es, pero si ves por ejemplo a una persona que está en un parque caminando con su perro. De repente, se acerca un amigo y dice:</p>
     <div style="background: #f5f5f5; border-left: 5px solid var(--secondary-color); padding: 1.2rem 1.8rem; margin: 2rem 0; font-style: italic; border-radius: 0 6px 6px 0; box-shadow: 2px 2px 8px rgba(0,0,0,0.05);">
       « Dein Hund ist wirklich süß! »
     </div>
@@ -191,7 +170,7 @@ description: Descubre la base teórica del Antimétodo, incluyendo el input comp
     <div class="interactive-activity">
       <h4>Aprende Vocabulario con Input Comprensible</h4>
       <p>Imagina que estás aprendiendo alemán y te encuentras con la siguiente frase. No sabes nada de alemán aún.</p>
-      <div class="german-phrase" id="germanPhrase1">Ich esse einen Apfel.</div>
+      <div class="german-phrase" id="germanPhrase1_Apfel">Ich esse einen Apfel.</div>
       <p class="question-prompt"><strong>Pregunta 1:</strong> ¿Qué porcentaje de esta oración entiendes ahora mismo? ¿Qué palabra nueva (si alguna) crees haber aprendido solo con verla?</p>
       <p style="text-align:center; font-style:italic;">(Probablemente entiendas muy poco o nada, ¿verdad? El input no fue comprensible.)</p>
       
@@ -216,22 +195,24 @@ description: Descubre la base teórica del Antimétodo, incluyendo el input comp
             <div class="translation">(un)</div>
           </div>
         </div>
-        <p>Conociendo estas tres palabras, vuelves a ver la frase. Observa la palabra resaltada y la imagen directamente asociada:</p>
-        <div class="german-phrase-with-image"> <!-- CONTENEDOR PARA LA FRASE CON IMAGEN INLINE -->
-            Ich esse einen <span class="highlighted-word-container"><strong>Apfel</strong><img src="{{ '/assets/manzana.png' | relative_url }}" alt="Una manzana" class="inline-apple-image"></span>.
+        <p>Conociendo estas tres palabras, vuelves a ver la frase. Observa la palabra resaltada:</p>
+        <div class="german-phrase" id="germanPhrase2_Apfel">Ich esse einen <strong>Apfel</strong>.</div>
+        <div class="apple-image-container"> <!-- Contenedor para la imagen de manzana grande -->
+          <img src="{{ '/assets/manzana.png' | relative_url }}" alt="Una manzana">
         </div>
+        <p class="apple-caption">Esto es un <strong>Apfel</strong>.</p> <!-- Texto para relacionar -->
         <p class="question-prompt"><strong>Pregunta 2:</strong> Ahora, con las pistas y la imagen, ¿qué palabra nueva aprendiste? ¿Qué significa "Apfel"?</p>
-        <p class="conclusion-text" id="apfelConclusion" style="display:none;">¡Exacto! "Apfel" significa manzana. Lo aprendiste porque el input (la frase + la imagen) se volvió <strong>comprensible</strong> gracias al contexto y al vocabulario que ya "conocías". Así funciona el i+1.</p>
+        <p class="conclusion-text" id="apfelConclusion" style="display:none;">¡Exacto! "Apfel" significa manzana. Lo aprendiste porque el input (la frase + la imagen + la pista "Esto es un Apfel") se volvió <strong>comprensible</strong> gracias al contexto y al vocabulario que ya "conocías". Así funciona el i+1.</p>
       </div>
     </div>
     
     <h3>La hipótesis del monitor</h3>
-    <!-- ACTIVIDAD INTERACTIVA 2: MONITOR - Ahora ANTES del párrafo explicativo -->
+    <!-- ACTIVIDAD INTERACTIVA 2: MONITOR -->
     <div class="interactive-activity fill-in-blank-activity">
         <h4>Tu Instinto Lingüístico: El Monitor Adquirido</h4>
         <p>Muchas veces "sentimos" que algo está bien o mal en nuestro idioma nativo sin pensar en reglas gramaticales. Intenta completar la siguiente frase en español:</p>
         <p style="text-align:center; font-size: 1.2em; margin: 1rem 0;">
-            Yo voy <input type="text" id="blankWord" maxlength="1" size="1" oninput="checkAnswerMonitor(this.value)"> la casa.
+            Yo voy <input type="text" id="blankWordMonitor" maxlength="1" size="1" oninput="checkAnswerMonitor(this.value)"> la casa.
         </p>
         <div id="feedbackMsgMonitor" class="feedback-message"></div>
         <div id="monitorExplanation" class="hidden-content">
@@ -241,6 +222,7 @@ description: Descubre la base teórica del Antimétodo, incluyendo el input comp
         </div>
     </div>
 
+    <!-- TU TEXTO ORIGINAL RESTAURADO AQUÍ -->
     <p>"Cuando yo era pequeño me gustaba jugar los juguetes". Si leíste esta oración probablemente veas algo mal con ella, que le falta una "a" para que sea correcta gramaticalmente, a pesar de no tener idea de la gramática del español. Esto es gracias al monitor adquirido; sentimos que está mal a pesar de no saber qué es o por qué. En comparación, el monitor aprendido de manera consciente (el que se desarrolla mediante el estudio formal de gramática) aunque puede ayudar a corregir errores al escribir o al hablar pausadamente, no resulta tan útil en el habla espontánea, ya que interfiere con la fluidez. Esto se debe a que para usarlo necesitas conocer las reglas (incluso los expertos no las conocen todas), tiempo para pensar (que no tienes en una conversación normal), y enfocar tu atención en la forma y el significado simultáneamente. Esto convierte el hablar en un proceso tedioso, a menudo traduciendo desde tu idioma natal.</p>
     <p>En cambio, el monitor adquirido de forma natural a través de input comprensible y repetido se activa de manera automática, permitiendo correcciones más intuitivas sin obstaculizar la comunicación. Este monitor "implícito" mejora con el tiempo y la exposición constante, y refleja un conocimiento más profundo, funcional y <strong>eficiente</strong> del idioma.</p>
   </section>
@@ -248,8 +230,8 @@ description: Descubre la base teórica del Antimétodo, incluyendo el input comp
 </main>
 
 <script>
-function revealCluesApfel() { // Renombrada para evitar conflictos
-  const cluesSection = document.getElementById('cluesSectionApfel'); // ID único
+function revealCluesApfel() { 
+  const cluesSection = document.getElementById('cluesSectionApfel'); 
   cluesSection.style.display = 'block';
   setTimeout(() => {
     const apfelConclusion = document.getElementById('apfelConclusion');
@@ -257,15 +239,20 @@ function revealCluesApfel() { // Renombrada para evitar conflictos
       apfelConclusion.style.display = 'block';
     }
   }, 1500); 
-  const button = document.querySelector('.interactive-button[onclick="revealCluesApfel()"]'); // Ajustar selector
+  const button = document.querySelector('.interactive-button[onclick="revealCluesApfel()"]'); 
   if (button) {
     button.style.display = 'none';
   }
 }
 
-function checkAnswerMonitor(value) { // Renombrada para evitar conflictos
-  const feedbackMsg = document.getElementById('feedbackMsgMonitor'); // ID único
+function checkAnswerMonitor(value) { 
+  const feedbackMsg = document.getElementById('feedbackMsgMonitor'); 
   const monitorExplanation = document.getElementById('monitorExplanation');
+  // Asegurarse de que los elementos existen antes de manipularlos
+  if (!feedbackMsg || !monitorExplanation) {
+      console.error("Error: Elementos de feedback o explicación del monitor no encontrados.");
+      return;
+  }
   if (value.toLowerCase() === 'a') {
     feedbackMsg.textContent = '¡Correcto! "Yo voy a la casa."';
     feedbackMsg.className = 'feedback-message correct';
