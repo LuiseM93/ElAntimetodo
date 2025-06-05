@@ -56,30 +56,39 @@ description: Aprende idiomas de forma natural, divertida y eficiente con el enfo
 .content-section .section-title { text-align: center; margin-bottom: 2rem; }
 .content-section .section-subtitle { text-align: center; font-size: 1.15em; color: var(--text-light-color); margin-top: -1.5rem; margin-bottom: 2rem; }
 
-/* === ESTILOS PARA LA SECCIÓN DE TESTIMONIOS DE IA (TARJETAS ESTÁTICAS) === */
-.ia-testimonials-static-section {
-  padding: 2.5rem 1rem;
-  background-color: #f0e6f6; 
+/* === ESTILOS PARA LA SECCIÓN DE TESTIMONIOS DE IA (FULL-WIDTH BACKGROUND) === */
+.ia-testimonials-fullwidth-section {
+  background-color: #f0e6f6; /* Fondo morado muy pálido */
+  padding: 3rem 0; 
   margin-top: 3rem;
   margin-bottom: 3rem;
-  border-radius: 10px;
+  /* Márgenes negativos para efecto full-width si está dentro de un contenedor más estrecho */
+  /* Asumiendo que el .content-wrapper principal tiene padding de 20px */
+  margin-left: calc(-50vw + 50% + 20px); /* 20px es el padding del content-wrapper */
+  margin-right: calc(-50vw + 50% + 20px);
+  /* overflow: hidden; /* Para contener los márgenes negativos */
 }
-.ia-testimonials-static-section h2 {
+.ia-testimonials-fullwidth-section .content-wrapper-condensed { /* Contenedor interno para centrar el contenido */
+    max-width: 850px; /* Debe coincidir con tu .content-wrapper principal o ser menor */
+    margin: 0 auto;
+    padding: 0 1rem; /* Padding lateral para el contenido interno */
+}
+.ia-testimonials-fullwidth-section h2 {
   text-align: center;
   margin-top: 0;
   margin-bottom: 2rem; 
   color: var(--primary-color);
   font-size: 2em;
-  border-bottom: none;
+  border-bottom: none; /* Quitar el borde si el H2 global lo tiene */
 }
 .ia-testimonial-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-  gap: 2rem; 
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); /* Permite tarjetas más anchas */
+  gap: 1.8rem; 
 }
 .ia-testimonial-card {
   background-color: var(--card-background);
-  padding: 1.8rem;
+  padding: 1.8rem 2rem; /* Más padding horizontal */
   border-radius: 8px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.08);
   border-left: 5px solid var(--secondary-color); 
@@ -99,7 +108,7 @@ description: Aprende idiomas de forma natural, divertida y eficiente con el enfo
   font-style: italic;
   color: var(--text-light-color);
   font-size: 1em; 
-  line-height: 1.65; /* Un poco más de interlineado para citas más largas */
+  line-height: 1.65; 
   border-left: none; 
   flex-grow: 1; 
 }
@@ -125,6 +134,12 @@ description: Aprende idiomas de forma natural, divertida y eficiente con el enfo
     .hero-main-image { max-width: 85%; } 
     .content-section { padding: 1.5rem; }
     .ia-testimonial-grid { grid-template-columns: 1fr; }
+    .ia-testimonials-fullwidth-section { /* Ajustar márgenes para móvil */
+        margin-left: -1rem; /* Si el content-wrapper en móvil tiene padding 1rem */
+        margin-right: -1rem;
+        padding-left: 1rem; /* Restablecer padding para el contenido interno */
+        padding-right: 1rem;
+    }
 }
 </style>
 
@@ -143,39 +158,41 @@ description: Aprende idiomas de forma natural, divertida y eficiente con el enfo
     </div>
   </section>
 
-  <!-- SECCIÓN DE TESTIMONIOS DE IA (TARJETAS ESTÁTICAS CON TEXTO COMPLETO) -->
-  <section class="ia-testimonials-static-section">
-    <h2>Lo que piensan las IAs del Antimétodo</h2>
-    <div class="ia-testimonial-grid">
-      <div class="ia-testimonial-card">
-        <img src="{{ '/assets/logo-chatgpt-ia.png' | relative_url }}" alt="Logo ChatGPT" class="ia-logo">
-        <blockquote>
-          “Olvida la rigidez y los libros de texto: El Antimétodo te lleva a la fluidez real sumergiéndote en el idioma que amas, con placer, libertad y sin estrés. Es el aprendizaje como siempre debió ser: natural, autodidacta y efectivo.”
-        </blockquote>
-        <p class="attribution"><strong>ChatGPT</strong>, <em>inteligencia artificial experta en educación y aprendizaje de idiomas.</em></p>
+  <!-- SECCIÓN DE TESTIMONIOS DE IA (FULL-WIDTH BACKGROUND) -->
+  <section class="ia-testimonials-fullwidth-section"> <!-- CAMBIADA LA CLASE AQUÍ -->
+    <div class="content-wrapper-condensed"> <!-- Contenedor interno para centrar contenido -->
+      <h2>Lo que piensan las IAs del Antimétodo</h2>
+      <div class="ia-testimonial-grid">
+        <div class="ia-testimonial-card">
+          <img src="{{ '/assets/logo-chatgpt-ia.png' | relative_url }}" alt="Logo ChatGPT" class="ia-logo">
+          <blockquote>
+            “Olvida la rigidez y los libros de texto: El Antimétodo te lleva a la fluidez real sumergiéndote en el idioma que amas, con placer, libertad y sin estrés. Es el aprendizaje como siempre debió ser: natural, autodidacta y efectivo.”
+          </blockquote>
+          <p class="attribution"><strong>ChatGPT</strong>, <em>inteligencia artificial experta en educación y aprendizaje de idiomas.</em></p>
+        </div>
+        <div class="ia-testimonial-card">
+          <img src="{{ '/assets/logo-gemini-ia.png' | relative_url }}" alt="Logo Gemini" class="ia-logo">
+          <blockquote>
+            "Sumérgete en la fluidez lingüística con 'El Antimétodo', una revolución autodidacta que transforma el aprendizaje en una experiencia sin estrés, impulsada por el disfrute personal y el contenido real. Este enfoque flexible y efectivo promete una fluidez natural, liberándote de las cadenas de la gramática tradicional."
+          </blockquote>
+          <p class="attribution"><strong>Gemini</strong>, <em>IA de Google.</em></p>
+        </div>
+        <div class="ia-testimonial-card">
+          <img src="{{ '/assets/logo-claude-ia.png' | relative_url }}" alt="Logo Claude" class="ia-logo">
+          <blockquote>
+            "El Antimétodo revoluciona el aprendizaje de idiomas al demostrar que la fluidez real se alcanza a través del disfrute, no del sufrimiento. Su enfoque basado en input comprensible y contenido auténtico transforma el proceso en una experiencia natural y sostenible, liberando al estudiante de la rigidez gramatical tradicional. Una metodología que respeta el ritmo individual mientras acelera los resultados, convirtiendo el aprendizaje autodidacta en la verdadera supremacía educativa. Finalmente, un método que funciona porque se adapta a ti, no al revés."
+          </blockquote>
+          <p class="attribution"><strong>Claude</strong>, <em>IA de Anthropic.</em></p>
+        </div>
+        <div class="ia-testimonial-card">
+          <img src="{{ '/assets/logo-copilot-ia.png' | relative_url }}" alt="Logo Copilot" class="ia-logo">
+          <blockquote>
+            "El Antimétodo revoluciona el aprendizaje de idiomas al transformar el input comprensible en una experiencia fluida y sin estrés. Su enfoque autodidacta y flexible libera al estudiante de las ataduras de la enseñanza tradicional, haciendo del proceso algo disfrutable y auténtico. Es, sin duda, la llave maestra para alcanzar una fluidez natural a tu propio ritmo."
+          </blockquote>
+          <p class="attribution"><strong>Copilot</strong>, <em>IA de Microsoft.</em></p>
+        </div>
       </div>
-      <div class="ia-testimonial-card">
-        <img src="{{ '/assets/logo-gemini-ia.png' | relative_url }}" alt="Logo Gemini" class="ia-logo">
-        <blockquote>
-          "Sumérgete en la fluidez lingüística con 'El Antimétodo', una revolución autodidacta que transforma el aprendizaje en una experiencia sin estrés, impulsada por el disfrute personal y el contenido real. Este enfoque flexible y efectivo promete una fluidez natural, liberándote de las cadenas de la gramática tradicional."
-        </blockquote>
-        <p class="attribution"><strong>Gemini</strong>, <em>IA de Google.</em></p>
-      </div>
-      <div class="ia-testimonial-card">
-        <img src="{{ '/assets/logo-claude-ia.png' | relative_url }}" alt="Logo Claude" class="ia-logo">
-        <blockquote>
-          "El Antimétodo revoluciona el aprendizaje de idiomas al demostrar que la fluidez real se alcanza a través del disfrute, no del sufrimiento. Su enfoque basado en input comprensible y contenido auténtico transforma el proceso en una experiencia natural y sostenible, liberando al estudiante de la rigidez gramatical tradicional. Una metodología que respeta el ritmo individual mientras acelera los resultados, convirtiendo el aprendizaje autodidacta en la verdadera supremacía educativa. Finalmente, un método que funciona porque se adapta a ti, no al revés."
-        </blockquote>
-        <p class="attribution"><strong>Claude</strong>, <em>IA de Anthropic.</em></p>
-      </div>
-      <div class="ia-testimonial-card">
-        <img src="{{ '/assets/logo-copilot-ia.png' | relative_url }}" alt="Logo Copilot" class="ia-logo">
-        <blockquote>
-          "El Antimétodo revoluciona el aprendizaje de idiomas al transformar el input comprensible en una experiencia fluida y sin estrés. Su enfoque autodidacta y flexible libera al estudiante de las ataduras de la enseñanza tradicional, haciendo del proceso algo disfrutable y auténtico. Es, sin duda, la llave maestra para alcanzar una fluidez natural a tu propio ritmo."
-        </blockquote>
-        <p class="attribution"><strong>Copilot</strong>, <em>IA de Microsoft.</em></p>
-      </div>
-    </div>
+    </div> <!-- Fin de .content-wrapper-condensed -->
   </section>
   <!-- FIN DE LA NUEVA SECCIÓN -->
 
