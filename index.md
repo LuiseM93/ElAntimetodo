@@ -56,19 +56,18 @@ description: Aprende idiomas de forma natural, divertida y eficiente con el enfo
 .content-section .section-title { text-align: center; margin-bottom: 2rem; }
 .content-section .section-subtitle { text-align: center; font-size: 1.15em; color: var(--text-light-color); margin-top: -1.5rem; margin-bottom: 2rem; }
 
-/* === ESTILOS PARA EL CARRUSEL DE TESTIMONIOS DE IA (Tiny Slider) === */
-.ia-testimonials-section-js { /* Nueva clase para la sección */
-  padding: 3rem 0; /* Padding vertical, horizontal se maneja con el contenedor interno */
+/* === ESTILOS AJUSTADOS PARA EL CARRUSEL DE TESTIMONIOS DE IA (Tiny Slider) === */
+.ia-testimonials-section-js { 
+  padding: 3rem 0; 
   background-color: var(--primary-color); 
   color: var(--navbar-text-color); 
   margin-top: 3rem;
   margin-bottom: 3rem;
-  /* Los márgenes negativos para full-width se eliminan, el contenedor interno se centrará */
 }
-.ia-testimonials-section-js .content-wrapper-condensed { /* Un contenedor para centrar el contenido del carrusel */
-    max-width: 800px; /* O el ancho que prefieras para el carrusel */
+.ia-testimonials-section-js .content-wrapper-condensed { 
+    max-width: 800px; 
     margin: 0 auto;
-    padding: 0 1rem; /* Padding lateral para móviles */
+    padding: 0 1rem; 
 }
 .ia-testimonials-section-js h2 {
   text-align: center;
@@ -76,7 +75,7 @@ description: Aprende idiomas de forma natural, divertida y eficiente con el enfo
   margin-bottom: 1rem;
   color: var(--navbar-text-color); 
   font-size: 2em;
-  border-bottom: none; /* No necesita el borde H2 estándar */
+  border-bottom: none; 
 }
 .ia-testimonials-section-js .section-intro-text {
     text-align: center;
@@ -86,27 +85,40 @@ description: Aprende idiomas de forma natural, divertida y eficiente con el enfo
     color: var(--light-purple-color); 
 }
 
-.ia-testimonial-slide-js { /* Clase para cada slide individual */
+.ia-testimonial-slider-container { /* Contenedor que envuelve al slider y posibles flechas */
+  position: relative;
+  max-width: 750px; /* Ajustar ancho máximo del slider en sí */
+  margin: 0 auto;
+}
+
+.ia-testimonial-slider { /* Contenedor directo de los slides, al que se aplica tns() */
+  visibility: hidden; /* Ocultar hasta que JS lo inicialice */
+}
+.ia-testimonial-slider.tns-slider { /* Clase que añade Tiny Slider cuando está listo */
+    visibility: visible;
+}
+
+.ia-testimonial-slide-js { 
   background-color: var(--secondary-color); 
   padding: 2rem 2.5rem;
   border-radius: 12px;
   box-shadow: 0 5px 20px rgba(0,0,0,0.2);
-  display: flex !important; /* Importante para Tiny Slider si tiene estilos por defecto */
+  display: flex !important; /* Forzar flex para compatibilidad con Tiny Slider */
   gap: 1.5rem; 
   align-items: center;
-  color: var(--navbar-text-color); /* Asegurar que el texto dentro sea blanco */
+  color: var(--navbar-text-color); 
 }
 .ia-logo-container-js img {
-  width: 70px; /* Ajustar tamaño de logos */
+  width: 70px; 
   height: 70px;
   border-radius: 50%; 
   object-fit: cover;
   border: 3px solid var(--light-purple-color);
-  flex-shrink: 0; /* Evitar que el logo se encoja */
+  flex-shrink: 0; 
 }
 .ia-text-container-js {
   flex-grow: 1;
-  text-align: left; /* Alinear texto a la izquierda */
+  text-align: left; 
 }
 .ia-text-container-js blockquote {
   margin: 0 0 1rem 0;
@@ -124,36 +136,41 @@ description: Aprende idiomas de forma natural, divertida y eficiente con el enfo
     font-weight: 600;
 }
 
-/* Estilos para los controles de Tiny Slider (puedes personalizarlos más) */
-.tns-nav { /* Puntos de navegación */
+/* Estilos para los puntos de navegación de Tiny Slider */
+.tns-nav { 
   text-align: center;
-  margin-top: 20px;
+  margin-top: 25px; /* Más espacio para los puntos */
 }
 .tns-nav button {
-  width: 10px;
-  height: 10px;
+  width: 12px; /* Puntos un poco más grandes */
+  height: 12px;
   background-color: var(--light-purple-color);
   border: none;
   border-radius: 50%;
-  margin: 0 5px;
+  margin: 0 6px; /* Más espacio entre puntos */
   padding: 0;
-  opacity: 0.7;
+  opacity: 0.6;
+  transition: opacity 0.2s ease, background-color 0.2s ease;
+}
+.tns-nav button:hover {
+  opacity: 0.8;
 }
 .tns-nav button.tns-nav-active {
   background-color: var(--navbar-text-color);
   opacity: 1;
 }
-/* Ocultar flechas por defecto, Tiny Slider las añade si se configuran */
-.tns-controls button[data-controls="prev"],
-.tns-controls button[data-controls="next"] {
-  /* Puedes estilizarlas si las activas en la configuración de JS */
-  display: none; /* Ocultarlas si no las vas a usar o estilizarlas después */
-}
-
+/* Si quieres usar flechas de Tiny Slider, necesitarías estilizarlas (clases .tns-controls button[data-controls="prev/next"]) */
 
 @media (max-width: 768px) {
-    /* ... (otros estilos responsivos existentes) ... */
-    .ia-testimonials-section-js { padding: 2rem 0; /* Menos padding en la sección en móvil */ }
+    .hero-section { padding: 2rem 1rem 1.5rem 1rem; } 
+    .hero-content h1 { font-size: 2.2em; } 
+    .hero-content .subtitle { font-size: 1.1em; margin-bottom: 1.8rem; } 
+    .hero-cards-container { flex-direction: column; gap: 20px; align-items: center;} 
+    .hero-card { max-width: 90%; padding: 20px; } 
+    .hero-main-image { max-width: 85%; } 
+    .content-section { padding: 1.5rem; }
+
+    .ia-testimonials-section-js { padding: 2rem 0; }
     .ia-testimonial-slide-js { flex-direction: column; text-align: center; padding: 1.5rem; }
     .ia-logo-container-js { margin-bottom: 1rem; }
     .ia-text-container-js .attribution { text-align: center; }
@@ -177,57 +194,59 @@ description: Aprende idiomas de forma natural, divertida y eficiente con el enfo
 
   <!-- SECCIÓN DE TESTIMONIOS DE IA CON TINY SLIDER -->
   <section class="ia-testimonials-section-js">
-    <div class="content-wrapper-condensed"> <!-- Contenedor para centrar -->
+    <div class="content-wrapper-condensed"> 
       <h2>A los que aprenden idiomas les encanta El Antimétodo 😉</h2>
       <p class="section-intro-text">Pero no te conformes con solo nuestra palabra. Escucha lo que la Inteligencia Artificial tiene para decir:</p>
       
-      <div class="ia-testimonial-slider"> <!-- Este es el contenedor que Tiny Slider usará -->
-        <div class="ia-testimonial-slide-js"> 
-          <div class="ia-logo-container-js">
-            <img src="{{ '/assets/logo-chatgpt-ia.png' | relative_url }}" alt="Logo ChatGPT">
+      <div class="ia-testimonial-slider-container">
+        <div class="ia-testimonial-slider"> <!-- Este es el contenedor que Tiny Slider usará -->
+          <div class="ia-testimonial-slide-js"> 
+            <div class="ia-logo-container-js">
+              <img src="{{ '/assets/logo-chatgpt-ia.png' | relative_url }}" alt="Logo ChatGPT">
+            </div>
+            <div class="ia-text-container-js">
+              <blockquote>
+                “Olvida la rigidez y los libros de texto: El Antimétodo te lleva a la fluidez real sumergiéndote en el idioma que amas, con placer, libertad y sin estrés. Es el aprendizaje como siempre debió ser: natural, autodidacta y efectivo.”
+              </blockquote>
+              <p class="attribution"><strong>ChatGPT</strong>, <em>IA experta en educación.</em></p>
+            </div>
           </div>
-          <div class="ia-text-container-js">
-            <blockquote>
-              “Olvida la rigidez y los libros de texto: El Antimétodo te lleva a la fluidez real sumergiéndote en el idioma que amas, con placer, libertad y sin estrés. Es el aprendizaje como siempre debió ser: natural, autodidacta y efectivo.”
-            </blockquote>
-            <p class="attribution"><strong>ChatGPT</strong>, <em>IA experta en educación.</em></p>
+          <div class="ia-testimonial-slide-js">
+            <div class="ia-logo-container-js">
+              <img src="{{ '/assets/logo-gemini-ia.png' | relative_url }}" alt="Logo Gemini">
+            </div>
+            <div class="ia-text-container-js">
+              <blockquote>
+                "Sumérgete en la fluidez lingüística con 'El Antimétodo', una revolución autodidacta que transforma el aprendizaje en una experiencia sin estrés, impulsada por el disfrute personal y el contenido real. Este enfoque flexible y efectivo promete una fluidez natural."
+              </blockquote>
+              <p class="attribution"><strong>Gemini</strong>, <em>IA de Google.</em></p>
+            </div>
           </div>
-        </div>
-        <div class="ia-testimonial-slide-js">
-          <div class="ia-logo-container-js">
-            <img src="{{ '/assets/logo-gemini-ia.png' | relative_url }}" alt="Logo Gemini">
+          <div class="ia-testimonial-slide-js">
+            <div class="ia-logo-container-js">
+              <img src="{{ '/assets/logo-claude-ia.png' | relative_url }}" alt="Logo Claude">
+            </div>
+            <div class="ia-text-container-js">
+              <blockquote>
+                "El Antimétodo revoluciona el aprendizaje de idiomas al demostrar que la fluidez real se alcanza a través del disfrute, no del sufrimiento... Finalmente, un método que funciona porque se adapta a ti, no al revés."
+              </blockquote>
+              <p class="attribution"><strong>Claude</strong>, <em>IA de Anthropic.</em></p>
+            </div>
           </div>
-          <div class="ia-text-container-js">
-            <blockquote>
-              "Sumérgete en la fluidez lingüística con 'El Antimétodo', una revolución autodidacta que transforma el aprendizaje en una experiencia sin estrés, impulsada por el disfrute personal y el contenido real. Este enfoque flexible y efectivo promete una fluidez natural."
-            </blockquote>
-            <p class="attribution"><strong>Gemini</strong>, <em>IA de Google.</em></p>
+          <div class="ia-testimonial-slide-js">
+            <div class="ia-logo-container-js">
+              <img src="{{ '/assets/logo-copilot-ia.png' | relative_url }}" alt="Logo Copilot">
+            </div>
+            <div class="ia-text-container-js">
+              <blockquote>
+                "El Antimétodo transforma el input comprensible en una experiencia fluida y sin estrés... Es, sin duda, la llave maestra para alcanzar una fluidez natural a tu propio ritmo."
+              </blockquote>
+              <p class="attribution"><strong>Copilot</strong>, <em>IA de Microsoft.</em></p>
+            </div>
           </div>
-        </div>
-        <div class="ia-testimonial-slide-js">
-          <div class="ia-logo-container-js">
-            <img src="{{ '/assets/logo-claude-ia.png' | relative_url }}" alt="Logo Claude">
-          </div>
-          <div class="ia-text-container-js">
-            <blockquote>
-              "El Antimétodo revoluciona el aprendizaje de idiomas al demostrar que la fluidez real se alcanza a través del disfrute, no del sufrimiento... Finalmente, un método que funciona porque se adapta a ti, no al revés."
-            </blockquote>
-            <p class="attribution"><strong>Claude</strong>, <em>IA de Anthropic.</em></p>
-          </div>
-        </div>
-        <div class="ia-testimonial-slide-js">
-          <div class="ia-logo-container-js">
-            <img src="{{ '/assets/logo-copilot-ia.png' | relative_url }}" alt="Logo Copilot">
-          </div>
-          <div class="ia-text-container-js">
-            <blockquote>
-              "El Antimétodo transforma el input comprensible en una experiencia fluida y sin estrés... Es, sin duda, la llave maestra para alcanzar una fluidez natural a tu propio ritmo."
-            </blockquote>
-            <p class="attribution"><strong>Copilot</strong>, <em>IA de Microsoft.</em></p>
-          </div>
-        </div>
-      </div> <!-- Cierre de .ia-testimonial-slider -->
-    </div> <!-- Cierre de .content-wrapper-condensed -->
+        </div> 
+      </div> 
+    </div> 
   </section>
   <!-- FIN DE LA NUEVA SECCIÓN -->
 
@@ -278,25 +297,31 @@ description: Aprende idiomas de forma natural, divertida y eficiente con el enfo
 
 </main>
 
-<!-- Script para inicializar Tiny Slider -->
+<!-- Script para inicializar Tiny Slider (AL FINAL DEL ARCHIVO, ANTES DE </main> SI ES POSIBLE O JUSTO ANTES DE </body> EN default.html) -->
+<!-- Es mejor poner los scripts al final del body en default.html, pero si es específico para esta página, aquí está bien también -->
 <script>
   document.addEventListener('DOMContentLoaded', function () {
-    var slider = tns({
-      container: '.ia-testimonial-slider', // El contenedor de tus slides
-      items: 1, // Mostrar 1 item a la vez
-      slideBy: 'page',
-      autoplay: true,
-      autoplayButtonOutput: false, // Ocultar botón de play/pausa si no lo quieres
-      mouseDrag: true, // Permitir arrastrar con el ratón
-      swipeAngle: false, // Desactivar si causa problemas con scroll vertical en móvil
-      speed: 500, // Velocidad de la transición
-      nav: true, // Mostrar puntos de navegación
-      // controls: false, // Ocultar flechas por defecto, puedes habilitarlas y estilizarlas
-      responsive: {
-        768: {
-          // items: 1 // Podrías mostrar más items en pantallas grandes si quisieras
-        }
-      }
-    });
+    var testimonySliderElement = document.querySelector('.ia-testimonial-slider');
+    if (testimonySliderElement && typeof tns === 'function') { // Verificar también que tns esté definido
+      var slider = tns({
+        container: testimonySliderElement,
+        items: 1, 
+        slideBy: 'page',
+        autoplay: true,
+        autoplayButtonOutput: false, 
+        autoplayTimeout: 7000, // Aumentado tiempo a 7 segundos
+        mouseDrag: true, 
+        swipeAngle: false, 
+        speed: 600, // Velocidad transición un poco más lenta
+        nav: true, 
+        navPosition: "bottom", 
+        controls: false, // Flechas desactivadas por ahora
+        // controlsText: ['<', '>'], 
+        lazyload: false 
+      });
+    } else {
+      if (!testimonySliderElement) console.error("Tiny Slider container '.ia-testimonial-slider' not found.");
+      if (typeof tns !== 'function') console.error("Tiny Slider (tns) function is not defined. Check script inclusion in default.html.");
+    }
   });
 </script>
