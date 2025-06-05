@@ -56,22 +56,19 @@ description: Aprende idiomas de forma natural, divertida y eficiente con el enfo
 .content-section .section-title { text-align: center; margin-bottom: 2rem; }
 .content-section .section-subtitle { text-align: center; font-size: 1.15em; color: var(--text-light-color); margin-top: -1.5rem; margin-bottom: 2rem; }
 
-/* === ESTILOS PARA LA SECCIÓN DE TESTIMONIOS DE IA (FULL-WIDTH BACKGROUND) === */
+/* === ESTILOS PARA LA SECCIÓN DE TESTIMONIOS DE IA (FULL-WIDTH BACKGROUND Y TARJETAS MÁS ANCHAS) === */
 .ia-testimonials-fullwidth-section {
-  background-color: #f0e6f6; /* Fondo morado muy pálido */
+  background-color: #f0e6f6; 
   padding: 3rem 0; 
   margin-top: 3rem;
   margin-bottom: 3rem;
-  /* Márgenes negativos para efecto full-width si está dentro de un contenedor más estrecho */
-  /* Asumiendo que el .content-wrapper principal tiene padding de 20px */
-  margin-left: calc(-50vw + 50% + 20px); /* 20px es el padding del content-wrapper */
+  margin-left: calc(-50vw + 50% + 20px); 
   margin-right: calc(-50vw + 50% + 20px);
-  /* overflow: hidden; /* Para contener los márgenes negativos */
 }
-.ia-testimonials-fullwidth-section .content-wrapper-condensed { /* Contenedor interno para centrar el contenido */
-    max-width: 850px; /* Debe coincidir con tu .content-wrapper principal o ser menor */
+.ia-testimonials-fullwidth-section .content-wrapper-condensed { 
+    max-width: 900px; /* Aumentado para permitir 2 tarjetas más anchas */
     margin: 0 auto;
-    padding: 0 1rem; /* Padding lateral para el contenido interno */
+    padding: 0 1rem; 
 }
 .ia-testimonials-fullwidth-section h2 {
   text-align: center;
@@ -79,24 +76,31 @@ description: Aprende idiomas de forma natural, divertida y eficiente con el enfo
   margin-bottom: 2rem; 
   color: var(--primary-color);
   font-size: 2em;
-  border-bottom: none; /* Quitar el borde si el H2 global lo tiene */
+  border-bottom: none; 
 }
 .ia-testimonial-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+  grid-template-columns: 1fr; /* Móvil primero: 1 columna */
   gap: 1.8rem; 
 }
-.ia-testimonial-card { /* ÚNICA DEFINICIÓN CORRECTA */
+
+@media (min-width: 700px) { /* A partir de 700px, intenta 2 columnas */
+  .ia-testimonial-grid {
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual tamaño */
+  }
+}
+
+.ia-testimonial-card {
   background-color: var(--card-background);
-  padding: 1.8rem 2rem; 
+  padding: 1.8rem 2.2rem; 
   border-radius: 8px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.08);
   border-left: 5px solid var(--secondary-color); 
   display: flex;
   flex-direction: column; 
   width: 100%; 
-  min-height: 280px; /* AJUSTA ESTE VALOR SEGÚN NECESITES */
-  }
+  min-height: 300px; /* AJUSTA ESTA ALTURA MÍNIMA según necesites */
+}
 .ia-testimonial-card .ia-logo {
   width: 48px; 
   height: 48px;
@@ -127,7 +131,7 @@ description: Aprende idiomas de forma natural, divertida y eficiente con el enfo
   font-size: 0.9em;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) { /* Esta media query ya existe, asegúrate de que no haya conflictos */
     .hero-section { padding: 2rem 1rem 1.5rem 1rem; } 
     .hero-content h1 { font-size: 2.2em; } 
     .hero-content .subtitle { font-size: 1.1em; margin-bottom: 1.8rem; } 
@@ -135,11 +139,11 @@ description: Aprende idiomas de forma natural, divertida y eficiente con el enfo
     .hero-card { max-width: 90%; padding: 20px; } 
     .hero-main-image { max-width: 85%; } 
     .content-section { padding: 1.5rem; }
-    .ia-testimonial-grid { grid-template-columns: 1fr; }
-    .ia-testimonials-fullwidth-section { /* Ajustar márgenes para móvil */
-        margin-left: -1rem; /* Si el content-wrapper en móvil tiene padding 1rem */
+    /* .ia-testimonial-grid { grid-template-columns: 1fr; } // Ya está definido como 1fr por defecto */
+    .ia-testimonials-fullwidth-section { 
+        margin-left: -1rem; 
         margin-right: -1rem;
-        padding-left: 1rem; /* Restablecer padding para el contenido interno */
+        padding-left: 1rem; 
         padding-right: 1rem;
     }
 }
@@ -161,8 +165,8 @@ description: Aprende idiomas de forma natural, divertida y eficiente con el enfo
   </section>
 
   <!-- SECCIÓN DE TESTIMONIOS DE IA (FULL-WIDTH BACKGROUND) -->
-  <section class="ia-testimonials-fullwidth-section"> <!-- CAMBIADA LA CLASE AQUÍ -->
-    <div class="content-wrapper-condensed"> <!-- Contenedor interno para centrar contenido -->
+  <section class="ia-testimonials-fullwidth-section"> 
+    <div class="content-wrapper-condensed"> 
       <h2>Lo que piensan las IAs del Antimétodo</h2>
       <div class="ia-testimonial-grid">
         <div class="ia-testimonial-card">
@@ -194,7 +198,7 @@ description: Aprende idiomas de forma natural, divertida y eficiente con el enfo
           <p class="attribution"><strong>Copilot</strong>, <em>IA de Microsoft.</em></p>
         </div>
       </div>
-    </div> <!-- Fin de .content-wrapper-condensed -->
+    </div> 
   </section>
   <!-- FIN DE LA NUEVA SECCIÓN -->
 
@@ -239,7 +243,7 @@ description: Aprende idiomas de forma natural, divertida y eficiente con el enfo
         <p style="font-size:0.85em; color: #777; margin-top: 0.5rem;"><em>Paciencia, estamos construyendo algo genial...</em></p>
     </div>
      <p style="text-align: center; font-size: 0.9em; color: #888; margin-top: 3rem; border-top: 1px dashed var(--light-purple-color); padding-top: 1rem;">
-       <em>Última actualización del sitio: 04 de Junio de 2025 10:28pm</em>
+       <em>Última actualización del sitio: 04 de Junio de 2025 10:32pm</em>
      </p>
   </section>
 
