@@ -78,15 +78,16 @@ description: Aprende idiomas de forma natural, divertida y eficiente con el enfo
   font-size: 2em;
   border-bottom: none; 
 }
+
 .ia-testimonial-grid {
   display: grid;
-  grid-template-columns: 1fr; /* Móvil primero: 1 columna */
-  gap: 1.8rem; 
+  grid-template-columns: 1fr; /* Por defecto 1 columna para móviles */
+  gap: 2rem; /* Espacio entre tarjetas */
 }
 
-@media (min-width: 700px) { /* A partir de 700px, intenta 2 columnas */
+@media (min-width: 700px) { /* A partir de 700px de ancho del viewport, intenta 2 columnas */
   .ia-testimonial-grid {
-    grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual tamaño */
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual ancho fraccional */
   }
 }
 
@@ -98,8 +99,7 @@ description: Aprende idiomas de forma natural, divertida y eficiente con el enfo
   border-left: 5px solid var(--secondary-color); 
   display: flex;
   flex-direction: column; 
-  width: 100%; 
-  min-height: 200px; /* AJUSTA ESTA ALTURA MÍNIMA según necesites */
+  /* La altura se ajustará al contenido */
 }
 .ia-testimonial-card .ia-logo {
   width: 48px; 
@@ -116,14 +116,14 @@ description: Aprende idiomas de forma natural, divertida y eficiente con el enfo
   font-size: 1em; 
   line-height: 1.65; 
   border-left: none; 
-  flex-grow: 1; 
+  flex-grow: 1; /* Importante para que la atribución se vaya abajo si las tarjetas tienen alturas variables */
 }
 .ia-testimonial-card .attribution {
   text-align: right;
   font-size: 0.9em;
   color: var(--primary-color);
   font-weight: 500;
-  margin-top: auto; 
+  margin-top: auto; /* Empuja la atribución al final de la tarjeta */
 }
 .ia-testimonial-card .attribution em {
   font-style: normal;
@@ -131,7 +131,7 @@ description: Aprende idiomas de forma natural, divertida y eficiente con el enfo
   font-size: 0.9em;
 }
 
-@media (max-width: 768px) { /* Esta media query ya existe, asegúrate de que no haya conflictos */
+@media (max-width: 768px) { 
     .hero-section { padding: 2rem 1rem 1.5rem 1rem; } 
     .hero-content h1 { font-size: 2.2em; } 
     .hero-content .subtitle { font-size: 1.1em; margin-bottom: 1.8rem; } 
@@ -139,7 +139,7 @@ description: Aprende idiomas de forma natural, divertida y eficiente con el enfo
     .hero-card { max-width: 90%; padding: 20px; } 
     .hero-main-image { max-width: 85%; } 
     .content-section { padding: 1.5rem; }
-    /* .ia-testimonial-grid { grid-template-columns: 1fr; } // Ya está definido como 1fr por defecto */
+    /* .ia-testimonial-grid ya es 1fr por defecto, no es necesario repetirlo aquí */
     .ia-testimonials-fullwidth-section { 
         margin-left: -1rem; 
         margin-right: -1rem;
@@ -243,7 +243,7 @@ description: Aprende idiomas de forma natural, divertida y eficiente con el enfo
         <p style="font-size:0.85em; color: #777; margin-top: 0.5rem;"><em>Paciencia, estamos construyendo algo genial...</em></p>
     </div>
      <p style="text-align: center; font-size: 0.9em; color: #888; margin-top: 3rem; border-top: 1px dashed var(--light-purple-color); padding-top: 1rem;">
-       <em>Última actualización del sitio: 04 de Junio de 2025 10:32pm</em>
+       <em>Última actualización del sitio: 04 de Junio de 2025 10:41pm</em>
      </p>
   </section>
 
