@@ -89,11 +89,6 @@ description: Conéctate con el creador del Antimétodo, resuelve tus dudas por I
       Este sitio web está en constante evolución. ¡Tu feedback es muy valioso para mejorarlo!
     </p>
     
-    <!-- Aquí es donde podrías poner la imagen épica de "Supremacía" si decides que va bien en esta página -->
-    <!-- <div style="margin-top: 3rem;">
-      <img src="{{ '/assets/antimetodo-supremacy-epic.png' | relative_url }}" alt="La Supremacía del Antimétodo es Real" style="max-width: 60%; height: auto; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
-    </div> -->
-
   </section>
 
 </main>
