@@ -66,7 +66,7 @@ description: Conéctate con el creador del Antimétodo, resuelve tus dudas por I
   <section class="contact-section-card">
     <h2>¿Tienes Dudas o Sugerencias?</h2>
     <p style="font-size: 1.1em; margin-top: 1rem; line-height: 1.7; color: var(--text-light-color);">
-      Para cualquier consulta sobre El Antimétodo, si necesitas ayuda con algún recurso, o simplemente quieres compartir tu experiencia, las principales formas de contactar son a través de Instagram o correo electrónico:
+      Para cualquier consulta sobre El Antimétodo, sobre cualquier duda, o simplemente compartir tu experiencia, las principales formas de contactar son a través de Instagram o correo electrónico:
     </p>
     
     <div class="contact-options-container">
@@ -76,7 +76,6 @@ description: Conéctate con el creador del Antimétodo, resuelve tus dudas por I
         </svg>
         Contactar por Instagram
       </a>
-
       <div class="email-link-container"> <!-- Contenedor para el texto y el enlace de email -->
         <a href="mailto:joseluishernandeztareas@gmail.com" class="email-link">
           <svg class="email-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm0 2l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"/></svg>
