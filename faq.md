@@ -67,7 +67,7 @@ description: Respuestas a las dudas más comunes sobre El Antimétodo, el aprend
     <div class="faq-item">
       <h3 class="faq-question">¿Cuánto tiempo tardare en aprender un idioma con el Antimétodo?</h3>
       <div class="faq-answer">
-        <p><strong>No existe una respuesta exacta</strong> porque depende mucho del idioma, la dedicación y el tiempo que le dediques. Como referencia común y meta realista, alcanzar un nivel alto en un idioma suele tomar alrededor de <strong>2 años con 2 horas diarias</strong> de estudio con el Antimétodo. Sin embargo, esto puede variar mucho según cada persona. Además, con el Antimétodo es bastante fácil superar el tiempo diario de estudio planeado, lo que puede <strong>acelerar mucho el proceso</strong>. Lo más importante es la <strong>constancia y confiar en el método</strong>, porque aquí buscamos un aprendizaje natural y duradero. Además, disfrutarás el camino sin frustrarte, enfocándote en conectar con el idioma desde el primer día.</p>
+        <p><strong>No existe una respuesta exacta</strong> porque depende mucho del idioma, la dedicación y el tiempo que le dediques. Como referencia común y meta realista, alcanzar un nivel alto en un idioma suele tomar alrededor de <strong>2 años en promedio</strong> con el Antimétodo. Sin embargo, esto puede variar mucho según cada persona. Además, con el Antimétodo es bastante fácil superar el tiempo diario de estudio planeado, lo que puede <strong>acelerar mucho el proceso</strong>. Lo más importante es la <strong>constancia y confiar en el método</strong>, porque aquí buscamos un aprendizaje natural y duradero. Además, disfrutarás el camino sin frustrarte, enfocándote en conectar con el idioma desde el primer día.</p>
       </div>
     </div>
 
