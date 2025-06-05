@@ -99,7 +99,7 @@ description: Aprende idiomas de forma natural, divertida y eficiente con el enfo
   display: flex;
   flex-direction: column; 
   width: 100%; 
-  min-height: 300px; /* AJUSTA ESTA ALTURA MÍNIMA según necesites */
+  min-height: 200px; /* AJUSTA ESTA ALTURA MÍNIMA según necesites */
 }
 .ia-testimonial-card .ia-logo {
   width: 48px; 
