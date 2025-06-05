@@ -233,7 +233,7 @@ description: Ejemplos de rutinas y una herramienta interactiva para diseñar tu 
           <ul>
             <li>¡Aquí es donde El Antimétodo brilla!</li>
             <li>Actividad Principal de Inmersión (1.5 - 2h+): Series/películas (subs idioma meta), lectura intensiva, videojuegos, YouTube.</li>
-            <li>Anki: Repaso (terminar el mazo de 1000 palabras frecuentes) [15-20 min]</em>.</li>
+            <li>Anki: Repaso (terminar el mazo de 1000 palabras frecuentes) <em>[15-20 min]</em>.</li>
           </ul>
           <p><strong>Etapa 3 (Free Flow y Consolidación - objetivo 2h+ diarias):</strong></p>
           <ul>
