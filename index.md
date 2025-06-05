@@ -215,7 +215,7 @@ description: Aprende idiomas de forma natural con el enfoque del input comprensi
         <p style="font-size:0.85em; color: #777; margin-top: 0.5rem;"><em>Paciencia, estamos construyendo algo genial...</em></p>
     </div>
     <p style="text-align: center; font-size: 0.9em; color: #888; margin-top: 3rem; border-top: 1px dashed var(--light-purple-color); padding-top: 1rem;">
-   <em>Última actualización del sitio: 04 de Junio de 2025 7:06pm</em>
+   <em>Última actualización del sitio: 04 de Junio de 2025 8:02pm</em>
  </p>
   </section>
 
