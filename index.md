@@ -86,7 +86,6 @@ description: Aprende idiomas de forma natural, divertida y eficiente con el enfo
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
   gap: 1.8rem; 
 }
-
 .ia-testimonial-card { /* ÚNICA DEFINICIÓN CORRECTA */
   background-color: var(--card-background);
   padding: 1.8rem 2rem; 
@@ -97,6 +96,7 @@ description: Aprende idiomas de forma natural, divertida y eficiente con el enfo
   flex-direction: column; 
   width: 100%; 
   min-height: 280px; /* AJUSTA ESTE VALOR SEGÚN NECESITES */
+  }
 .ia-testimonial-card .ia-logo {
   width: 48px; 
   height: 48px;
