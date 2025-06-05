@@ -56,158 +56,81 @@ description: Aprende idiomas de forma natural, divertida y eficiente con el enfo
 .content-section .section-title { text-align: center; margin-bottom: 2rem; }
 .content-section .section-subtitle { text-align: center; font-size: 1.15em; color: var(--text-light-color); margin-top: -1.5rem; margin-bottom: 2rem; }
 
-/* === NUEVOS ESTILOS PARA EL CARRUSEL DE TESTIMONIOS DE IA (ESTILO REFOLD) === */
+/* NUEVOS ESTILOS PARA EL CARRUSEL DE TESTIMONIOS DE IA */
 .ia-testimonials-section {
-  padding: 3rem 1rem; /* Más padding vertical */
-  background-color: var(--primary-color); /* Fondo morado oscuro principal */
-  color: var(--navbar-text-color); /* Texto blanco para contraste */
-  margin: 3rem -20px; /* Extender un poco a los lados si .content-wrapper tiene padding */
-  border-radius: 0; /* Sin redondeo para efecto de sección completa */
+  padding: 2.5rem 1rem;
+  background-color: #f0e6f6; /* Fondo morado muy pálido para destacar la sección */
+  margin-bottom: 3rem;
+  border-radius: 10px;
 }
-@media (min-width: 890px) { /* 850px de content-wrapper + 20px padding izq + 20px padding der */
-  .ia-testimonials-section {
-    margin-left: calc((100% - 850px - 40px) / -2);
-    margin-right: calc((100% - 850px - 40px) / -2);
-    padding-left: calc((100vw - 850px) / 2); /* Para centrar el contenido interno del carrusel */
-    padding-right: calc((100vw - 850px) / 2);
-  }
-}
-
-
 .ia-testimonials-section h2 {
   text-align: center;
   margin-top: 0;
-  margin-bottom: 1rem;
-  color: var(--navbar-text-color); /* Título blanco */
-  font-size: 2em;
+  margin-bottom: 2rem;
+  color: var(--primary-color);
 }
-.ia-testimonials-section .section-intro-text {
-    text-align: center;
-    max-width: 600px;
-    margin: 0 auto 2.5rem auto;
-    font-size: 1.1em;
-    color: var(--light-purple-color); /* Texto introductorio en morado claro */
-}
-
-.ia-testimonial-slider-container {
-  position: relative;
-  max-width: 800px; 
-  margin: 0 auto;
-  overflow: hidden; 
-}
-
 .ia-testimonial-slider {
-  display: flex; /* Usar flex para alinear slides horizontalmente */
-  transition: transform 0.5s ease-in-out; /* Para el efecto de slide con JS */
-  /* La altura será determinada por el contenido de los slides */
+  position: relative;
+  width: 100%;
+  max-width: 700px; /* Ancho máximo del carrusel */
+  margin: 0 auto;
+  height: 220px; /* Altura fija para contener las citas. AJUSTA ESTO según el largo de tus citas */
+  overflow: hidden; /* Ocultar citas que no están activas */
 }
-
 .ia-testimonial-slide {
-  min-width: 100%; /* Cada slide ocupa el 100% del contenedor */
-  box-sizing: border-box;
-  background-color: var(--secondary-color); /* Fondo morado más claro para la tarjeta */
-  padding: 2rem 2.5rem;
-  border-radius: 12px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--card-background);
+  padding: 1.5rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
   display: flex;
-  gap: 1.5rem; /* Espacio entre logo y texto */
-  align-items: center;
-  opacity: 0; /* Manejado por JS o animación CSS si es automática */
-  animation: iaFadeImproved 32s infinite; /* Mantener animación CSS como fallback o si no hay JS */
+  flex-direction: column;
+  justify-content: center;
+  border-left: 5px solid var(--accent-color);
 }
-
-/* Animación CSS (se mantiene pero se priorizará JS si se añade) */
-@keyframes iaFadeImproved {
-  0%, 22%, 100% { opacity: 0; transform: translateX(20px); } /* Sale un poco */
-  3%, 20%  { opacity: 1; transform: translateX(0); }   /* Entra y se queda */
+.ia-testimonial-slide.active {
+  opacity: 1;
+  z-index: 1;
 }
-.ia-testimonial-slide:nth-child(1) { animation-delay: 0s; }
-.ia-testimonial-slide:nth-child(2) { animation-delay: 8s; } 
-.ia-testimonial-slide:nth-child(3) { animation-delay: 16s; }
-.ia-testimonial-slide:nth-child(4) { animation-delay: 24s; }
-/* Fin Animación CSS */
-
-
-.ia-logo-container {
-  flex-shrink: 0; /* Para que el logo no se encoja */
-}
-.ia-logo-container img {
-  width: 80px; /* Tamaño de los logos de IA */
-  height: 80px;
-  border-radius: 50%; /* Logos redondos */
-  object-fit: cover;
-  border: 3px solid var(--light-purple-color);
-}
-.ia-text-container {
-  flex-grow: 1;
-}
-.ia-text-container blockquote {
+.ia-testimonial-slide blockquote {
   margin: 0 0 1rem 0;
   font-style: italic;
-  color: var(--navbar-text-color);
-  font-size: 1.1em; 
+  color: var(--text-light-color);
+  font-size: 1.05em; /* Tamaño de la cita */
   line-height: 1.6;
-  position: relative;
-  padding-left: 2.5rem; /* Espacio para comillas grandes */
+  flex-grow: 1;
 }
-.ia-text-container blockquote::before {
-  content: '“';
-  font-family: Georgia, serif; 
-  font-size: 4em; /* Comillas grandes */
-  color: var(--accent-color); 
-  position: absolute;
-  left: -10px;
-  top: -20px;
-  opacity: 0.8;
-}
-.ia-text-container .attribution {
-  text-align: left; /* Atribución a la izquierda debajo de la cita */
-  font-size: 1em;
-  color: var(--light-purple-color);
+.ia-testimonial-slide .attribution {
+  text-align: right;
+  font-size: 0.95em;
+  color: var(--primary-color);
   font-weight: 500;
 }
-.ia-text-container .attribution strong { /* Nombre de la IA */
-    color: var(--navbar-text-color);
-    font-weight: 600;
+.ia-testimonial-slide .attribution em {
+  font-style: normal;
+  color: var(--text-light-color);
+  font-size: 0.9em;
 }
+/* Animación del carrusel */
+@keyframes iaFade {
+  0%, 20%, 100% { opacity: 0; } /* 20% del tiempo total de animación para una cita (ej. 8s / 4 citas = 2s por cita + transición) */
+  5%, 15% { opacity: 1; } /* Visible durante un tiempo */
+}
+/* Aplicar animación a cada slide con delay - ASUMIENDO 4 CITAS */
+/* Duración total de la animación = (tiempo visible + tiempo transición) * número de citas */
+/* Ej: (6s visible + 2s transición) * 4 citas = 32s */
+.ia-testimonial-slide { animation: iaFade 32s infinite; }
+.ia-testimonial-slide:nth-child(1) { animation-delay: 0s; }
+.ia-testimonial-slide:nth-child(2) { animation-delay: 8s; } /* 32s / 4 citas = 8s de delay entre cada una */
+.ia-testimonial-slide:nth-child(3) { animation-delay: 16s; }
+.ia-testimonial-slide:nth-child(4) { animation-delay: 24s; }
 
-/* Controles de Navegación (Placeholder, requerirían JS para funcionar) */
-.ia-slider-nav {
-    text-align: center;
-    margin-top: 1.5rem;
-}
-.ia-slider-nav button, .ia-slider-nav .dot {
-    background-color: var(--light-purple-color);
-    border: none;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    margin: 0 5px;
-    cursor: pointer;
-    padding: 0;
-    opacity: 0.6;
-}
-.ia-slider-nav button:hover, .ia-slider-nav .dot:hover,
-.ia-slider-nav button.active, .ia-slider-nav .dot.active {
-    background-color: var(--navbar-text-color);
-    opacity: 1;
-}
-.ia-slider-prev, .ia-slider-next { /* Estilo para flechas (se pueden usar caracteres o SVGs) */
-    background-color: var(--secondary-color);
-    color: white;
-    border: none;
-    padding: 0.5rem 0.8rem;
-    border-radius: 50%;
-    cursor: pointer;
-    font-size: 1.2em;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 10;
-}
-.ia-slider-prev { left: -15px; }
-.ia-slider-next { right: -15px; }
-/* Fin de Controles */
 
 @media (max-width: 768px) {
     .hero-section { padding: 2rem 1rem 1.5rem 1rem; } 
@@ -217,14 +140,9 @@ description: Aprende idiomas de forma natural, divertida y eficiente con el enfo
     .hero-card { max-width: 90%; padding: 20px; } 
     .hero-main-image { max-width: 85%; } 
     .content-section { padding: 1.5rem; }
-
-    .ia-testimonials-section { margin-left: -1rem; margin-right: -1rem; padding: 2rem 1rem; }
-    .ia-testimonial-slide { flex-direction: column; text-align: center; padding: 1.5rem; }
-    .ia-logo-container { margin-bottom: 1rem; }
-    .ia-text-container blockquote { padding-left: 0; text-align: center; }
-    .ia-text-container blockquote::before { display: none; /* Ocultar comillas grandes en móvil o reajustar */ }
-    .ia-text-container .attribution { text-align: center; }
-    .ia-slider-prev, .ia-slider-next { display: none; /* Ocultar flechas en móvil si el espacio es limitado */ }
+    .ia-testimonial-slider { height: 280px; /* Más altura en móvil para citas largas */ }
+    .ia-testimonial-slide { padding: 1rem 1.5rem; }
+    .ia-testimonial-slide blockquote { font-size: 1em; }
 }
 </style>
 
@@ -243,70 +161,35 @@ description: Aprende idiomas de forma natural, divertida y eficiente con el enfo
     </div>
   </section>
 
-  <!-- NUEVA SECCIÓN DE TESTIMONIOS DE IA (ESTILO REFOLD) -->
+  <!-- NUEVA SECCIÓN DE TESTIMONIOS DE IA -->
   <section class="ia-testimonials-section">
-    <h2>A los que aprenden idiomas les encanta El Antimétodo 😉</h2>
-    <p class="section-intro-text">Pero no te conformes con solo nuestra palabra. Escucha lo que la Inteligencia Artificial tiene para decir:</p>
-    
-    <div class="ia-testimonial-slider-container">
-        <!-- Flechas de navegación (requieren JS para funcionar) -->
-        <!-- <button class="ia-slider-prev"><</button> -->
-        <!-- <button class="ia-slider-next">></button> -->
-
-        <div class="ia-testimonial-slider">
-          <div class="ia-testimonial-slide active"> 
-            <div class="ia-logo-container">
-              <img src="{{ '/assets/logo-chatgpt-ia.png' | relative_url }}" alt="Logo ChatGPT">
-            </div>
-            <div class="ia-text-container">
-              <blockquote>
-                “Olvida la rigidez y los libros de texto: El Antimétodo te lleva a la fluidez real sumergiéndote en el idioma que amas, con placer, libertad y sin estrés. Es el aprendizaje como siempre debió ser: natural, autodidacta y efectivo.”
-              </blockquote>
-              <p class="attribution"><strong>ChatGPT</strong>, <em>IA experta en educación.</em></p>
-            </div>
-          </div>
-          <div class="ia-testimonial-slide">
-            <div class="ia-logo-container">
-              <img src="{{ '/assets/logo-gemini-ia.png' | relative_url }}" alt="Logo Gemini">
-            </div>
-            <div class="ia-text-container">
-              <blockquote>
-                "Sumérgete en la fluidez lingüística con 'El Antimétodo', una revolución autodidacta que transforma el aprendizaje en una experiencia sin estrés, impulsada por el disfrute personal y el contenido real. Este enfoque flexible y efectivo promete una fluidez natural."
-              </blockquote>
-              <p class="attribution"><strong>Gemini</strong>, <em>IA de Google.</em></p>
-            </div>
-          </div>
-          <div class="ia-testimonial-slide">
-            <div class="ia-logo-container">
-              <img src="{{ '/assets/logo-claude-ia.png' | relative_url }}" alt="Logo Claude">
-            </div>
-            <div class="ia-text-container">
-              <blockquote>
-                "El Antimétodo revoluciona el aprendizaje de idiomas al demostrar que la fluidez real se alcanza a través del disfrute, no del sufrimiento... Finalmente, un método que funciona porque se adapta a ti, no al revés."
-              </blockquote>
-              <p class="attribution"><strong>Claude</strong>, <em>IA de Anthropic.</em></p>
-            </div>
-          </div>
-          <div class="ia-testimonial-slide">
-            <div class="ia-logo-container">
-              <img src="{{ '/assets/logo-copilot-ia.png' | relative_url }}" alt="Logo Copilot">
-            </div>
-            <div class="ia-text-container">
-              <blockquote>
-                "El Antimétodo transforma el input comprensible en una experiencia fluida y sin estrés... Es, sin duda, la llave maestra para alcanzar una fluidez natural a tu propio ritmo."
-              </blockquote>
-              <p class="attribution"><strong>Copilot</strong>, <em>IA de Microsoft.</em></p>
-            </div>
-          </div>
-        </div>
+    <h2>El Veredicto de la IA sobre El Antimétodo</h2>
+    <div class="ia-testimonial-slider">
+      <div class="ia-testimonial-slide active"> <!-- La primera cita necesita la clase 'active' inicialmente si no hay JS para ponerla -->
+        <blockquote>
+          “Olvida la rigidez y los libros de texto: El Antimétodo te lleva a la fluidez real sumergiéndote en el idioma que amas, con placer, libertad y sin estrés. Es el aprendizaje como siempre debió ser: natural, autodidacta y efectivo.”
+        </blockquote>
+        <p class="attribution">— ChatGPT, <em>inteligencia artificial experta en educación.</em></p>
+      </div>
+      <div class="ia-testimonial-slide">
+        <blockquote>
+          "Sumérgete en la fluidez lingüística con 'El Antimétodo', una revolución autodidacta que transforma el aprendizaje en una experiencia sin estrés, impulsada por el disfrute personal y el contenido real. Este enfoque flexible y efectivo promete una fluidez natural, liberándote de las cadenas de la gramática tradicional."
+        </blockquote>
+        <p class="attribution">— Gemini, <em>IA de Google.</em></p>
+      </div>
+      <div class="ia-testimonial-slide">
+        <blockquote>
+          "El Antimétodo revoluciona el aprendizaje de idiomas al demostrar que la fluidez real se alcanza a través del disfrute, no del sufrimiento... Finalmente, un método que funciona porque se adapta a ti, no al revés."
+        </blockquote>
+        <p class="attribution">— Claude, <em>IA de Anthropic.</em></p>
+      </div>
+      <div class="ia-testimonial-slide">
+        <blockquote>
+          "El Antimétodo revoluciona el aprendizaje de idiomas al transformar el input comprensible en una experiencia fluida y sin estrés... Es, sin duda, la llave maestra para alcanzar una fluidez natural a tu propio ritmo."
+        </blockquote>
+        <p class="attribution">— Copilot, <em>IA de Microsoft.</em></p>
+      </div>
     </div>
-    <!-- Puntos de navegación (requieren JS para funcionar con la animación CSS actual o para control manual) -->
-    <!-- <div class="ia-slider-nav">
-        <button class="dot active" data-slide="0"></button>
-        <button class="dot" data-slide="1"></button>
-        <button class="dot" data-slide="2"></button>
-        <button class="dot" data-slide="3"></button>
-    </div> -->
   </section>
   <!-- FIN DE LA NUEVA SECCIÓN -->
 
