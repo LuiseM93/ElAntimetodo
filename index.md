@@ -83,13 +83,12 @@ description: Aprende idiomas de forma natural, divertida y eficiente con el enfo
 }
 .ia-testimonial-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 450px), 1fr));
-  gap: 2rem; 
-  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+  gap: 1.8rem; 
 }
 .ia-testimonial-card { /* ÚNICA DEFINICIÓN CORRECTA */
   background-color: var(--card-background);
-  padding: 1.8rem 2.2rem; 
+  padding: 1.8rem 2rem; 
   border-radius: 8px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.08);
   border-left: 5px solid var(--secondary-color); 
@@ -240,7 +239,7 @@ description: Aprende idiomas de forma natural, divertida y eficiente con el enfo
         <p style="font-size:0.85em; color: #777; margin-top: 0.5rem;"><em>Paciencia, estamos construyendo algo genial...</em></p>
     </div>
      <p style="text-align: center; font-size: 0.9em; color: #888; margin-top: 3rem; border-top: 1px dashed var(--light-purple-color); padding-top: 1rem;">
-       <em>Última actualización del sitio: 04 de Junio de 2025 10:03pm</em>
+       <em>Última actualización del sitio: 04 de Junio de 2025 10:28pm</em>
      </p>
   </section>
 
