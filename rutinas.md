@@ -246,7 +246,7 @@ description: Ejemplos de rutinas y una herramienta interactiva para diseñar tu 
           <ul>
             <li>Práctica de Output (30m - 1h): Escribir, chatear con IA, hablar solo, intercambios.</li>
             <li>Inmersión Activa (1h): Continuar nutriendo el input.</li>
-            <li>Inmersión pasiva <em>Recomendada</em> en tiempos muertos.</li>
+            <li>Inmersión pasiva <em>[Recomendada]</em> en tiempos muertos.</li>
           </ul>
           <h4>Inmersión Pasiva (Todas las Etapas, especialmente desde la 2):</h4>
           <p>¡Tu arma secreta! Podcasts, música mientras haces otras tareas. Fácilmente puedes añadir 1-2 horas extra diarias.</p>
