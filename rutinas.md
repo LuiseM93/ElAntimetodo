@@ -307,7 +307,7 @@ description: Ejemplos de rutinas y una herramienta interactiva para diseñar tu 
     <div style="text-align:center; margin-bottom: 1.5rem;">
       <img src="{{ '/assets/rutinas-herramienta-ia-intro.png' | relative_url }}" alt="Herramienta IA para rutinas" style="max-width:180px; height:auto;">
     </div>
-    <p style="text-align:center; font-size:1.1em; color: var(--text-light-color);">Sabemos que cada aprendiz es único. Usa la inteligencia artificial (como ChatGPT) para generar un borrador de rutina adaptado a TUS tiempos, gustos y etapa. ¡Inspirado en estrategias de expertos como Mr. Salas!</p>
+    <p style="text-align:center; font-size:1.1em; color: var(--text-light-color);">Sabemos que cada aprendiz es único. Usa la inteligencia artificial (como ChatGPT) para generar un borrador de rutina adaptado a TUS tiempos, gustos y etapa. ¡Inspirado en Mr. Salas!</p>
 
     <div class="step">
       <h3 class="step-title"><img src="{{ '/assets/rutinas-paso1-informacion.png' | relative_url }}" alt="Paso 1" class="step-icon">Paso 1: Prepara tu Información</h3>
