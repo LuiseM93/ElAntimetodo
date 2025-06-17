@@ -28,7 +28,7 @@ description: Explora en detalle las 4 etapas del Antimétodo, desde la preparaci
 }
 .etapa-section .center-h2-container { 
     text-align: center;
-    margin-bottom: 1.5rem; 
+    margin-bottom: 1.5rem; /* Este margen se aplica si el H2 está dentro del div */
 }
 
 .etapa-section h3.subsection-title { 
@@ -40,21 +40,21 @@ description: Explora en detalle las 4 etapas del Antimétodo, desde la preparaci
   padding-bottom: 0.3rem;
   border-bottom: 1px dashed var(--light-purple-color);
 }
-.etapa-section ul.custom-list { 
+.etapa-section ul.custom-list { /* Cambiado de checklist a custom-list para más flexibilidad */
   list-style: none;
   padding-left: 0;
 }
 .etapa-section ul.custom-list li {
-  padding-left: 2em; 
+  padding-left: 2em; /* Espacio para el emoji/icono */
   position: relative;
   margin-bottom: 0.7em;
   font-size: 1.05em; 
 }
 .etapa-section ul.custom-list li::before {
-  content: '👉'; 
+  content: '👉'; /* Emoji por defecto, se puede cambiar por otros */
   position: absolute;
   left: 0;
-  font-size: 1em; 
+  font-size: 1em; /* Ajustar tamaño del emoji */
   color: var(--secondary-color);
 }
 .etapa-section ul.custom-list li.goal::before { content: '🎯'; }
@@ -71,7 +71,7 @@ description: Explora en detalle las 4 etapas del Antimétodo, desde la preparaci
     border-radius: 4px;
     font-weight: 500;
 }
-.etapa-section .sub-list { 
+.etapa-section .sub-list { /* Para listas anidadas dentro de las actividades */
     list-style-type: disc;
     padding-left: 20px;
     margin-top: 0.3rem;
@@ -86,10 +86,6 @@ description: Explora en detalle las 4 etapas del Antimétodo, desde la preparaci
     <p class="subtitle" style="font-size: 1.2em; color: var(--secondary-color);">Un camino claro hacia la fluidez natural.</p>
     <p>El Antimétodo se divide en etapas progresivas, diseñadas para llevarte de la mano desde los conceptos básicos hasta la comunicación efectiva. Cada etapa se enfoca en habilidades específicas, construyendo una base sólida para la siguiente.</p>
     <p style="margin-top:1rem; font-style:italic; color:var(--text-light-color);">Para una guía más detallada sobre cómo organizar tu tiempo en cada etapa y ejemplos prácticos, visita nuestra sección de <a href="{{ '/rutinas' | relative_url }}">Rutinas</a>. Si tienes dudas, la sección de <a href="{{ '/faq' | relative_url }}">Preguntas Frecuentes (FAQ)</a> tiene muchas respuestas. Y para herramientas específicas, ¡no olvides consultar nuestros <a href="{{ '/recursos' | relative_url }}">Recursos</a>!</p>
-        <p style="margin-top:1.5rem; padding: 1rem; background-color: #f0e6f6; border-radius: 6px; border-left: 4px solid var(--accent-color);">
-      <strong>¿Ya sabes algo del idioma y no estás seguro por dónde empezar?</strong><br>
-      Usa nuestra <a href="{{ '/test-ubicacion' | relative_url }}" style="font-weight:bold;">Guía Interactiva con IA para Descubrir tu Etapa Ideal</a> y optimiza tu aprendizaje desde el inicio.
-    </p>
   </section>
 
   <!-- ETAPA 1 -->
@@ -258,5 +254,9 @@ description: Explora en detalle las 4 etapas del Antimétodo, desde la preparaci
       <li class="challenge"><strong>"No se me ocurren las palabras cuando quiero hablar":</strong> Es normal. Tu vocabulario activo aún se está desarrollando. Sigue con el input y, al hablar, no tengas miedo de parafrasear o usar palabras más simples si no recuerdas la exacta.</li>
     </ul>
   </section>
-
+<section class="content-section" style="margin-top: 3rem; text-align:center; background-color: #f0e6f6; border-top: 2px solid var(--primary-color);">
+    <h2 class="section-title" style="border-bottom: none; margin-bottom: 1rem;">¿No Sabes por Dónde Empezar?</h2>
+    <p style="font-size: 1.1em; color: var(--text-light-color); margin-bottom:1.5rem;">Si ya tienes conocimientos previos del idioma y quieres una recomendación personalizada sobre en qué etapa del Antimétodo enfocarte, ¡nuestra guía con IA te puede ayudar!</p>
+    <a href="{{ '/test-ubicacion' | relative_url }}" class="btn btn-primary" style="font-size: 1.1em;">Descubre tu Etapa Ideal con IA</a>
+  </section>
 </main>
