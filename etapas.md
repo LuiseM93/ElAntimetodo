@@ -28,7 +28,7 @@ description: Explora en detalle las 4 etapas del Antimétodo, desde la preparaci
 }
 .etapa-section .center-h2-container { 
     text-align: center;
-    margin-bottom: 1.5rem; /* Este margen se aplica si el H2 está dentro del div */
+    margin-bottom: 1.5rem; 
 }
 
 .etapa-section h3.subsection-title { 
@@ -40,21 +40,21 @@ description: Explora en detalle las 4 etapas del Antimétodo, desde la preparaci
   padding-bottom: 0.3rem;
   border-bottom: 1px dashed var(--light-purple-color);
 }
-.etapa-section ul.custom-list { /* Cambiado de checklist a custom-list para más flexibilidad */
+.etapa-section ul.custom-list { 
   list-style: none;
   padding-left: 0;
 }
 .etapa-section ul.custom-list li {
-  padding-left: 2em; /* Espacio para el emoji/icono */
+  padding-left: 2em; 
   position: relative;
   margin-bottom: 0.7em;
   font-size: 1.05em; 
 }
 .etapa-section ul.custom-list li::before {
-  content: '👉'; /* Emoji por defecto, se puede cambiar por otros */
+  content: '👉'; 
   position: absolute;
   left: 0;
-  font-size: 1em; /* Ajustar tamaño del emoji */
+  font-size: 1em; 
   color: var(--secondary-color);
 }
 .etapa-section ul.custom-list li.goal::before { content: '🎯'; }
@@ -71,7 +71,7 @@ description: Explora en detalle las 4 etapas del Antimétodo, desde la preparaci
     border-radius: 4px;
     font-weight: 500;
 }
-.etapa-section .sub-list { /* Para listas anidadas dentro de las actividades */
+.etapa-section .sub-list { 
     list-style-type: disc;
     padding-left: 20px;
     margin-top: 0.3rem;
