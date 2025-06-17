@@ -370,6 +370,13 @@ description: Herramientas, aplicaciones, mazos de Anki y fuentes de input para a
   <!-- APOYO EXTRA -->
   <section class="resource-section">
     <h2>💡 Apoyo Extra y Guías Adicionales</h2>
+       <div class="resource-item">
+      <h4><img src="{{ '/assets/faq-preguntas-respuestas.png' | relative_url }}" alt="Test de Ubicación" class="resource-logo" style="width:22px; height:22px;">Test de Ubicación Antimétodo (con IA)</h4>
+      <p class="description">¿Ya sabes algo del idioma y no estás seguro por dónde empezar? Utiliza esta guía para que la IA te ayude a encontrar tu etapa ideal.</p>
+      <ul>
+        <li><a href="{{ '/test-ubicacion' | relative_url }}" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size:0.9em;">Descubre tu Etapa Aquí</a></li>
+      </ul>
+    </div>
     <div class="resource-item">
       <h4><img src="{{ '/assets/logo-refold.png' | relative_url }}" alt="Logo Refold" class="resource-logo">Guías de Idiomas de Refold</h4>
       <ul>
