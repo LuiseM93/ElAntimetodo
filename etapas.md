@@ -86,6 +86,10 @@ description: Explora en detalle las 4 etapas del Antimétodo, desde la preparaci
     <p class="subtitle" style="font-size: 1.2em; color: var(--secondary-color);">Un camino claro hacia la fluidez natural.</p>
     <p>El Antimétodo se divide en etapas progresivas, diseñadas para llevarte de la mano desde los conceptos básicos hasta la comunicación efectiva. Cada etapa se enfoca en habilidades específicas, construyendo una base sólida para la siguiente.</p>
     <p style="margin-top:1rem; font-style:italic; color:var(--text-light-color);">Para una guía más detallada sobre cómo organizar tu tiempo en cada etapa y ejemplos prácticos, visita nuestra sección de <a href="{{ '/rutinas' | relative_url }}">Rutinas</a>. Si tienes dudas, la sección de <a href="{{ '/faq' | relative_url }}">Preguntas Frecuentes (FAQ)</a> tiene muchas respuestas. Y para herramientas específicas, ¡no olvides consultar nuestros <a href="{{ '/recursos' | relative_url }}">Recursos</a>!</p>
+        <p style="margin-top:1.5rem; padding: 1rem; background-color: #f0e6f6; border-radius: 6px; border-left: 4px solid var(--accent-color);">
+      <strong>¿Ya sabes algo del idioma y no estás seguro por dónde empezar?</strong><br>
+      Usa nuestra <a href="{{ '/test-ubicacion' | relative_url }}" style="font-weight:bold;">Guía Interactiva con IA para Descubrir tu Etapa Ideal</a> y optimiza tu aprendizaje desde el inicio.
+    </p>
   </section>
 
   <!-- ETAPA 1 -->
