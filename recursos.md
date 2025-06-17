@@ -42,11 +42,9 @@ description: Herramientas, aplicaciones, mazos de Anki y fuentes de input para a
 }
 .resource-item li {
   margin-bottom: 0.4rem; 
-  /* display: flex; // Quitado para que el texto fluya normalmente si el logo es muy ancho */
-  /* align-items: center; */
 }
-.resource-item li > .resource-logo { /* Estilo para el logo si está directamente en el LI */
-    vertical-align: -5px; /* Ajuste vertical fino del logo */
+.resource-item li > .resource-logo { 
+    vertical-align: -5px; 
     margin-right: 6px;
 }
 
@@ -61,10 +59,10 @@ description: Herramientas, aplicaciones, mazos de Anki y fuentes de input para a
 }
 .price-tag { background-color: #ffe0b2; color: #e65100; border: 1px solid #e65100; }
 .free-tag { background-color: #c8e6c9; color: #2e7d32; border: 1px solid #2e7d32; }
-.warning-tag strong { color: #ef5350; } 
+.warning-tag strong, .warning-tag { color: #ef5350; font-weight:bold;} /* Ajustado para que el emoji o texto sea rojo */
 .note-tag { background-color: #e3f2fd; color: #0d47a1; border: 1px solid #0d47a1; }
 
-.resource-item p.description, .resource-item .details { /* .details para info adicional */
+.resource-item p.description, .resource-item .details { 
     font-size: 0.95em;
     color: var(--text-light-color); 
     margin-top: 0.3rem;
@@ -78,9 +76,9 @@ description: Herramientas, aplicaciones, mazos de Anki y fuentes de input para a
 }
 
 .resource-logo {
-  width: 20px; /* Reducido tamaño de logos un poco */
+  width: 20px; 
   height: 20px;
-  margin-right: 6px; /* Reducido margen */
+  margin-right: 6px; 
   object-fit: contain; 
   vertical-align: middle; 
   border-radius: 3px;
@@ -90,7 +88,16 @@ description: Herramientas, aplicaciones, mazos de Anki y fuentes de input para a
     height: 24px;
     margin-right: 8px;
 }
-
+.new-resource-title { /* Para los nuevos títulos de sección que añadiste */
+    font-family: var(--font-primary);
+    color: var(--primary-color);
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    margin-bottom: 0.8rem;
+    padding-bottom: 0.2rem;
+    border-bottom: 1px solid var(--light-purple-color);
+}
 </style>
 
 <main class="content-wrapper">
@@ -104,7 +111,7 @@ description: Herramientas, aplicaciones, mazos de Anki y fuentes de input para a
   <section class="resource-section">
     <h2>⭐ Seguimiento de Tiempo (¡Esencial!)</h2>
     <div class="resource-item">
-      <h4><img src="{{ '/assets/logo-refold.png' | relative_url }}" alt="Logo Refold" class="resource-logo">Refold Tracker <span class="note-tag">Recomendada para El Antimétodo</span></h4>
+      <h4><img src="{{ '/assets/logo-refold.png' | relative_url }}" alt="Logo Refold" class="resource-logo">Refold Tracker <span class="note-tag">Recomendada</span></h4> <!-- CAMBIADO -->
       <p class="description">Aplicación esencial para registrar tu tiempo de inmersión y estudio, ayudándote a medir tu progreso y mantener la motivación.</p>
       <ul>
         <li><a href="https://www.notion.so/refold/Descargar-la-App-de-Refold-ES-16d4fa7e6fbd4a909068c310a36df275" target="_blank" rel="noopener noreferrer">Información y Descarga (Notion de Refold)</a></li>
@@ -114,9 +121,8 @@ description: Herramientas, aplicaciones, mazos de Anki y fuentes de input para a
         💡 **¡Ve El Antimétodo en acción!** Sígueme dentro de la app Refold Tracker buscando mi usuario: <strong>LuiseM93</strong> para ver cómo aplico el método y registro mi progreso.
       </p>
     </div>
-    <div class="resource-item" style="margin-top: 1.5rem;"> <!-- Añadido un poco de margen superior para separar las alternativas -->
-      <h4>Alternativas para Seguimiento de Tiempo:</h4>
-      <p class="description">Aunque recomendamos Refold Tracker por su enfoque específico en el aprendizaje de idiomas, estas son otras herramientas populares:</p>
+    <div class="resource-item" style="margin-top: 1.5rem;">
+      <h4>Alternativas a Refold Tracker <span class="note-tag">Recomendamos más Refold Tracker</span></h4>
       <ul>
         <li><a href="https://toggl.com/track/" target="_blank" rel="noopener noreferrer">Toggl Track</a></li>
         <li><a href="https://polylogger.com/auth/login" target="_blank" rel="noopener noreferrer">Polylogger</a></li>
@@ -127,7 +133,6 @@ description: Herramientas, aplicaciones, mazos de Anki y fuentes de input para a
   <!-- ETAPA 1 -->
   <section class="resource-section">
     <h2>Etapa 1: Preparación Previa</h2>
-    
     <div class="resource-category">
       <h3><img src="{{ '/assets/logo-anki.png' | relative_url }}" alt="Logo Anki" class="resource-logo">Anki (Sistema de Repetición Espaciada)</h3>
       <div class="resource-item">
@@ -135,7 +140,7 @@ description: Herramientas, aplicaciones, mazos de Anki y fuentes de input para a
         <ul>
           <li><a href="https://apps.ankiweb.net" target="_blank" rel="noopener noreferrer">PC / Mac / Linux (Web Oficial)</a></li>
           <li><a href="https://play.google.com/store/apps/details?id=com.ichi2.anki" target="_blank" rel="noopener noreferrer">AnkiDroid (Android)</a> <span class="free-tag">Gratis</span></li>
-          <li><a href="https://apps.apple.com/us/app/ankimobile-flashcards/id373493387" target="_blank" rel="noopener noreferrer">AnkiMobile (iOS)</a> <span class="warning-tag">⚠️</span> <span class="price-tag">$24.99 USD aprox. (razón desconocida)</span></li>
+          <li><a href="https://apps.apple.com/us/app/ankimobile-flashcards/id373493387" target="_blank" rel="noopener noreferrer">AnkiMobile (iOS)</a> <span class="warning-tag">⚠️</span> <span class="price-tag">$24.99 USD (razón desconocida)</span></li>
         </ul>
       </div>
       <div class="resource-item">
@@ -200,6 +205,21 @@ description: Herramientas, aplicaciones, mazos de Anki y fuentes de input para a
             <li><a href="https://voracious.app" target="_blank" rel="noopener noreferrer">Sitio Web de Voracious</a></li>
         </ul>
       </div>
+      <div class="resource-item">
+        <h4 class="new-resource-title">Crea tus Propios Audiolibros</h4>
+        <p class="description">Herramientas para leer ebooks mientras escuchas el audio, o convertir ebooks en audiobooks.</p>
+        <ul>
+            <li><a href="https://github.com/santinic/audiblez" target="_blank" rel="noopener noreferrer">Audiblez</a> - <em>Genera audiobooks desde e-books.</em></li>
+            <li><a href="https://hub.docker.com/r/athomasson2/ebook2audiobook" target="_blank" rel="noopener noreferrer">ebook2audiobook</a> - <em>Convierte ebooks en audiobooks.</em></li>
+        </ul>
+      </div>
+      <div class="resource-item">
+        <h4>Gestor de Audiolibros (Android)</h4>
+        <ul>
+            <li><a href="https://play.google.com/store/apps/details?id=de.ph1b.audiobook" target="_blank" rel="noopener noreferrer">Voice (Audiobook Player)</a> <span class="free-tag">Gratis sin anuncios</span></li>
+        </ul>
+        <p class="description"><em>(Puedes encontrar audiolibros gratuitos también en Spotify).</em></p>
+      </div>
     </div>
 
     <div class="resource-category">
@@ -210,8 +230,16 @@ description: Herramientas, aplicaciones, mazos de Anki y fuentes de input para a
             <li><a href="https://www.primevideo.com" target="_blank" rel="noopener noreferrer">Prime Video</a></li>
             <li><a href="https://www.disneyplus.com" target="_blank" rel="noopener noreferrer">Disney Plus</a></li>
             <li><img src="{{ '/assets/logo-youtube.png' | relative_url }}" alt="Logo YouTube" class="resource-logo"><a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">YouTube</a> <span class="free-tag">Gratis</span></li>
-            <li><a href="https://www.france.tv" target="_blank" rel="noopener noreferrer">France.tv</a> <span class="free-tag">Gratis</span> - <em>Sitio de streaming para ver contenido en francés (De Francia - puede requerir VPN de Francia).</em></li>
-            <li><a href="https://tubitv.com" target="_blank" rel="noopener noreferrer">Tubi TV</a> <span class="free-tag">Gratis</span> - <em>Sitio de streaming para ver contenido en inglés (De Estados Unidos - puede requerir VPN de Estados Unidos).</em></li>
+            <li><a href="https://www.france.tv" target="_blank" rel="noopener noreferrer">France.tv</a> <span class="free-tag">Gratis</span> - <em>Sitio de streaming para ver contenido en francés (De Francia - puede requerir VPN).</em></li>
+            <li><a href="https://tubitv.com" target="_blank" rel="noopener noreferrer">Tubi TV</a> <span class="free-tag">Gratis</span> - <em>Sitio de streaming para ver contenido en inglés (De Estados Unidos - puede requerir VPN).</em></li>
+        </ul>
+    </div>
+    <div class="resource-category">
+        <h3>Descargar Subtítulos</h3>
+        <p class="description">Pueden servir para minar automáticamente y para tener subtítulos para películas descargadas.</p>
+        <ul>
+            <li><a href="https://www.opensubtitles.com/en/home" target="_blank" rel="noopener noreferrer">OpenSubtitles</a></li>
+            <li><a href="https://my-subs.co" target="_blank" rel="noopener noreferrer">My Subs</a></li>
         </ul>
     </div>
      <div class="resource-category">
@@ -228,7 +256,8 @@ description: Herramientas, aplicaciones, mazos de Anki y fuentes de input para a
     <div class="resource-category">
         <h3>Consejos de Inmersión</h3>
         <ul>
-            <li>De preferencia puedes crear una cuenta de YouTube en el idioma y país meta. Así como cambiar de idioma tu cuenta de Netflix y dispositivos.</li>
+            <li>No es necesario crear un nuevo correo de YouTube para tener un nuevo canal en otro idioma. Te recomendamos seguir esta <a href="https://www.youtube.com/watch?v=qDvm4IoPgTI" target="_blank" rel="noopener noreferrer">guía rápida de Refold</a> para crear una cuenta para inmersión sin crear cuenta de correo nueva.</li>
+            <li>Cambia el idioma de tu cuenta de Netflix, teléfono y otros dispositivos al idioma meta.</li>
         </ul>
     </div>
   </section>
@@ -249,6 +278,7 @@ description: Herramientas, aplicaciones, mazos de Anki y fuentes de input para a
         <p class="description">Es importante que sean solo oraciones i+1 donde solo haya una palabra desconocida y a la hora de traducir la oración completa puedes utilizar una IA para tener la definición más exacta según el contexto.</p>
         <ul>
           <li>Tutorial de ejemplo (manual): <a href="https://www.youtube.com/watch?v=0TKEytorfdY" target="_blank" rel="noopener noreferrer">Ver video</a></li>
+          <li>Guía completa por Refold (mina oraciones automáticamente con audio e imagen, incluyendo Kindle): <a href="https://www.youtube.com/watch?v=KxLRp1yd8Ro" target="_blank" rel="noopener noreferrer">Ver video</a></li>
         </ul>
       </div>
       <div class="resource-item">
@@ -270,6 +300,7 @@ description: Herramientas, aplicaciones, mazos de Anki y fuentes de input para a
         <li><img src="{{ '/assets/logo-spotify.png' | relative_url }}" alt="Logo Spotify" class="resource-logo"><a href="https://www.spotify.com" target="_blank" rel="noopener noreferrer">Spotify</a></li>
         <li><a href="https://play.google.com/store/apps/details?id=com.bambuna.podcastaddict&hl=en" target="_blank" rel="noopener noreferrer">Podcast Addict (Android)</a> <span class="free-tag">Gratis</span></li>
         <li>Apple Podcasts (iOS) <span class="free-tag">Gratis</span></li>
+        <li>Base de datos de podcast para inmersión pasiva en japonés: <a href="https://docs.google.com/spreadsheets/d/17P2dBQHnBnHcG3ua_24IO6sP9RDC-5b3WHV9Ri2N5qU/edit?gid=0#gid=0" target="_blank" rel="noopener noreferrer">Ver hoja de cálculo</a> <span class="free-tag">Gratis</span></li>
       </ul>
     </div>
     <div class="resource-item">
@@ -277,7 +308,7 @@ description: Herramientas, aplicaciones, mazos de Anki y fuentes de input para a
         <ul>
             <li><a href="https://www.radiofrance.fr" target="_blank" rel="noopener noreferrer">Radio France</a> <span class="free-tag">Gratis</span></li>
         </ul>
-        <p class="platforms">Aplicaciones disponibles en Play Store y App Store.</p>
+        <p class="platforms">Aplicaciones disponibles en <a href="https://play.google.com/store/apps/details?id=com.radiofrance.radio.radiofrance.android&hl=en" target="_blank" rel="noopener noreferrer">Play Store</a> y <a href="https://apps.apple.com/us/app/radio-france-podcast-direct/id310211433" target="_blank" rel="noopener noreferrer">App Store</a>.</p>
     </div>
   </section>
 
@@ -301,9 +332,10 @@ description: Herramientas, aplicaciones, mazos de Anki y fuentes de input para a
           <li><a href="https://www.hellotalk.com" target="_blank" rel="noopener noreferrer">HelloTalk</a></li>
           <li><a href="https://www.episoden.com" target="_blank" rel="noopener noreferrer">Episoden</a></li>
           <li><a href="https://www.speaky.com" target="_blank" rel="noopener noreferrer">Speaky</a> <span class="warning-tag">⚠️</span> <span class="note-tag">Aún no explorado pero recomendado.</span></li>
-          <li><a href="https://www.lingbe.com" target="_blank" rel="noopener noreferrer">Lingbe</a> - <em>Llamadas con nativos.</em> (Apps en Play Store y App Store)</li>
+          <li><a href="https://www.lingbe.com" target="_blank" rel="noopener noreferrer">Lingbe</a> - <em>Llamadas con nativos.</em> (Apps: <a href="https://play.google.com/store/apps/details?id=com.lingbe.app&hl=es" target="_blank" rel="noopener noreferrer">Play Store</a>, <a href="https://apps.apple.com/es/app/lingbe/id1061633775" target="_blank" rel="noopener noreferrer">App Store</a>)</li>
           <li><a href="https://www.conversationexchange.com" target="_blank" rel="noopener noreferrer">Conversation Exchange</a></li>
           <li><a href="https://language.exchange" target="_blank" rel="noopener noreferrer">Language.exchange</a></li>
+          <li><a href="https://store.steampowered.com/app/438100/VRChat/" target="_blank" rel="noopener noreferrer">VRChat</a> - <em>Únete a servidores donde hablen tu idioma meta.</em></li>
           <li>Discord: Puedes buscar grupos donde hablen tu idioma meta.</li>
         </ul>
       </div>
@@ -328,8 +360,8 @@ description: Herramientas, aplicaciones, mazos de Anki y fuentes de input para a
             <h4>Aplicaciones y Técnicas Específicas:</h4>
             <ul>
                 <li><a href="https://elsaspeak.com/en/" target="_blank" rel="noopener noreferrer">Elsa Speak (Inglés)</a> <span class="price-tag">De pago (opción gratuita limitada)</span> - <em>Aprende fonética y mejora tu pronunciación en inglés.</em></li>
-                <li>Flow-verlapping: <a href="https://www.youtube.com/watch?v=17Z0qMuMOzA" target="_blank" rel="noopener noreferrer">Tutorial por Mr. Salas</a> - <em>Mejora la pronunciación de forma sencilla grabando fragmentos y repitiendo.</em></li>
-                <li>Shadowing: <a href="https://www.youtube.com/watch?v=8qx_hnAGc-k" target="_blank" rel="noopener noreferrer">Setup y Tutorial Óptimo</a> - <em>No es necesario para hacer shadowing pero lo puede hacer más óptimo y beneficioso.</em></li>
+                <li>Flow-verlapping: <a href="https://www.youtube.com/watch?v=17Z0qMuMOzA" target="_blank" rel="noopener noreferrer">Tutorial por Mr. Salas</a> - <em>Mejora la pronunciación grabando y repitiendo.</em></li>
+                <li>Shadowing: <a href="https://www.youtube.com/watch?v=8qx_hnAGc-k" target="_blank" rel="noopener noreferrer">Setup y Tutorial Óptimo</a> - <em>Para hacerlo más óptimo y beneficioso.</em></li>
             </ul>
         </div>
     </div>
@@ -346,9 +378,10 @@ description: Herramientas, aplicaciones, mazos de Anki y fuentes de input para a
     </div>
     <div class="resource-item">
       <h4>AJATT (All Japanese All The Time)</h4>
-      <p class="description"><span class="warning-tag">⚠️</span> <em>Método obsesivo para aprender japonés dedicando más de 5 horas al día.</em></p>
+      <p class="description"><span class="warning-tag">⚠️</span> <em>Método obsesivo para aprender japonés (+5 horas/día).</em></p>
       <ul>
         <li><a href="https://tatsumoto-ren.github.io/blog/whats-ajatt.html" target="_blank" rel="noopener noreferrer">¿Qué es AJATT? (Explicación en Tatsumoto Ren)</a></li>
+        <li><a href="https://web.archive.org/web/20100403201214/http://www.alljapaneseallthetime.com:80/blog/all-japanese-all-the-time-ajatt-how-to-learn-japanese-on-your-own-having-fun-and-to-fluency" target="_blank" rel="noopener noreferrer">Sitio Original de AJATT por Khatzumoto (Tabla de Contenido - Archive.org)</a></li>
       </ul>
     </div>
      <div class="resource-item">
@@ -359,8 +392,18 @@ description: Herramientas, aplicaciones, mazos de Anki y fuentes de input para a
         <li><img src="{{ '/assets/logo-refold.png' | relative_url }}" alt="Logo Refold" class="resource-logo"><a href="https://www.youtube.com/@Refold" target="_blank" rel="noopener noreferrer">Refold</a></li>
       </ul>
     </div>
+    <div class="resource-category"> <!-- Nueva categoría para bases de datos de recursos -->
+        <h3>Bases de Datos de Recursos Comunitarios</h3>
+        <ul>
+            <li><a href="https://learnjapanese.moe/resources/" target="_blank" rel="noopener noreferrer">LearnJapanese.moe (Recursos para Japonés)</a></li>
+            <li><a href="https://tatsumoto-ren.github.io/blog/resources.html" target="_blank" rel="noopener noreferrer">Recursos para Japonés (Sitio AJATT de Tatsumoto Ren)</a></li>
+            <li><a href="https://www.notion.so/refold/Community-Dashboard-ES-2123ffaa1c34456a8ce5a4639276d5e5" target="_blank" rel="noopener noreferrer">Base de Recursos de la Comunidad Refold (Varios Idiomas)</a></li>
+        </ul>
+    </div>
   </section>
-<div style="text-align: center; margin-top: 3rem; padding-top: 2rem; border-top: 1px dashed var(--light-purple-color);">
+
+  <!-- IMAGEN DEL VIAJERO AL FINAL -->
+  <div style="text-align: center; margin-top: 3rem; padding-top: 2rem; border-top: 1px dashed var(--light-purple-color);">
     <img src="{{ '/assets/recursos-viajero-antimetodo.png' | relative_url }}" 
          alt="Tu viaje de aprendizaje de idiomas con las herramientas del Antimétodo" 
          style="max-width: 500px; width: 100%; height: auto; border-radius: 10px; box-shadow: 0 6px 15px rgba(0,0,0,0.1); border: 2px solid var(--light-purple-color);">
