@@ -328,7 +328,7 @@ description: Ejemplos de rutinas y una herramienta interactiva para diseñar tu 
       <h3 class="step-title"><img src="{{ '/assets/rutinas-paso2-prompt-ia.png' | relative_url }}" alt="Paso 2" class="step-icon">Paso 2: El "Mega-Prompt" para ChatGPT</h3>
       <p>Una vez tengas tus respuestas, copia el siguiente comando y pégalo en ChatGPT (o una IA similar), reemplazando la información <strong>[ENTRE CORCHETES AZULES Y MAYÚSCULAS]</strong> con TUS respuestas del Paso 1.</p>
       <div class="prompt-box">
-        <button class="copy-button" onclick="copyPromptToClipboard()">Copiar</button>
+        <button class="copy-button" onclick="copyPromptToClipboard()">Copiar Prompt</button>
         <span id="promptToCopy">Hola ChatGPT, necesito tu ayuda para diseñar un horario semanal DETALLADO y ESTRUCTURADO para aprender <strong>[IDIOMA META]</strong> utilizando los principios de "El Antimétodo". Actualmente me encuentro en la <strong>[ETAPA ACTUAL DEL ANTIMÉTODO: Ej. Etapa 1, Etapa 2, Etapa 3 o Etapa 4]</strong>. Mi objetivo principal es dedicar aproximadamente <strong>[NÚMERO DE HORAS]</strong> horas diarias a la Inmersión Activa, lo que suma <strong>[NÚMERO DE HORAS TOTALES]</strong> horas semanales.
 
 **Principios Clave del Antimétodo a Considerar:**
