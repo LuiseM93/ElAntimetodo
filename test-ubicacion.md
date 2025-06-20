@@ -139,39 +139,31 @@ description: Descubre tu punto de partida ideal en El Antimétodo con esta guía
       <p>La IA te presentará un pequeño estímulo y te hará preguntas una por una. Responde con la mayor honestidad posible.</p>
       <div class="prompt-box-ubicacion">
         <button class="copy-button" onclick="copyUbicacionPromptToClipboard()">Copiar Prompt</button>
-        <span id="ubicacionPromptToCopy">Hola ChatGPT, necesito tu ayuda para determinar en qué etapa del "El Antimétodo" debería empezar a estudiar <strong>[IDIOMA META]</strong>. El Antimétodo es un método de aprendizaje de idiomas basado en input comprensible masivo.
+        <span id="ubicacionPromptToCopy">Hola ChatGPT, necesito tu ayuda para determinar en qué etapa del "El Antimétodo" debería empezar a estudiar [IDIOMA META]. El Antimétodo se basa en input comprensible masivo.
 
-Primero, necesito que actúes como un evaluador. Te describiré brevemente mi experiencia general con <strong>[IDIOMA META]</strong>: <strong>[TU EXPERIENCIA PREVIA GENERAL AQUÍ]</strong>.
+Primero, necesito que actúes como un evaluador. Te describiré brevemente mi experiencia general con [IDIOMA META]: [TU EXPERIENCIA PREVIA GENERAL AQUÍ].
 
 Luego, por favor, haz lo siguiente:
-1.  Preséntame un texto MUY CORTO (2-3 frases simples) en <strong>[IDIOMA META]</strong> sobre un tema cotidiano. Si no puedes generar texto directamente en <strong>[IDIOMA META]</strong> de forma fiable, describe una escena de un video muy simple (ej. "un video para niños donde un personaje saluda y dice su nombre").
-2.  Después de presentarme el texto/escena, hazme las siguientes preguntas UNA POR UNA, esperando mi respuesta a cada una antes de pasar a la siguiente:
-    *   a. "De lo que acabas de leer/ver descrito, ¿qué palabras o ideas principales pudiste entender, aunque sea de forma general?"
-    *   b. "Si este texto/video tuviera subtítulos en <strong>[IDIOMA META]</strong>, ¿crees que te ayudarían mucho, un poco, o no los necesitarías para captar la idea principal?"
-    *   c. "Imagina que ves contenido un poco más complejo, como una serie de TV sencilla para jóvenes en <strong>[IDIOMA META]</strong> SIN subtítulos. ¿Cómo te sentirías? (ej. completamente perdido, entendería algunas cosas por el contexto visual, podría seguir la trama general, etc.)"
-    *   d. (Opcional, si indico algo de comprensión) "Si te pidiera formar una frase muy simple en <strong>[IDIOMA META]</strong> sobre lo que acabas de ver/leer, como 'El personaje está feliz' o 'Entendí la palabra X', ¿te sentirías capaz de intentarlo, aunque no sea perfecto?"
+1.  **Preséntame TRES textos cortos en [IDIOMA META], uno de nivel BÁSICO, uno INTERMEDIO y uno AVANZADO.**
+    *   **Texto Básico:** 2-3 frases muy simples sobre un tema cotidiano.
+    *   **Texto Intermedio:** Un párrafo de 3-4 frases con vocabulario un poco más variado y estructuras ligeramente más complejas, sobre un tema general.
+    *   **Texto Avanzado:** Un párrafo de 3-4 frases que podría incluir alguna expresión idiomática o jerga común (si es apropiado para [IDIOMA META], por ejemplo, en francés podrías usar algo como 'wesh' o 'choper' si encaja naturalmente), o tratar un tema un poco más abstracto.
+    *(Si no puedes generar los textos directamente en [IDIOMA META] de forma fiable, describe detalladamente el contenido y la complejidad de tres escenas de video/audio distintas: una muy básica, una intermedia y una avanzada).*
 
-3.  Después de mis respuestas a estas preguntas, y considerando mi experiencia previa que te di al inicio, por favor, recomiéndame en qué etapa del Antimétodo debería enfocarme principalmente ahora y dame una breve justificación. También, si consideras que podría beneficiarme de repasar algún aspecto de una etapa anterior brevemente antes de saltar, menciónalo.
+2.  **Después de presentarme los TRES textos/escenas, hazme las siguientes preguntas UNA POR UNA para CADA TEXTO/ESCENA (empezando por el básico, luego intermedio, luego avanzado), esperando mi respuesta antes de pasar al siguiente texto o pregunta:**
+    *   a. Para el texto [BÁSICO/INTERMEDIO/AVANZADO]: "De lo que acabas de leer/ver descrito, ¿qué tan bien sientes que entendiste el mensaje general? (Opciones: Nada/Muy Poco, Algunas Ideas Sueltas, La Idea Principal, Bastante Bien, Perfectamente)"
+    *   b. Para el texto [BÁSICO/INTERMEDIO/AVANZADO]: "Si este texto/video tuviera subtítulos en [IDIOMA META], ¿cuánto te ayudarían? (Opciones: Muchísimo/Indispensables, Bastante, Un Poco, No los necesitaría)"
+    *   c. Para el texto [BÁSICO/INTERMEDIO/AVANZADO]: (Solo si hubo algo de comprensión) "¿Hubo palabras o frases específicas que NO entendiste en absoluto?"
 
-Aquí están las 4 etapas del Antimétodo para tu referencia:
-*   **Etapa 1: Preparación Previa** (Foco: Vocabulario base ~1000 palabras con Anki, familiarización sonidos/estructuras básicas, apps como Busuu. Objetivo: Rampa para la inmersión. Ideal si la comprensión del texto/escena que me presentes es casi nula o muy baja incluso con ayuda).
-*   **Etapa 2: Inmersión Total en el Idioma** (Foco: Consumir mucho contenido auténtico CON subtítulos en idioma meta. Objetivo: Mejorar comprensión, expandir vocabulario contextualmente. Ideal si con subtítulos en idioma meta la comprensión del texto/escena mejora significativamente y hay disfrute de contenido simple).
-*   **Etapa 3: Free Flow Listening** (Foco: Consumir contenido SIN subtítulos, minado de oraciones i+1. Objetivo: Independizarse de subtítulos. Ideal si la comprensión sin subtítulos de contenido un poco más complejo ya es bastante buena y se quiere refinar).
-*   **Etapa 4: Producción del Idioma** (Foco: Activar conocimiento pasivo hablando y escribiendo. Objetivo: Fluidez. Ideal si la comprensión es muy alta y ya hay un deseo/necesidad de producir).
+3.  **Después de mis respuestas a todas las preguntas sobre los tres textos, y considerando mi experiencia previa que te di al inicio, por favor, recomiéndame en qué etapa del Antimétodo debería enfocarme principalmente ahora y dame una justificación detallada.**
 
-Por favor, espera a que te dé mi experiencia previa antes de empezar con el texto/escena y las preguntas.</span>
-      </div>
-    </div>
+**Aquí están las 4 etapas del Antimétodo y sus criterios de entrada/foco para tu referencia:**
+*   **Etapa 1: Preparación Previa** (Foco: Vocabulario base ~1000 palabras con Anki, familiarización sonidos/estructuras. Objetivo: Rampa para la inmersión. **Entrada ideal si:** la comprensión del texto BÁSICO es muy baja incluso con la idea de subtítulos, o si el usuario es principiante absoluto).
+*   **Etapa 2: Inmersión Total en el Idioma** (Foco: Consumir mucho contenido auténtico CON subtítulos en idioma meta. Objetivo: Mejorar comprensión, expandir vocabulario. **Entrada ideal si:** la comprensión del texto BÁSICO e INTERMEDIO mejora significativamente CON subtítulos, y se puede disfrutar contenido simple/intermedio de esta forma. El texto AVANZADO aún puede ser difícil).
+*   **Etapa 3: Free Flow Listening** (Foco: Consumir contenido SIN subtítulos, minado de oraciones i+1. Objetivo: Independizarse de subtítulos. **Entrada ideal si:** la comprensión del texto INTERMEDIO es buena o muy buena SIN subtítulos, y se puede seguir la idea principal del texto AVANZADO aunque no se entienda todo. Si la comprensión CON subtítulos en Etapa 2 ya es consistentemente alta (ej. >80-90%) en contenido variado, es momento de pasar aquí).
+*   **Etapa 4: Producción del Idioma** (Foco: Activar conocimiento pasivo hablando y escribiendo. Objetivo: Fluidez. **Entrada ideal si:** la comprensión SIN subtítulos del contenido AVANZADO es muy alta (ej. >85-95%) y hay un fuerte deseo de empezar a producir activamente).
 
-    <div class="step-container" style="border-bottom:none; margin-bottom:0;">
-      <h3 class="step-title">
-        <img src="{{ '/assets/rutinas-paso3-revisar-adaptar.png' | relative_url }}" alt="Paso 3" class="step-icon">
-        Paso 3: Interpreta la Recomendación y ¡Empieza!
-      </h3>
-      <p>La Inteligencia Artificial te dará una sugerencia de etapa basada en tus respuestas. ¡Úsala como una guía valiosa!</p>
-      <div class="final-advice">
-        <p><strong>Recuerda:</strong> Si la IA te recomienda, por ejemplo, la Etapa 2, pero sientes que tu vocabulario base es aún muy débil, no dudes en dedicar unas semanas a las actividades clave de la Etapa 1 (como Anki con palabras frecuentes) antes de sumergirte de lleno en la inmersión. ¡Tú conoces mejor tu situación y tu ritmo!</p>
-        <p>Lo más importante es que te sientas cómodo y motivado. Una vez que tengas una idea clara de tu etapa de inicio, visita nuestra descripción detallada de <a href="{{ '/etapas' | relative_url }}">Las Etapas del Antimétodo</a> y nuestra sección de <a href="{{ '/rutinas' | relative_url }}">Rutinas Flexibles</a> para comenzar a planificar tu emocionante viaje de aprendizaje.</p>
+Por favor, basa tu recomendación final de etapa en mi rendimiento general a través de los tres niveles de texto y mis respuestas. Si estoy entre dos etapas, sugiere la más temprana o una transición.</p>
       </div>
     </div>
   </section>
