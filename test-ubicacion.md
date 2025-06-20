@@ -127,6 +127,31 @@ label {
 }
 .final-advice p { margin-bottom: 0.8rem; }
 .final-advice p:last-child { margin-bottom: 0; }
+  
+  .interactive-button {
+  background: linear-gradient(135deg, var(--secondary-color), var(--accent-color));
+  color: #fff;
+  font-size: 1em;
+  font-weight: 600;
+  font-family: var(--font-primary);
+  border: none;
+  padding: 0.8rem 1.4rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.interactive-button:hover {
+  background: linear-gradient(135deg, var(--accent-color), var(--secondary-color));
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+.interactive-button:active {
+  transform: scale(0.97);
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+}
 </style>
 
 <main class="content-wrapper">
@@ -152,7 +177,7 @@ label {
       <label for="experienciaPrevia">Describe brevemente tu experiencia previa con este idioma:</label>
       <textarea id="experienciaPrevia" class="user-input-field" rows="3" placeholder="Ej: Estudié 2 años en la escuela hace mucho, veo algunas series con subtítulos en español y entiendo frases comunes."></textarea>
       
-      <button class="interactive-button" onclick="generarYMostrarPrompt()" style="margin-top: 1rem; font-size: 1em;">Generar Prompt para la IA</button>
+      <button class="interactive-button" onclick="generarYMostrarPrompt()">✨ Generar Prompt para la IA</button>
     </div>
 
     <div class="step-container" id="paso2IA" style="display:none;"> <!-- Paso 2 inicialmente oculto -->
