@@ -257,7 +257,7 @@ function generarYMostrarPrompt() {
   }
 
   let tempPrompt = promptPlantilla.replace(/\[IDIOMA META\]/g, idiomaMeta);
-  let promptPersonalizado = tempPrompt.replace('[EXPERIENCIA PREVIA GENERAL AQUÍ]', experienciaPrevia);
+  let promptPersonalizado = tempPrompt.replace('[EXPERIENCIA PREVIA GENERAL]', experienciaPrevia);
 
   promptOutputSpan.innerText = promptPersonalizado; 
 
