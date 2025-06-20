@@ -256,14 +256,11 @@ function generarYMostrarPrompt() {
     return;
   }
 
-  // Reemplazar los placeholders en la plantilla del prompt
-  let promptPersonalizado = promptPlantilla.replace(/\[IDIOMA META\]/g, idiomaMeta);
-  promptPersonalizado = promptPersonalizado.replace('[EXPERIENCIA PREVIA GENERAL AQUÍ]', experienciaPrevia);
-  // El placeholder [TU EXPERIENCIA PREVIA GENERAL AQUÍ] solo aparece una vez, así que no necesita /g
+  let tempPrompt = promptPlantilla.replace(/\[IDIOMA META\]/g, idiomaMeta);
+  let promptPersonalizado = tempPrompt.replace('[EXPERIENCIA PREVIA GENERAL AQUÍ]', experienciaPrevia);
 
-  promptOutputSpan.innerText = promptPersonalizado; // Usar innerText para que los saltos de línea se mantengan al copiar
+  promptOutputSpan.innerText = promptPersonalizado; 
 
-  // Mostrar los siguientes pasos
   document.getElementById('paso2IA').style.display = 'block';
   document.getElementById('paso3Interpreta').style.display = 'block';
 }
