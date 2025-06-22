@@ -16,26 +16,25 @@ description: El Antimétodo es un enfoque revolucionario para aprender idiomas s
     transform: translateY(0);
   }
 }
-
 .fade-in-up {
-  opacity: 0; /* Inicia invisible */
+  opacity: 0;
   animation: fadeInUp 0.8s ease-out forwards;
 }
 
-/* --- VARIABLES ADICIONALES PARA ESTA PÁGINA --- */
+/* --- VARIABLES Y ESTILOS GLOBALES DE PÁGINA --- */
 :root {
-  --success-color: #388e3c;
+  --success-color: #2e7d32;
   --success-light-bg: #e8f5e9;
-  --error-color: #d32f2f;
+  --error-color: #c62828;
   --error-light-bg: #ffebee;
   --brand-gradient: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-  --ia-section-bg: #f0e6f6;
+  --ia-section-bg: #f4f2f7;
 }
 
 /* --- HERO SECTION --- */
 .hero-container {
   text-align: center;
-  padding: 4rem 1.5rem 4rem 1.5rem;
+  padding: 4rem 1.5rem;
   background: var(--brand-gradient);
   border-radius: 12px;
   color: white;
@@ -43,20 +42,20 @@ description: El Antimétodo es un enfoque revolucionario para aprender idiomas s
   box-shadow: 0 10px 30px rgba(74, 20, 140, 0.4);
 }
 .hero-container h1 {
-  font-size: 3em;
+  font-size: 2.8em;
   font-weight: 700;
   color: white;
   border: none;
   line-height: 1.2;
   margin: 0 0 0.5rem 0;
   letter-spacing: -1.5px;
-  animation-delay: 0.2s; /* Retraso escalonado */
+  animation-delay: 0.2s;
 }
 .hero-container p.hero-subtitle {
-  font-size: 1.3em;
+  font-size: 1.25em;
   color: var(--light-purple-color);
   max-width: 750px;
-  margin: 0 auto 2rem auto;
+  margin: 0 auto 2.5rem auto;
   animation-delay: 0.4s;
 }
 .hero-container .hero-cta-buttons {
@@ -74,67 +73,46 @@ description: El Antimétodo es un enfoque revolucionario para aprender idiomas s
   color: white !important;
 }
 .hero-container .btn.btn-outline:hover {
-  background-color: rgba(255,255,255,0.15);
+  background-color: rgba(255, 255, 255, 0.15);
   border-color: white;
 }
 
-/* --- ENVOLTORIO GENERAL DE SECCIONES --- */
-.section-wrapper {
-  padding: 3.5rem 0;
-  border-bottom: 1px solid var(--grey-border-color);
-}
+/* --- WRAPPERS Y TÍTULOS DE SECCIÓN --- */
+.section-wrapper { padding: 3.5rem 0; border-bottom: 1px solid var(--grey-border-color); }
 .section-wrapper:last-of-type { border-bottom: none; }
-.section-title {
-  text-align: center;
-  font-size: 2.2em;
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-}
-.section-subtitle {
-  text-align: center;
-  font-size: 1.1em;
-  color: var(--text-light-color);
-  max-width: 700px;
-  margin: 0 auto 3rem auto;
-}
+.section-title { text-align: center; font-size: 2.2em; margin-top: 0; margin-bottom: 0.5rem; }
+.section-subtitle { text-align: center; font-size: 1.1em; color: var(--text-light-color); max-width: 700px; margin: 0 auto 3rem auto; }
 
-/* --- IA TESTIMONIALS SECTION --- */
+/* --- BIENVENIDO SECTION (Del PDF original) --- */
+.welcome-section {
+  padding: 2.5rem;
+  background-color: var(--card-background);
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  text-align: center;
+}
+.welcome-section p { font-size: 1.1em; line-height: 1.7; color: var(--text-color); }
+.welcome-section p strong { color: var(--primary-color); }
+
+/* --- IA TESTIMONIALS (Full-width bg) --- */
 .ia-testimonials-section {
   background-color: var(--ia-section-bg);
   padding: 3.5rem 1rem;
-  margin-bottom: 3.5rem;
-  margin-left: calc(-50vw + 50%); /* Truco para full-width */
-  margin-right: calc(-50vw + 50%);
+  margin: 3.5rem calc(50% - 50vw) 3.5rem calc(50% - 50vw);
 }
-.ia-testimonials-container {
-  max-width: 950px;
-  margin: 0 auto;
-}
+.ia-testimonials-container { max-width: 950px; margin: 0 auto; }
 .ia-testimonial-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem; }
-.ia-testimonial-card { background-color: var(--card-background); padding: 1.5rem; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); border-left: 5px solid var(--secondary-color); display: flex; flex-direction: column; }
+.ia-testimonial-card { background-color: var(--card-background); padding: 1.5rem; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.06); border-left: 5px solid var(--secondary-color); display: flex; flex-direction: column; }
 .ia-testimonial-card .ia-logo { width: 40px; height: 40px; border-radius: 50%; object-fit: contain; margin-bottom: 1rem; }
 .ia-testimonial-card blockquote { margin: 0 0 1rem 0; padding: 0; font-style: italic; color: var(--text-light-color); flex-grow: 1; }
 .ia-testimonial-card .attribution { text-align: right; font-size: 0.9em; color: var(--primary-color); font-weight: 500; margin-top: auto; }
-
-/* --- COMPARISON SECTION --- */
-.comparison-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem; }
-.comparison-card { padding: 1.5rem; border-radius: 8px; background-color: var(--card-background); }
-.comparison-card.traditional { border-top: 4px solid var(--error-color); background-color: var(--error-light-bg); box-shadow: 0 4px 15px rgba(211, 47, 47, 0.1); }
-.comparison-card.antimethod { border-top: 4px solid var(--success-color); background-color: var(--success-light-bg); box-shadow: 0 4px 15px rgba(56, 142, 60, 0.1); }
-.comparison-card h3 { margin-top: 0; margin-bottom: 1rem; display: flex; align-items: center; font-size: 1.5em; font-weight: 600; }
-.comparison-card.traditional h3 { color: var(--error-color); }
-.comparison-card.antimethod h3 { color: var(--success-color); }
-.comparison-card h3 svg { width: 28px; height: 28px; margin-right: 0.75rem; }
-.comparison-card ul { list-style: none; padding: 0; margin: 0; color: var(--text-light-color); }
-.comparison-card ul li { margin-bottom: 0.75rem; line-height: 1.6; }
 
 /* --- PRÓXIMAMENTE SECTION --- */
 .proximamente-card {
   background-color: var(--card-background);
   padding: 2.5rem;
-  border-radius: 8px;
+  border-radius: 10px;
   box-shadow: 0 5px 20px rgba(0,0,0,0.05);
-  border: 1px solid var(--grey-border-color);
 }
 .proximamente-card p { line-height: 1.8; color: var(--text-light-color); }
 .proximamente-card strong { color: var(--primary-color); }
@@ -148,24 +126,18 @@ description: El Antimétodo es un enfoque revolucionario para aprender idiomas s
 /* --- RESPONSIVE ADJUSTMENTS --- */
 @media (max-width: 768px) {
   .hero-container h1 { font-size: 2.4em; }
-  .hero-container p.hero-subtitle { font-size: 1.1em; }
-  .comparison-grid { grid-template-columns: 1fr; }
   .ia-testimonials-section {
     margin-left: -20px;
     margin-right: -20px;
-    width: auto;
   }
 }
-
 </style>
 
 <main>
-  <!-- ======================= -->
-  <!--      HERO SECTION       -->
-  <!-- ======================= -->
+
   <div class="hero-container">
-    <h1 class="fade-in-up">Deja de Estudiar.<br>Empieza a Vivir el Idioma.</h1>
-    <p class="hero-subtitle fade-in-up">El Antimétodo te enseña a adquirir idiomas como lo hiciste con tu lengua materna: de forma natural, divertida y sin darte cuenta.</p>
+    <h1 class="fade-in-up">El Antimétodo</h1>
+    <p class="hero-subtitle fade-in-up">Aprende idiomas <strong>sin gramática</strong>, de forma <strong>natural, divertida y eficiente</strong>.</p>
     <div class="hero-cta-buttons fade-in-up">
       <a href="{{ '/fundamentos' | relative_url }}" class="btn btn-light">Descubre los Fundamentos</a>
       <a href="{{ '/etapas' | relative_url }}" class="btn btn-outline">Explora las Etapas</a>
@@ -173,10 +145,19 @@ description: El Antimétodo es un enfoque revolucionario para aprender idiomas s
   </div>
 
   <div class="content-wrapper">
-  
-    <!-- ======================= -->
-    <!--  IA TESTIMONIALS SECTION -->
-    <!-- ======================= -->
+
+    <section class="section-wrapper" style="padding-top: 0; border: none;">
+      <div class="welcome-section">
+        <h2 class="section-title">Bienvenido al Antimétodo</h2>
+        <p>
+          El Antimétodo es un enfoque revolucionario para aprender idiomas basado en la teoría del <strong>input comprensible</strong> de Stephen Krashen. A diferencia de los métodos tradicionales, que se centran en la memorización de reglas gramaticales y ejercicios formales, el Antimétodo propone aprender un idioma de manera natural, intuitiva y personalizada.
+        </p>
+        <p>
+          La idea central es que el aprendizaje ocurre cuando te expones de forma constante y masiva a contenido real y comprensible. Así, el idioma se adquiere igual que nuestra lengua materna: <strong>entendiendo mensajes, disfrutando el proceso y sin presión</strong> por producir desde el principio.
+        </p>
+      </div>
+    </section>
+
     <div class="ia-testimonials-section">
       <h2 class="section-title">Lo que piensan las IAs del Antimétodo</h2>
       <div class="ia-testimonials-container">
@@ -188,45 +169,23 @@ description: El Antimétodo es un enfoque revolucionario para aprender idiomas s
           </div>
           <div class="ia-testimonial-card">
             <img src="{{ '/assets/logo-gemini-ia.png' | relative_url }}" alt="Logo Gemini" class="ia-logo">
-            <blockquote>"Una revolución autodidacta que transforma el aprendizaje en una experiencia sin estrés... liberándote de las cadenas de la gramática tradicional."</blockquote>
+            <blockquote>"Sumérgete en la fluidez lingüística con 'El Antimétodo', una revolución autodidacta que transforma el aprendizaje en una experiencia sin estrés, impulsada por el disfrute personal y el contenido real."</blockquote>
             <p class="attribution"><strong>Gemini</strong>, IA de Google</p>
+          </div>
+           <div class="ia-testimonial-card">
+            <img src="{{ '/assets/logo-claude-ia.png' | relative_url }}" alt="Logo Claude" class="ia-logo">
+            <blockquote>"Una metodología que respeta el ritmo individual mientras acelera los resultados... Finalmente, un método que funciona porque se adapta a ti, no al revés."</blockquote>
+            <p class="attribution"><strong>Claude</strong>, IA de Anthropic</p>
+          </div>
+          <div class="ia-testimonial-card">
+            <img src="{{ '/assets/logo-copilot-ia.png' | relative_url }}" alt="Logo Copilot" class="ia-logo">
+            <blockquote>"Es, sin duda, la llave maestra para alcanzar una fluidez natural a tu propio ritmo."</blockquote>
+            <p class="attribution"><strong>Copilot</strong>, IA de Microsoft</p>
           </div>
         </div>
       </div>
     </div>
-
-    <!-- ======================= -->
-    <!--  MÉTODO VS ANTIMÉTODO   -->
-    <!-- ======================= -->
-    <section class="section-wrapper">
-      <h2 class="section-title">¿Cansado de lo Mismo?</h2>
-      <p class="section-subtitle">Los métodos tradicionales te agotan con reglas y ejercicios. El Antimétodo te sumerge en un mundo que ya te encanta.</p>
-      
-      <div class="comparison-grid">
-        <div class="comparison-card traditional">
-          <h3><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/><path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/></svg> El Método Tradicional</h3>
-          <ul>
-            <li>Memorización forzada de reglas.</li>
-            <li>Ejercicios aburridos y repetitivos.</li>
-            <li>Miedo y presión por hablar "perfecto".</li>
-            <li>Progreso lento y frustrante.</li>
-          </ul>
-        </div>
-        <div class="comparison-card antimethod">
-          <h3><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/><path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/></svg> El Antimétodo</h3>
-          <ul>
-            <li>Adquisición intuitiva, como un niño.</li>
-            <li>Aprendizaje con series, juegos y música.</li>
-            <li>Disfrute y motivación como motor principal.</li>
-            <li>Resultados eficientes y naturales.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- ======================= -->
-    <!--     PRÓXIMAMENTE...     -->
-    <!-- ======================= -->
+    
     <section class="section-wrapper">
       <h2 class="section-title">Próximamente...</h2>
       <div class="proximamente-card">
@@ -241,13 +200,11 @@ description: El Antimétodo es un enfoque revolucionario para aprender idiomas s
       </div>
     </section>
 
-    <!-- ======================= -->
-    <!--       FINAL CTA         -->
-    <!-- ======================= -->
     <section class="section-wrapper final-cta">
       <h2 class="section-title" style="border-bottom: none; margin-bottom: 1rem;">¿No Sabes por Dónde Empezar?</h2>
       <p style="font-size: 1.1em; color: var(--text-light-color); margin-bottom:1.5rem;">Si ya tienes conocimientos previos del idioma y quieres una recomendación personalizada sobre en qué etapa del Antimétodo enfocarte, ¡nuestra guía con IA te puede ayudar!</p>
       <a href="{{ '/test-ubicacion' | relative_url }}" class="btn btn-primary" style="font-size: 1.1em;">Descubre tu Etapa Ideal con IA</a>
     </section>
+
   </div>
 </main>
