@@ -35,32 +35,6 @@ description: Aprende idiomas de forma natural, divertida y eficiente con el enfo
     <img src="{{ '/assets/supremacy.jpg' | relative_url }}" alt="Supremacía del Antimétodo" class="hero-main-image">
   </div>
 </div>
-<!-- ================================================== -->
-<!-- SECCIÓN PRESENTACIÓN APP ANTIMÉTODO TRACKER        -->
-<!-- ================================================== -->
-<section class="app-promo-section">
-  <div class="content-wrapper-condensed" style="display: flex; align-items: center; gap: 2rem; flex-wrap: wrap;">
-    <div class="app-promo-image" style="flex: 1 1 300px; text-align:center;">
-      <a href="https://luisem93.github.io/Antimetodotracker/" target="_blank" rel="noopener noreferrer" title="Ir a El Antimétodo Tracker">
-        <img src="{{ '/assets/app.png' | relative_url }}" alt="Vista previa de la app El Antimétodo Tracker" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
-      </a>
-    </div>
-    <div class="app-promo-text" style="flex: 1 1 400px;">
-      <h2 style="text-align:left; border-bottom: 2px solid var(--primary-color); padding-bottom:0.5rem; display:inline-block;">¡Descubre El Antimétodo Tracker!</h2>
-      <p style="font-size: 1.1em; color: var(--text-light-color); line-height: 1.7;">
-        Lleva tu aprendizaje al siguiente nivel con nuestra aplicación web diseñada para ser tu compañera ideal en la inmersión. Registra tu progreso, construye hábitos sólidos, accede a guías y ¡mucho más!
-      </p>
-      <p style="font-size: 1.1em; color: var(--text-light-color); line-height: 1.7;">
-        Organiza tu viaje hacia la fluidez de una manera natural, eficiente y, sobre todo, disfrutable.
-      </p>
-      <div class="app-promo-buttons" style="margin-top: 1.5rem; display: flex; gap: 1rem; flex-wrap:wrap;">
-        <a href="https://luisem93.github.io/Antimetodotracker/" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="font-size: 1em;">🚀 Ir a la App</a>
-        <a href="{{ '/antimetodo-tracker-app' | relative_url }}" class="btn" style="font-size: 1em; background-color: var(--accent-color);">Más Información</a>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- FIN SECCIÓN APP                                    -->
 
 <style>
   /* Estilos para la Sección de Promoción de la App */
@@ -230,6 +204,30 @@ description: Aprende idiomas de forma natural, divertida y eficiente con el enfo
       <a href="{{ '/fundamentos' | relative_url }}" class="btn btn-primary">Descubre los Fundamentos</a>
     </div>
   </section>
+<!-- SECCIÓN PRESENTACIÓN APP ANTIMÉTODO TRACKER        -->
+<section class="app-promo-section">
+  <div class="content-wrapper-condensed" style="display: flex; align-items: center; gap: 2rem; flex-wrap: wrap;">
+    <div class="app-promo-image" style="flex: 1 1 300px; text-align:center;">
+      <a href="https://luisem93.github.io/Antimetodotracker/" target="_blank" rel="noopener noreferrer" title="Ir a El Antimétodo Tracker">
+        <img src="{{ '/assets/app.png' | relative_url }}" alt="Vista previa de la app El Antimétodo Tracker" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+      </a>
+    </div>
+    <div class="app-promo-text" style="flex: 1 1 400px;">
+      <h2 style="text-align:left; border-bottom: 2px solid var(--primary-color); padding-bottom:0.5rem; display:inline-block;">¡Descubre El Antimétodo Tracker!</h2>
+      <p style="font-size: 1.1em; color: var(--text-light-color); line-height: 1.7;">
+        Lleva tu aprendizaje al siguiente nivel con nuestra aplicación web diseñada para ser tu compañera ideal en la inmersión. Registra tu progreso, construye hábitos sólidos, accede a guías y ¡mucho más!
+      </p>
+      <p style="font-size: 1.1em; color: var(--text-light-color); line-height: 1.7;">
+        Organiza tu viaje hacia la fluidez de una manera natural, eficiente y, sobre todo, disfrutable.
+      </p>
+      <div class="app-promo-buttons" style="margin-top: 1.5rem; display: flex; gap: 1rem; flex-wrap:wrap;">
+        <a href="https://luisem93.github.io/Antimetodotracker/" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="font-size: 1em;">🚀 Ir a la App</a>
+        <a href="{{ '/antimetodo-tracker-app' | relative_url }}" class="btn" style="font-size: 1em; background-color: var(--accent-color);">Más Información</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- FIN SECCIÓN APP                                    -->
 
   <!-- SECCIÓN DE TESTIMONIOS DE IA (FULL-WIDTH BACKGROUND) -->
   <section class="ia-testimonials-fullwidth-section"> 
