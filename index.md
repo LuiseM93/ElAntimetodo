@@ -35,8 +35,75 @@ description: Aprende idiomas de forma natural, divertida y eficiente con el enfo
     <img src="{{ '/assets/supremacy.jpg' | relative_url }}" alt="Supremacía del Antimétodo" class="hero-main-image">
   </div>
 </div>
+<!-- ================================================== -->
+<!-- SECCIÓN PRESENTACIÓN APP ANTIMÉTODO TRACKER        -->
+<!-- ================================================== -->
+<section class="app-promo-section">
+  <div class="content-wrapper-condensed" style="display: flex; align-items: center; gap: 2rem; flex-wrap: wrap;">
+    <div class="app-promo-image" style="flex: 1 1 300px; text-align:center;">
+      <a href="https://luisem93.github.io/Antimetodotracker/" target="_blank" rel="noopener noreferrer" title="Ir a El Antimétodo Tracker">
+        <img src="{{ '/assets/app.png' | relative_url }}" alt="Vista previa de la app El Antimétodo Tracker" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+      </a>
+    </div>
+    <div class="app-promo-text" style="flex: 1 1 400px;">
+      <h2 style="text-align:left; border-bottom: 2px solid var(--primary-color); padding-bottom:0.5rem; display:inline-block;">¡Descubre El Antimétodo Tracker!</h2>
+      <p style="font-size: 1.1em; color: var(--text-light-color); line-height: 1.7;">
+        Lleva tu aprendizaje al siguiente nivel con nuestra aplicación web diseñada para ser tu compañera ideal en la inmersión. Registra tu progreso, construye hábitos sólidos, accede a guías y ¡mucho más!
+      </p>
+      <p style="font-size: 1.1em; color: var(--text-light-color); line-height: 1.7;">
+        Organiza tu viaje hacia la fluidez de una manera natural, eficiente y, sobre todo, disfrutable.
+      </p>
+      <div class="app-promo-buttons" style="margin-top: 1.5rem; display: flex; gap: 1rem; flex-wrap:wrap;">
+        <a href="https://luisem93.github.io/Antimetodotracker/" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="font-size: 1em;">🚀 Ir a la App</a>
+        <a href="{{ '/antimetodo-tracker-app' | relative_url }}" class="btn" style="font-size: 1em; background-color: var(--accent-color);">Más Información</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- FIN SECCIÓN APP                                    -->
 
 <style>
+  /* Estilos para la Sección de Promoción de la App */
+.app-promo-section {
+  padding: 3rem 0; 
+  background-color: #f0e6f6; 
+}
+
+
+.app-promo-section .content-wrapper-condensed { 
+    max-width: 900px; 
+    margin: 0 auto;
+    padding: 0 1rem; 
+}
+
+.app-promo-image img:hover {
+    transform: scale(1.03);
+    transition: transform 0.3s ease;
+}
+
+.app-promo-text h2 {
+    font-size: 2em; /* Tamaño del título de la promo */
+}
+
+.app-promo-buttons .btn {
+    padding: 0.8rem 1.5rem; /* Ajustar padding de botones si es necesario */
+}
+
+@media (max-width: 768px) {
+  .app-promo-section .content-wrapper-condensed {
+    flex-direction: column; /* Apilar imagen y texto en móvil */
+  }
+  .app-promo-text {
+    text-align: center; /* Centrar texto en móvil */
+  }
+  .app-promo-text h2 {
+    text-align: center; /* Centrar H2 en móvil */
+    display: block; /* Para que el centrado y el borde funcionen bien */
+  }
+  .app-promo-buttons {
+    justify-content: center; /* Centrar botones en móvil */
+  }
+}
 /* Estilos del Hero Section (existentes) */
 .hero-section { text-align: center; padding: 2.5rem 1rem 1.8rem 1rem; margin-bottom: 40px; background-color: var(--card-background); border-radius: 12px; box-shadow: 0 8px 25px rgba(74, 20, 140, 0.1); border: 1px solid var(--light-purple-color); }
 .hero-content h1 { font-family: var(--font-primary); border-bottom: none; font-size: 2.8em; margin-bottom: 0.25em; color: var(--primary-color); font-weight: 700; letter-spacing: -1px; }
