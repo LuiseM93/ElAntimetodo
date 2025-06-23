@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Guía: Importa tu Historial de Trackers a "El Antimétodo Tracker" con IA
+title: "Guía" Importa tu Historial de Trackers a "El Antimétodo Tracker" con IA
 description: Aprende cómo usar un prompt de IA para convertir tus datos de seguimiento de tiempo de otras apps al formato de "El Antimétodo Tracker".
 ---
 
