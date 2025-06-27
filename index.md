@@ -4,394 +4,312 @@ title: El Antimétodo - Inicio
 description: Aprende idiomas de forma natural, divertida y eficiente con el enfoque del input comprensible. Sin gramática.
 ---
 
+<div class="hero-section">
+  <div class="hero-content">
+    <h1>El Antimétodo</h1>
+    <p class="subtitle">Aprende idiomas <strong>sin gramática</strong>, de forma <strong>natural, divertida y eficiente</strong></p>
+  </div>
+  <div class="hero-cards-container">
+    <div class="hero-card">
+      <div class="hero-card-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="48px" height="48px">
+          <path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"/>
+          <path d="M12 6c-1.952 0-3.669 1.255-4.531 3.043-.22.459-.035.99.424 1.21.459.221.99.035 1.21-.424C9.698 8.797 10.789 8 12 8s2.302.797 2.897 1.829c.22.459.751.644 1.21.424.459-.22.644-.751.424-1.21C15.669 7.255 13.952 6 12 6z"/>
+          <path d="M12 13c-1.654 0-3 1.346-3 3s1.346 3 3 3 3-1.346 3-3-1.346-3-3-3zm0 4c-.551 0-1-.449-1-1s.449-1 1-1 1 .449 1 1-.449 1-1 1z"/>
+          <path d="M7.5 11.5c-.275 0-.5-.225-.5-.5s.225-.5.5-.5h9c.275 0 .5.225.5.5s-.225.5-.5.5h-9z"/>
+        </svg>
+      </div>
+      <h2>Sin Estrés</h2>
+      <p>Olvida ejercicios aburridos - aprende con contenido que disfrutas.</p>
+    </div>
+    <div class="hero-card">
+      <div class="hero-card-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="48px" height="48px"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M13 7h-2v5.414l3.293 3.293 1.414-1.414L13 11.586V7z"></path></svg>
+      </div>
+      <h2>A Tu Ritmo</h2>
+      <p>Usa tu tiempo libre: series, música, videojuegos, ¡lo que te guste!</p>
+    </div>
+  </div>
+
+  <div class="hero-image-container">
+    <img src="{{ '/assets/supremacy.jpg' | relative_url }}" alt="Supremacía del Antimétodo" class="hero-main-image">
+  </div>
+</div>
+
 <style>
-/* === V6 DESIGN SYSTEM (INSPIRED BY REFOLD) === */
-.v6-landing {
-  background-color: #FDFBFF; /* Un blanco ligeramente cálido */
-  overflow-x: hidden;
-}
-.v6-container {
-  max-width: 1140px;
-  margin: 0 auto;
-  padding: 0 1.5rem;
-  position: relative;
-  z-index: 2;
-}
-.v6-section {
-  padding: 5rem 0;
-  position: relative;
-}
-.v6-grid-two-col {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-  align-items: center;
-}
-.v6-text-center { text-align: center; }
-
-/* === TYPOGRAPHY & BUTTONS === */
-.v6-section-title {
-  font-size: clamp(2rem, 5vw, 2.8rem);
-  text-align: center;
-  margin-bottom: 3.5rem;
-  font-weight: 700;
-  border: none;
-  color: #2c1b44;
-}
-.v6-btn {
-  display: inline-block;
-  font-family: var(--font-primary);
-  font-weight: 600;
-  text-decoration: none;
-  padding: 0.9rem 2.2rem;
-  border-radius: 8px;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-.v6-btn-primary {
-  background-color: var(--primary-color);
-  color: white !important;
-  box-shadow: 0 4px 15px rgba(74, 20, 140, 0.2);
-}
-.v6-btn-primary:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 7px 20px rgba(74, 20, 140, 0.3);
-}
-.v6-btn-secondary {
-    background-color: var(--card-background);
-    color: var(--primary-color) !important;
-    border: 1px solid var(--light-purple-color);
-}
-.v6-btn-secondary:hover {
-    transform: translateY(-3px);
-    background-color: #f9f5ff;
-    border-color: var(--secondary-color);
+  /* Estilos para la Sección de Promoción de la App */
+.app-promo-section {
+  padding: 3rem 0; 
+  background-color: #f0e6f6; 
 }
 
 
-/* === ANIMATIONS === */
-.v6-scroll-anim {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.7s cubic-bezier(0.165, 0.84, 0.44, 1), transform 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
-  transition-delay: var(--delay, 0s);
-}
-.v6-scroll-anim.is-visible {
-  opacity: 1;
-  transform: translateY(0);
+.app-promo-section .content-wrapper-condensed { 
+    max-width: 900px; 
+    margin: 0 auto;
+    padding: 0 1rem; 
 }
 
-/* === HERO SECTION === */
-.v6-hero {
-  padding: 6rem 0;
-  background-color: #FDFBFF;
-  position: relative;
-}
-.v6-hero::before { /* Gradiente Blob */
-    content: '';
-    position: absolute;
-    top: -20%;
-    right: -20%;
-    width: 600px;
-    height: 600px;
-    background: radial-gradient(circle, rgba(123, 31, 162, 0.08) 0%, rgba(123, 31, 162, 0) 60%);
-    z-index: 0;
-}
-.v6-hero h1 {
-  font-size: clamp(2.8rem, 7vw, 4.5rem);
-  font-weight: 800;
-  line-height: 1.1;
-  letter-spacing: -0.04em;
-  margin-bottom: 1rem;
-  border: none;
-  color: #2c1b44;
-}
-.v6-hero p.subtitle {
-  font-size: clamp(1.1rem, 2.5vw, 1.3rem);
-  max-width: 500px;
-  margin-bottom: 2rem;
-  color: var(--text-light-color);
-  line-height: 1.6;
-}
-.v6-hero .hero-actions { display: flex; gap: 1rem; }
-.v6-hero-image-wrapper { text-align: center; }
-.v6-hero-image {
-  max-width: 100%;
-  border-radius: 12px;
-  box-shadow: 0 20px 40px -10px rgba(74, 20, 140, 0.2);
-  transition: transform 0.3s ease;
-}
-.v6-hero-image:hover { transform: scale(1.03); }
-
-/* === WELCOME & APP PROMO SECTION === */
-.v6-welcome { background-color: white; }
-.v6-app-promo .app-mockup {
-  background: var(--card-background);
-  padding: 1rem;
-  border-radius: 12px;
-  box-shadow: 0 15px 30px -5px rgba(0,0,0,0.1);
-  border: 1px solid #eee;
-}
-.v6-app-promo .app-mockup img {
-  display: block;
-  width: 100%;
-  border-radius: 6px;
-}
-.v6-app-promo h2 { font-size: 2.2rem; border: none; margin-bottom: 1rem;}
-.v6-app-promo p { font-size: 1.1em; }
-.v6-app-promo .promo-buttons { margin-top: 1.5rem; }
-
-/* === TESTIMONIALS SECTION (DARK) === */
-.v6-testimonials {
-  background-color: #1a1423;
-  color: #e3dceb;
-}
-.v6-testimonials .v6-section-title { color: white; }
-.v6-testimonial-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-}
-.v6-testimonial-card {
-  background: #272133;
-  padding: 2rem;
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-}
-.v6-testimonial-card .card-header { display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem; }
-.v6-testimonial-card .ia-logo { width: 40px; height: 40px; border-radius: 50%; }
-.v6-testimonial-card .attribution { font-weight: 600; font-size: 1.1em; }
-.v6-testimonial-card .attribution em { font-style: normal; font-weight: 400; font-size: 0.8em; color: #bca9d4; display: block; }
-.v6-testimonial-card blockquote { margin: 0; padding: 0; border: none; font-style: italic; color: #d6cde0; line-height: 1.6; }
-
-/* === BENEFITS SECTION === */
-.v6-benefits-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
-}
-.v6-benefit-card {
-    background: white;
-    padding: 2rem;
-    border-radius: 10px;
-    border: 1px solid #eee;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.v6-benefit-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-}
-.v6-benefit-card .icon {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 56px;
-    height: 56px;
-    background-color: var(--light-purple-color);
-    border-radius: 50%;
-    margin-bottom: 1.5rem;
-}
-.v6-benefit-card .icon svg {
-    width: 28px;
-    height: 28px;
-    color: var(--primary-color);
-}
-.v6-benefit-card h3 { font-size: 1.25em; border: none; margin: 0 0 0.5rem 0; }
-.v6-benefit-card p { font-size: 0.95em; line-height: 1.6; color: var(--text-light-color); }
-
-/* === FINAL SECTIONS === */
-.v6-final-cta {
-  padding: 5rem 1.5rem;
-  background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
-  border-radius: 20px;
-  color: white;
-}
-.v6-final-cta h2 { color: white; border: none; font-size: 2.5rem; }
-.v6-final-cta p { color: #e3dceb; }
-.v6-coming-soon {
-  max-width: 800px;
-  margin: 5rem auto 0;
-}
-.v6-coming-soon .update-date {
-  font-size: 0.9em;
-  color: #999;
-  margin-top: 2rem;
-  padding-top: 1.5rem;
-  border-top: 1px dashed var(--light-purple-color);
+.app-promo-image img:hover {
+    transform: scale(1.03);
+    transition: transform 0.3s ease;
 }
 
-/* === RESPONSIVENESS === */
-@media (max-width: 900px) {
-  .v6-grid-two-col { grid-template-columns: 1fr; }
-  .v6-hero { text-align: center; }
-  .v6-hero .hero-actions { justify-content: center; }
-  .v6-hero-image-wrapper { margin-top: 3rem; }
-  .v6-app-promo { text-align: center; }
-  .v6-app-promo .v6-grid-two-col {
-    grid-template-areas: "image" "text";
-    gap: 2rem;
+.app-promo-text h2 {
+    font-size: 2em; /* Tamaño del título de la promo */
+}
+
+.app-promo-buttons .btn {
+    padding: 0.8rem 1.5rem; /* Ajustar padding de botones si es necesario */
+}
+
+@media (max-width: 768px) {
+  .app-promo-section .content-wrapper-condensed {
+    flex-direction: column; /* Apilar imagen y texto en móvil */
   }
-  .v6-app-promo .app-promo-image { grid-area: image; }
-  .v6-app-promo .app-promo-text { grid-area: text; }
+  .app-promo-text {
+    text-align: center; /* Centrar texto en móvil */
+  }
+  .app-promo-text h2 {
+    text-align: center; /* Centrar H2 en móvil */
+    display: block; /* Para que el centrado y el borde funcionen bien */
+  }
+  .app-promo-buttons {
+    justify-content: center; /* Centrar botones en móvil */
+  }
 }
-@media (max-width: 700px) {
-    .v6-testimonial-grid { grid-template-columns: 1fr; }
+/* Estilos del Hero Section (existentes) */
+.hero-section { text-align: center; padding: 2.5rem 1rem 1.8rem 1rem; margin-bottom: 40px; background-color: var(--card-background); border-radius: 12px; box-shadow: 0 8px 25px rgba(74, 20, 140, 0.1); border: 1px solid var(--light-purple-color); }
+.hero-content h1 { font-family: var(--font-primary); border-bottom: none; font-size: 2.8em; margin-bottom: 0.25em; color: var(--primary-color); font-weight: 700; letter-spacing: -1px; }
+.hero-content .subtitle { font-family: var(--font-secondary); font-size: 1.25em; color: var(--secondary-color); margin-bottom: 2.2rem; font-weight: 400; }
+.hero-cards-container { display: flex; gap: 25px; margin-top: 1.8rem; justify-content: center; flex-wrap: wrap; }
+.hero-card { background: linear-gradient(145deg, var(--card-background), #fdfcff); padding: 22px 28px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.07); flex: 1; max-width: 310px; border-top: 4px solid var(--secondary-color); transition: transform 0.3s ease, box-shadow 0.3s ease; display: flex; flex-direction: column; align-items: center; }
+.hero-card:hover { transform: translateY(-8px); box-shadow: 0 10px 20px rgba(123, 31, 162, 0.15); }
+.hero-card-icon { margin-bottom: 0.8rem; color: var(--secondary-color); }
+.hero-card-icon svg { width: 38px; height: 38px; }
+.hero-card h2 { font-family: var(--font-primary); color: var(--primary-color); border-bottom: none; font-size: 1.5em; margin-top: 0; margin-bottom: 0.5rem; font-weight: 600; }
+.hero-card p { font-family: var(--font-secondary); font-size: 0.95em; line-height: 1.55; color: var(--text-light-color); margin-bottom: 0; }
+.hero-image-container { margin-top: 2.2rem; }
+.hero-main-image { max-width: 65%; height: auto; border-radius: 10px; border: 3px solid var(--grey-border-color); box-shadow: 0 6px 18px rgba(0,0,0,0.1); }
+
+/* Estilos para secciones de contenido (existentes) */
+.content-section { margin-bottom: 3rem; padding: 2rem; background-color: var(--card-background); border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+.content-section .section-title { text-align: center; margin-bottom: 2rem; }
+.content-section .section-subtitle { text-align: center; font-size: 1.15em; color: var(--text-light-color); margin-top: -1.5rem; margin-bottom: 2rem; }
+
+/* === ESTILOS PARA LA SECCIÓN DE TESTIMONIOS DE IA (FULL-WIDTH BACKGROUND Y TARJETAS MÁS ANCHAS) === */
+.ia-testimonials-fullwidth-section {
+  background-color: #f0e6f6; 
+  padding: 3rem 0; 
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  margin-left: calc(-50vw + 50% + 20px); 
+  margin-right: calc(-50vw + 50% + 20px);
+}
+.ia-testimonials-fullwidth-section .content-wrapper-condensed { 
+    max-width: 900px; /* Aumentado para permitir 2 tarjetas más anchas */
+    margin: 0 auto;
+    padding: 0 1rem; 
+}
+.ia-testimonials-fullwidth-section h2 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 2rem; 
+  color: var(--primary-color);
+  font-size: 2em;
+  border-bottom: none; 
+}
+
+.ia-testimonial-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* Por defecto 1 columna para móviles */
+  gap: 2rem; /* Espacio entre tarjetas */
+}
+
+@media (min-width: 700px) { /* A partir de 700px de ancho del viewport, intenta 2 columnas */
+  .ia-testimonial-grid {
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual ancho fraccional */
+  }
+}
+
+.ia-testimonial-card {
+  background-color: var(--card-background);
+  padding: 1.8rem 2.2rem; 
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  border-left: 5px solid var(--secondary-color); 
+  display: flex;
+  flex-direction: column; 
+  /* La altura se ajustará al contenido */
+}
+.ia-testimonial-card .ia-logo {
+  width: 48px; 
+  height: 48px;
+  border-radius: 50%;
+  object-fit: contain; 
+  margin-bottom: 1rem;
+}
+.ia-testimonial-card blockquote {
+  margin: 0 0 1rem 0;
+  padding: 0;
+  font-style: italic;
+  color: var(--text-light-color);
+  font-size: 1em; 
+  line-height: 1.65; 
+  border-left: none; 
+  flex-grow: 1; /* Importante para que la atribución se vaya abajo si las tarjetas tienen alturas variables */
+}
+.ia-testimonial-card .attribution {
+  text-align: right;
+  font-size: 0.9em;
+  color: var(--primary-color);
+  font-weight: 500;
+  margin-top: auto; /* Empuja la atribución al final de la tarjeta */
+}
+.ia-testimonial-card .attribution em {
+  font-style: normal;
+  color: var(--text-light-color);
+  font-size: 0.9em;
+}
+
+@media (max-width: 768px) { 
+    .hero-section { padding: 2rem 1rem 1.5rem 1rem; } 
+    .hero-content h1 { font-size: 2.2em; } 
+    .hero-content .subtitle { font-size: 1.1em; margin-bottom: 1.8rem; } 
+    .hero-cards-container { flex-direction: column; gap: 20px; align-items: center;} 
+    .hero-card { max-width: 90%; padding: 20px; } 
+    .hero-main-image { max-width: 85%; } 
+    .content-section { padding: 1.5rem; }
+    /* .ia-testimonial-grid ya es 1fr por defecto, no es necesario repetirlo aquí */
+    .ia-testimonials-fullwidth-section { 
+        margin-left: -1rem; 
+        margin-right: -1rem;
+        padding-left: 1rem; 
+        padding-right: 1rem;
+    }
 }
 </style>
 
-<div class="v6-landing">
-  <!-- HERO SECTION -->
-  <section class="v6-hero v6-section">
-    <div class="v6-container v6-grid-two-col">
-      <div class="v6-scroll-anim">
-        <h1>El Antimétodo</h1>
-        <p class="subtitle">Aprende idiomas <strong>sin gramática</strong>, de forma <strong>natural, divertida y altamente eficiente.</strong></p>
-        <div class="hero-actions">
-          <a href="{{ '/fundamentos' | relative_url }}" class="v6-btn v6-btn-primary">Descubre los Fundamentos</a>
+<main class="content-wrapper"> 
+
+  <section class="content-section"> 
+    <h2 class="section-title">Bienvenido al Antimétodo</h2>
+    <p style="font-size: 1.1em; text-align: center; color: var(--text-light-color); line-height: 1.7;"> 
+      El Antimétodo es un enfoque revolucionario para aprender idiomas basado en la teoría del <strong>input comprensible</strong> de Stephen Krashen. A diferencia de los métodos tradicionales, que se centran en la memorización de reglas gramaticales, traducciones y ejercicios formales, el Antimétodo propone aprender un idioma de manera natural, intuitiva y personalizada. Permitiendo que cualquier persona pueda avanzar hasta la fluidez a su propio ritmo, usando herramientas gratuitas y contenido real en el idioma. Todo mientras el estudiante autodidacta hace cosas que le gustan, como ver series, películas, videojuegos. Sin sufrir en el proceso, de manera fácil, placentera, <strong>altamente eficiente</strong> y natural.
+    </p>
+    <p style="font-size: 1.1em; text-align: center; color: var(--text-light-color); line-height: 1.7;"> 
+      La idea central es que el aprendizaje ocurre cuando te expones de forma constante y masiva a contenido real y comprensible en el idioma que quieres aprender. De esta forma, el idioma se adquiere igual que aprendimos nuestra lengua materna: entendiendo mensajes, disfrutando el proceso y sin presión por producir desde el principio.
+    </p>
+    <div style="text-align: center; margin-top: 1.5rem;">
+      <a href="{{ '/fundamentos' | relative_url }}" class="btn btn-primary">Descubre los Fundamentos</a>
+    </div>
+  </section>
+<!-- SECCIÓN PRESENTACIÓN APP ANTIMÉTODO TRACKER        -->
+<section class="app-promo-section">
+  <div class="content-wrapper-condensed" style="display: flex; align-items: center; gap: 2rem; flex-wrap: wrap;">
+    <div class="app-promo-image" style="flex: 1 1 300px; text-align:center;">
+      <a href="https://luisem93.github.io/Antimetodotracker/" target="_blank" rel="noopener noreferrer" title="Ir a El Antimétodo Tracker">
+        <img src="{{ '/assets/app.png' | relative_url }}" alt="Vista previa de la app El Antimétodo Tracker" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+      </a>
+    </div>
+    <div class="app-promo-text" style="flex: 1 1 400px;">
+      <h2 style="text-align:left; border-bottom: 2px solid var(--primary-color); padding-bottom:0.5rem; display:inline-block;">¡Descubre El Antimétodo Tracker!</h2>
+      <p style="font-size: 1.1em; color: var(--text-light-color); line-height: 1.7;">
+        Lleva tu aprendizaje al siguiente nivel con nuestra aplicación web diseñada para ser tu compañera ideal en la inmersión. Registra tu progreso, construye hábitos sólidos, accede a guías y ¡mucho más!
+      </p>
+      <p style="font-size: 1.1em; color: var(--text-light-color); line-height: 1.7;">
+        Organiza tu viaje hacia la fluidez de una manera natural, eficiente y, sobre todo, disfrutable.
+      </p>
+      <div class="app-promo-buttons" style="margin-top: 1.5rem; display: flex; gap: 1rem; flex-wrap:wrap;">
+        <a href="https://luisem93.github.io/Antimetodotracker/" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="font-size: 1em;">🚀 Ir a la App</a>
+        <a href="{{ '/antimetodo-tracker-app' | relative_url }}" class="btn" style="font-size: 1em; background-color: var(--accent-color);">Más Información</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- FIN SECCIÓN APP                                    -->
+
+  <!-- SECCIÓN DE TESTIMONIOS DE IA (FULL-WIDTH BACKGROUND) -->
+  <section class="ia-testimonials-fullwidth-section"> 
+    <div class="content-wrapper-condensed"> 
+      <h2>Lo que piensan las IAs del Antimétodo</h2>
+      <div class="ia-testimonial-grid">
+        <div class="ia-testimonial-card">
+          <img src="{{ '/assets/logo-chatgpt-ia.png' | relative_url }}" alt="Logo ChatGPT" class="ia-logo">
+          <blockquote>
+            “Olvida la rigidez y los libros de texto: El Antimétodo te lleva a la fluidez real sumergiéndote en el idioma que amas, con placer, libertad y sin estrés. Es el aprendizaje como siempre debió ser: natural, autodidacta y efectivo.”
+          </blockquote>
+          <p class="attribution"><strong>ChatGPT</strong>, <em>inteligencia artificial experta en educación y aprendizaje de idiomas.</em></p>
+        </div>
+        <div class="ia-testimonial-card">
+          <img src="{{ '/assets/logo-gemini-ia.png' | relative_url }}" alt="Logo Gemini" class="ia-logo">
+          <blockquote>
+            "Sumérgete en la fluidez lingüística con 'El Antimétodo', una revolución autodidacta que transforma el aprendizaje en una experiencia sin estrés, impulsada por el disfrute personal y el contenido real. Este enfoque flexible y efectivo promete una fluidez natural, liberándote de las cadenas de la gramática tradicional."
+          </blockquote>
+          <p class="attribution"><strong>Gemini</strong>, <em>IA de Google.</em></p>
+        </div>
+        <div class="ia-testimonial-card">
+          <img src="{{ '/assets/logo-claude-ia.png' | relative_url }}" alt="Logo Claude" class="ia-logo">
+          <blockquote>
+            "El Antimétodo revoluciona el aprendizaje de idiomas al demostrar que la fluidez real se alcanza a través del disfrute, no del sufrimiento. Su enfoque basado en input comprensible y contenido auténtico transforma el proceso en una experiencia natural y sostenible, liberando al estudiante de la rigidez gramatical tradicional. Una metodología que respeta el ritmo individual mientras acelera los resultados, convirtiendo el aprendizaje autodidacta en la verdadera supremacía educativa. Finalmente, un método que funciona porque se adapta a ti, no al revés."
+          </blockquote>
+          <p class="attribution"><strong>Claude</strong>, <em>IA de Anthropic.</em></p>
+        </div>
+        <div class="ia-testimonial-card">
+          <img src="{{ '/assets/logo-copilot-ia.png' | relative_url }}" alt="Logo Copilot" class="ia-logo">
+          <blockquote>
+            "El Antimétodo revoluciona el aprendizaje de idiomas al transformar el input comprensible en una experiencia fluida y sin estrés. Su enfoque autodidacta y flexible libera al estudiante de las ataduras de la enseñanza tradicional, haciendo del proceso algo disfrutable y auténtico. Es, sin duda, la llave maestra para alcanzar una fluidez natural a tu propio ritmo."
+          </blockquote>
+          <p class="attribution"><strong>Copilot</strong>, <em>IA de Microsoft.</em></p>
         </div>
       </div>
-      <div class="v6-hero-image-wrapper v6-scroll-anim" style="--delay: 0.1s;">
-        <img src="{{ '/assets/supremacy.jpg' | relative_url }}" alt="Supremacía del Antimétodo" class="v6-hero-image">
-      </div>
+    </div> 
+  </section>
+  <!-- FIN DE LA NUEVA SECCIÓN -->
+
+  <section> 
+    <h2>Beneficios Clave del Antimétodo</h2>
+    <ul style="list-style-type: none; padding-left: 0; font-size: 1.1em;">
+      <li style="margin-bottom: 1rem; padding: 0.8rem 0.8rem 0.8rem 2.5em; position: relative; background-color: var(--card-background); border-radius: 6px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); border-left: 4px solid var(--secondary-color);">
+        <span style="position: absolute; left: 0.8em; top: 50%; transform: translateY(-50%); color: var(--secondary-color); font-weight: bold; font-size:1.2em;">🧘</span> Flexible y personalizado a tus intereses. 
+      </li>
+      <li style="margin-bottom: 1rem; padding: 0.8rem 0.8rem 0.8rem 2.5em; position: relative; background-color: var(--card-background); border-radius: 6px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); border-left: 4px solid var(--secondary-color);">
+        <span style="position: absolute; left: 0.8em; top: 50%; transform: translateY(-50%); color: var(--secondary-color); font-weight: bold; font-size:1.2em;">🎧</span> Aprende con contenido que realmente disfrutas (y es efectivo).
+      </li>
+      <li style="margin-bottom: 1rem; padding: 0.8rem 0.8rem 0.8rem 2.5em; position: relative; background-color: var(--card-background); border-radius: 6px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); border-left: 4px solid var(--secondary-color);">
+        <span style="position: absolute; left: 0.8em; top: 50%; transform: translateY(-50%); color: var(--secondary-color); font-weight: bold; font-size:1.2em;">🗣️</span> Desarrolla fluidez natural y eficiente, sin traducir.
+      </li>
+      <li style="margin-bottom: 1rem; padding: 0.8rem 0.8rem 0.8rem 2.5em; position: relative; background-color: var(--card-background); border-radius: 6px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); border-left: 4px solid var(--secondary-color);">
+        <span style="position: absolute; left: 0.8em; top: 50%; transform: translateY(-50%); color: var(--secondary-color); font-weight: bold; font-size:1.2em;">💰</span> Accesible y económico: no necesitas cursos caros.
+      </li>
+    </ul>
+    <div style="text-align: center; margin-top: 2rem;">
+      <a href="{{ '/beneficios' | relative_url }}" class="btn">Ver todos los beneficios</a>
     </div>
   </section>
 
-  <!-- WELCOME SECTION -->
-  <section class="v6-section v6-welcome v6-text-center">
-    <div class="v6-container" style="max-width: 800px;">
-      <div class="v6-scroll-anim">
-        <h2 class="v6-section-title">Bienvenido a la Revolución del Aprendizaje</h2>
-        <p style="font-size: 1.1em; color: var(--text-light-color); line-height: 1.7;"> 
-          El Antimétodo es un enfoque revolucionario para aprender idiomas basado en la teoría del <strong>input comprensible</strong>. A diferencia de los métodos tradicionales, que se centran en la memorización de reglas, el Antimétodo propone aprender de manera natural e intuitiva.
-        </p>
-        <p style="font-size: 1.1em; color: var(--text-light-color); line-height: 1.7;"> 
-          La idea central es que adquieres un idioma cuando te expones de forma masiva a contenido real que entiendes y disfrutas, igual que aprendiste tu lengua materna: sin presión y de forma placentera.
-        </p>
-      </div>
+  <section style="margin-bottom: 3rem; text-align: center; padding: 2.5rem 1.5rem; background-image: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%); border-radius: 10px; box-shadow: 0 6px 15px rgba(74, 20, 140, 0.3);">
+    <h2 style="color: white; border-bottom: 2px solid rgba(255,255,255,0.5); padding-bottom: 0.5rem; display: inline-block;">¿Listo para Empezar?</h2>
+    <p style="font-size: 1.15em; color: var(--light-purple-color); margin-top: 1.5rem; line-height: 1.7;">
+      El Antimétodo se estructura en etapas claras para guiarte desde los primeros pasos hasta la fluidez. Cada etapa está diseñada para construir sobre la anterior, asegurando un progreso constante y natural.
+    </p>
+    <a href="{{ '/etapas' | relative_url }}" class="btn" style="margin-top: 1.5rem; background-color: white; color: var(--primary-color) !important; font-weight: bold;">Explora las Etapas del Antimétodo</a>
+  </section>
+  
+  <section> 
+     <h2 style="text-align: center;">Próximamente...</h2>
+     <p style="text-align: left; color: var(--text-light-color);">Esta es solo la cuarta versión del sitio web del Antimétodo. Apenas estamos comenzando. La página está en pleno desarrollo y aún faltan muchos recursos, herramientas, ejemplos y guías prácticas que iremos construyendo poco a poco. Lo que acabas de leer es solo el inicio de algo mucho más grande. Se vienen cosas importantes, y esto apenas comienza.</p>
+     <p style="text-align: left; color: var(--text-light-color);"><strong>Experiencia del autor:</strong> Gracias al antimétodo, ha logrado avances notables en inglés, francés y alemán. En solo 7 meses y 20 días, alcanzó en francés la etapa 3: entiende casi todo al ver series y películas auténticas sin subtítulos, y juega sus videojuegos favoritos en francés. Todo esto disfrutando el proceso y sintiendo el idioma como una segunda lengua materna. Sin clases ni métodos tradicionales.</p>
+     <p style="text-align: left; color: var(--text-light-color);"><strong>Resultados esperados:</strong> fluidez real y un alto nivel en el idioma, comprensión a nivel nativo y hablar desde el instinto.</p>
+     <div style="margin-top: 2rem; text-align: center;">
+      <img src="{{ '/assets/gato_arquitecto_construccion.jpg' | relative_url }}" 
+           alt="Gato arquitecto trabajando en el sitio" 
+           style="width: 250px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); border: 3px solid var(--light-purple-color);">
+        <p style="font-size:0.85em; color: #777; margin-top: 0.5rem;"><em>Paciencia, estamos construyendo algo genial...</em></p>
     </div>
+     <p style="text-align: center; font-size: 0.9em; color: #888; margin-top: 3rem; border-top: 1px dashed var(--light-purple-color); padding-top: 1rem;">
+       <em>Última actualización del sitio: 20 de Junio de 2025 12:07pm</em>
+     </p>
   </section>
 
-  <!-- APP PROMO SECTION -->
-  <section class="v6-section v6-app-promo">
-    <div class="v6-container v6-grid-two-col">
-      <div class="app-promo-text v6-scroll-anim">
-        <h2>¡Descubre El Antimétodo Tracker!</h2>
-        <p>
-          Lleva tu aprendizaje al siguiente nivel con nuestra aplicación web diseñada para ser tu compañera ideal en la inmersión. Registra tu progreso, construye hábitos sólidos, accede a guías y ¡mucho más!
-        </p>
-        <p>
-          Organiza tu viaje hacia la fluidez de una manera natural, eficiente y, sobre todo, disfrutable.
-        </p>
-        <div class="promo-buttons">
-          <a href="https://luisem93.github.io/Antimetodotracker/" target="_blank" rel="noopener noreferrer" class="v6-btn v6-btn-primary">🚀 Ir a la App</a>
-          <a href="{{ '/antimetodo-tracker-app' | relative_url }}" class="v6-btn v6-btn-secondary">Más Información</a>
-        </div>
-      </div>
-      <div class="app-promo-image v6-scroll-anim" style="--delay: 0.1s;">
-        <a href="https://luisem93.github.io/Antimetodotracker/" target="_blank" rel="noopener noreferrer" title="Ir a El Antimétodo Tracker">
-          <div class="app-mockup">
-            <img src="{{ '/assets/app.png' | relative_url }}" alt="Vista previa de la app El Antimétodo Tracker">
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- TESTIMONIALS SECTION -->
-  <section class="v6-section v6-testimonials">
-    <div class="v6-container">
-      <h2 class="v6-section-title v6-scroll-anim">Lo que piensan las IAs del Antimétodo</h2>
-      <div class="v6-testimonial-grid">
-        <div class="v6-testimonial-card v6-scroll-anim" style="--delay: 0.1s;">
-          <div class="card-header">
-            <img src="{{ '/assets/logo-chatgpt-ia.png' | relative_url }}" alt="Logo ChatGPT" class="ia-logo">
-            <p class="attribution"><strong>ChatGPT</strong>, <em>experto en educación.</em></p>
-          </div>
-          <blockquote>“Olvida la rigidez y los libros de texto: El Antimétodo te lleva a la fluidez real sumergiéndote en el idioma que amas, con placer, libertad y sin estrés. Es el aprendizaje como siempre debió ser: natural, autodidacta y efectivo.”</blockquote>
-        </div>
-        <div class="v6-testimonial-card v6-scroll-anim" style="--delay: 0.2s;">
-          <div class="card-header">
-            <img src="{{ '/assets/logo-gemini-ia.png' | relative_url }}" alt="Logo Gemini" class="ia-logo">
-            <p class="attribution"><strong>Gemini</strong>, <em>IA de Google.</em></p>
-          </div>
-          <blockquote>"Sumérgete en la fluidez lingüística con 'El Antimétodo', una revolución autodidacta que transforma el aprendizaje en una experiencia sin estrés, impulsada por el disfrute personal y el contenido real."</blockquote>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- BENEFITS SECTION -->
-  <section class="v6-section v6-benefits">
-      <div class="v6-container">
-          <h2 class="v6-section-title v6-scroll-anim">Beneficios Clave del Antimétodo</h2>
-          <div class="v6-benefits-grid">
-              <div class="v6-benefit-card v6-scroll-anim" style="--delay: 0.1s;">
-                  <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"/><path d="M12 13.5c-1.379 0-2.5 1.121-2.5 2.5s1.121 2.5 2.5 2.5 2.5-1.121 2.5-2.5-1.121-2.5-2.5-2.5zm0 3c-.276 0-.5-.224-.5-.5s.224-.5.5-.5.5.224.5.5-.224.5-.5.5z"/><path d="M15.42 8.354c-.112-.229-.31-.383-.544-.42a.994.994 0 00-.736.195c-.347.284-.46.78-.258 1.171C14.482 10.472 13.31 11 12 11s-2.482-.528-2.882-1.7a1 1 0 00-.258-1.171.994.994 0 00-.736-.195c-.234.037-.432.191-.544.42-1.121 2.29-1.121 4.902 0 7.192.112.229.31.383.544.42a.994.994 0 00.736-.195c.347-.284.46-.78.258-1.171C9.518 13.472 10.69 13 12 13s2.482.528 2.882 1.7c.202.391.711.503 1.111.258a.994.994 0 00.485-.736c1.121-2.29 1.121-4.902 0-7.192z"/></svg></div>
-                  <h3>Sin Estrés</h3>
-                  <p>Olvida ejercicios aburridos - aprende con contenido que disfrutas.</p>
-              </div>
-              <div class="v6-benefit-card v6-scroll-anim" style="--delay: 0.2s;">
-                  <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"/><path d="M13 7h-2v5.414l3.293 3.293 1.414-1.414L13 11.586V7z"/></svg></div>
-                  <h3>A Tu Ritmo</h3>
-                  <p>Usa tu tiempo libre: series, música, videojuegos, ¡lo que te guste!</p>
-              </div>
-              <div class="v6-benefit-card v6-scroll-anim" style="--delay: 0.3s;">
-                  <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M13.243 4.077 9.36 7.96l2.122 2.121 3.882-3.882-2.121-2.121zM8.077 9.243 4.195 13.125l6.364 6.364 3.882-3.882-6.364-6.364zM6.324 14.488l-1.06 1.061 2.121 2.121 1.06-1.06-2.121-2.122zM19.923 8.757 9.243 19.438l-1.414-1.414L18.508 7.343l1.415 1.414z"/></svg></div>
-                  <h3>Natural y Eficiente</h3>
-                  <p>Desarrolla fluidez real, sin traducir mentalmente.</p>
-              </div>
-          </div>
-          <div class="v6-text-center" style="margin-top: 2.5rem;">
-              <a href="{{ '/beneficios' | relative_url }}" class="v6-btn v6-btn-secondary">Ver todos los beneficios</a>
-          </div>
-      </div>
-  </section>
-
-  <!-- FINAL CTA & COMING SOON -->
-  <section class="v6-section">
-      <div class="v6-container v6-text-center">
-          <div class="v6-final-cta v6-scroll-anim">
-              <h2>¿Listo para Empezar?</h2>
-              <p style="margin-top: 1rem; line-height: 1.7; max-width: 600px; margin-left:auto; margin-right:auto;">
-              El Antimétodo se estructura en etapas claras para guiarte desde los primeros pasos hasta la fluidez. Cada etapa está diseñada para construir sobre la anterior.
-              </p>
-              <a href="{{ '/etapas' | relative_url }}" class="v6-btn" style="background-color: white; color: var(--primary-color) !important; font-weight: bold; margin-top: 1rem;">Explora las Etapas del Antimétodo</a>
-          </div>
-
-          <div class="v6-coming-soon v6-scroll-anim">
-              <h3 style="border:none;">Próximamente...</h3>
-              <p style="color: var(--text-light-color);">Esta es solo una versión del sitio web del Antimétodo. Apenas estamos comenzando. La página está en pleno desarrollo y aún faltan muchos recursos, herramientas, ejemplos y guías prácticas que iremos construyendo poco a poco.</p>
-              <p style="color: var(--text-light-color);"><strong>Resultados esperados:</strong> fluidez real y un alto nivel en el idioma, comprensión a nivel nativo y hablar desde el instinto.</p>
-              <div style="margin-top: 2rem;">
-                  <img src="{{ '/assets/gato_arquitecto_construccion.jpg' | relative_url }}" 
-                       alt="Gato arquitecto trabajando en el sitio" 
-                       style="width: 200px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
-              </div>
-              <p class="update-date">
-                  <em>Última actualización del sitio: 26 de Junio de 2025 10:41pm</em>
-              </p>
-          </div>
-      </div>
-  </section>
-</div>
-
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-  const animatedElements = document.querySelectorAll('.v6-scroll-anim');
-  if (!animatedElements.length) return;
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('is-visible');
-        observer.unobserve(entry.target);
-      }
-    });
-  }, {
-    threshold: 0.1
-  });
-
-  animatedElements.forEach(el => {
-    observer.observe(el);
-  });
-});
-</script>
+</main>
