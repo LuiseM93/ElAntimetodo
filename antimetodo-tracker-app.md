@@ -5,227 +5,286 @@ description: Descubre "El Antimétodo Tracker", la aplicación web diseñada par
 ---
 
 <style>
-.app-presentation-page .page-header {
-  text-align: center;
-  padding: 2rem 1rem 1.5rem 1rem; /* Menos padding inferior si la imagen va después */
-}
-.app-presentation-page .app-showcase-image {
-  display: block;
-  max-width: 750px; /* Ancho máximo para la imagen de la app */
-  width: 90%; /* Responsiva */
-  height: auto;
-  margin: 0 auto 2.5rem auto;
-  border-radius: 10px;
-  box-shadow: 0 8px 25px rgba(74, 20, 140, 0.15); /* Sombra un poco más fuerte */
-  border: 1px solid var(--light-purple-color);
-}
-.app-presentation-page .intro-section {
-  font-size: 1.15em;
-  text-align: center;
-  color: var(--text-light-color);
-  margin-bottom: 3rem;
-  line-height: 1.7;
-  padding: 0 1rem;
-}
-.app-presentation-page .intro-section strong {
-    color: var(--primary-color);
+.app-landing-page {
+  /* No se necesita .content-wrapper en esta página, controlamos el ancho nosotros mismos */
 }
 
-.features-section {
-  margin-bottom: 2.5rem;
+/* Hero Section */
+.app-hero {
+  text-align: center;
+  padding: 4rem 1.5rem 3rem;
+  background: radial-gradient(circle, rgba(90, 34, 139, 0.1) 0%, rgba(249, 248, 253, 0) 70%);
 }
-.features-section h2.main-features-title {
+.app-hero h1 {
+  font-size: 3.2em;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+  background: -webkit-linear-gradient(45deg, var(--primary-color), var(--accent-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.app-hero .subtitle {
+  font-size: 1.4em;
+  margin-bottom: 2rem;
+}
+.app-hero-image {
+  max-width: 800px;
+  width: 100%;
+  margin: 1rem auto 2.5rem;
+  border-radius: 12px;
+  box-shadow: var(--shadow-lg);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.app-hero-image:hover {
+  transform: scale(1.02);
+  box-shadow: 0 15px 35px rgba(74, 20, 140, 0.2);
+}
+.app-hero-cta {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* How it Works Section */
+.how-it-works {
+  padding: 3rem 1.5rem;
+  background-color: var(--light-purple-color);
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  width: 100vw;
+}
+.how-it-works h2 {
     text-align: center;
-    font-size: 2em;
+    border-bottom: none;
     margin-bottom: 2.5rem;
-    border-bottom: 3px solid var(--primary-color);
-    display: inline-block; /* Para que el borde se ajuste al texto */
-    padding-bottom: 0.5rem;
 }
-.features-section .center-h2-container { /* Para centrar el H2 */
-    text-align: center;
+.steps-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.step-card {
+  text-align: center;
+  background-color: var(--card-background);
+  padding: 2rem 1.5rem;
+  border-radius: 10px;
+  box-shadow: var(--shadow-md);
+  border-top: 4px solid var(--secondary-color);
+}
+.step-card img {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 1rem;
+}
+.step-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.2em;
+  color: var(--primary-color);
+}
+.step-card p {
+  font-size: 0.95em;
+  color: var(--text-light-color);
 }
 
-.feature-block {
-  margin-bottom: 2.5rem;
-  padding: 1.8rem;
-  background-color: var(--card-background);
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.07);
-  border-left: 5px solid var(--secondary-color); /* Acento de color */
+
+/* Features Section */
+.features-section {
+  padding: 4rem 1.5rem;
 }
-.feature-block h3 {
-  color: var(--secondary-color);
-  font-size: 1.5em; /* Títulos de funcionalidad más grandes */
+.features-section h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  border-bottom: none;
+}
+.feature-row {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: 5rem;
+}
+.feature-row:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.feature-text {
+  flex: 1;
+}
+.feature-text h3 {
+  font-size: 1.8em;
   margin-top: 0;
-  margin-bottom: 1rem;
-  padding-bottom: 0.4rem;
-  border-bottom: 1px dashed var(--light-purple-color);
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--border-purple-color);
+  display: inline-block;
 }
-.feature-block ul {
+.feature-text ul {
   list-style: none;
   padding-left: 0;
 }
-.feature-block li {
+.feature-text li {
   padding-left: 1.8em;
   position: relative;
   margin-bottom: 0.8rem;
-  line-height: 1.65;
 }
-.feature-block li::before {
-  content: '✨'; /* Icono para puntos de funcionalidad */
+.feature-text li::before {
+  content: '✓';
   position: absolute;
   left: 0;
-  color: var(--accent-color);
-  font-size: 1em;
+  color: var(--secondary-color);
+  font-weight: bold;
+  font-size: 1.2em;
 }
-.feature-block .sub-list { /* Para listas anidadas (ej. detalles de tracker) */
-    list-style-type: '▹'; /* Pequeña flecha */
-    padding-left: 20px;
-    margin-top: 0.5rem;
-    font-size: 0.95em;
+.feature-image {
+  flex: 1.2;
+  text-align: center;
 }
-.feature-block .sub-list li::before {
-    content: ''; /* Quitar el emoji para sub-items */
-    padding-left: 0;
-}
-.feature-block .important-note-inline {
-    display: block;
-    background-color: #f0e6f6;
-    padding: 0.8rem;
-    border-radius: 5px;
-    margin-top: 0.8rem;
-    font-size: 0.95em;
-    border-left: 3px solid var(--accent-color);
+.feature-image img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: var(--shadow-lg);
 }
 
-.cta-section {
+/* Data Control Section */
+.data-control-section {
+  padding: 3rem 1.5rem;
+  background-color: var(--card-background);
+  border-radius: 12px;
   text-align: center;
-  padding: 2.5rem 1rem;
-  background-color: var(--light-purple-color); /* Fondo suave para el CTA */
-  border-radius: 10px;
-  margin-top: 3rem;
+  max-width: 800px;
+  margin: 2rem auto;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border-purple-color);
 }
-.cta-section .btn-app { /* Estilo específico para el botón de la app */
-  font-size: 1.2em;
-  padding: 1rem 2.5rem;
-  background-image: linear-gradient(135deg, var(--accent-color) 0%, var(--secondary-color) 100%);
-  box-shadow: 0 5px 15px rgba(123, 31, 162, 0.3);
+.data-control-section h3 {
+  margin-top: 0;
 }
-.final-summary {
-    margin-top: 3rem;
-    padding: 1.5rem;
-    background-color: var(--card-background);
-    border-radius: 8px;
-    border-top: 4px solid var(--primary-color);
-    font-size: 1.1em;
-    line-height: 1.7;
+.data-control-section p {
+  margin-bottom: 1.5rem;
+}
+
+/* Final CTA Section */
+.final-cta-section {
+  text-align: center;
+  padding: 4rem 1.5rem;
+}
+.final-cta-section h2 {
+  border-bottom: none;
+}
+
+@media (max-width: 768px) {
+  .app-hero h1 { font-size: 2.5em; }
+  .feature-row, .feature-row:nth-child(even) {
+    flex-direction: column;
+    gap: 2rem;
     text-align: center;
+  }
+  .feature-text h3 {
+    display: block;
+    text-align: center;
+  }
 }
 
 </style>
 
-<main class="content-wrapper app-presentation-page">
+<div class="app-landing-page">
 
-  <div class="page-header">
-    <h1>El Antimétodo Tracker</h1>
-    <p class="subtitle" style="font-size: 1.3em; color: var(--secondary-color);">Tu Centro de Mando para la Fluidez</p>
-  </div>
-
-  <img src="{{ '/assets/app.png' | relative_url }}" alt="Interfaz de la aplicación El Antimétodo Tracker" class="app-showcase-image">
-
-  <section class="intro-section">
-    <p>Transforma tu aprendizaje de idiomas con <strong>El Antimétodo Tracker</strong>, la aplicación web diseñada para ser tu aliada definitiva en el camino hacia la fluidez. Olvídate de las clases aburridas y la gramática tediosa; esta herramienta te permite aplicar la filosofía del input comprensible de forma <strong>organizada, medible y motivadora</strong>.</p>
-    <p>No es solo un contador de horas, es una plataforma integral para gestionar tu inmersión, construir hábitos sólidos y acceder a la guía esencial del Antimétodo, todo en un solo lugar.</p>
-  </section>
-
-  <section class="features-section">
-    <div class="center-h2-container">
-        <h2 class="main-features-title">¿Qué es "El Antimétodo Tracker"?<br>Tu Compañero Inteligente</h2>
-    </div>
-    <p style="text-align:center; max-width: 700px; margin: 0 auto 2rem auto; font-size:1.05em; color:var(--text-light-color);">Basada en los principios de adquisición natural del lenguaje, la app te ayuda a sumergirte en contenido que realmente disfrutas (series, películas, videojuegos, música) para aprender de manera intuitiva, tal como lo promueve la filosofía de <a href="{{ '/' | relative_url }}">El Antimétodo</a>.</p>
-
-    <div class="feature-block">
-      <h3>🚀 Onboarding Inteligente y Test de Ubicación</h3>
-      <ul>
-        <li>Comienza tu viaje con el pie derecho. La app te da una bienvenida personalizada.</li>
-        <li>Te ayuda a definir tu punto de partida en El Antimétodo, sugiriendo tu etapa inicial con la ayuda de IA (si está configurada) o enlazando a nuestro <a href="{{ '/test-ubicacion' | relative_url }}">test de ubicación detallado</a> en el sitio web.</li>
-        <li>Configura rápidamente tu idioma de aprendizaje y tu etapa si ya la conoces.</li>
-        <li><strong>Aviso Importante:</strong> Desde el inicio se te informa que tus datos se guardan solo en tu navegador, animándote a exportarlos regularmente para tu tranquilidad.</li>
-      </ul>
-    </div>
-
-    <div class="feature-block">
-      <h3>📊 Tu Panel de Control (Dashboard) Motivador</h3>
-      <ul>
-        <li>Tu centro de operaciones visual. Observa tu progreso de un vistazo: etapa actual, cumplimiento de hábitos diarios con gráficos intuitivos, actividad reciente y consejos adaptados a ti.</li>
-        <li>Mantén la motivación alta y el enfoque claro con un diseño que te inspira a seguir adelante.</li>
-        <li>Selector de Idioma Activo para gestionar múltiples idiomas fácilmente.</li>
-      </ul>
-    </div>
-
-    <div class="feature-block">
-      <h3>⏱️ Tracker de Actividades Poderoso y Flexible</h3>
-      <ul>
-        <li><strong>Registra cada minuto</strong> de tu inmersión y estudio con precisión. Usa el modo manual, cronómetro o temporizador.</li>
-        <li>Detalla cada sesión: idioma, categoría (Inmersión Activa/Pasiva, Estudio, Producción), sub-actividad específica (o personalizada) y notas.</li>
-        <li>Edita tus registros en cualquier momento.</li>
-        <li>Analiza tu dedicación con <strong>estadísticas avanzadas y gráficos detallados</strong>: tiempo total (diario, semanal, mensual), desglose por tipo de actividad y por habilidad (Listening, Reading, etc.).</li>
-        <li>Establece y conquista metas de horas acumuladas (50h, 100h, 250h+) y observa tu progreso estimado.</li>
-        <li>Crea y sigue tus <strong>metas personales</strong> (ej. "Ver mi primera película sin subtítulos").</li>
-        <li>¡Disfruta de tu <strong>Reporte Anual estilo "Wrapped"</strong> para celebrar tus logros y compartir tu dedicación!</li>
-      </ul>
-    </div>
-    
-    <div class="feature-block">
-      <h3>🛠️ Constructor de Hábitos y Rutinas Sostenibles</h3>
-      <ul>
-        <li>La constancia es clave, y esta app te ayuda a construirla. <strong>Define tus bloques de estudio y metas de tiempo diarias</strong>.</li>
-        <li>Especifica qué categorías de actividad (Inmersión Activa, Estudio, etc.) cuentan para cada hábito.</li>
-        <li>Guarda tus configuraciones como <strong>plantillas de rutinas</strong> para diferentes momentos (ej. "Rutina Intensiva de Fin de Semana", "Modo Ligero entre Semana"). Carga, renombra, actualiza o elimina tus plantillas.</li>
-      </ul>
-    </div>
-
-    <div class="feature-block">
-      <h3>📚 Guías y Recursos del Antimétodo Integrados</h3>
-      <ul>
-        <li>Accede directamente en la app a la <strong>información esencial del Antimétodo</strong>.</li>
-        <li>Explicaciones detalladas de las prácticas fundamentales (Anki, minado de oraciones, tipos de inmersión).</li>
-        <li>Guía completa de cada una de las 4 etapas: objetivo principal, descripción detallada, objetivos clave, consejos, desafíos y criterios para avanzar.</li>
-        <li>Incluye un <strong>Explorador de Recursos</strong> curado para encontrar herramientas y contenido.</li>
-      </ul>
-    </div>
-
-    <div class="feature-block">
-      <h3>⚙️ Control Total sobre tu Personalización y Datos</h3>
-      <ul>
-        <li>Adapta la app a ti: añade tus idiomas de aprendizaje, selecciona tu idioma principal y configura preferencias de registro.</li>
-        <li><strong>Tus datos son tuyos y se guardan en tu navegador.</strong></li>
-        <li><strong>Exporta fácilmente toda tu información</strong> (perfil, registros, metas, rutinas) en un archivo JSON para copias de seguridad o migración.</li>
-        <li>Importa datos desde un archivo JSON previamente exportado.</li>
-        <li><strong>¿Vienes de otro tracker?</strong> Añade horas pasadas con la función "Importar Actividad Agregada (Bulk Import)" dentro de la app. Para una conversión más precisa de historiales detallados de otras apps, usa nuestra <a href="{{ '/importar-tracker' | relative_url }}">Guía de Importación con IA</a> disponible en este sitio web.</li>
-        <li>Opción para restablecer todos tus datos y empezar de cero (con confirmación).</li>
-      </ul>
-    </div>
-
-    <div class="feature-block">
-      <h3>✨ Experiencia de Usuario Pulida</h3>
-      <ul>
-        <li>Elige entre tema Claro u Oscuro según tu preferencia.</li>
-        <li>Diseño completamente responsivo para usarla cómodamente en computadoras y móviles.</li>
-        <li>Una agradable pantalla de bienvenida (Splash Screen) al cargar.</li>
-        <li>Totalmente gratuita y sin anuncios para un aprendizaje sin interrupciones.</li>
-      </ul>
+  <section class="app-hero">
+    <h1>Tu Compañero Definitivo de Inmersión</h1>
+    <p class="subtitle">Organiza, mide y acelera tu viaje hacia la fluidez con la herramienta gratuita creada para El Antimétodo.</p>
+    <img src="{{ '/assets/app.png' | relative_url }}" alt="Interfaz de la aplicación El Antimétodo Tracker en un mockup" class="app-hero-image">
+    <div class="app-hero-cta">
+      <a href="https://luisem93.github.io/Antimetodotracker/" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="font-size: 1.1em; padding: 1rem 2.5rem;">🚀 Ir a la App Ahora</a>
+      <a href="#features" class="btn btn-secondary" style="font-size: 1.1em; padding: 1rem 2.5rem;">Ver Funcionalidades</a>
     </div>
   </section>
 
-  <section class="cta-section">
-    <h2 style="color:white; border-bottom: none;">¡Lleva tu Aprendizaje al Siguiente Nivel!</h2>
-    <a href="https://luisem93.github.io/Antimetodotracker/" target="_blank" rel="noopener noreferrer" class="btn btn-app">🚀 Accede a El Antimétodo Tracker Ahora</a>
+  <section class="how-it-works">
+    <div style="max-width: 1100px; margin: 0 auto;">
+      <h2>De Cero a Hábito en 3 Pasos</h2>
+      <div class="steps-container">
+        <div class="step-card">
+          <img src="{{ '/assets/rutinas-paso1-informacion.png' | relative_url }}" alt="Icono de registrar">
+          <h3>1. Registra tu Inmersión</h3>
+          <p>Anota cada minuto de contenido que consumes. Ya sea viendo una serie, jugando o escuchando un podcast, cada segundo cuenta.</p>
+        </div>
+        <div class="step-card">
+          <img src="{{ '/assets/rutinas-herramienta-ia-intro.png' | relative_url }}" alt="Icono de analizar">
+          <h3>2. Analiza tu Progreso</h3>
+          <p>Con gráficos y estadísticas claras, visualiza tu dedicación, descubre tus patrones y mantén la motivación por las nubes.</p>
+        </div>
+        <div class="step-card">
+          <img src="{{ '/assets/rutinas-principio-consistencia.png' | relative_url }}" alt="Icono de conquistar">
+          <h3>3. Conquista la Fluidez</h3>
+          <p>Usa las guías integradas y las herramientas de hábitos para convertir el aprendizaje en un estilo de vida placentero y altamente efectivo.</p>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section class="final-summary">
-    <p>En resumen, "El Antimétodo Tracker" es mucho más que un simple contador de horas. Es una plataforma integral que te acompaña, guía, motiva y te da las herramientas para aplicar con éxito la filosofía del Antimétodo, permitiéndote aprender idiomas de una manera que se sienta efectiva y, crucialmente, que disfrutes. Te da control total sobre tus datos y te ayuda a visualizar tu progreso de formas muy detalladas y significativas.</p>
+  <section class="features-section" id="features">
+    <div style="max-width: 1100px; margin: 0 auto;">
+      <h2>Todo lo que Necesitas en un Solo Lugar</h2>
+
+      <div class="feature-row">
+        <div class="feature-text">
+          <h3>Panel de Control Inteligente</h3>
+          <p>Tu centro de mando personalizado. Mira de un vistazo tu etapa actual, tus rachas de hábitos y tu actividad reciente para mantener el enfoque y la motivación siempre al máximo.</p>
+          <ul>
+            <li>Visualiza tu progreso diario y semanal.</li>
+            <li>Recibe consejos adaptados a tu etapa.</li>
+            <li>Gestiona múltiples idiomas con facilidad.</li>
+          </ul>
+        </div>
+        <div class="feature-image">
+          <img src="{{ '/assets/antimetodo-vision.jpg' | relative_url }}" alt="Dashboard de la aplicación El Antimétodo Tracker">
+        </div>
+      </div>
+
+      <div class="feature-row">
+        <div class="feature-text">
+          <h3>Tracker de Actividades Flexible</h3>
+          <p>Registra tu tiempo con la precisión que necesitas. Usa el cronómetro, el temporizador o añade entradas manualmente. Cada minuto de tu esfuerzo merece ser contado.</p>
+          <ul>
+            <li>Clasifica tus actividades por categoría y habilidad.</li>
+            <li>Analiza tu dedicación con estadísticas avanzadas.</li>
+            <li>Establece y persigue metas de horas acumuladas.</li>
+          </ul>
+        </div>
+        <div class="feature-image">
+          <img src="{{ '/assets/rutinas-planificacion-general.png' | relative_url }}" alt="Gráficos de seguimiento de tiempo en la app">
+        </div>
+      </div>
+      
+      <div class="feature-row">
+        <div class="feature-text">
+          <h3>Constructor de Hábitos Sostenibles</h3>
+          <p>La constancia es el superpoder del aprendizaje. Define tus metas diarias y semanales, crea rutinas personalizadas y haz que la inmersión sea una parte natural de tu día a día.</p>
+          <ul>
+            <li>Establece objetivos de tiempo flexibles.</li>
+            <li>Guarda plantillas de rutinas para diferentes días.</li>
+            <li>Observa cómo tus hábitos se consolidan con el tiempo.</li>
+          </ul>
+        </div>
+        <div class="feature-image">
+          <img src="{{ '/assets/rutina-inmersion-extrema.png' | relative_url }}" alt="Calendario de hábitos en la app">
+        </div>
+      </div>
+    </div>
   </section>
 
-</main>
+  <section class="data-control-section">
+    <h3>Tus Datos, Tu Control, Tu Privacidad</h3>
+    <p>En El Antimétodo, creemos que eres el dueño de tu aprendizaje y de tu información. Todos tus datos se guardan exclusivamente en tu navegador. No se envían a ningún servidor. Para tu total tranquilidad, puedes exportar tu historial completo con un solo clic y guardarlo donde quieras.</p>
+    <a href="{{ '/importar-tracker' | relative_url }}" class="btn btn-secondary">¿Vienes de otro tracker? Aprende a importar tus datos</a>
+  </section>
+
+  <section class="final-cta-section">
+    <h2>Empieza a Aprender de Forma Inteligente. Hoy.</h2>
+    <p class="subtitle">Únete a la revolución del aprendizaje de idiomas. La herramienta es gratuita, poderosa y está esperándote.</p>
+    <a href="https://luisem93.github.io/Antimetodotracker/" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="font-size: 1.2em; padding: 1.2rem 3rem;">🚀 Abrir El Antimétodo Tracker</a>
+  </section>
+
+</div>
