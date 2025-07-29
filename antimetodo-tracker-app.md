@@ -284,7 +284,7 @@ description: Descubre "El Antimétodo Tracker", la aplicación web diseñada par
   <section class="final-cta-section">
     <h2>Empieza a Aprender de Forma Inteligente. Hoy.</h2>
     <p class="subtitle">Únete a la revolución del aprendizaje de idiomas. La herramienta es gratuita, poderosa y está esperándote.</p>
-    <a href="https://luisem93.github.io/Antimetodotracker/" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="font-size: 1.2em; padding: 1.2rem 3rem;">🚀 Abrir El Antimétodo Tracker</a>
+    <a href="https://antimetodo.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="font-size: 1.2em; padding: 1.2rem 3rem;">🚀 Abrir El Antimétodo Tracker</a>
   </section>
 
 </div>
