@@ -196,7 +196,7 @@ description: Descubre "El Antimétodo Tracker", la aplicación web diseñada par
     <p class="subtitle">Organiza, mide y acelera tu viaje hacia la fluidez con la herramienta gratuita creada para El Antimétodo.</p>
     <img src="{{ '/assets/app.png' | relative_url }}" alt="Interfaz de la aplicación El Antimétodo Tracker en un mockup" class="app-hero-image">
     <div class="app-hero-cta">
-      <a href="https://luisem93.github.io/Antimetodotracker/" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="font-size: 1.1em; padding: 1rem 2.5rem;">🚀 Ir a la App Ahora</a>
+      <a href="https://antimetodo.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="font-size: 1.1em; padding: 1rem 2.5rem;">🚀 Ir a la App Ahora</a>
       <a href="#features" class="btn btn-secondary" style="font-size: 1.1em; padding: 1rem 2.5rem;">Ver Funcionalidades</a>
     </div>
   </section>
