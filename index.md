@@ -208,7 +208,7 @@ description: Aprende idiomas de forma natural, divertida y eficiente con el enfo
 <section class="app-promo-section">
   <div class="content-wrapper-condensed" style="display: flex; align-items: center; gap: 2rem; flex-wrap: wrap;">
     <div class="app-promo-image" style="flex: 1 1 300px; text-align:center;">
-      <a href="antimetodo.vercel.app" target="_blank" rel="noopener noreferrer" title="Ir a El Antimétodo Tracker">
+      <a href="https://antimetodo.vercel.app" target="_blank" rel="noopener noreferrer" title="Ir a El Antimétodo Tracker">
         <img src="{{ '/assets/app.png' | relative_url }}" alt="Vista previa de la app El Antimétodo Tracker" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
       </a>
     </div>
