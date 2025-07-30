@@ -106,7 +106,7 @@ description: Aprende cómo usar un prompt de IA para convertir tus datos de segu
 <main class="content-wrapper">
 
   <section style="text-align: center; padding: 2rem 1rem;">
-    <h1>Guía: Importa tu Historial a "El Antimétodo Tracker"</h1>
+    <h1>Guía: Importa tu Historial a "El Antimétodo Tracker"- DESACTUALIZADO (NO FUNCIONA)</h1>
     <p class="subtitle" style="font-size: 1.2em; color: var(--secondary-color);">Usa el poder de la IA para convertir tus datos de otros trackers.</p>
   </section>
 
