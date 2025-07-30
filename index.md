@@ -222,7 +222,7 @@ description: Aprende idiomas de forma natural, divertida y eficiente con el enfo
       </p>
       <div class="app-promo-buttons" style="margin-top: 1.5rem; display: flex; gap: 1rem; flex-wrap:wrap;">
         <a href="https://antimetodo.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="font-size: 1em;">🚀 Ir a la App</a>
-        <a href="{{ 'https://antimetodo.vercel.app' | relative_url }}" class="btn" style="font-size: 1em; background-color: var(--accent-color);">Más Información</a>
+        <a href="{{ '/antimetodo-tracker-app' | relative_url }}" class="btn" style="font-size: 1em; background-color: var(--accent-color);">Más Información</a>
       </div>
     </div>
   </div>
