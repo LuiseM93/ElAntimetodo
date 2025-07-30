@@ -226,6 +226,68 @@ description: Descubre la base teórica del Antimétodo, incluyendo el input comp
     <p>En cambio, el monitor adquirido de forma natural a través de input comprensible y repetido se activa de manera automática, permitiendo correcciones más intuitivas sin obstaculizar la comunicación. Este monitor "implícito" mejora con el tiempo y la exposición constante, y refleja un conocimiento más profundo, funcional y <strong>eficiente</strong> del idioma.</p>
   </section>
 
+  <!-- INICIO DE LA SECCIÓN DE CIENCIA -->
+  <section class="content-section">
+    <h2 class="section-title">La Ciencia Detrás del Antimétodo</h2>
+    <p style="font-size: 1.1em; text-align: center; color: var(--text-light-color); line-height: 1.7;">
+      El Antimétodo no es una simple opinión; se fundamenta en décadas de investigación en adquisición de segundas lenguas. Su base es la sólida y respetada hipótesis del 'Input Comprensible' del Dr. Stephen Krashen, un pilar en la lingüística moderna. A continuación, desglosamos las cinco hipótesis clave que demuestran por qué este enfoque es tan efectivo.
+    </p>
+    <div style="text-align: center; margin: 2.5rem 0;">
+      <img src="{{ '/assets/ciencia.png' | relative_url }}" alt="Ciencia detrás del Antimétodo" style="max-width: 90%; height: auto; border: 3px solid var(--light-purple-color); border-radius: 10px; box-shadow: 0 5px 15px rgba(74, 20, 140, 0.15);">
+    </div>
+
+    <h3>1. La Distinción entre Adquisición y Aprendizaje</h3>
+    <p>La <strong>adquisición</strong> es el proceso subconsciente y natural de 'sentir' el idioma, similar a como los niños aprenden su lengua materna. Ocurre al entender mensajes en contextos reales. Es el motor de la fluidez espontánea.</p>
+    <p>El <strong>aprendizaje</strong>, en cambio, es el conocimiento consciente de reglas gramaticales. Es 'saber sobre' el idioma. Aunque útil para pulir, no genera fluidez y puede obstaculizar la comunicación natural.</p>
+    <blockquote style="background: #f5f5f5; border-left: 5px solid var(--secondary-color); padding: 1.2rem 1.8rem; margin: 2rem 0; font-style: italic; border-radius: 0 6px 6px 0; box-shadow: 2px 2px 8px rgba(0,0,0,0.05);">
+      "La fluidez proviene de lo que adquirimos, no de lo que aprendemos conscientemente."
+    </blockquote>
+
+    <h3>2. El Papel del 'Monitor'</h3>
+    <p>El 'aprendizaje' consciente actúa como un 'Monitor' o editor interno. Solo se activa para corregir lo que vamos a decir o escribir. Sin embargo, su uso requiere tiempo, conocimiento de la regla y un enfoque en la forma, lo que lo hace poco práctico en una conversación fluida.</p>
+    <p>Confiar demasiado en el Monitor causa dudas y vacilaciones. El Antimétodo se enfoca en desarrollar el sistema adquirido, que es mucho más rápido y eficiente.</p>
+    <div style="text-align: center; margin: 2.5rem 0;">
+      <img src="{{ '/assets/monitor.png' | relative_url }}" alt="Diagrama del Monitor" style="max-width: 90%; height: auto; border: 3px solid var(--light-purple-color); border-radius: 10px; box-shadow: 0 5px 15px rgba(74, 20, 140, 0.15);">
+    </div>
+
+    <h3>3. El Orden Natural de Adquisición</h3>
+    <p>La investigación muestra que adquirimos las estructuras de un idioma en un orden predecible y natural, sin importar nuestra edad o lengua materna. Ciertas reglas se 'adquieren' antes que otras de forma intuitiva.</p>
+    <p>Los métodos tradicionales que fuerzan un orden gramatical artificial (ej. enseñar el subjuntivo complejo al inicio) van en contra de este proceso natural, creando frustración y una falsa sensación de dificultad.</p>
+
+    <h3>4. El Corazón del Método: El Input (i+1)</h3>
+    <p>Esta es la hipótesis central. Progresamos en un idioma al recibir 'input' (lectura o escucha) que está un nivel ligeramente por encima de nuestro nivel actual. Krashen lo llama 'i+1', donde 'i' es nuestro nivel actual y '+1' es el nuevo conocimiento que estamos listos para adquirir.</p>
+    <p>No se trata de entender todo, sino de usar el contexto (imágenes, conocimiento previo, lógica) para descifrar el significado. Así es como el cerebro absorbe nuevas palabras y estructuras de forma masiva y sin esfuerzo consciente.</p>
+    <div class="interactive-activity" style="text-align: center;">
+        <p>Imagina que entiendes la frase 'El gato se sentó en la...' y ves una imagen de una silla.</p>
+        <p style="font-size: 1.2em; margin: 1rem 0;">El gato se sentó en la ______.</p>
+        <img src="{{ '/assets/silla.png' | relative_url }}" alt="Una silla" style="max-width: 150px; border-radius: 8px; border: 2px solid var(--secondary-color); margin-top: 1rem;">
+        <p class="conclusion-text" style="display:block; margin-top: 1rem;">Aunque no conocieras la palabra 'silla', el contexto y la imagen la hacen 100% comprensible. Acabas de experimentar el i+1.</p>
+    </div>
+
+    <h3>5. La Importancia del Filtro Afectivo</h3>
+    <p>El 'filtro afectivo' es una barrera mental. Variables como el estrés, la ansiedad, la falta de confianza o el aburrimiento 'suben' el filtro, bloqueando la entrada de input comprensible y deteniendo la adquisición.</p>
+    <p>El Antimétodo está diseñado para mantener este filtro bajo. Al usar contenido que te gusta, eliminar la presión de hablar antes de tiempo y celebrar el progreso, creas un estado mental óptimo para que el idioma 'entre' sin resistencia.</p>
+    <div style="display: flex; justify-content: space-around; margin: 2rem 0;">
+        <div style="text-align: center;">
+            <p style="font-size: 2em;">😟🧱</p>
+            <p><strong>Filtro Alto:</strong> Estrés, Aburrimiento, Miedo a Equivocarse</p>
+        </div>
+        <div style="text-align: center;">
+            <p style="font-size: 2em;">😊✅</p>
+            <p><strong>Filtro Bajo:</strong> Motivación, Curiosidad, Confianza</p>
+        </div>
+    </div>
+  </section>
+
+  <section style="margin-bottom: 3rem; text-align: center; padding: 2.5rem 1.5rem; background-image: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%); border-radius: 10px; box-shadow: 0 6px 15px rgba(74, 20, 140, 0.3);">
+    <h2 style="color: white; border-bottom: 2px solid rgba(255,255,255,0.5); padding-bottom: 0.5rem; display: inline-block;">Conclusión: Aprender como un Nativo, pero más Rápido</h2>
+    <p style="font-size: 1.15em; color: var(--light-purple-color); margin-top: 1.5rem; line-height: 1.7;">
+      Estas cinco hipótesis, respaldadas por la ciencia, forman un sistema coherente que explica por qué el Antimétodo funciona. No se trata de magia, sino de alinear nuestro proceso de aprendizaje con la forma en que nuestro cerebro está diseñado para adquirir idiomas. Al enfocarte en el input comprensible y mantener un estado mental positivo, no solo aprendes, sino que adquieres el idioma de la forma más eficiente y placentera posible.
+    </p>
+    <a href="{{ '/etapas' | relative_url }}" class="btn" style="margin-top: 1.5rem; background-color: white; color: var(--primary-color) !important; font-weight: bold;">Quiero Empezar a Aprender Así</a>
+  </section>
+  <!-- FIN DE LA SECCIÓN DE CIENCIA -->
+
 </main>
 
 <script>
