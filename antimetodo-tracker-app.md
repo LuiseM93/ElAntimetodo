@@ -1,7 +1,7 @@
 ---
 layout: default
-title: El Antimétodo Tracker - Tu Compañero Definitivo de Inmersión
-description: Descubre "El Antimétodo Tracker", la aplicación web diseñada para gestionar tu aprendizaje de idiomas, construir hábitos, acceder a guías y alcanzar la fluidez de forma natural y disfrutable.
+title: El Antimétodo Tracker - Tu Centro de Mando Social para Adquirir Idiomas
+description: Mide tu progreso, compite con amigos y únete a una comunidad que aprende de forma diferente con El Antimétodo Tracker. Gratis y para siempre.
 ---
 
 <style>
@@ -192,8 +192,8 @@ description: Descubre "El Antimétodo Tracker", la aplicación web diseñada par
 <div class="app-landing-page">
 
   <section class="app-hero">
-    <h1>Tu Compañero Definitivo de Inmersión</h1>
-    <p class="subtitle">Organiza, mide y acelera tu viaje hacia la fluidez con la herramienta gratuita creada para El Antimétodo.</p>
+    <h1>Tu Centro de Mando Social para Adquirir Idiomas</h1>
+    <p class="subtitle">Mide tu progreso, compite con amigos y únete a una comunidad que aprende de forma diferente. Gratis y para siempre.</p>
     <img src="{{ '/assets/app.png' | relative_url }}" alt="Interfaz de la aplicación El Antimétodo Tracker en un mockup" class="app-hero-image">
     <div class="app-hero-cta">
       <a href="https://antimetodo.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="font-size: 1.1em; padding: 1rem 2.5rem;">🚀 Ir a la App Ahora</a>
@@ -203,22 +203,22 @@ description: Descubre "El Antimétodo Tracker", la aplicación web diseñada par
 
   <section class="how-it-works">
     <div style="max-width: 1100px; margin: 0 auto;">
-      <h2>De Cero a Hábito en 3 Pasos</h2>
+      <h2>Funcionalidades Clave</h2>
       <div class="steps-container">
         <div class="step-card">
-          <img src="{{ '/assets/rutinas-paso1-informacion.png' | relative_url }}" alt="Icono de registrar">
-          <h3>1. Registra tu Inmersión</h3>
-          <p>Anota cada minuto de contenido que consumes. Ya sea viendo una serie, jugando o escuchando un podcast, cada segundo cuenta.</p>
+          <img src="{{ '/assets/rutinas-principio-consistencia.png' | relative_url }}" alt="Icono de registrar sin miedo">
+          <h3>1. Registra Sin Miedo</h3>
+          <p>Nuestro temporizador persistente guarda tu progreso aunque cierres la página. Tu esfuerzo nunca se pierde.</p>
         </div>
         <div class="step-card">
-          <img src="{{ '/assets/rutinas-herramienta-ia-intro.png' | relative_url }}" alt="Icono de analizar">
-          <h3>2. Analiza tu Progreso</h3>
-          <p>Con gráficos y estadísticas claras, visualiza tu dedicación, descubre tus patrones y mantén la motivación por las nubes.</p>
+          <img src="{{ '/assets/rutinas-planificacion-general.png' | relative_url }}" alt="Icono de analizar y conquistar">
+          <h3>2. Analiza y Conquista</h3>
+          <p>Con gráficos y estadísticas avanzadas, entiende tus patrones y visualiza tu camino hacia la fluidez.</p>
         </div>
         <div class="step-card">
-          <img src="{{ '/assets/rutinas-principio-consistencia.png' | relative_url }}" alt="Icono de conquistar">
-          <h3>3. Conquista la Fluidez</h3>
-          <p>Usa las guías integradas y las herramientas de hábitos para convertir el aprendizaje en un estilo de vida placentero y altamente efectivo.</p>
+          <img src="{{ '/assets/logo-social.jpg' | relative_url }}" alt="Icono de competir y compartir">
+          <h3>3. Compite y Comparte</h3>
+          <p>Únete a una comunidad, sigue a tus amigos, compite en las tablas de clasificación y comparte tus logros.</p>
         </div>
       </div>
     </div>
@@ -230,8 +230,8 @@ description: Descubre "El Antimétodo Tracker", la aplicación web diseñada par
 
       <div class="feature-row">
         <div class="feature-text">
-          <h3>Panel de Control Inteligente</h3>
-          <p>Tu centro de mando personalizado. Mira de un vistazo tu etapa actual, tus rachas de hábitos y tu actividad reciente para mantener el enfoque y la motivación siempre al máximo.</p>
+          <h3>Un Panel de Control que te Entiende</h3>
+          <p>Tu centro de mando personalizado. Mira de un vistazo tu etapa actual, tus puntos de enfoque y tu actividad reciente para mantener la motivación siempre al máximo.</p>
           <ul>
             <li>Visualiza tu progreso diario y semanal.</li>
             <li>Recibe consejos adaptados a tu etapa.</li>
@@ -245,31 +245,31 @@ description: Descubre "El Antimétodo Tracker", la aplicación web diseñada par
 
       <div class="feature-row">
         <div class="feature-text">
-          <h3>Tracker de Actividades Flexible</h3>
-          <p>Registra tu tiempo con la precisión que necesitas. Usa el cronómetro, el temporizador o añade entradas manualmente. Cada minuto de tu esfuerzo merece ser contado.</p>
+          <h3>El Ecosistema Social del Antimétodo</h3>
+          <p>El aprendizaje de idiomas no tiene por qué ser un viaje solitario. Conéctate, compite y crece con otros miembros de la comunidad.</p>
           <ul>
-            <li>Clasifica tus actividades por categoría y habilidad.</li>
-            <li>Analiza tu dedicación con estadísticas avanzadas.</li>
-            <li>Establece y persigue metas de horas acumuladas.</li>
+            <li><strong>Feed de Actividad:</strong> Comparte tus logros y recibe ánimos de otros usuarios.</li>
+            <li><strong>Perfiles Públicos:</strong> Muestra tu progreso, tu historial y tus logros.</li>
+            <li><strong>Tablas de Clasificación:</strong> Compite semanal, mensual e históricamente con tus amigos y con toda la comunidad.</li>
           </ul>
         </div>
         <div class="feature-image">
-          <img src="{{ '/assets/rutinas-planificacion-general.png' | relative_url }}" alt="Gráficos de seguimiento de tiempo en la app">
+          <img src="{{ '/assets/supremacy.jpg' | relative_url }}" alt="Comunidad de El Antimétodo">
         </div>
       </div>
       
       <div class="feature-row">
         <div class="feature-text">
-          <h3>Constructor de Hábitos Sostenibles</h3>
-          <p>La constancia es el superpoder del aprendizaje. Define tus metas diarias y semanales, crea rutinas personalizadas y haz que la inmersión sea una parte natural de tu día a día.</p>
+          <h3>Gamificación que Impulsa tu Hábito</h3>
+          <p>Convierte la constancia en una recompensa. Gana puntos, desbloquea logros y personaliza tu experiencia como nunca antes.</p>
           <ul>
-            <li>Establece objetivos de tiempo flexibles.</li>
-            <li>Guarda plantillas de rutinas para diferentes días.</li>
-            <li>Observa cómo tus hábitos se consolidan con el tiempo.</li>
+            <li><strong>Puntos de Enfoque:</strong> Gana puntos por cada día de actividad y úsalos en la tienda.</li>
+            <li><strong>Tienda de Recompensas:</strong> Desbloquea títulos exclusivos y temas visuales para la aplicación.</li>
+            <li><strong>Personaliza tu Perfil:</strong> Muestra tus logros con títulos únicos.</li>
           </ul>
         </div>
         <div class="feature-image">
-          <img src="{{ '/assets/rutina-inmersion-extrema.png' | relative_url }}" alt="Calendario de hábitos en la app">
+          <img src="{{ '/assets/rev.png' | relative_url }}" alt="Sistema de recompensas en la app">
         </div>
       </div>
     </div>
@@ -277,8 +277,8 @@ description: Descubre "El Antimétodo Tracker", la aplicación web diseñada par
 
   <section class="data-control-section">
     <h3>Tus Datos, Tu Control, Tu Privacidad</h3>
-    <p>En El Antimétodo, creemos que eres el dueño de tu aprendizaje y de tu información. Todos tus datos se guardan exclusivamente en tu navegador. No se envían a ningún servidor. Para tu total tranquilidad, puedes exportar tu historial completo con un solo clic y guardarlo donde quieras.</p>
-    <a href="{{ '/importar-tracker' | relative_url }}" class="btn btn-secondary">¿Vienes de otro tracker? Aprende a importar tus datos</a>
+    <p>Eres el dueño de tu aprendizaje y de tu información. La aplicación te permite exportar tu historial completo con un solo clic. Además, con nuestra herramienta de importación masiva, puedes reconstruir tu historial si vienes de otro tracker.</p>
+    <a href="{{ '/importar-tracker' | relative_url }}" class="btn btn-secondary">Aprende a importar tus datos</a>
   </section>
 
   <section class="final-cta-section">
