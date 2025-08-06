@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://elantimetodo.com/sitemap.xml
