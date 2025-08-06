@@ -1,7 +1,7 @@
 ---
 layout: default
-title: El Antimétodo - Inicio
-description: Aprende idiomas de forma natural, divertida y eficiente con el enfoque del input comprensible. Sin gramática.
+title: El Antimétodo - Aprende Idiomas con Input Comprensible
+description: Aprende idiomas de forma natural y divertida con El Antimétodo. Sin gramática, a tu ritmo y con contenido que te gusta. ¡Empieza hoy!
 ---
 
 <div class="hero-section">
@@ -32,7 +32,7 @@ description: Aprende idiomas de forma natural, divertida y eficiente con el enfo
   </div>
 
   <div class="hero-image-container">
-    <img src="{{ '/assets/supremacy.jpg' | relative_url }}" alt="Supremacía del Antimétodo" class="hero-main-image">
+    <img src="{{ '/assets/supremacy.jpg' | relative_url }}" alt="Gráfico sobre la supremacía de El Antimétodo para aprender idiomas" class="hero-main-image">
   </div>
 </div>
 
