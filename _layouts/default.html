@@ -5,8 +5,8 @@
   <title>{{ page.title | default: site.title }} - El Antimétodo</title>
   <meta property="og:title" content="{{ page.title | default: site.title }} - El Antimétodo">
   <meta property="og:description" content="{{ page.description | default: site.description }}">
-  <meta property="og:image" content="https://luisem93.github.io/ElAntimetodo/assets/logo-social.jpg">
-  <meta property="og:url" content="https://luisem93.github.io/ElAntimetodo/{{ page.url | relative_url }}">
+  <meta property="og:image" content="https://elantimetodo.com/assets/logo-social.jpg">
+  <meta property="og:url" content="https://elantimetodo.com/{{ page.url | relative_url }}">
   <meta property="og:type" content="website">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -374,25 +374,27 @@
       });
     }
 
-    // Script para resaltar el enlace activo del navbar (existente)
+    // Script para resaltar el enlace activo del navbar (corregido)
     document.addEventListener("DOMContentLoaded", function() {
-      const currentLocation = window.location.pathname;
       const desktopNavLinks = document.querySelectorAll(".navbar-links a");
       const mobileNavLinks = document.querySelectorAll(".mobile-menu a");
-      const siteBase = "{{ '/' | relative_url }}".replace(/\/$/, '');
 
       function setActiveLink(links) {
-        links.forEach(link => {
-          let absoluteLinkHref = link.href; 
-          let normalizedLink = absoluteLinkHref.replace(/\/index\.html$/, '').replace(/\/$/, '');
-          let normalizedLocation = window.location.href.replace(/\/index\.html$/, '').replace(/\/$/, '');
-          
-          if (normalizedLink.endsWith(siteBase) && normalizedLocation.endsWith(siteBase)){
-             if(link.getAttribute('href') === "{{ '/' | relative_url }}") link.classList.add("active");
-          } else if (normalizedLink === normalizedLocation) {
-            link.classList.add("active");
-          }
-        });
+          links.forEach(link => {
+              // Obtener la URL absoluta del enlace y de la página actual
+              const linkUrl = new URL(link.href, document.baseURI).pathname;
+              const currentUrl = window.location.pathname;
+
+              // Normalizar las URLs para que no terminen en /
+              const normalizedLinkUrl = linkUrl.endsWith('/') ? linkUrl.slice(0, -1) : linkUrl;
+              const normalizedCurrentUrl = currentUrl.endsWith('/') ? currentUrl.slice(0, -1) : currentUrl;
+              
+              // Casos especiales para la página de inicio
+              if ((normalizedLinkUrl === '' && (normalizedCurrentUrl === '' || normalizedCurrentUrl.endsWith('index.html'))) ||
+                  (normalizedLinkUrl !== '' && normalizedCurrentUrl.includes(normalizedLinkUrl))) {
+                  link.classList.add("active");
+              }
+          });
       }
       
       setActiveLink(desktopNavLinks);
