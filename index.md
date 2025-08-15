@@ -4,162 +4,37 @@ title: El Antimétodo - Aprende Idiomas con Input Comprensible
 description: Aprende idiomas de forma natural y divertida con El Antimétodo. Sin gramática, a tu ritmo y con contenido que te gusta. ¡Empieza hoy!
 ---
 
-<div class="hero-impact">
-  <div class="hero-text">
+<div class="hero-section">
+  <div class="hero-content">
     <h1>El Antimétodo</h1>
-    <p class="subtitle">
-      Aprende idiomas <strong>sin gramática</strong>, de forma <strong>natural, divertida y eficiente</strong>
-    </p>
-
-    <div class="hero-features">
-      <div class="feature">
-        <span class="icon">🧘</span>
-        <div>
-          <h2>Sin Estrés</h2>
-          <p>Olvida ejercicios aburridos - aprende con contenido que disfrutas.</p>
-        </div>
+    <p class="subtitle">Aprende idiomas <strong>sin gramática</strong>, de forma <strong>natural, divertida y eficiente</strong></p>
+  </div>
+  <div class="hero-cards-container">
+    <div class="hero-card">
+      <div class="hero-card-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="48px" height="48px">
+          <path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"/>
+          <path d="M12 6c-1.952 0-3.669 1.255-4.531 3.043-.22.459-.035.99.424 1.21.459.221.99.035 1.21-.424C9.698 8.797 10.789 8 12 8s2.302.797 2.897 1.829c.22.459.751.644 1.21.424.459-.22.644-.751.424-1.21C15.669 7.255 13.952 6 12 6z"/>
+          <path d="M12 13c-1.654 0-3 1.346-3 3s1.346 3 3 3 3-1.346 3-3-1.346-3-3-3zm0 4c-.551 0-1-.449-1-1s.449-1 1-1 1 .449 1 1-.449 1-1 1z"/>
+          <path d="M7.5 11.5c-.275 0-.5-.225-.5-.5s.225-.5.5-.5h9c.275 0 .5.225.5.5s-.225.5-.5.5h-9z"/>
+        </svg>
       </div>
-      <div class="feature">
-        <span class="icon">⏳</span>
-        <div>
-          <h2>A Tu Ritmo</h2>
-          <p>Usa tu tiempo libre: series, música, videojuegos, ¡lo que te guste!</p>
-        </div>
+      <h2>Sin Estrés</h2>
+      <p>Olvida ejercicios aburridos - aprende con contenido que disfrutas.</p>
+    </div>
+    <div class="hero-card">
+      <div class="hero-card-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="48px" height="48px"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M13 7h-2v5.414l3.293 3.293 1.414-1.414L13 11.586V7z"></path></svg>
       </div>
+      <h2>A Tu Ritmo</h2>
+      <p>Usa tu tiempo libre: series, música, videojuegos, ¡lo que te guste!</p>
     </div>
   </div>
 
-  <div class="hero-image">
-    <img src="{{ '/assets/supremacy.jpg' | relative_url }}" alt="The Antimethod Supremacy">
+  <div class="hero-image-container">
+    <img src="{{ '/assets/supremacy.jpg' | relative_url }}" alt="Gráfico sobre la supremacía de El Antimétodo para aprender idiomas" class="hero-main-image">
   </div>
 </div>
-
-<style>
-.hero-impact {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 3rem;
-  padding: 3rem;
-  border-radius: 20px;
-  background: linear-gradient(120deg, #4a148c, #7b1fa2);
-  box-shadow: 0 20px 40px rgba(74, 20, 140, 0.35);
-  color: white;
-  position: relative;
-  overflow: hidden;
-}
-
-/* Animación de fondo */
-.hero-impact::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(circle at 20% 80%, rgba(255,255,255,0.15), transparent 50%),
-              radial-gradient(circle at 80% 20%, rgba(255,255,255,0.1), transparent 50%);
-  animation: backgroundMove 12s ease-in-out infinite alternate;
-}
-@keyframes backgroundMove {
-  0% { background-position: 20% 80%, 80% 20%; }
-  100% { background-position: 25% 75%, 75% 25%; }
-}
-
-.hero-text {
-  flex: 1 1 400px;
-  position: relative;
-  z-index: 1;
-}
-
-.hero-text h1 {
-  font-size: 3rem;
-  font-weight: 800;
-  margin-bottom: 0.5rem;
-  line-height: 1.1;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.4);
-}
-
-.hero-text .subtitle {
-  font-size: 1.25rem;
-  margin-bottom: 2rem;
-  opacity: 0.95;
-  max-width: 500px;
-}
-
-.hero-features {
-  display: flex;
-  flex-direction: column;
-  gap: 1.2rem;
-}
-
-.feature {
-  display: flex;
-  align-items: flex-start;
-  gap: 1rem;
-  background: rgba(255,255,255,0.08);
-  padding: 1rem 1.2rem;
-  border-radius: 12px;
-  backdrop-filter: blur(8px);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.feature:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.25);
-}
-
-.feature .icon {
-  font-size: 1.8rem;
-  flex-shrink: 0;
-}
-
-.feature h2 {
-  font-size: 1.2rem;
-  margin: 0 0 0.25rem;
-}
-
-.feature p {
-  font-size: 0.95rem;
-  opacity: 0.85;
-  margin: 0;
-}
-
-.hero-image {
-  flex: 1 1 350px;
-  position: relative;
-  z-index: 1;
-}
-
-.hero-image img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 14px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
-  animation: zoomSlow 12s ease-in-out infinite alternate;
-}
-
-@keyframes zoomSlow {
-  0% { transform: scale(1); }
-  100% { transform: scale(1.05); }
-}
-
-/* Responsive */
-@media (max-width: 900px) {
-  .hero-impact {
-    flex-direction: column;
-    text-align: center;
-    padding: 2rem;
-  }
-  .hero-text h1 {
-    font-size: 2.4rem;
-  }
-  .hero-text .subtitle {
-    font-size: 1.1rem;
-    margin: 0 auto 2rem;
-  }
-  .hero-features {
-    align-items: center;
-  }
-}
-</style>
 
 <style>
   /* Estilos para la Sección de Promoción de la App */
@@ -433,7 +308,7 @@ description: Aprende idiomas de forma natural y divertida con El Antimétodo. Si
         <p style="font-size:0.85em; color: #777; margin-top: 0.5rem;"><em>Paciencia, estamos construyendo algo genial...</em></p>
     </div>
      <p style="text-align: center; font-size: 0.9em; color: #888; margin-top: 3rem; border-top: 1px dashed var(--light-purple-color); padding-top: 1rem;">
-       <em>Última actualización del sitio: 29 de Julio de 2025 11:21pm</em>
+       <em>Última actualización del sitio: 10 de Agosto de 2025 11:25am</em>
      </p>
   </section>
 
