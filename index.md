@@ -4,149 +4,159 @@ title: El Antimétodo - Aprende Idiomas con Input Comprensible
 description: Aprende idiomas de forma natural y divertida con El Antimétodo. Sin gramática, a tu ritmo y con contenido que te gusta. ¡Empieza hoy!
 ---
 
-<div class="hero-card-showcase">
-  <div class="hero-card-content">
+<div class="hero-impact">
+  <div class="hero-text">
     <h1>El Antimétodo</h1>
     <p class="subtitle">
       Aprende idiomas <strong>sin gramática</strong>, de forma <strong>natural, divertida y eficiente</strong>
     </p>
 
-    <div class="hero-card-features">
+    <div class="hero-features">
       <div class="feature">
-        <div class="icon">🧘</div>
-        <h2>Sin Estrés</h2>
-        <p>Olvida ejercicios aburridos - aprende con contenido que disfrutas.</p>
+        <span class="icon">🧘</span>
+        <div>
+          <h2>Sin Estrés</h2>
+          <p>Olvida ejercicios aburridos - aprende con contenido que disfrutas.</p>
+        </div>
       </div>
       <div class="feature">
-        <div class="icon">⏳</div>
-        <h2>A Tu Ritmo</h2>
-        <p>Usa tu tiempo libre: series, música, videojuegos, ¡lo que te guste!</p>
+        <span class="icon">⏳</span>
+        <div>
+          <h2>A Tu Ritmo</h2>
+          <p>Usa tu tiempo libre: series, música, videojuegos, ¡lo que te guste!</p>
+        </div>
       </div>
     </div>
   </div>
 
-  <div class="hero-card-image">
+  <div class="hero-image">
     <img src="{{ '/assets/supremacy.jpg' | relative_url }}" alt="The Antimethod Supremacy">
   </div>
-
-  <!-- Brillo animado -->
-  <div class="hero-bg-animation"></div>
 </div>
 
 <style>
-.hero-card-showcase {
-  position: relative;
-  overflow: hidden;
+.hero-impact {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 2rem;
-  padding: 3rem 2rem;
+  gap: 3rem;
+  padding: 3rem;
   border-radius: 20px;
-  background: linear-gradient(135deg, #4a148c, #7b1fa2);
-  box-shadow: 0 15px 35px rgba(74, 20, 140, 0.3);
+  background: linear-gradient(120deg, #4a148c, #7b1fa2);
+  box-shadow: 0 20px 40px rgba(74, 20, 140, 0.35);
   color: white;
-}
-
-.hero-card-content {
-  flex: 1 1 350px;
   position: relative;
-  z-index: 2;
+  overflow: hidden;
 }
 
-.hero-card-content h1 {
+/* Animación de fondo */
+.hero-impact::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 20% 80%, rgba(255,255,255,0.15), transparent 50%),
+              radial-gradient(circle at 80% 20%, rgba(255,255,255,0.1), transparent 50%);
+  animation: backgroundMove 12s ease-in-out infinite alternate;
+}
+@keyframes backgroundMove {
+  0% { background-position: 20% 80%, 80% 20%; }
+  100% { background-position: 25% 75%, 75% 25%; }
+}
+
+.hero-text {
+  flex: 1 1 400px;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-text h1 {
   font-size: 3rem;
   font-weight: 800;
   margin-bottom: 0.5rem;
+  line-height: 1.1;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.4);
 }
 
-.hero-card-content .subtitle {
-  font-size: 1.3rem;
-  opacity: 0.9;
+.hero-text .subtitle {
+  font-size: 1.25rem;
   margin-bottom: 2rem;
+  opacity: 0.95;
+  max-width: 500px;
 }
 
-.hero-card-features {
+.hero-features {
   display: flex;
-  gap: 1.5rem;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 1.2rem;
 }
 
 .feature {
-  flex: 1 1 220px;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
   background: rgba(255,255,255,0.08);
-  backdrop-filter: blur(8px);
+  padding: 1rem 1.2rem;
   border-radius: 12px;
-  padding: 1.5rem;
-  text-align: center;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  backdrop-filter: blur(8px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .feature:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.25);
 }
 
 .feature .icon {
-  font-size: 2rem;
-  margin-bottom: 0.8rem;
+  font-size: 1.8rem;
+  flex-shrink: 0;
 }
 
 .feature h2 {
   font-size: 1.2rem;
-  margin-bottom: 0.4rem;
+  margin: 0 0 0.25rem;
 }
 
 .feature p {
   font-size: 0.95rem;
   opacity: 0.85;
+  margin: 0;
 }
 
-.hero-card-image {
-  flex: 1 1 320px;
-  text-align: center;
+.hero-image {
+  flex: 1 1 350px;
   position: relative;
-  z-index: 2;
-}
-
-.hero-card-image img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 14px;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.25);
-}
-
-/* Fondo animado */
-.hero-bg-animation {
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(circle at 20% 20%, rgba(255,255,255,0.15), transparent 40%),
-              radial-gradient(circle at 80% 80%, rgba(255,255,255,0.15), transparent 40%);
-  animation: moveGlow 8s ease-in-out infinite alternate;
   z-index: 1;
 }
 
-@keyframes moveGlow {
-  0% {
-    background-position: 20% 20%, 80% 80%;
-  }
-  100% {
-    background-position: 30% 30%, 70% 70%;
-  }
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+  animation: zoomSlow 12s ease-in-out infinite alternate;
+}
+
+@keyframes zoomSlow {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.05); }
 }
 
 /* Responsive */
-@media (max-width: 768px) {
-  .hero-card-showcase {
+@media (max-width: 900px) {
+  .hero-impact {
     flex-direction: column;
     text-align: center;
+    padding: 2rem;
   }
-  .hero-card-content h1 {
+  .hero-text h1 {
     font-size: 2.4rem;
   }
-  .hero-card-content .subtitle {
+  .hero-text .subtitle {
     font-size: 1.1rem;
+    margin: 0 auto 2rem;
+  }
+  .hero-features {
+    align-items: center;
   }
 }
 </style>
