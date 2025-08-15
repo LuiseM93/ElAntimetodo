@@ -239,7 +239,7 @@ description: Mide tu progreso, compite con amigos y únete a una comunidad que a
           </ul>
         </div>
         <div class="feature-image">
-          <img src="{{ '/assets/antimetodo-vision.jpg' | relative_url }}" alt="Dashboard de la aplicación El Antimétodo Tracker">
+          <img src="{{ '/assets/trackerapp.png' | relative_url }}" alt="Dashboard de la aplicación El Antimétodo Tracker">
         </div>
       </div>
 
