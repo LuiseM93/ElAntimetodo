@@ -378,7 +378,7 @@ description: Descubre la base teórica del Antimétodo, incluyendo el input comp
     </div>
 
     <div class="chart-container">
-      <h3 class="chart-title">La 'Dieta' del Aprendiz Exitoso: ¿Qué Contenido se Consume?</h3>
+      <h3 class="chart-title">¿Qué Contenido consumen los estudiantes?</h3>
       <div class="infographic-container">
         <div class="infographic-item">
           <div class="infographic-icon">🎵</div>
