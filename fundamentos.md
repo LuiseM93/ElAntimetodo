@@ -401,7 +401,7 @@ description: Descubre la base teórica del Antimétodo, incluyendo el input comp
   </section>
 
   <section class="content-section">
-    <h2 class="section-title">Parte 1: El Andamiaje Teórico Ampliado – La Ciencia detrás de la Naturalidad</h2>
+    <h2 class="section-title">Parte 1: La Ciencia detrás del Antimétodo y la Naturalidad</h2>
     <p style="font-size: 1.1em; text-align: center; color: var(--text-light-color); line-height: 1.7;">
       Si bien la teoría del Input Comprensible de Stephen Krashen es el pilar del Antimétodo, no es una idea aislada en el universo de la lingüística. Es, en realidad, la punta de un iceberg científico inmenso. Múltiples campos —desde la psicolingüística y la neurociencia cognitiva hasta la sociolingüística— han llegado a conclusiones sorprendentemente similares por caminos diferentes. Estas teorías, en conjunto, forman un mosaico robusto que valida una verdad central: el cerebro humano está exquisitamente diseñado para adquirir idiomas de manera implícita y natural cuando se le proporciona el estímulo adecuado.
     </p>
