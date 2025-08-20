@@ -111,18 +111,29 @@ description: Herramientas, aplicaciones, mazos de Anki y fuentes de input para a
   <section class="resource-section">
     <h2>⭐ Seguimiento de Tiempo (¡Esencial!)</h2>
     <div class="resource-item">
-      <h4><img src="{{ '/assets/logo-refold.png' | relative_url }}" alt="Logo Refold" class="resource-logo">Refold Tracker <span class="note-tag">Recomendada</span></h4> <!-- CAMBIADO -->
-      <p class="description">Aplicación esencial para registrar tu tiempo de inmersión y estudio, ayudándote a medir tu progreso y mantener la motivación.</p>
+      <h4><img src="{{ '/assets/logo.png' | relative_url }}" alt="Logo El Antimétodo" class="resource-logo">El Antimétodo Tracker <span class="note-tag">Opción Oficial</span> <span class="free-tag">Recomendada</span></h4>
+      <p class="description">Nuestra propia aplicación social para registrar tu tiempo, competir con amigos y visualizar tu progreso. Gratis y de código abierto.</p>
+      <ul>
+        <li><a href="https://antimetodo.vercel.app" target="_blank" rel="noopener noreferrer">Ir a la aplicación web</a></li>
+        <li><a href="{{ '/antimetodo-tracker-app' | relative_url }}">Conocer más sobre sus funciones</a></li>
+      </ul>
+	  <p class="description" style="margin-top: 0.8rem; font-style: italic; background-color: #f0e6f6; padding: 0.5rem; border-radius: 4px; border-left: 3px solid var(--secondary-color);">
+        💡 **¡Sígueme en El Antimétodo Tracker!** Búscame por mi usuario: <strong>@Luise</strong> para ver mi progreso y competir juntos.
+      </p>
+    </div>
+    <div class="resource-item">
+      <h4><img src="{{ '/assets/logo-refold.png' | relative_url }}" alt="Logo Refold" class="resource-logo">Refold Tracker <span class="note-tag">Recomendada</span></h4>
+      <p class="description">Una alternativa popular para registrar tu tiempo de inmersión y estudio, que te ayuda a medir tu progreso y mantener la motivación.</p>
       <ul>
         <li><a href="https://www.notion.so/refold/Descargar-la-App-de-Refold-ES-16d4fa7e6fbd4a909068c310a36df275" target="_blank" rel="noopener noreferrer">Información y Descarga (Notion de Refold)</a></li>
         <li><a href="https://play.google.com/store/apps/details?id=com.refoldla.habitsmobile&hl=en" target="_blank" rel="noopener noreferrer">Descargar en Play Store (Android)</a></li>
       </ul>
       <p class="description" style="margin-top: 0.8rem; font-style: italic; background-color: #f0e6f6; padding: 0.5rem; border-radius: 4px; border-left: 3px solid var(--secondary-color);">
-        💡 **¡Ve El Antimétodo en acción!** Sígueme dentro de la app Refold Tracker buscando mi usuario: <strong>LuiseM93</strong> para ver cómo aplico el método y registro mi progreso.
+        💡 **Visita mi perfil antiguo de Refold Tracker** buscando mi usuario: <strong>LuiseM93</strong> para ver mi progreso anterior.
       </p>
     </div>
     <div class="resource-item" style="margin-top: 1.5rem;">
-      <h4>Alternativas a Refold Tracker <span class="note-tag">Recomendamos más Refold Tracker</span></h4>
+      <h4>Alternativas al Antimétodo o Refold Tracker</h4>
       <ul>
         <li><a href="https://toggl.com/track/" target="_blank" rel="noopener noreferrer">Toggl Track</a></li>
         <li><a href="https://polylogger.com/auth/login" target="_blank" rel="noopener noreferrer">Polylogger</a></li>
