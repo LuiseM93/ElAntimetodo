@@ -114,7 +114,7 @@ description: Herramientas, aplicaciones, mazos de Anki y fuentes de input para a
       <h4><img src="{{ '/assets/logo.png' | relative_url }}" alt="Logo El Antimétodo" class="resource-logo">El Antimétodo Tracker <span class="note-tag">Opción Oficial</span> <span class="free-tag">Recomendada</span></h4>
       <p class="description">Nuestra propia aplicación social para registrar tu tiempo, competir con amigos y visualizar tu progreso. Gratis y de código abierto.</p>
       <ul>
-        <li><a href="https://antimetodo.vercel.app" target="_blank" rel="noopener noreferrer">Ir a la aplicación web</a></li>
+        <li><a href="https://app.elantimetodo.com" target="_blank" rel="noopener noreferrer">Ir a la aplicación web</a></li>
         <li><a href="{{ '/antimetodo-tracker-app' | relative_url }}">Conocer más sobre sus funciones</a></li>
       </ul>
 	  <p class="description" style="margin-top: 0.8rem; font-style: italic; background-color: #f0e6f6; padding: 0.5rem; border-radius: 4px; border-left: 3px solid var(--secondary-color);">
