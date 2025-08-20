@@ -298,7 +298,7 @@ description: Aprende idiomas de forma natural y divertida con El Antimétodo. Si
   
   <section> 
      <h2 style="text-align: center;">Próximamente...</h2>
-     <p style="text-align: left; color: var(--text-light-color);">Esta es solo la cuarta versión del sitio web del Antimétodo. Apenas estamos comenzando. La página está en pleno desarrollo y aún faltan muchos recursos, herramientas, ejemplos y guías prácticas que iremos construyendo poco a poco. Lo que acabas de leer es solo el inicio de algo mucho más grande. Se vienen cosas importantes, y esto apenas comienza.</p>
+     <p style="text-align: left; color: var(--text-light-color);">Esta es sólamente una versión del sitio web del Antimétodo. Apenas estamos comenzando. La página está en pleno desarrollo y aún faltan muchos recursos, herramientas, ejemplos y guías prácticas que iremos construyendo poco a poco. Lo que acabas de leer es solo el inicio de algo mucho más grande. Se vienen cosas importantes, y esto apenas comienza.</p>
      <p style="text-align: left; color: var(--text-light-color);"><strong>Experiencia del autor:</strong> Gracias al antimétodo, ha logrado avances notables en inglés, francés y alemán. En solo 7 meses y 20 días, alcanzó en francés la etapa 3: entiende casi todo al ver series y películas auténticas sin subtítulos, y juega sus videojuegos favoritos en francés. Todo esto disfrutando el proceso y sintiendo el idioma como una segunda lengua materna. Sin clases ni métodos tradicionales.</p>
      <p style="text-align: left; color: var(--text-light-color);"><strong>Resultados esperados:</strong> fluidez real y un alto nivel en el idioma, comprensión a nivel nativo y hablar desde el instinto.</p>
      <div style="margin-top: 2rem; text-align: center;">
