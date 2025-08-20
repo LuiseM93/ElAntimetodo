@@ -196,7 +196,7 @@ description: Mide tu progreso, compite con amigos y únete a una comunidad que a
     <p class="subtitle">Mide tu progreso, compite con amigos y únete a una comunidad que aprende de forma diferente. Gratis y para siempre.</p>
     <img src="{{ '/assets/app.png' | relative_url }}" alt="Interfaz de la aplicación El Antimétodo Tracker en un mockup" class="app-hero-image">
     <div class="app-hero-cta">
-      <a href="https://antimetodo.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="font-size: 1.1em; padding: 1rem 2.5rem;">🚀 Ir a la App Ahora</a>
+      <a href="https://app.elantimetodo.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="font-size: 1.1em; padding: 1rem 2.5rem;">🚀 Ir a la App Ahora</a>
       <a href="#features" class="btn btn-secondary" style="font-size: 1.1em; padding: 1rem 2.5rem;">Ver Funcionalidades</a>
     </div>
   </section>
@@ -269,7 +269,7 @@ description: Mide tu progreso, compite con amigos y únete a una comunidad que a
           </ul>
         </div>
         <div class="feature-image">
-          <img src="{{ '/assets/rev.png' | relative_url }}" alt="Sistema de recompensas en la app">
+          <img src="{{ '/assets/gamifica.png' | relative_url }}" alt="Sistema de recompensas en la app">
         </div>
       </div>
     </div>
@@ -284,7 +284,7 @@ description: Mide tu progreso, compite con amigos y únete a una comunidad que a
   <section class="final-cta-section">
     <h2>Empieza a Aprender de Forma Inteligente. Hoy.</h2>
     <p class="subtitle">Únete a la revolución del aprendizaje de idiomas. La herramienta es gratuita, poderosa y está esperándote.</p>
-    <a href="https://antimetodo.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="font-size: 1.2em; padding: 1.2rem 3rem;">🚀 Abrir El Antimétodo Tracker</a>
+    <a href="https://app.elantimetodo.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="font-size: 1.2em; padding: 1.2rem 3rem;">🚀 Abrir El Antimétodo Tracker</a>
   </section>
 
 </div>
