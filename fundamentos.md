@@ -473,14 +473,7 @@ description: Descubre la base teórica del Antimétodo, incluyendo el input comp
       <li>Otro estudio de seis semanas que integró materiales auténticos en un currículo mostró mejoras drásticas y cuantificables: la habilidad de escucha (listening) aumentó un 28.2% y la habilidad de habla (speaking) un 23.8%. Esto prueba que incluso en periodos cortos, el input auténtico acelera el progreso de forma exponencial (Fuente: Faiz, A., "The Impact of Integrating Authentic Materials on Learner Engagement and Language Development", 2023).</li>
     </ul>
 
-    <h3>3. La "Regla del 98%": La Ciencia de la Comprensión Óptima</h3>
-    <p>El Antimétodo no se trata de "simplemente ver Netflix". Se trata de encontrar contenido comprensible. La ciencia de la adquisición de vocabulario y la carga cognitiva nos da un número mágico para entender por qué esto es tan importante.</p>
-    <ul>
-      <li><strong>El Umbral de la Comprensión:</strong> Múltiples estudios, como los de Batia Laufer (1989) y Hu y Nation (2000), han demostrado que un aprendiz necesita comprender entre el 95% y el 98% del input para poder inferir el significado de las palabras desconocidas y adquirir nuevo lenguaje de forma natural, sin sentirse abrumado.</li>
-      <li><strong>¿Por qué es crucial?</strong> Por debajo del 95%, la carga cognitiva se dispara. Tu cerebro gasta tanta energía tratando de descifrar lo que oye que no tiene capacidad para aprender. Por encima del 98%, te encuentras en tu "zona de adquisición óptima" (el famoso i+1 de Krashen), donde el contenido es lo suficientemente fácil como para ser disfrutable, pero lo suficientemente desafiante como para garantizar un progreso constante. El objetivo del Antimétodo es enseñarte a vivir en esta zona.</li>
-    </ul>
-
-    <h3>4. La Prueba Social: La Experiencia Colectiva de Miles de Autodidactas</h3>
+    <h3>3. La Prueba Social: La Experiencia Colectiva de Miles de Autodidactas</h3>
     <p>Más allá de los estudios formales, la prueba más poderosa es la experiencia compartida por una comunidad global de aprendices que han adoptado principios similares a los del Antimétodo.</p>
     <ul>
       <li><strong>Casos Documentados:</strong> La web está llena de testimonios detallados (en foros como Reddit, canales de YouTube y blogs) de individuos que han alcanzado niveles de fluidez C1 o superiores en idiomas como japonés, francés, inglés y español.</li>
