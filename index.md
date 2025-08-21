@@ -288,6 +288,22 @@ description: Aprende idiomas de forma natural y divertida con El Antimétodo. Si
     </div>
   </section>
 
+<!-- ================================================== -->
+<!--      INICIO: SECCIÓN DE TESTIMONIO DEL CREADOR      -->
+<!-- ================================================== -->
+<section class="content-section" style="background-color: #fdfcff; border-left: 4px solid var(--primary-color); border-radius: 8px; padding-top: 2rem; padding-bottom: 2rem; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+  <h3 style="text-align: center; font-size: 1.8em; color: var(--primary-color); margin-top: 0; margin-bottom: 1.5rem; border-bottom: none;">Un Testimonio Real</h3>
+  <blockquote style="margin: 0 1.5rem; padding: 0; border-left: none; text-align: center;">
+    <p style="font-style: italic; line-height: 1.7; font-size: 1.1em; color: var(--text-light-color);">
+      “Gracias al Antimétodo, he logrado avances notables en inglés, francés y alemán. En solo 7 meses y 20 días, alcancé en francés la etapa 3: entiendo casi todo al ver series y películas auténticas sin subtítulos, y juego mis videojuegos favoritos en francés. Todo esto disfrutando el proceso y sintiendo el idioma como una segunda lengua materna.”
+    </p>
+  </blockquote>
+  <p style="text-align: center; font-weight: 600; color: var(--primary-color); margin-top: 1.5rem; margin-bottom: 0;">- El Creador de El Antimétodo</p>
+</section>
+<!-- ================================================== -->
+<!--       FIN: SECCIÓN DE TESTIMONIO DEL CREADOR        -->
+<!-- ================================================== -->
+
   <section style="margin-bottom: 3rem; text-align: center; padding: 2.5rem 1.5rem; background-image: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%); border-radius: 10px; box-shadow: 0 6px 15px rgba(74, 20, 140, 0.3);">
     <h2 style="color: white; border-bottom: 2px solid rgba(255,255,255,0.5); padding-bottom: 0.5rem; display: inline-block;">¿Listo para Empezar?</h2>
     <p style="font-size: 1.15em; color: var(--light-purple-color); margin-top: 1.5rem; line-height: 1.7;">
@@ -299,7 +315,6 @@ description: Aprende idiomas de forma natural y divertida con El Antimétodo. Si
   <section> 
      <h2 style="text-align: center;">Próximamente...</h2>
      <p style="text-align: left; color: var(--text-light-color);">Esta es sólamente una versión del sitio web del Antimétodo. Apenas estamos comenzando. La página está en pleno desarrollo y aún faltan muchos recursos, herramientas, ejemplos y guías prácticas que iremos construyendo poco a poco. Lo que acabas de leer es solo el inicio de algo mucho más grande. Se vienen cosas importantes, y esto apenas comienza.</p>
-     <p style="text-align: left; color: var(--text-light-color);"><strong>Experiencia del autor:</strong> Gracias al antimétodo, ha logrado avances notables en inglés, francés y alemán. En solo 7 meses y 20 días, alcanzó en francés la etapa 3: entiende casi todo al ver series y películas auténticas sin subtítulos, y juega sus videojuegos favoritos en francés. Todo esto disfrutando el proceso y sintiendo el idioma como una segunda lengua materna. Sin clases ni métodos tradicionales.</p>
      <p style="text-align: left; color: var(--text-light-color);"><strong>Resultados esperados:</strong> fluidez real y un alto nivel en el idioma, comprensión a nivel nativo y hablar desde el instinto.</p>
      <div style="margin-top: 2rem; text-align: center;">
       <img src="{{ '/assets/gato_arquitecto_construccion.jpg' | relative_url }}" 
@@ -308,7 +323,7 @@ description: Aprende idiomas de forma natural y divertida con El Antimétodo. Si
         <p style="font-size:0.85em; color: #777; margin-top: 0.5rem;"><em>Paciencia, estamos construyendo algo genial...</em></p>
     </div>
      <p style="text-align: center; font-size: 0.9em; color: #888; margin-top: 3rem; border-top: 1px dashed var(--light-purple-color); padding-top: 1rem;">
-       <em>Última actualización del sitio: 20 de Agosto de 2025 4:04pm</em>
+       <em>Última actualización del sitio: 18 de Agosto de 2025 12:51pm</em>
      </p>
   </section>
 
