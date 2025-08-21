@@ -234,7 +234,7 @@ description: Mide tu progreso, compite con amigos y únete a una comunidad que a
           <p>Tu centro de mando personalizado. Mira de un vistazo tu etapa actual, tus puntos de enfoque y tu actividad reciente para mantener la motivación siempre al máximo.</p>
           <ul>
             <li>Visualiza tu progreso diario y semanal.</li>
-            <li>Recibe consejos adaptados a tu etapa.</li>
+            <li>Selecciona tu Etapa del Antimétodo para recibir guías y consejos personalizados.</li>
             <li>Gestiona múltiples idiomas con facilidad.</li>
           </ul>
         </div>
@@ -261,7 +261,7 @@ description: Mide tu progreso, compite con amigos y únete a una comunidad que a
       <div class="feature-row">
         <div class="feature-text">
           <h3>Gamificación que Impulsa tu Hábito</h3>
-          <p>Convierte la constancia en una recompensa. Gana puntos, desbloquea logros y personaliza tu experiencia como nunca antes.</p>
+          <p>Transforma la disciplina en un juego. Gana Puntos de Enfoque por tu constancia, desbloquea logros y canjéalos por recompensas que hacen que la app sea verdaderamente tuya.</p>
           <ul>
             <li><strong>Puntos de Enfoque:</strong> Gana puntos por cada día de actividad y úsalos en la tienda.</li>
             <li><strong>Tienda de Recompensas:</strong> Desbloquea títulos exclusivos y temas visuales para la aplicación.</li>
@@ -280,6 +280,12 @@ description: Mide tu progreso, compite con amigos y únete a una comunidad que a
     <p>Eres el dueño de tu aprendizaje y de tu información. La aplicación te permite exportar tu historial completo con un solo clic. Además, con nuestra herramienta de importación masiva, puedes reconstruir tu historial si vienes de otro tracker.</p>
     <a href="{{ '/importar-tracker' | relative_url }}" class="btn btn-secondary">Aprende a importar tus datos</a>
   </section>
+
+  <!-- PWA Section -->
+  <div style="text-align: center; padding: 2rem 1.5rem;">
+    <h3 style="font-size: 1.8em;">Instálala en tu Móvil y Escritorio</h3>
+    <p style="max-width: 700px; margin: 0 auto 1rem auto; color: var(--text-light-color);">El Antimétodo Tracker es una Aplicación Web Progresiva (PWA). Puedes instalarla directamente en tu pantalla de inicio para una experiencia más rápida y fluida, como si fuera una app nativa.</p>
+  </div>
 
   <section class="final-cta-section">
     <h2>Empieza a Aprender de Forma Inteligente. Hoy.</h2>
