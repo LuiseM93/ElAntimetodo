@@ -204,30 +204,51 @@ description: Aprende idiomas de forma natural y divertida con El Antimétodo. Si
       <a href="{{ '/fundamentos' | relative_url }}" class="btn btn-primary">Descubre los Fundamentos</a>
     </div>
   </section>
-<!-- SECCIÓN PRESENTACIÓN APP ANTIMÉTODO TRACKER        -->
-<section class="app-promo-section">
-  <div class="content-wrapper-condensed" style="display: flex; align-items: center; gap: 2rem; flex-wrap: wrap;">
-    <div class="app-promo-image" style="flex: 1 1 300px; text-align:center;">
-      <a href="https://app.elantimetodo.com" target="_blank" rel="noopener noreferrer" title="Ir a El Antimétodo Tracker">
-        <img src="{{ '/assets/app.png' | relative_url }}" alt="Vista previa de la app El Antimétodo Tracker" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
-      </a>
+
+  <section> 
+    <h2>Beneficios Clave del Antimétodo</h2>
+    <ul style="list-style-type: none; padding-left: 0; font-size: 1.1em;">
+      <li style="margin-bottom: 1rem; padding: 0.8rem 0.8rem 0.8rem 2.5em; position: relative; background-color: var(--card-background); border-radius: 6px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); border-left: 4px solid var(--secondary-color);">
+        <span style="position: absolute; left: 0.8em; top: 50%; transform: translateY(-50%); color: var(--secondary-color); font-weight: bold; font-size:1.2em;">🧘</span> Flexible y personalizado a tus intereses. 
+      </li>
+      <li style="margin-bottom: 1rem; padding: 0.8rem 0.8rem 0.8rem 2.5em; position: relative; background-color: var(--card-background); border-radius: 6px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); border-left: 4px solid var(--secondary-color);">
+        <span style="position: absolute; left: 0.8em; top: 50%; transform: translateY(-50%); color: var(--secondary-color); font-weight: bold; font-size:1.2em;">🎧</span> Aprende con contenido que realmente disfrutas (y es efectivo).
+      </li>
+      <li style="margin-bottom: 1rem; padding: 0.8rem 0.8rem 0.8rem 2.5em; position: relative; background-color: var(--card-background); border-radius: 6px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); border-left: 4px solid var(--secondary-color);">
+        <span style="position: absolute; left: 0.8em; top: 50%; transform: translateY(-50%); color: var(--secondary-color); font-weight: bold; font-size:1.2em;">🗣️</span> Desarrolla fluidez natural y eficiente, sin traducir.
+      </li>
+      <li style="margin-bottom: 1rem; padding: 0.8rem 0.8rem 0.8rem 2.5em; position: relative; background-color: var(--card-background); border-radius: 6px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); border-left: 4px solid var(--secondary-color);">
+        <span style="position: absolute; left: 0.8em; top: 50%; transform: translateY(-50%); color: var(--secondary-color); font-weight: bold; font-size:1.2em;">💰</span> Accesible y económico: no necesitas cursos caros.
+      </li>
+    </ul>
+    <div style="text-align: center; margin-top: 2rem;">
+      <a href="{{ '/beneficios' | relative_url }}" class="btn">Ver todos los beneficios</a>
     </div>
-    <div class="app-promo-text" style="flex: 1 1 400px;">
-      <h2 style="text-align:left; border-bottom: 2px solid var(--primary-color); padding-bottom:0.5rem; display:inline-block;">¡Descubre El Antimétodo Tracker!</h2>
-      <p style="font-size: 1.1em; color: var(--text-light-color); line-height: 1.7;">
-        Lleva tu aprendizaje al siguiente nivel con nuestra aplicación web diseñada para ser tu compañera ideal en la inmersión. Registra tu progreso, construye hábitos sólidos, accede a guías y ¡mucho más!
-      </p>
-      <p style="font-size: 1.1em; color: var(--text-light-color); line-height: 1.7;">
-        Organiza tu viaje hacia la fluidez de una manera natural, eficiente y, sobre todo, disfrutable.
-      </p>
-      <div class="app-promo-buttons" style="margin-top: 1.5rem; display: flex; gap: 1rem; flex-wrap:wrap;">
-        <a href="https://app.elantimetodo.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="font-size: 1em;">🚀 Ir a la App</a>
-        <a href="{{ '/antimetodo-tracker-app' | relative_url }}" class="btn" style="font-size: 1em; background-color: var(--accent-color);">Más Información</a>
-      </div>
-    </div>
-  </div>
+  </section>
+
+  <section style="margin-bottom: 3rem; text-align: center; padding: 2.5rem 1.5rem; background-image: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%); border-radius: 10px; box-shadow: 0 6px 15px rgba(74, 20, 140, 0.3);">
+    <h2 style="color: white; border-bottom: 2px solid rgba(255,255,255,0.5); padding-bottom: 0.5rem; display: inline-block;">¿Listo para Empezar?</h2>
+    <p style="font-size: 1.15em; color: var(--light-purple-color); margin-top: 1.5rem; line-height: 1.7;">
+      El Antimétodo se estructura en etapas claras para guiarte desde los primeros pasos hasta la fluidez. Cada etapa está diseñada para construir sobre la anterior, asegurando un progreso constante y natural.
+    </p>
+    <a href="{{ '/etapas' | relative_url }}" class="btn" style="margin-top: 1.5rem; background-color: white; color: var(--primary-color) !important; font-weight: bold;">Explora las Etapas del Antimétodo</a>
+  </section>
+
+<!-- ================================================== -->
+<!--      INICIO: SECCIÓN DE TESTIMONIO DEL CREADOR      -->
+<!-- ================================================== -->
+<section class="content-section" style="background-color: #fdfcff; border-left: 4px solid var(--primary-color); border-radius: 8px; padding-top: 2rem; padding-bottom: 2rem; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+  <h3 style="text-align: center; font-size: 1.8em; color: var(--primary-color); margin-top: 0; margin-bottom: 1.5rem; border-bottom: none;">Un Testimonio Real</h3>
+  <blockquote style="margin: 0 1.5rem; padding: 0; border-left: none; text-align: center;">
+    <p style="font-style: italic; line-height: 1.7; font-size: 1.1em; color: var(--text-light-color);">
+      “Gracias al Antimétodo, he logrado avances notables en inglés, francés y alemán. En solo 7 meses y 20 días, alcancé en francés la etapa 3: entiendo casi todo al ver series y películas auténticas sin subtítulos, y juego mis videojuegos favoritos en francés. Todo esto disfrutando el proceso y sintiendo el idioma como una segunda lengua materna.”
+    </p>
+  </blockquote>
+  <p style="text-align: center; font-weight: 600; color: var(--primary-color); margin-top: 1.5rem; margin-bottom: 0;">- El Creador de El Antimétodo</p>
 </section>
-<!-- FIN SECCIÓN APP                                    -->
+<!-- ================================================== -->
+<!--       FIN: SECCIÓN DE TESTIMONIO DEL CREADOR        -->
+<!-- ================================================== -->
 
   <!-- SECCIÓN DE TESTIMONIOS DE IA (FULL-WIDTH BACKGROUND) -->
   <section class="ia-testimonials-fullwidth-section"> 
@@ -267,51 +288,32 @@ description: Aprende idiomas de forma natural y divertida con El Antimétodo. Si
   </section>
   <!-- FIN DE LA NUEVA SECCIÓN -->
 
-  <section> 
-    <h2>Beneficios Clave del Antimétodo</h2>
-    <ul style="list-style-type: none; padding-left: 0; font-size: 1.1em;">
-      <li style="margin-bottom: 1rem; padding: 0.8rem 0.8rem 0.8rem 2.5em; position: relative; background-color: var(--card-background); border-radius: 6px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); border-left: 4px solid var(--secondary-color);">
-        <span style="position: absolute; left: 0.8em; top: 50%; transform: translateY(-50%); color: var(--secondary-color); font-weight: bold; font-size:1.2em;">🧘</span> Flexible y personalizado a tus intereses. 
-      </li>
-      <li style="margin-bottom: 1rem; padding: 0.8rem 0.8rem 0.8rem 2.5em; position: relative; background-color: var(--card-background); border-radius: 6px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); border-left: 4px solid var(--secondary-color);">
-        <span style="position: absolute; left: 0.8em; top: 50%; transform: translateY(-50%); color: var(--secondary-color); font-weight: bold; font-size:1.2em;">🎧</span> Aprende con contenido que realmente disfrutas (y es efectivo).
-      </li>
-      <li style="margin-bottom: 1rem; padding: 0.8rem 0.8rem 0.8rem 2.5em; position: relative; background-color: var(--card-background); border-radius: 6px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); border-left: 4px solid var(--secondary-color);">
-        <span style="position: absolute; left: 0.8em; top: 50%; transform: translateY(-50%); color: var(--secondary-color); font-weight: bold; font-size:1.2em;">🗣️</span> Desarrolla fluidez natural y eficiente, sin traducir.
-      </li>
-      <li style="margin-bottom: 1rem; padding: 0.8rem 0.8rem 0.8rem 2.5em; position: relative; background-color: var(--card-background); border-radius: 6px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); border-left: 4px solid var(--secondary-color);">
-        <span style="position: absolute; left: 0.8em; top: 50%; transform: translateY(-50%); color: var(--secondary-color); font-weight: bold; font-size:1.2em;">💰</span> Accesible y económico: no necesitas cursos caros.
-      </li>
-    </ul>
-    <div style="text-align: center; margin-top: 2rem;">
-      <a href="{{ '/beneficios' | relative_url }}" class="btn">Ver todos los beneficios</a>
+<!-- SECCIÓN PRESENTACIÓN APP ANTIMÉTODO TRACKER        -->
+<section class="app-promo-section">
+  <div class="content-wrapper-condensed" style="display: flex; align-items: center; gap: 2rem; flex-wrap: wrap;">
+    <div class="app-promo-image" style="flex: 1 1 300px; text-align:center;">
+      <a href="https://app.elantimetodo.com" target="_blank" rel="noopener noreferrer" title="Ir a El Antimétodo Tracker">
+        <img src="{{ '/assets/app.png' | relative_url }}" alt="Vista previa de la app El Antimétodo Tracker" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+      </a>
     </div>
-  </section>
-
-<!-- ================================================== -->
-<!--      INICIO: SECCIÓN DE TESTIMONIO DEL CREADOR      -->
-<!-- ================================================== -->
-<section class="content-section" style="background-color: #fdfcff; border-left: 4px solid var(--primary-color); border-radius: 8px; padding-top: 2rem; padding-bottom: 2rem; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
-  <h3 style="text-align: center; font-size: 1.8em; color: var(--primary-color); margin-top: 0; margin-bottom: 1.5rem; border-bottom: none;">Un Testimonio Real</h3>
-  <blockquote style="margin: 0 1.5rem; padding: 0; border-left: none; text-align: center;">
-    <p style="font-style: italic; line-height: 1.7; font-size: 1.1em; color: var(--text-light-color);">
-      “Gracias al Antimétodo, he logrado avances notables en inglés, francés y alemán. En solo 7 meses y 20 días, alcancé en francés la etapa 3: entiendo casi todo al ver series y películas auténticas sin subtítulos, y juego mis videojuegos favoritos en francés. Todo esto disfrutando el proceso y sintiendo el idioma como una segunda lengua materna.”
-    </p>
-  </blockquote>
-  <p style="text-align: center; font-weight: 600; color: var(--primary-color); margin-top: 1.5rem; margin-bottom: 0;">- El Creador de El Antimétodo</p>
+    <div class="app-promo-text" style="flex: 1 1 400px;">
+      <h2 style="text-align:left; border-bottom: 2px solid var(--primary-color); padding-bottom:0.5rem; display:inline-block;">⚠️ Herramienta de Apoyo: Antimétodo Tracker</h2>
+      <p style="font-size: 1.1em; color: var(--text-light-color); line-height: 1.7;"><strong>Importante:</strong> Esta es una herramienta de seguimiento para ayudarte a aplicar el método. La aplicación por sí sola no te enseña el idioma, es un complemento a tu inmersión.</p>
+      <p style="font-size: 1.1em; color: var(--text-light-color); line-height: 1.7;">
+        Lleva tu aprendizaje al siguiente nivel con nuestra aplicación web diseñada para ser tu compañera ideal en la inmersión. Registra tu progreso, construye hábitos sólidos, accede a guías y ¡mucho más!
+      </p>
+      <p style="font-size: 1.1em; color: var(--text-light-color); line-height: 1.7;">
+        Organiza tu viaje hacia la fluidez de una manera natural, eficiente y, sobre todo, disfrutable.
+      </p>
+      <div class="app-promo-buttons" style="margin-top: 1.5rem; display: flex; gap: 1rem; flex-wrap:wrap;">
+        <a href="https://app.elantimetodo.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="font-size: 1em;">🚀 Ir a la App</a>
+        <a href="{{ '/antimetodo-tracker-app' | relative_url }}" class="btn" style="font-size: 1em; background-color: var(--accent-color);">Más Información</a>
+      </div>
+    </div>
+  </div>
 </section>
-<!-- ================================================== -->
-<!--       FIN: SECCIÓN DE TESTIMONIO DEL CREADOR        -->
-<!-- ================================================== -->
+<!-- FIN SECCIÓN APP                                    -->
 
-  <section style="margin-bottom: 3rem; text-align: center; padding: 2.5rem 1.5rem; background-image: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%); border-radius: 10px; box-shadow: 0 6px 15px rgba(74, 20, 140, 0.3);">
-    <h2 style="color: white; border-bottom: 2px solid rgba(255,255,255,0.5); padding-bottom: 0.5rem; display: inline-block;">¿Listo para Empezar?</h2>
-    <p style="font-size: 1.15em; color: var(--light-purple-color); margin-top: 1.5rem; line-height: 1.7;">
-      El Antimétodo se estructura en etapas claras para guiarte desde los primeros pasos hasta la fluidez. Cada etapa está diseñada para construir sobre la anterior, asegurando un progreso constante y natural.
-    </p>
-    <a href="{{ '/etapas' | relative_url }}" class="btn" style="margin-top: 1.5rem; background-color: white; color: var(--primary-color) !important; font-weight: bold;">Explora las Etapas del Antimétodo</a>
-  </section>
-  
   <section> 
      <h2 style="text-align: center;">Próximamente...</h2>
      <p style="text-align: left; color: var(--text-light-color);">Esta es sólamente una versión del sitio web del Antimétodo. Apenas estamos comenzando. La página está en pleno desarrollo y aún faltan muchos recursos, herramientas, ejemplos y guías prácticas que iremos construyendo poco a poco. Lo que acabas de leer es solo el inicio de algo mucho más grande. Se vienen cosas importantes, y esto apenas comienza.</p>
