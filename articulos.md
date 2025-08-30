@@ -7,11 +7,11 @@ description: Artículos que desafían lo que creías saber sobre aprender idioma
 <style>
 .article-card-list {
   display: grid;
-  /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */ /* Comentado para que solo una tarjeta ocupe el ancho */
-  grid-template-columns: minmax(0, 1fr); /* Para que una sola tarjeta pueda centrarse o tener un max-width */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* grid-template-columns: minmax(0, 1fr); */ /* Para que una sola tarjeta pueda centrarse o tener un max-width */
   gap: 1.5rem;
   margin-top: 2rem;
-  justify-items: center; /* Centrar la tarjeta si solo hay una */
+  justify-items: center;
 }
 .article-card {
   background: var(--card-background);
@@ -97,6 +97,16 @@ description: Artículos que desafían lo que creías saber sobre aprender idioma
         </div>
       </a>
       
+      <a href="{{ '/guia-aprendizaje-efectivo' | relative_url }}" class="article-card">
+        <img src="{{ '/assets/estudiar.png' | relative_url }}" alt="Hombre estudiando con un sistema" class="featured-image">
+        <div class="article-card-content">
+          <h3>Recurso Extra: Un Sistema Universal para Aprender y Estudiar Cualquier Cosa</h3>
+          <p class="excerpt">Una guía científica y paso a paso para aprender cualquier materia. Este manual NO es parte del Antimétodo, es un recurso universal de estudio que compartimos para nuestra comunidad.</p>
+          <span class="read-more">Leer más →</span>
+          <p class="article-meta">Publicado: 29 de Agosto de 2025</p>
+        </div>
+      </a>
+
       <!-- Aquí podrías añadir más tarjetas de ejemplo en el futuro si quieres mostrar más de uno -->
 
     </div>
