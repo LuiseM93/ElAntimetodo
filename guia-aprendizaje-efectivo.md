@@ -93,6 +93,13 @@ description: Una guía científica y paso a paso para aprender y estudiar cualqu
     ¿Alguna vez has sentido que pasas horas estudiando para luego olvidarlo todo? La culpa no es tuya, es del método. La ciencia ha demostrado que las técnicas de estudio más populares (releer, subrayar, resumir) son también las menos efectivas. Este manual te enseñará un sistema basado en evidencia para que aprendas cualquier cosa de forma más rápida, profunda y duradera.
   </p>
 
+  <div class="disclaimer-box">
+    <h3 style="text-align:center; display: block;"><a href="{{ '/assets/How to learn and study.pdf' | relative_url }}" target="_blank">El Plano Original: Descarga mi Mapa Mental</a></h3>
+    <p>
+      Este manual no nació de un guion, sino de mi propia investigación para entender cómo aprender de verdad. Este mapa mental es la herramienta que usé para estructurar todo el sistema. Te lo comparto como un recurso descargable para que puedas ver la 'imagen grande' y usarlo como tu propia guía visual. Notarás que la lógica aquí es aún más profunda que en el texto; este es el verdadero código fuente.
+    </p>
+  </div>
+
   <h2 style="color: var(--primary-color);">Capítulo 1: La Planificación Estratégica 🗓️</h2>
   <p>
     El aprendizaje efectivo no ocurre por accidente. Requiere un plan. Tu agenda es tu cuartel general para organizar la conquista del conocimiento.
@@ -113,13 +120,37 @@ description: Una guía científica y paso a paso para aprender y estudiar cualqu
     "Encoding" es el proceso de transformar la información nueva en conocimiento que tu cerebro pueda entender y conectar. Un buen método de estudio debe crear un "schema" o esqueleto de información interconectada.
   </p>
   <div class="action-manual">
-    <h4>🔥 El Manual de Acción: Cómo Aplicarlo Paso a Paso</h4>
+    <h4>🔥 El Manual de Acción: Cómo Aplicarlo Paso a Paso (Versión Corregida)</h4>
+    <p>El "Encoding" no es una técnica, es un proceso estratégico. Todo comienza con un diagnóstico:</p>
+    <h5>Paso 1: Identifica el Tipo de Información</h5>
+    <p>Antes de hacer nada, pregúntate: ¿Qué estoy tratando de aprender?</p>
     <ul>
-      <li><strong>Identifica el Tipo de Información:</strong> ¿Es conceptual (teorías, principios), referencial (datos, fechas, fórmulas), procedural (procesos) o análoga (historias, ejemplos)?</li>
-      <li><strong>Usa Mapas Mentales (Mind Mapping):</strong> Es la herramienta principal para ver la "imagen grande", simplificar conceptos y conectarlos. Reduce la cantidad de palabras al mínimo.</li>
-      <li><strong>Crea Analogías:</strong> Conecta la nueva información con cosas que ya sabes. Luego, critica tus propias analogías: ¿dónde fallan? Este proceso fortalece la comprensión.</li>
-      <li><strong>Piensa en la Utilidad (Rehearsing):</strong> Constantemente pregúntate: ¿cómo podría usar esta información? ¿Dónde encaja en lo que ya sé?</li>
+      <li><strong>Conceptual:</strong> ¿Son teorías, principios, ideas interconectadas, la "imagen grande"? (Ej: Cómo funciona la fotosíntesis, los principios de la termodinámica).</li>
+      <li><strong>Referencial:</strong> ¿Son datos fijos, hechos concretos, vocabulario? (Ej: Fechas históricas, fórmulas químicas, nombres de capitales).</li>
+      <li><strong>Procedural:</strong> ¿Es un proceso, una serie de pasos, una habilidad que se hace? (Ej: Cómo resolver una ecuación, cómo atarse los zapatos, cómo ejecutar un movimiento de guitarra).</li>
+      <li><strong>Análoga:</strong> ¿Son historias, ejemplos, metáforas que explican un concepto? (Ej: Usar la historia de una batalla para explicar una estrategia de negocios).</li>
     </ul>
+    <h5>Paso 2: Aplica la Herramienta de Codificación Correcta</h5>
+    <p>Una vez que sabes el tipo de información, eliges tu arma. No uses un martillo para atornillar un tornillo.</p>
+    <ul>
+      <li><strong>Si es Conceptual → Usa Mapas Mentales (Mind Mapping):</strong><br>
+      Tu objetivo es conectar conceptos y ver la imagen grande. Usa Xmind u otra herramienta para simplificar ideas complejas, reducir el texto al mínimo y crear un esqueleto visual de conocimiento.</li>
+      <li><strong>Si es Referencial → Crea Evidencia Concreta (Anki):</strong><br>
+      Tu objetivo es anclar datos fijos. Para esto, herramientas como Anki son útiles (con precaución). Crea tarjetas para fórmulas, fechas o definiciones exactas. Es un proceso de "anotar evidencia de inmediato".</li>
+      <li><strong>Si es Procedural → Hazlo Inmediatamente (Práctica Deliberada):</strong><br>
+      No puedes aprender un proceso leyéndolo. Debes ejecutarlo. Si estás aprendiendo una técnica, un proceso o un método, la codificación es la práctica misma.</li>
+      <li><strong>Si es Análoga → Construye y Critica Analogías:</strong><br>
+      Conecta la nueva información con algo que ya sabes profundamente. Pero no te detengas ahí: el paso crucial es criticar tu propia analogía. ¿Dónde se rompe? ¿Dónde falla? Este proceso de crítica fortalece la comprensión a un nivel mucho más profundo.</li>
+    </ul>
+    <h5>Paso 3 (Meta-Habilidad): Piensa en la Utilidad (Rehearsing)</h5>
+    <p>Este paso se aplica a TODOS los tipos de información. Mientras codificas, pregúntate constantemente: "¿Cómo y dónde podría usar esto? ¿Con qué otra cosa que sé se vincula?" Este es el pegamento que une todo tu conocimiento.</p>
+  </div>
+
+  <div class="disclaimer-box">
+    <h3 style="text-align:center; display: block;">Una nota sobre PACER</h3>
+    <p>
+      PACER es un acrónimo para <strong>P</strong>review, <strong>A</strong>sk, <strong>C</strong>onnect, <strong>E</strong>xpand, <strong>R</strong>eview. Es una técnica de lectura activa que te ayuda a codificar la información de manera más efectiva. A medida que lees, previsualizas el material, te haces preguntas, conectas las ideas con lo que ya sabes, expandes los conceptos y revisas lo que has aprendido. Es una forma de aplicar los principios de codificación directamente a la lectura.
+    </p>
   </div>
 
   <h2 style="color: var(--primary-color);">Capítulo 3: El Recuerdo Activo (Active Recall) 💡</h2>
