@@ -74,6 +74,17 @@ description: Una guía científica y paso a paso para aprender y estudiar cualqu
     width: 40px;
     height: 40px;
 }
+.btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 1rem;
+    text-align: center;
+}
 </style>
 
 <main style="max-width: 850px; margin: 0 auto; padding: 0 1rem;">
@@ -235,6 +246,7 @@ description: Una guía científica y paso a paso para aprender y estudiar cualqu
     <p>
       Este manual no nació de un guion, sino de mi propia investigación para entender cómo aprender de verdad. Este mapa mental es la herramienta que usé para estructurar todo el sistema. Te lo comparto como un recurso descargable para que puedas ver la 'imagen grande' y usarlo como tu propia guía visual. Notarás que la lógica aquí es aún más profunda que en el texto; este es el verdadero código fuente.
     </p>
+    <a href="{{ '/assets/How to learn and study.pdf' | relative_url }}" class="btn" target="_blank">Descargar Mapa Mental (PDF)</a>
   </div>
 
 </main>
