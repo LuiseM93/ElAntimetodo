@@ -87,7 +87,7 @@ description: Artículos que desafían lo que creías saber sobre aprender idioma
     <h3 style="margin-top: 3rem; text-align: center; color: var(--secondary-color);">Próximo Artículo:</h3>
     <div class="article-card-list">
       <a href="{{ '/guia-aprendizaje-efectivo' | relative_url }}" class="article-card">
-        <img src="{{ '/assets/estudiar.png' | relative_url }}" alt="Hombre estudiando con un sistema" class="featured-image">
+        <img src="{{ '/assets/estudiar-guia.png' | relative_url }}" alt="Libro de guia de estudio" class="featured-image">
         <div class="article-card-content">
           <h3>Recurso Extra: Un Sistema Universal para Aprender y Estudiar Cualquier Cosa</h3>
           <p class="excerpt">Una guía científica y paso a paso para aprender cualquier materia. Este manual NO es parte del Antimétodo, es un recurso universal de estudio que compartimos para nuestra comunidad.</p>
