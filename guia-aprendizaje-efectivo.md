@@ -162,7 +162,7 @@ description: Una guía científica y paso a paso para aprender y estudiar cualqu
     <ul>
       <li><strong>Free Recall (Recuerdo Libre):</strong> Después de leer o ver algo, cierra el libro. Toma una hoja en blanco y un temporizador (5-10 min). Escribe o di en voz alta todo lo que recuerdes. ¡Sin trampas!</li>
       <li><strong>Enseña a un Niño (Opcional):</strong> Intenta explicar el tema de la forma más simple posible. Esto revela al instante tus puntos débiles.</li>
-      <li><strong>Cued Recall (Recuerdo con Pistas):</strong> Usa preguntas para guiar tu recuerdo. No te limites a "¿Qué es X?". Usa preguntas que te obliguen a aplicar, analizar o evaluar la información (niveles 2-5 de la Taxonomía de Bloom).</li>
+      <li><strong>Cued Recall (Recuerdo con Pistas):</strong> Usa preguntas para guiar tu recuerdo. No te limites a "¿Qué es X?". Usa preguntas que te obliguen a aplicar, analizar o evaluar la información (niveles 2-5 de la Taxonomía de Bloom) Puedes pedirle a una IA que te haga preguntas basadas en la taxonomía de Bloom (niveles 2 a 5) para mejorar al máximo tu cued recall 💡.</li>
       <li><strong>Identifica y Revisa Puntos Débiles:</strong> Después de una sesión de recuerdo activo, compara tus notas con el material original. ¿Qué olvidaste? ¿Qué entendiste mal? Vuelve a tu mapa mental y refuerza esas áreas.</li>
     </ul>
   </div>
