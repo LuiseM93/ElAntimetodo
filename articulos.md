@@ -86,6 +86,16 @@ description: Artículos que desafían lo que creías saber sobre aprender idioma
 
     <h3 style="margin-top: 3rem; text-align: center; color: var(--secondary-color);">Próximo Artículo:</h3>
     <div class="article-card-list">
+      <a href="{{ '/guia-aprendizaje-efectivo' | relative_url }}" class="article-card">
+        <img src="{{ '/assets/estudiar.png' | relative_url }}" alt="Hombre estudiando con un sistema" class="featured-image">
+        <div class="article-card-content">
+          <h3>Recurso Extra: Un Sistema Universal para Aprender y Estudiar Cualquier Cosa</h3>
+          <p class="excerpt">Una guía científica y paso a paso para aprender cualquier materia. Este manual NO es parte del Antimétodo, es un recurso universal de estudio que compartimos para nuestra comunidad.</p>
+          <span class="read-more">Leer más →</span>
+          <p class="article-meta">Publicado: 29 de Agosto de 2025</p>
+        </div>
+      </a>
+
       <!-- Tarjeta de ejemplo 1 actualizada -->
       <a href="#" class="article-card"> <!-- El href="#" es un placeholder, luego enlazaría al artículo real -->
         <img src="{{ '/assets/adul.png' | relative_url }}" alt="Adultos aprendiendo idiomas" class="featured-image">
@@ -94,16 +104,6 @@ description: Artículos que desafían lo que creías saber sobre aprender idioma
           <p class="excerpt">En contraste con lo que siempre se ha dicho, los adultos pueden aprender un idioma mucho más rápido que un niño. Mientras ellos tardan años sin siquiera saber leer o escribir, tú puedes avanzar en meses aplicando El Antimétodo...</p>
           <span class="read-more">Leer más →</span>
           <p class="article-meta">Publicado: Próximamente</p>
-        </div>
-      </a>
-      
-      <a href="{{ '/guia-aprendizaje-efectivo' | relative_url }}" class="article-card">
-        <img src="{{ '/assets/estudiar.png' | relative_url }}" alt="Hombre estudiando con un sistema" class="featured-image">
-        <div class="article-card-content">
-          <h3>Recurso Extra: Un Sistema Universal para Aprender y Estudiar Cualquier Cosa</h3>
-          <p class="excerpt">Una guía científica y paso a paso para aprender cualquier materia. Este manual NO es parte del Antimétodo, es un recurso universal de estudio que compartimos para nuestra comunidad.</p>
-          <span class="read-more">Leer más →</span>
-          <p class="article-meta">Publicado: 29 de Agosto de 2025</p>
         </div>
       </a>
 
