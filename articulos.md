@@ -88,12 +88,12 @@ description: Una colección de guías y sistemas 'oro puro' para dominar idiomas
 .article-card-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* grid-template-columns: minmax(0, 1fr); */ /* Para que una sola tarjeta pueda centrarse o tener un max-width */
   gap: 1.5rem;
   margin-top: 2rem;
   justify-items: center;
 }
 .article-card {
-  position: relative; /* Requerido para posicionar la etiqueta */
   background: var(--card-background);
   border-radius: 8px;
   box-shadow: 0 3px 10px rgba(0,0,0,0.1);
@@ -103,33 +103,16 @@ description: Una colección de guías y sistemas 'oro puro' para dominar idiomas
   text-decoration: none; 
   color: var(--text-color); 
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  max-width: 450px;
-  width: 100%;
+  max-width: 450px; /* Ancho máximo para una sola tarjeta, para que no sea demasiado ancha */
+  width: 100%; /* Asegurar que use el espacio disponible hasta el max-width */
 }
 .article-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 15px rgba(0,0,0,0.15);
 }
-.article-card .tag {
-  position: absolute;
-  top: 12px;
-  left: 12px;
-  padding: 5px 10px;
-  border-radius: 5px;
-  font-size: 0.75em;
-  font-weight: bold;
-  color: white;
-  text-transform: uppercase;
-  z-index: 1;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-}
-.article-card .tag.guia-maestra { background-color: #27ae60; } /* Verde Esmeralda */
-.article-card .tag.antimetodo { background-color: var(--secondary-color); } /* Púrpura del sitio */
-.article-card .tag.caso-exito { background-color: #2980b9; } /* Azul Nube */
-
 .article-card img.featured-image {
   width: 100%;
-  height: 200px;
+  height: 200px; /* Aumentada ligeramente la altura para la imagen destacada */
   object-fit: cover; 
 }
 .article-card-content {
@@ -141,7 +124,7 @@ description: Una colección de guías y sistemas 'oro puro' para dominar idiomas
   margin-bottom: 0.5rem;
   color: var(--primary-color);
   font-size: 1.3em;
-  line-height: 1.3;
+  line-height: 1.3; /* Mejorar espaciado del título si es largo */
 }
 .article-card-content p.excerpt {
   font-size: 0.95em;
@@ -174,7 +157,7 @@ description: Una colección de guías y sistemas 'oro puro' para dominar idiomas
       <br><br>
       Aquí encontrarás desde la filosofía y los <strong>Casos de Éxito</strong> del <strong>Antimétodo</strong>, hasta <strong>Guías Maestras</strong> para optimizar tu mente y tu físico al máximo nivel.
       <br><br>
-      Cada pieza de contenido, sin importar la etiqueta que lleve, está al mismo nivel de calidad y ha sido diseñada para darte resultados reales y contundentes. Explora, aprende y aplica.
+      Cada pieza de contenido ha sido diseñada para darte resultados reales y contundentes. Explora, aprende y aplica.
     </p>
   </section>
 
@@ -183,7 +166,6 @@ description: Una colección de guías y sistemas 'oro puro' para dominar idiomas
 
       <!-- Guía de Aprendizaje Efectivo -->
       <a href="{{ '/guia-aprendizaje-efectivo' | relative_url }}" class="article-card">
-        <span class="tag guia-maestra">Guía Maestra</span>
         <img src="{{ '/assets/estudiar-guia.png' | relative_url }}" alt="Libro de guia de estudio" class="featured-image">
         <div class="article-card-content">
           <h3>Recurso Extra: Un Sistema Universal para Aprender y Estudiar Cualquier Cosa</h3>
@@ -195,7 +177,6 @@ description: Una colección de guías y sistemas 'oro puro' para dominar idiomas
 
       <!-- Guía Heavy Duty (Placeholder) -->
       <a href="#" class="article-card">
-        <span class="tag guia-maestra">Guía Maestra</span>
         <img src="{{ '/assets/heavyduty.png' | relative_url }}" alt="Guía de entrenamiento Heavy Duty" class="featured-image">
         <div class="article-card-content">
           <h3>Guía Completa: Heavy Duty</h3>
@@ -207,7 +188,6 @@ description: Una colección de guías y sistemas 'oro puro' para dominar idiomas
 
       <!-- Caso de Éxito Francés (Placeholder) -->
       <a href="#" class="article-card">
-        <span class="tag caso-exito">Caso de Éxito</span>
         <img src="{{ '/assets/french.png' | relative_url }}" alt="Progreso en idioma francés" class="featured-image">
         <div class="article-card-content">
           <h3>De cero a ver series sin subtitulos y leer libros enteros</h3>
@@ -219,7 +199,6 @@ description: Una colección de guías y sistemas 'oro puro' para dominar idiomas
 
       <!-- Artículo del Antimétodo -->
       <a href="#" class="article-card">
-        <span class="tag antimetodo">Antimétodo</span>
         <img src="{{ '/assets/adul.png' | relative_url }}" alt="Adultos aprendiendo idiomas" class="featured-image">
         <div class="article-card-content">
           <h3>Los adultos son mejores aprendiendo idiomas que los niños</h3>
