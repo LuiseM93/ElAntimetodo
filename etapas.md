@@ -85,6 +85,7 @@ description: Explora en detalle las 4 etapas del Antimétodo, desde la preparaci
     <h1>Las Etapas del Antimétodo</h1>
     <p class="subtitle" style="font-size: 1.2em; color: var(--secondary-color);">Un camino claro hacia la fluidez natural.</p>
     <p>El Antimétodo se divide en etapas progresivas, diseñadas para llevarte de la mano desde los conceptos básicos hasta la comunicación efectiva. Cada etapa se enfoca en habilidades específicas, construyendo una base sólida para la siguiente.</p>
+    <p>Además, para cuando hayas completado tu viaje, hemos preparado una <strong><a href="#guia-certificacion">Guía Completa para la Certificación Oficial</a></strong>, demostrando que El Antimétodo te cubre desde el día uno hasta tu validación profesional.</p>
     <p style="margin-top:1rem; font-style:italic; color:var(--text-light-color);">Para una guía más detallada sobre cómo organizar tu tiempo en cada etapa y ejemplos prácticos, visita nuestra sección de <a href="{{ '/rutinas' | relative_url }}">Rutinas</a>. Si tienes dudas, la sección de <a href="{{ '/faq' | relative_url }}">Preguntas Frecuentes (FAQ)</a> tiene muchas respuestas. Y para herramientas específicas, ¡no olvides consultar nuestros <a href="{{ '/recursos' | relative_url }}">Recursos</a>!</p>
   </section>
 
@@ -253,10 +254,17 @@ description: Explora en detalle las 4 etapas del Antimétodo, desde la preparaci
       <li class="challenge"><strong>Miedo a Equivocarse / "Pánico Escénico":</strong> Recuerda que todos los aprendices pasan por esto. El Antimétodo te ha preparado bien. Tu comprensión es alta. ¡Lánzate! Cuanto más practiques, menos miedo tendrás.</li>
       <li class="challenge"><strong>"No se me ocurren las palabras cuando quiero hablar":</strong> Es normal. Tu vocabulario activo aún se está desarrollando. Sigue con el input y, al hablar, no tengas miedo de parafrasear o usar palabras más simples si no recuerdas la exacta.</li>
     </ul>
-  </section>
+    </section>
+<!-- GUÍA DE CERTIFICACIÓN -->
+<section id="guia-certificacion" class="etapa-section">
+  <img src="{{ '/assets/images/antimetodo_cert.png' | relative_url }}" alt="Certificación Oficial de El Antimétodo" class="etapa-header-image">
+  <div class="center-h2-container"><h2>¿Y Después? Convierte tu Fluidez en un Certificado Oficial</h2></div>
+  
+  <p>Has completado el ciclo de El Antimétodo y has alcanzado la fluidez. Si tu siguiente objetivo es validar esta habilidad para fines académicos o profesionales, hemos creado una guía completa para ti. Aprende a 'hackear' los exámenes oficiales y a traducir tu fluidez en un certificado reconocido.</p>
+  
+  <div style="text-align: center; margin-top: 2rem;">
+    <a href="{{ '/guia-certificacion' | relative_url }}" class="btn btn-primary" style="font-size: 1.1em;">Ir a la Guía de Certificación</a>
+  </div>
+</section>
 <section class="content-section" style="margin-top: 3rem; text-align:center; background-color: #f0e6f6; border-top: 2px solid var(--primary-color);">
-    <h2 class="section-title" style="border-bottom: none; margin-bottom: 1rem;">¿No Sabes por Dónde Empezar?</h2>
-    <p style="font-size: 1.1em; color: var(--text-light-color); margin-bottom:1.5rem;">Si ya tienes conocimientos previos del idioma y quieres una recomendación personalizada sobre en qué etapa del Antimétodo enfocarte, ¡nuestra guía con IA te puede ayudar!</p>
-    <a href="{{ '/test-ubicacion' | relative_url }}" class="btn btn-primary" style="font-size: 1.1em;">Descubre tu Etapa Ideal con IA</a>
-  </section>
 </main>
