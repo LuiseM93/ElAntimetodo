@@ -1,6 +1,8 @@
 # Sección 0: ¡Felicidades, lo Lograste!
 
-![Antimetodo imagen celebración](/assets/antimetodo_cert.png)
+<div style="text-align: center; margin-bottom: 1rem;">
+    <img src="{{ '/assets/antimetodo_cert.png' | relative_url }}" alt="Antimetodo imagen celebración" style="max-width: 50%; height: auto; border: 3px solid var(--light-purple-color); border-radius: 8px; box-shadow: 0 4px 10px rgba(74, 20, 140, 0.2);">
+</div>
 
 ## Has Roto las Reglas. Has Conquistado el Idioma. Ahora, Consigue el Sello Oficial.
 
@@ -18,7 +20,9 @@ No te preocupes. No vamos a volver a los libros de texto aburridos. Esta guía t
 
 # Sección 1: El Mapa de las Certificaciones: Elige tu Misión
 
-![Niveles](/assets/niveles.jpg)
+<div style="text-align: center; margin-bottom: 1rem;">
+    <img src="{{ '/assets/niveles.jpg' | relative_url }}" alt="Niveles" style="max-width: 50%; height: auto; border: 3px solid var(--light-purple-color); border-radius: 8px; box-shadow: 0 4px 10px rgba(74, 20, 140, 0.2);">
+</div>
 
 ## No todos los certificados son iguales. Elegir el correcto desde el principio te ahorrará cientos de horas y miles de pesos. Aquí tienes el mapa para navegar el mundo de las certificaciones como un experto.
 
@@ -73,7 +77,9 @@ Aquí está tu arsenal. Elige tu arma según el idioma y el objetivo.
 
 # Sección 2: El Diagnóstico de El Antimétodo: Mide tu Poder Real
 
-![Medidor de poder o gráfico de análisis](/assets/diagnostico-poder.png)
+<div style="text-align: center; margin-bottom: 1rem;">
+    <img src="{{ '/assets/diagnostico-poder.png' | relative_url }}" alt="Medidor de poder o gráfico de análisis" style="max-width: 50%; height: auto; border: 3px solid var(--light-purple-color); border-radius: 8px; box-shadow: 0 4px 10px rgba(74, 20, 140, 0.2);">
+</div>
 
 ## Antes de lanzarte a la batalla (y pagar la inscripción), necesitas saber cuál es tu nivel de poder actual.
 
@@ -105,7 +111,9 @@ Aquí tienes los mejores recursos, directos de las fuentes oficiales.
 
 # Sección 3: El Gimnasio de Entrenamiento: Domina la Mecánica del Examen
 
-![Cerebro levantando pesas o un dojo](/assets/gimnasio-entrenamiento.png)
+<div style="text-align: center; margin-bottom: 1rem;">
+    <img src="{{ '/assets/gimnasio-entrenamiento.png' | relative_url }}" alt="Cerebro levantando pesas o un dojo" style="max-width: 50%; height: auto; border: 3px solid var(--light-purple-color); border-radius: 8px; box-shadow: 0 4px 10px rgba(74, 20, 140, 0.2);">
+</div>
 
 ## ¿Hiciste el simulacro y el resultado no fue el que esperabas? No te preocupes. Este es el momento en que nos volvemos tácticos.
 
@@ -167,7 +175,9 @@ La pregunta es: [PEGA AQUÍ LA PREGUNTA/TEMA DEL ENSAYO].
 
 # Sección 4: Plan de Ataque de 4 Semanas: El Sprint Final
 
-![Línea de salida o un cohete despegando](/assets/sprint-final.png)
+<div style="text-align: center; margin-bottom: 1rem;">
+    <img src="{{ '/assets/sprint-final.png' | relative_url }}" alt="Línea de salida o un cohete despegando" style="max-width: 50%; height: auto; border: 3px solid var(--light-purple-color); border-radius: 8px; box-shadow: 0 4px 10px rgba(74, 20, 140, 0.2);">
+</div>
 
 ## Has llegado. Tu nivel de idioma es sólido. Ahora es el momento de consolidar todo tu poder y canalizarlo para el día de la prueba.
 
@@ -208,7 +218,9 @@ Este no es un plan de estudio, es un **plan de rendimiento.**
 
 # Conclusión: Eres Más que un Certificado
 
-![Camino que se pierde en el horizonte](/assets/conclusion-viaje.png)
+<div style="text-align: center; margin-bottom: 1rem;">
+    <img src="{{ '/assets/conclusion-viaje.png' | relative_url }}" alt="Camino que se pierde en el horizonte" style="max-width: 50%; height: auto; border: 3px solid var(--light-purple-color); border-radius: 8px; box-shadow: 0 4px 10px rgba(74, 20, 140, 0.2);">
+</div>
 
 ## Has llegado al final de la guía y al umbral de tu objetivo.
 
