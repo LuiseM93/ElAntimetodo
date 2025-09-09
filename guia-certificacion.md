@@ -112,7 +112,7 @@ Aquí tienes los mejores recursos, directos de las fuentes oficiales.
 # Sección 3: El Gimnasio de Entrenamiento: Domina la Mecánica del Examen
 
 <div style="text-align: center; margin-bottom: 1rem;">
-    <img src="{{ '/assets/gimnasio-entrenamiento.png' | relative_url }}" alt="Cerebro levantando pesas o un dojo" style="max-width: 50%; height: auto; border: 3px solid var(--light-purple-color); border-radius: 8px; box-shadow: 0 4px 10px rgba(74, 20, 140, 0.2);">
+    <img src="{{ '/assets/gimnasio-entrenamiento.jpg' | relative_url }}" alt="Cerebro levantando pesas o un dojo" style="max-width: 50%; height: auto; border: 3px solid var(--light-purple-color); border-radius: 8px; box-shadow: 0 4px 10px rgba(74, 20, 140, 0.2);">
 </div>
 
 ## ¿Hiciste el simulacro y el resultado no fue el que esperabas? No te preocupes. Este es el momento en que nos volvemos tácticos.
