@@ -267,4 +267,8 @@ description: Explora en detalle las 4 etapas del Antimétodo, desde la preparaci
   </div>
 </section>
 <section class="content-section" style="margin-top: 3rem; text-align:center; background-color: #f0e6f6; border-top: 2px solid var(--primary-color);">
+    <h2 class="section-title" style="border-bottom: none; margin-bottom: 1rem;">¿No Sabes por Dónde Empezar?</h2>
+    <p style="font-size: 1.1em; color: var(--text-light-color); margin-bottom:1.5rem;">Si ya tienes conocimientos previos del idioma y quieres una recomendación personalizada sobre en qué etapa del Antimétodo enfocarte, ¡nuestra guía con IA te puede ayudar!</p>
+    <a href="{{ '/test-ubicacion' | relative_url }}" class="btn btn-primary" style="font-size: 1.1em;">Descubre tu Etapa Ideal con IA</a>
+</section>
 </main>
