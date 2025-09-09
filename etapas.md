@@ -257,7 +257,10 @@ description: Explora en detalle las 4 etapas del Antimétodo, desde la preparaci
     </section>
 <!-- GUÍA DE CERTIFICACIÓN -->
 <section id="guia-certificacion" class="etapa-section">
-  <img src="{{ '/assets/antimetodo_cert.png' | relative_url }}" alt="Certificación Oficial de El Antimétodo" class="etapa-header-image">
+  <div style="text-align: center; margin-bottom: 1rem;">
+    <img src="{{ '/assets/antimetodo_cert.png' | relative_url }}" alt="Certificación Oficial de El Antimétodo"
+         style="max-width: 200px; height: auto; border: 3px solid var(--light-purple-color); border-radius: 8px; box-shadow: 0 4px 10px rgba(74, 20, 140, 0.2);">
+  </div>
   <div class="center-h2-container"><h2>¿Y Después? Convierte tu Fluidez en un Certificado Oficial</h2></div>
   
   <p>Has completado el ciclo de El Antimétodo y has alcanzado la fluidez. Si tu siguiente objetivo es validar esta habilidad para fines académicos o profesionales, hemos creado una guía completa para ti. Aprende a 'hackear' los exámenes oficiales y a traducir tu fluidez en un certificado reconocido.</p>
