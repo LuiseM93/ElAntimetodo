@@ -1,6 +1,6 @@
 # Sección 0: ¡Felicidades, lo Lograste!
 
-![Persona celebrando en la cima de una montaña](/assets/images/celebracion-logro.png)
+![Antimetodo imagen celebración](/assets/images/antimetodo_cert.png)
 
 ## Has Roto las Reglas. Has Conquistado el Idioma. Ahora, Consigue el Sello Oficial.
 
