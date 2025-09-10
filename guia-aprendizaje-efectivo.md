@@ -108,7 +108,7 @@ description: Una guía científica y paso a paso para aprender y estudiar cualqu
 
   <h2 style="color: var(--primary-color);">Capítulo 1: La Planificación Estratégica 🗓️</h2>
   <p>
-    El aprendizaje efectivo no ocurre por accidente. Requiere un plan. Tu agenda es tu cuartel general para organizar la conquista del conocimiento.
+    El aprendizaje efectivo no ocurre por accidente. Requiere un plan. Tu agenda es tu cuartel general para organizar la conquista del conocimiento (Te recomendamos comprar una agenda física para llevar todos tus registros de tus futuros repasos, temas a aprender,etc...).
   </p>
   <div class="action-manual">
     <h4>🔥 El Manual de Acción: Cómo Aplicarlo Paso a Paso</h4>
