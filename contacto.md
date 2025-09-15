@@ -115,7 +115,7 @@ description: Conoce a José Luis Hernández, el creador de El Antimétodo. Descu
   </section>
 
   <section class="contact-section-card">
-    <h2>¿Quieres Contactarme o Unirte a la Comunidad?</h2>
+    <h2>¿Quieres Contactarme o Seguir el Proyecto?</h2>
     <p style="font-size: 1.1em; margin-top: 1rem; line-height: 1.7; color: var(--text-light-color);">
       Para cualquier consulta, sugerencia, o para unirte a la conversación, estas son las mejores vías:
     </p>
