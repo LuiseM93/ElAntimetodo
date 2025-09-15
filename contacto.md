@@ -98,11 +98,15 @@ description: Conoce a José Luis Hernández, el creador de El Antimétodo. Descu
     <div class="about-me-text">
       <h2 style="margin-top:0; font-size: 1.8em;">¡Hola! Soy José Luis</h2>
       <p style="font-size: 1.1em; line-height: 1.7; color: var(--text-light-color);">
+        Un joven de 17 años de Tepic, Nayarit.
+        <br><br>
         Los idiomas no se estudian, se adquieren. Quien te diga lo contrario te está vendiendo una mentira.
         <br><br>
         Creo firmemente que cualquiera puede adquirir cualquier idioma siempre que aplique la metodología correcta y sea constante. El Antimétodo es la manera científica, natural, divertida, eficiente y flexible de adquirir idiomas. No es marketing, es la verdad.
         <br><br>
         Yo partí desde cero con el francés, no sabía ni lo más básico. Mi proceso fue... "único" e "irrepetible". Recuerdo llegar a mi casa y ponerme a jugar Cyberpunk 2077 para disfrutar al máximo su doblaje en francés. Recuerdo el momento en que más disfruté viendo Hajime no Ippo o Neon Genesis Evangelion sin subtítulos. Fue, como lo dije, "único" e "irrepetible", adquiriendo el idioma de la manera más eficaz, natural y divertida posible.
+        <br><br>
+        Y por supuesto, cada día utilizo mi app de El Antimétodo y mi filosofía para continuar mi propio viaje con los idiomas.
         <br><br>
         Tú también lo puedes lograr. ¡Solo tienes que intentarlo!
       </p>
