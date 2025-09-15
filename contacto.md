@@ -36,7 +36,8 @@ description: Conoce a José Luis Hernández, el creador de El Antimétodo. Descu
 }
 
 .contact-section-card {
-  margin-bottom: 3rem; 
+  max-width: 800px;
+  margin: 0 auto 3rem;
   padding: 2.5rem;
   background-color: var(--card-background); 
   border-radius: 10px;
