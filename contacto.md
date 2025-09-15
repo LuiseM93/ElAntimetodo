@@ -5,6 +5,9 @@ description: Conoce a José Luis Hernández, el creador de El Antimétodo. Descu
 ---
 
 <style>
+.content-wrapper {
+  max-width: 1100px;
+}
 .about-me-container {
   display: flex;
   flex-wrap: wrap;
@@ -119,7 +122,7 @@ description: Conoce a José Luis Hernández, el creador de El Antimétodo. Descu
       </a>
       <a href="https://www.facebook.com/people/El-Antimétodo/61579943335092" class="btn" target="_blank" rel="noopener noreferrer" style="background-color: var(--facebook-color); color: white !important; font-size: 1.1em;">
         <svg class="facebook-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" style="width: 22px; height: 22px; margin-right: 8px; vertical-align: middle;"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
-        Comunidad en Facebook
+        Facebook de El Antimétodo
       </a>
       <a href="mailto:joseluishernandeztareas@gmail.com" class="email-link">
         <svg class="email-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm0 2l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"/></svg>
