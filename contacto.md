@@ -99,7 +99,7 @@ description: Conoce a José Luis Hernández, el creador de El Antimétodo. Descu
     <div class="about-me-text">
       <h2 style="margin-top:0; font-size: 1.8em;">¡Hola! Soy José Luis</h2>
       <p style="font-size: 1.1em; line-height: 1.7; color: var(--text-light-color);">
-        Un joven de 17 años de Tepic, Nayarit.
+        Un joven de 17 años de Tepic, Nayarit. Estudiante de Economía en la UAN
         <br><br>
         Los idiomas no se estudian, se adquieren. Quien te diga lo contrario te está vendiendo una mentira.
         <br><br>
