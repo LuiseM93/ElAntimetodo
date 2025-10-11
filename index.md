@@ -8,9 +8,9 @@ description: Aprende idiomas de forma natural y divertida con El Antimétodo. Si
   <div class="hero-content">
     <h1>El Antimétodo</h1>
     <p class="subtitle">Aprende idiomas <strong>sin gramática</strong>, de forma <strong>natural, divertida y eficiente</strong></p>
-    <div class="hero-buttons" style="margin-top: 1.5rem; margin-bottom: 2.5rem; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
-      <a href="{{ '/etapas' | relative_url }}" class="btn">Etapas</a>
-      <a href="{{ '/test-ubicacion' | relative_url }}" class="btn btn-primary">Test de ubicación</a>
+    <div class="hero-buttons" style="margin-top: 1rem; margin-bottom: 2.5rem; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+      <a href="{{ '/etapas' | relative_url }}" class="btn">Explora las etapas</a>
+      <a href="{{ '/test-ubicacion' | relative_url }}" class="btn">Descubre tu etapa</a>
     </div>
   </div>
   <div class="hero-cards-container">
