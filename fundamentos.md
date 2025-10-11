@@ -237,6 +237,11 @@ description: Descubre la base teórica del Antimétodo, incluyendo el input comp
   color: var(--primary-color);
 }
 
+.references-list a {
+  overflow-wrap: break-word;
+  word-wrap: break-word; /* Fallback */
+}
+
 </style>
 
 <main class="content-wrapper">
@@ -498,7 +503,7 @@ description: Descubre la base teórica del Antimétodo, incluyendo el input comp
 
   <section class="content-section">
     <h2 class="section-title">Referencias</h2>
-    <ul style="list-style-type: none; padding-left: 0; font-size: 1em;">
+    <ul class="references-list" style="list-style-type: none; padding-left: 0; font-size: 1em;">
       <li style="margin-bottom: 1rem;">Jiménez Gómez, I., & Morales Vázquez, E. (2024). <em>Materiales auténticos facilitadores del aprendizaje de inglés como L2</em>. Estudios y Perspectivas Revista Científica y Académica, 4(3). Recuperado de: <a href="https://estudiosyperspectivas.org/index.php/EstudiosyPerspectivas/article/download/575/897/3235">https://estudiosyperspectivas.org/index.php/EstudiosyPerspectivas/article/download/575/897/3235</a></li>
       <li style="margin-bottom: 1rem;">Faiz, A. (2023). <em>The Impact of Integrating Authentic Materials on Learner Engagement and Language Development</em>. TRANSFORMATIONAL LANGUAGE, LITERATURE, AND TECHNOLOGY OVERVIEW IN LEARNING (TRANSTOOL), 2(4). Recuperado de: <a href="https://ojs.transpublika.com/index.php/TRANSTOOL/article/download/1378/1187/10079">https://ojs.transpublika.com/index.php/TRANSTOOL/article/download/1378/1187/10079</a></li>
       <li style="margin-bottom: 1rem;">Al-Shumaimeri, Y. A. N. (2007). <em>Immersion versus traditional instruction on the reading comprehension and vocabulary acquisition of EFL students</em>. Research in Second Language Acquisition and English Language Teaching (R-SELTL), 3(2). Recuperado de: <a href="https://rseltl.pierreonline.uk/index.php/J/article/view/17">https://rseltl.pierreonline.uk/index.php/J/article/view/17</a></li>
