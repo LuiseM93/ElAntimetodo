@@ -255,6 +255,11 @@ description: Explora en detalle las 4 etapas del Antimétodo, desde la preparaci
       <li class="challenge"><strong>"No se me ocurren las palabras cuando quiero hablar":</strong> Es normal. Tu vocabulario activo aún se está desarrollando. Sigue con el input y, al hablar, no tengas miedo de parafrasear o usar palabras más simples si no recuerdas la exacta.</li>
     </ul>
     </section>
+<section class="content-section" style="margin-top: 3rem; text-align:center; background-color: #f0e6f6; border-top: 2px solid var(--primary-color);">
+    <h2 class="section-title" style="border-bottom: none; margin-bottom: 1rem;">¿No Sabes por Dónde Empezar?</h2>
+    <p style="font-size: 1.1em; color: var(--text-light-color); margin-bottom:1.5rem;">Si ya tienes conocimientos previos del idioma y quieres una recomendación personalizada sobre en qué etapa del Antimétodo enfocarte, ¡nuestra guía con IA te puede ayudar!</p>
+    <a href="{{ '/test-ubicacion' | relative_url }}" class="btn btn-primary" style="font-size: 1.1em;">Descubre tu Etapa Ideal con IA</a>
+</section>
 <!-- GUÍA DE CERTIFICACIÓN -->
 <section id="guia-certificacion" class="etapa-section">
   <div style="text-align: center; margin-bottom: 1rem;">
@@ -268,10 +273,5 @@ description: Explora en detalle las 4 etapas del Antimétodo, desde la preparaci
   <div style="text-align: center; margin-top: 2rem;">
     <a href="{{ '/guia-certificacion' | relative_url }}" class="btn btn-primary" style="font-size: 1.1em;">Ir a la Guía de Certificación</a>
   </div>
-</section>
-<section class="content-section" style="margin-top: 3rem; text-align:center; background-color: #f0e6f6; border-top: 2px solid var(--primary-color);">
-    <h2 class="section-title" style="border-bottom: none; margin-bottom: 1rem;">¿No Sabes por Dónde Empezar?</h2>
-    <p style="font-size: 1.1em; color: var(--text-light-color); margin-bottom:1.5rem;">Si ya tienes conocimientos previos del idioma y quieres una recomendación personalizada sobre en qué etapa del Antimétodo enfocarte, ¡nuestra guía con IA te puede ayudar!</p>
-    <a href="{{ '/test-ubicacion' | relative_url }}" class="btn btn-primary" style="font-size: 1.1em;">Descubre tu Etapa Ideal con IA</a>
 </section>
 </main>
