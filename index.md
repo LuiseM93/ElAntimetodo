@@ -8,7 +8,7 @@ description: Aprende idiomas de forma natural y divertida con El Antimétodo. Si
   <div class="hero-content">
     <h1>El Antimétodo</h1>
     <p class="subtitle">Aprende idiomas <strong>sin gramática</strong>, de forma <strong>natural, divertida y eficiente</strong></p>
-    <div class="hero-buttons" style="margin-top: 1rem; margin-bottom: 2.5rem; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+    <div class="hero-buttons" style="margin-top: 0; margin-bottom: 2.5rem; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
       <a href="{{ '/etapas' | relative_url }}" class="btn">Explora las etapas</a>
       <a href="{{ '/test-ubicacion' | relative_url }}" class="btn">Descubre tu etapa</a>
     </div>
@@ -85,7 +85,7 @@ description: Aprende idiomas de forma natural y divertida con El Antimétodo. Si
 /* Estilos del Hero Section (existentes) */
 .hero-section { text-align: center; padding: 2.5rem 1rem 1.8rem 1rem; margin-bottom: 40px; background-color: var(--card-background); border-radius: 12px; box-shadow: 0 8px 25px rgba(74, 20, 140, 0.1); border: 1px solid var(--light-purple-color); }
 .hero-content h1 { font-family: var(--font-primary); border-bottom: none; font-size: 2.8em; margin-bottom: 0.25em; color: var(--primary-color); font-weight: 700; letter-spacing: -1px; }
-.hero-content .subtitle { font-family: var(--font-secondary); font-size: 1.25em; color: var(--secondary-color); margin-bottom: 2.2rem; font-weight: 400; }
+.hero-content .subtitle { font-family: var(--font-secondary); font-size: 1.25em; color: var(--secondary-color); margin-bottom: 1.2rem; font-weight: 400; }
 .hero-cards-container { display: flex; gap: 25px; margin-top: 1.8rem; justify-content: center; flex-wrap: wrap; }
 .hero-card { background: linear-gradient(145deg, var(--card-background), #fdfcff); padding: 22px 28px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.07); flex: 1; max-width: 310px; border-top: 4px solid var(--secondary-color); transition: transform 0.3s ease, box-shadow 0.3s ease; display: flex; flex-direction: column; align-items: center; }
 .hero-card:hover { transform: translateY(-8px); box-shadow: 0 10px 20px rgba(123, 31, 162, 0.15); }
