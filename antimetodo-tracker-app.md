@@ -201,6 +201,16 @@ description: Mide tu progreso, compite con amigos y únete a una comunidad que a
     </div>
   </section>
 
+  <!-- Video Tutorial Section -->
+  <section class="video-tutorial-section" style="text-align: center; padding: 4rem 1.5rem; background-color: var(--light-purple-color); margin-left: calc(-50vw + 50%); margin-right: calc(-50vw + 50%); width: 100vw;">
+    <div style="max-width: 1100px; margin: 0 auto;">
+      <h2 style="border-bottom: none; margin-bottom: 2.5rem;">Mira cómo funciona en 1 minuto</h2>
+      <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000; border-radius: 12px; box-shadow: var(--shadow-lg); margin: 0 auto; max-width: 800px;">
+        <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1129093756001734%2F&show_text=false&width=560&t=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+      </div>
+    </div>
+  </section>
+
   <section class="how-it-works">
     <div style="max-width: 1100px; margin: 0 auto;">
       <h2>Funcionalidades Clave</h2>
