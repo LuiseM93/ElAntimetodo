@@ -204,7 +204,7 @@ description: Mide tu progreso, compite con amigos y únete a una comunidad que a
   </section>
 
   <section class="how-it-works">
-    <h2 style="text-align: center; border-bottom: none; margin-top: 0; margin-bottom: 2rem;">Mira la App en Acción (Tutorial)</h2>
+    <h2 style="text-align: center; border-bottom: none; margin-top: 0; margin-bottom: 2rem;">Tutorial Completo de la App</h2>
     <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000; border-radius: 12px; box-shadow: var(--shadow-lg); margin: 0 auto; max-width: 800px;">
       <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1129093756001734%2F&show_text=false&width=560&t=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
     </div>
