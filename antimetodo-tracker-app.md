@@ -240,7 +240,7 @@ description: Mide tu progreso, compite con amigos y únete a una comunidad que a
           </ul>
         </div>
         <div class="feature-image">
-          <img src="{{ '/assets/supremacy.jpg' | relative_url }}" alt="Comunidad de El Antimétodo">
+          <img src="{{ '/assets/feedapp.png' | relative_url }}" alt="Comunidad de El Antimétodo">
         </div>
       </div>
       
