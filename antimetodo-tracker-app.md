@@ -49,11 +49,13 @@ description: Mide tu progreso, compite con amigos y únete a una comunidad que a
 
 /* How it Works Section */
 .how-it-works {
-  padding: 3rem 1.5rem;
+  padding: 2.5rem 1.5rem;
   background-color: var(--light-purple-color);
-  margin-left: calc(-50vw + 50%);
-  margin-right: calc(-50vw + 50%);
-  width: 100vw;
+  border-radius: 12px;
+  margin: 3rem auto;
+  max-width: 900px;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border-purple-color);
 }
 .how-it-works h2 {
     text-align: center;
@@ -202,29 +204,9 @@ description: Mide tu progreso, compite con amigos y únete a una comunidad que a
   </section>
 
   <section class="how-it-works">
-    <div style="max-width: 1100px; margin: 0 auto;">
-      <h2 style="border-bottom: none; margin-bottom: 2rem; text-align: center;">Tutorial Completo de la App</h2>
-      <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000; border-radius: 12px; box-shadow: var(--shadow-lg); margin: 0 auto 4rem auto; max-width: 800px;">
-        <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1129093756001734%2F&show_text=false&width=560&t=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
-      </div>
-      <h2>Funcionalidades Clave</h2>
-      <div class="steps-container">
-        <div class="step-card">
-          <img src="{{ '/assets/rutinas-principio-consistencia.png' | relative_url }}" alt="Icono de registrar sin miedo">
-          <h3>1. Registra Sin Miedo</h3>
-          <p>Nuestro temporizador persistente guarda tu progreso aunque cierres la página. Tu esfuerzo nunca se pierde.</p>
-        </div>
-        <div class="step-card">
-          <img src="{{ '/assets/rutinas-planificacion-general.png' | relative_url }}" alt="Icono de analizar y conquistar">
-          <h3>2. Analiza y Conquista</h3>
-          <p>Con gráficos y estadísticas avanzadas, entiende tus patrones y visualiza tu camino hacia la fluidez.</p>
-        </div>
-        <div class="step-card">
-          <img src="{{ '/assets/logo-social.jpg' | relative_url }}" alt="Icono de competir y compartir">
-          <h3>3. Compite y Comparte</h3>
-          <p>Únete a una comunidad, sigue a tus amigos, compite en las tablas de clasificación y comparte tus logros.</p>
-        </div>
-      </div>
+    <h2 style="text-align: center; border-bottom: none; margin-top: 0; margin-bottom: 2rem;">Mira la App en Acción (Tutorial)</h2>
+    <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000; border-radius: 12px; box-shadow: var(--shadow-lg); margin: 0 auto; max-width: 800px;">
+      <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1129093756001734%2F&show_text=false&width=560&t=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
     </div>
   </section>
 
