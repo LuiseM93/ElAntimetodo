@@ -86,6 +86,17 @@ description: Artículos que desafían lo que creías saber sobre aprender idioma
 
     <h3 style="margin-top: 3rem; text-align: center; color: var(--secondary-color);">Artículos Recientes:</h3>
     <div class="article-card-list">
+      <!-- Artículo: El Experimento One Piece -->
+      <a href="{{ '/experimento-one-piece' | relative_url }}" class="article-card">
+        <img src="{{ '/assets/one-piece.jpg' | relative_url }}" alt="El Experimento One Piece" class="featured-image">
+        <div class="article-card-content">
+          <h3>El Experimento One Piece: De Cero a Entender Japonés</h3>
+          <p class="excerpt">Un análisis teórico sobre cuánto japonés se podría aprender utilizando únicamente el anime One Piece como fuente de input comprensible, explorando las horas necesarias y el impacto del "efecto bola de nieve" en el aprendizaje.</p>
+          <span class="read-more">Leer más →</span>
+          <p class="article-meta">Publicado: 3 de Enero de 2026</p>
+        </div>
+      </a>
+
       <a href="{{ '/guia-aprendizaje-efectivo' | relative_url }}" class="article-card">
         <img src="{{ '/assets/estudiar-guia.png' | relative_url }}" alt="Libro de guia de estudio" class="featured-image">
         <div class="article-card-content">
@@ -104,17 +115,6 @@ description: Artículos que desafían lo que creías saber sobre aprender idioma
           <p class="excerpt">En contraste con lo que siempre se ha dicho, los adultos pueden aprender un idioma mucho más rápido que un niño. Mientras ellos tardan años sin siquiera saber leer o escribir, tú puedes avanzar en meses aplicando El Antimétodo...</p>
           <span class="read-more">Leer más →</span>
           <p class="article-meta">Publicado: Próximamente</p>
-        </div>
-      </a>
-
-      <!-- Artículo: El Experimento One Piece -->
-      <a href="{{ '/experimento-one-piece' | relative_url }}" class="article-card">
-        <img src="{{ '/assets/one piece.jpg' | relative_url }}" alt="El Experimento One Piece" class="featured-image">
-        <div class="article-card-content">
-          <h3>El Experimento One Piece: De Cero a Entender Japonés</h3>
-          <p class="excerpt">Un análisis teórico sobre cuánto japonés se podría aprender utilizando únicamente el anime One Piece como fuente de input comprensible, explorando las horas necesarias y el impacto del "efecto bola de nieve" en el aprendizaje.</p>
-          <span class="read-more">Leer más →</span>
-          <p class="article-meta">Publicado: 3 de Enero de 2026</p>
         </div>
       </a>
 

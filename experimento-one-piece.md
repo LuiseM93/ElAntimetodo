@@ -55,7 +55,7 @@ blockquote {
     <p class="subtitle" style="font-size: 1.2em; color: var(--secondary-color);">De Cero a Entender Japonés SOLO con One Piece</p>
   </section>
   
-  <img src="{{ '/assets/one piece.jpg' | relative_url }}" alt="El Experimento One Piece" class="article-header-image">
+  <img src="{{ '/assets/one-piece.jpg' | relative_url }}" alt="El Experimento One Piece" class="article-header-image">
 
   <section>
     <p>Estaba pensando en ver One Piece el otro día y creo que todos se asustan al ver que tiene un total de 1155 episodios. Entonces, se me abrió la pregunta: si solo utilizaras One Piece como input para aprender japonés, ¿cuánto aprenderías?</p>
