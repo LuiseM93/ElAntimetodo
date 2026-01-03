@@ -84,7 +84,7 @@ description: Artículos que desafían lo que creías saber sobre aprender idioma
       Prepárate para cuestionarlo todo y reaprender desde cero.
     </p>
 
-    <h3 style="margin-top: 3rem; text-align: center; color: var(--secondary-color);">Próximo Artículo:</h3>
+    <h3 style="margin-top: 3rem; text-align: center; color: var(--secondary-color);">Artículos Recientes:</h3>
     <div class="article-card-list">
       <a href="{{ '/guia-aprendizaje-efectivo' | relative_url }}" class="article-card">
         <img src="{{ '/assets/estudiar-guia.png' | relative_url }}" alt="Libro de guia de estudio" class="featured-image">
@@ -107,7 +107,16 @@ description: Artículos que desafían lo que creías saber sobre aprender idioma
         </div>
       </a>
 
-      <!-- Aquí podrías añadir más tarjetas de ejemplo en el futuro si quieres mostrar más de uno -->
+      <!-- Artículo: El Experimento One Piece -->
+      <a href="{{ '/experimento-one-piece' | relative_url }}" class="article-card">
+        <img src="{{ '/assets/one piece.jpg' | relative_url }}" alt="El Experimento One Piece" class="featured-image">
+        <div class="article-card-content">
+          <h3>El Experimento One Piece: De Cero a Entender Japonés</h3>
+          <p class="excerpt">Un análisis teórico sobre cuánto japonés se podría aprender utilizando únicamente el anime One Piece como fuente de input comprensible, explorando las horas necesarias y el impacto del "efecto bola de nieve" en el aprendizaje.</p>
+          <span class="read-more">Leer más →</span>
+          <p class="article-meta">Publicado: 3 de Enero de 2026</p>
+        </div>
+      </a>
 
     </div>
   </section>
