@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "El Experimento One Piece: De Cero a Entender Japonés"
+image: /assets/one-piece.jpg
 description: "Un análisis teórico sobre cuánto japonés se podría aprender utilizando únicamente el anime One Piece como fuente de input comprensible."
 ---
 
@@ -92,6 +93,28 @@ blockquote {
     <h4>El Efecto "Bola de Nieve"</h4>
     <p>Ahora tenemos que considerar que empezamos a ver One Piece al terminar la primera etapa del Antimétodo. Al comienzo, no vamos a reconocer más que algunas palabras que vimos en Anki, y a veces ni eso, ya que es muy diferente tener vocabulario adquirido a tenerlo a corto plazo gracias a la repetición espaciada. Tuvimos que utilizar Anki para que, a la hora de empezar con One Piece, pudiéramos reconocer palabras y, con la repetición, adquirirlas.</p>
     <p>Esto va a generar un efecto "bola de nieve", en el que el input será cada vez más comprensible, y entre más comprensible, más rápido vamos a avanzar.</p>
+
+    ### Pasos Prácticos para Replicar el Experimento
+
+    Si te animas a intentarlo, aquí tienes las instrucciones y herramientas:
+
+    <h4 class="list-title">1. Aprende Hiragana y Katakana</h4>
+    <p>Primero, necesitas dominar los silabarios básicos del japonés. Puedes lograrlo con este mazo de Anki que incluye reglas mnemotécnicas para facilitar el aprendizaje:</p>
+    <p style="text-align: center;">
+      <a href="https://ankiweb.net/shared/info/576084877" target="_blank" rel="noopener noreferrer" class="btn">Anki: Hiragana y Katakana con Mnemotecnias</a>
+    </p>
+
+    <h4 class="list-title">2. Construye tu Vocabulario Inicial</h4>
+    <p>En cuanto termines lo anterior, empieza a usar este mazo de vocabulario frecuente. Recuerda que no es obligatorio terminarlo antes de empezar a ver One Piece; puedes ir avanzando en paralelo.</p>
+    <p style="text-align: center;">
+      <a href="https://ankiweb.net/shared/info/1196762551" target="_blank" rel="noopener noreferrer" class="btn">Anki: Kaishi 1.5k - Vocabulario Básico</a>
+    </p>
+
+    <h4 class="list-title">3. Inmersión Total en One Piece</h4>
+    <p>Finalmente, SOLO te falta ver One Piece con subtítulos en japonés (kanji). ¡Disfruta la magia del Antimétodo!</p>
+    <blockquote>
+      <strong>Nota:</strong> Recuerda que si lo ves con subtítulos en español, será una completa pérdida de tiempo para el objetivo de aprender el idioma.
+    </blockquote>
 
     <h3>Conclusión del Experimento Teórico</h3>
     <p>Mi conclusión de lo que pasaría es que, al comienzo, no vamos a reconocer más que algunas palabras muy aisladas. Pero lo que importa es el final: seríamos capaces de entender alrededor de un <strong>50-60%</strong> del contenido con subtítulos en kanji (mi cálculo pesimista al ser un idioma lejano).</p>
