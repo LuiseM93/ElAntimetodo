@@ -94,9 +94,8 @@ blockquote {
     <p>Ahora tenemos que considerar que empezamos a ver One Piece al terminar la primera etapa del Antimétodo. Al comienzo, no vamos a reconocer más que algunas palabras que vimos en Anki, y a veces ni eso, ya que es muy diferente tener vocabulario adquirido a tenerlo a corto plazo gracias a la repetición espaciada. Tuvimos que utilizar Anki para que, a la hora de empezar con One Piece, pudiéramos reconocer palabras y, con la repetición, adquirirlas.</p>
     <p>Esto va a generar un efecto "bola de nieve", en el que el input será cada vez más comprensible, y entre más comprensible, más rápido vamos a avanzar.</p>
 
-    ### Pasos Prácticos para Replicar el Experimento
-
-    Si te animas a intentarlo, aquí tienes las instrucciones y herramientas:
+    <h3>Pasos Prácticos para Replicar el Experimento</h3>
+    <p>Si te animas a intentarlo, aquí tienes las instrucciones y herramientas:</p>
 
     <h4 class="list-title">1. Aprende Hiragana y Katakana</h4>
     <p>Primero, necesitas dominar los silabarios básicos del japonés. Puedes lograrlo con este mazo de Anki que incluye reglas mnemotécnicas para facilitar el aprendizaje:</p>
