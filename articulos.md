@@ -76,14 +76,6 @@ description: Artículos que desafían lo que creías saber sobre aprender idioma
   </section>
 
   <section style="margin-bottom: 3rem;">
-    <h2 style="text-align: center; color: var(--primary-color);">🚧 ¡Sección de Artículos en Construcción! 🚧</h2>
-    <p style="text-align: center; font-size: 1.1em; margin-top: 1rem; line-height: 1.7;">
-      Muy pronto encontrarás aquí artículos que desafían todo lo que creías saber sobre aprender idiomas. Con un enfoque directo, natural y basado en la experiencia, El Antimétodo expone lo que realmente funciona —sin atajos vacíos, sin promesas falsas, sin métodos tradicionales.
-    </p>
-    <p style="text-align: center; font-size: 1.1em; margin-top: 0.5rem; line-height: 1.7;">
-      Prepárate para cuestionarlo todo y reaprender desde cero.
-    </p>
-
     <h3 style="margin-top: 3rem; text-align: center; color: var(--secondary-color);">Artículos Recientes:</h3>
     <div class="article-card-list">
       <!-- Artículo: Cómo Adquirir un Idioma el Triple de Rápido -->
@@ -91,7 +83,7 @@ description: Artículos que desafían lo que creías saber sobre aprender idioma
         <img src="{{ '/assets/openear.png' | relative_url }}" alt="Cómo Adquirir un Idioma el Triple de Rápido" class="featured-image">
         <div class="article-card-content">
           <h3>Cómo Adquirir un Idioma el Triple de Rápido y Acumular Horas Masivas</h3>
-          <p class="excerpt">Descubre el hack definitivo para triplicar tu tiempo de inmersión en un idioma, incluso si eres una persona ocupadísima. Aprovecha cada momento libre sin cambiar tu rutina.</p>
+          <p class="excerpt">Si eres una persona OCUPADÍSIMA y quieres aprender idiomas acumulando muchas horas fácilmente, este es el hack que tienes que saber. Te explico cómo aprovechar cada momento de tu día salvajemente para triplicar tu contacto con el idioma sin que nadie se dé cuenta.</p>
           <span class="read-more">Leer más →</span>
           <p class="article-meta">Publicado: 1 de Febrero de 2026</p>
         </div>

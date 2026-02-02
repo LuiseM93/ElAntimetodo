@@ -55,12 +55,9 @@ blockquote {
   <section style="text-align: center;">
     <h1>Cómo Adquirir un Idioma el Triple de Rápido</h1>
     <p class="subtitle" style="font-size: 1.2em; color: var(--secondary-color);">Y acumular muchísimas horas como persona ocupadísima</p>
-  </section>
-  
-  <img src="{{ '/assets/openear.png' | relative_url }}" alt="Audífonos de oído abierto" class="article-header-image">
-
-  <section>
-    <p>Si estás leyendo esto, probablemente te falta tiempo para aprender idiomas. En mi caso, estudio economía, hago tareas, leo en la biblioteca, voy al gimnasio y regulo mi nutrición y peso diario. Aun así, saco tiempo para aprender dos idiomas al mismo tiempo. El consejo habitual de "estudia 3 horas al día" parece inalcanzable para la mayoría.</p>
+        </section>
+        
+        <section>    <p>Si estás leyendo esto, probablemente te falta tiempo para aprender idiomas. En mi caso, estudio economía, hago tareas, leo en la biblioteca, voy al gimnasio y regulo mi nutrición y peso diario. Aun así, saco tiempo para aprender dos idiomas al mismo tiempo. El consejo habitual de "estudia 3 horas al día" parece inalcanzable para la mayoría.</p>
     <p>Sin embargo, con este artículo podrás incluso triplicar tus horas de contacto con el idioma fácilmente. Es algo que descubrí y te voy a explicar.</p>
     <p>Como leíste en <a href="{{ '/etapas' | relative_url }}">las etapas</a>, la inmersión pasiva es cuando prestas atención parcial al idioma. Un truco conocido, popularizado por <i>MattvsJapan</i>, es llevar un iPod enganchado a la camisa con audífonos de cable, siempre encendidos, para ponértelos en cualquier rato libre. Pero se me ocurrió una idea mejor.</p>
 
@@ -85,9 +82,6 @@ blockquote {
 
     <h3>Conclusión</h3>
     <p>Esto es algo que descubrí y que aplico a diario. POR EXPERIENCIA, PUEDO DECIR QUE PUEDES METER FÁCILMENTE 2 HORAS EXTRA (TIRANDO A LO BAJO) QUE NUNCA HUBIERAS TENIDO DE OTRA MANERA. A día de hoy, 1 de febrero de 2026, tengo 41 horas de inmersión pasiva. Iré actualizando el artículo con las horas que gane gracias a esto.</p>
-    <blockquote>
-        <strong>RESUMEN:</strong> Si eres una persona OCUPADÍSIMA y quieres aprender idiomas acumulando muchas horas fácilmente, este es el hack que tienes que saber. Te explico cómo aprovechar cada momento de tu día salvajemente para triplicar tu contacto con el idioma sin que nadie se dé cuenta.
-    </blockquote>
 
   </section>
 
