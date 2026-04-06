@@ -72,12 +72,12 @@ description: Aprende idiomas divirtiéndote: el método basado en input comprens
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
-    gap: 2rem;
+    gap: 3rem;
   }
   .hero-text {
-    flex: 1;
+    flex: 0 0 60%;
     text-align: left;
   }
   .hero-text h1 {
@@ -94,7 +94,7 @@ description: Aprende idiomas divirtiéndote: el método basado en input comprens
     color: var(--secondary-color);
   }
   .hero-image {
-    flex: 0 0 45%;
+    flex: 0 0 40%;
     text-align: right;
   }
   .hero-image img {
