@@ -14,7 +14,7 @@ description: Aprende idiomas divirtiéndote: el método basado en input comprens
         <a href="{{ '/test-ubicacion' | relative_url }}" class="btn btn-outline">Descubre tu etapa</a>
       </div>
       <p class="hero-microcopy">
-        ✓ Toma menos de 2 minutos • ✓ Sin tarjeta de crédito
+        ✓ Toma menos de 2 minutos • ✓ Completamente Gratis
       </p>
     </div>
     <div class="hero-image">
