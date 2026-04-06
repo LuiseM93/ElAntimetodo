@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Las Etapas del Antimétodo - Tu Camino a la Fluidez
-description: Explora en detalle las 4 etapas del Antimétodo, desde la preparación inicial y la inmersión total hasta la producción fluida del idioma.
+title: Las 4 Etapas a la Fluidez | El Antimétodo
+description: Tu hoja de ruta clara: desde la preparación inicial hasta la fluidez nativa. Descubre qué hacer en cada etapa para dominar cualquier idioma.
 ---
 
 <style>

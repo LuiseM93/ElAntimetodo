@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Recursos y Herramientas - El Antimétodo
-description: Herramientas, aplicaciones, mazos de Anki y fuentes de input para aprender idiomas con El Antimétodo, organizados por etapa y utilidad.
+title: Herramientas y Recursos Gratuitos | El Antimétodo
+description: Mazos de Anki, extensiones para Netflix, trackers de tiempo y más. Todo lo que necesitas para tu inmersión en un solo lugar.
 ---
 
 <style>

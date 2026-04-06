@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Beneficios del Antimétodo
-description: Descubre las ventajas de aprender idiomas con el Antimétodo, como la flexibilidad, el aprendizaje natural, la accesibilidad y su alta eficiencia.
+title: Ventajas de Aprender sin Gramática | El Antimétodo
+description: Fluidez real, sin estrés y 100% gratis. Descubre por qué miles de autodidactas prefieren el Antimétodo frente a las escuelas tradicionales.
 ---
 
 <style>

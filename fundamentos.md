@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Fundamentos del Antimétodo - Input Comprensible y Adquisición Natural
-description: Descubre la base teórica del Antimétodo, incluyendo el input comprensible en acción y cómo funciona el monitor adquirido para el aprendizaje eficiente de idiomas.
+title: Fundamentos Científicos | El Antimétodo
+description: ¿Por qué funciona el input comprensible? Descubre la ciencia de Stephen Krashen y Noam Chomsky aplicada al aprendizaje natural de idiomas.
 ---
 
 <style>

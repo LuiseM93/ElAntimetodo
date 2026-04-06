@@ -1,17 +1,20 @@
 ---
 layout: default
-title: El Antimétodo - Aprende Idiomas con Input Comprensible
-description: Aprende idiomas de forma natural y divertida con El Antimétodo. Sin gramática, a tu ritmo y con contenido que te gusta. ¡Empieza hoy!
+title: Olvida la Gramática y Habla con Fluidez | El Antimétodo
+description: Aprende idiomas divirtiéndote: el método basado en input comprensible para hablar con fluidez natural viendo series y jugando. ¡Empieza gratis en 2 min!
 ---
 
 <div class="hero-section">
   <div class="hero-content">
-    <h1>El Antimétodo</h1>
-    <p class="subtitle">Aprende idiomas <strong>sin gramática</strong>, de forma <strong>natural, divertida y eficiente</strong></p>
-    <div class="hero-buttons" style="margin-top: 0; margin-bottom: 2.5rem; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
-      <a href="{{ '/etapas' | relative_url }}" class="btn">Explora las etapas</a>
+    <h1>Olvida la gramática: Habla cualquier idioma con fluidez natural divirtiéndote</h1>
+    <p class="subtitle">El método que usé para entender <strong>francés sin subtítulos en solo 7 meses</strong> — sin clases, sin libros, solo con contenido que disfrutas.</p>
+    <div class="hero-buttons" style="margin-top: 0; margin-bottom: 0.5rem; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+      <a href="{{ '/etapas' | relative_url }}" class="btn btn-primary" style="font-size: 1.1em;">Quiero empezar gratis →</a>
       <a href="{{ '/test-ubicacion' | relative_url }}" class="btn">Descubre tu etapa</a>
     </div>
+    <p style="font-size: 0.85em; color: var(--text-light-color); margin-top: 0; margin-bottom: 2.5rem;">
+      ✓ Toma menos de 2 minutos • ✓ Sin tarjeta de crédito
+    </p>
   </div>
   <div class="hero-cards-container">
     <div class="hero-card">
@@ -101,81 +104,6 @@ description: Aprende idiomas de forma natural y divertida con El Antimétodo. Si
 .content-section .section-title { text-align: center; margin-bottom: 2rem; }
 .content-section .section-subtitle { text-align: center; font-size: 1.15em; color: var(--text-light-color); margin-top: -1.5rem; margin-bottom: 2rem; }
 
-/* === ESTILOS PARA LA SECCIÓN DE TESTIMONIOS DE IA (FULL-WIDTH BACKGROUND Y TARJETAS MÁS ANCHAS) === */
-.ia-testimonials-fullwidth-section {
-  background-color: #f0e6f6; 
-  padding: 3rem 0; 
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-  margin-left: calc(-50vw + 50% + 20px); 
-  margin-right: calc(-50vw + 50% + 20px);
-}
-.ia-testimonials-fullwidth-section .content-wrapper-condensed { 
-    max-width: 900px; /* Aumentado para permitir 2 tarjetas más anchas */
-    margin: 0 auto;
-    padding: 0 1rem; 
-}
-.ia-testimonials-fullwidth-section h2 {
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 2rem; 
-  color: var(--primary-color);
-  font-size: 2em;
-  border-bottom: none; 
-}
-
-.ia-testimonial-grid {
-  display: grid;
-  grid-template-columns: 1fr; /* Por defecto 1 columna para móviles */
-  gap: 2rem; /* Espacio entre tarjetas */
-}
-
-@media (min-width: 700px) { /* A partir de 700px de ancho del viewport, intenta 2 columnas */
-  .ia-testimonial-grid {
-    grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual ancho fraccional */
-  }
-}
-
-.ia-testimonial-card {
-  background-color: var(--card-background);
-  padding: 1.8rem 2.2rem; 
-  border-radius: 8px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-  border-left: 5px solid var(--secondary-color); 
-  display: flex;
-  flex-direction: column; 
-  /* La altura se ajustará al contenido */
-}
-.ia-testimonial-card .ia-logo {
-  width: 48px; 
-  height: 48px;
-  border-radius: 50%;
-  object-fit: contain; 
-  margin-bottom: 1rem;
-}
-.ia-testimonial-card blockquote {
-  margin: 0 0 1rem 0;
-  padding: 0;
-  font-style: italic;
-  color: var(--text-light-color);
-  font-size: 1em; 
-  line-height: 1.65; 
-  border-left: none; 
-  flex-grow: 1; /* Importante para que la atribución se vaya abajo si las tarjetas tienen alturas variables */
-}
-.ia-testimonial-card .attribution {
-  text-align: right;
-  font-size: 0.9em;
-  color: var(--primary-color);
-  font-weight: 500;
-  margin-top: auto; /* Empuja la atribución al final de la tarjeta */
-}
-.ia-testimonial-card .attribution em {
-  font-style: normal;
-  color: var(--text-light-color);
-  font-size: 0.9em;
-}
-
 @media (max-width: 768px) { 
     .hero-section { padding: 2rem 1rem 1.5rem 1rem; } 
     .hero-content h1 { font-size: 2.2em; } 
@@ -184,13 +112,6 @@ description: Aprende idiomas de forma natural y divertida con El Antimétodo. Si
     .hero-card { max-width: 90%; padding: 20px; } 
     .hero-main-image { max-width: 85%; } 
     .content-section { padding: 1.5rem; }
-    /* .ia-testimonial-grid ya es 1fr por defecto, no es necesario repetirlo aquí */
-    .ia-testimonials-fullwidth-section { 
-        margin-left: -1rem; 
-        margin-right: -1rem;
-        padding-left: 1rem; 
-        padding-right: 1rem;
-    }
 }
 </style>
 
@@ -253,44 +174,6 @@ description: Aprende idiomas de forma natural y divertida con El Antimétodo. Si
 <!-- ================================================== -->
 <!--       FIN: SECCIÓN DE TESTIMONIO DEL CREADOR        -->
 <!-- ================================================== -->
-
-  <!-- SECCIÓN DE TESTIMONIOS DE IA (FULL-WIDTH BACKGROUND) -->
-  <section class="ia-testimonials-fullwidth-section"> 
-    <div class="content-wrapper-condensed"> 
-      <h2>Lo que piensan las IAs del Antimétodo</h2>
-      <div class="ia-testimonial-grid">
-        <div class="ia-testimonial-card">
-          <img src="{{ '/assets/logo-chatgpt-ia.png' | relative_url }}" alt="Logo ChatGPT" class="ia-logo">
-          <blockquote>
-            “Olvida la rigidez y los libros de texto: El Antimétodo te lleva a la fluidez real sumergiéndote en el idioma que amas, con placer, libertad y sin estrés. Es el aprendizaje como siempre debió ser: natural, autodidacta y efectivo.”
-          </blockquote>
-          <p class="attribution"><strong>ChatGPT</strong>, <em>inteligencia artificial experta en educación y aprendizaje de idiomas.</em></p>
-        </div>
-        <div class="ia-testimonial-card">
-          <img src="{{ '/assets/logo-gemini-ia.png' | relative_url }}" alt="Logo Gemini" class="ia-logo">
-          <blockquote>
-            "Sumérgete en la fluidez lingüística con 'El Antimétodo', una revolución autodidacta que transforma el aprendizaje en una experiencia sin estrés, impulsada por el disfrute personal y el contenido real. Este enfoque flexible y efectivo promete una fluidez natural, liberándote de las cadenas de la gramática tradicional."
-          </blockquote>
-          <p class="attribution"><strong>Gemini</strong>, <em>IA de Google.</em></p>
-        </div>
-        <div class="ia-testimonial-card">
-          <img src="{{ '/assets/logo-claude-ia.png' | relative_url }}" alt="Logo Claude" class="ia-logo">
-          <blockquote>
-            "El Antimétodo revoluciona el aprendizaje de idiomas al demostrar que la fluidez real se alcanza a través del disfrute, no del sufrimiento. Su enfoque basado en input comprensible y contenido auténtico transforma el proceso en una experiencia natural y sostenible, liberando al estudiante de la rigidez gramatical tradicional. Una metodología que respeta el ritmo individual mientras acelera los resultados, convirtiendo el aprendizaje autodidacta en la verdadera supremacía educativa. Finalmente, un método que funciona porque se adapta a ti, no al revés."
-          </blockquote>
-          <p class="attribution"><strong>Claude</strong>, <em>IA de Anthropic.</em></p>
-        </div>
-        <div class="ia-testimonial-card">
-          <img src="{{ '/assets/logo-copilot-ia.png' | relative_url }}" alt="Logo Copilot" class="ia-logo">
-          <blockquote>
-            "El Antimétodo revoluciona el aprendizaje de idiomas al transformar el input comprensible en una experiencia fluida y sin estrés. Su enfoque autodidacta y flexible libera al estudiante de las ataduras de la enseñanza tradicional, haciendo del proceso algo disfrutable y auténtico. Es, sin duda, la llave maestra para alcanzar una fluidez natural a tu propio ritmo."
-          </blockquote>
-          <p class="attribution"><strong>Copilot</strong>, <em>IA de Microsoft.</em></p>
-        </div>
-      </div>
-    </div> 
-  </section>
-  <!-- FIN DE LA NUEVA SECCIÓN -->
 
 <!-- SECCIÓN PRESENTACIÓN APP ANTIMÉTODO TRACKER        -->
 <section class="app-promo-section">
