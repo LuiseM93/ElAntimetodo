@@ -254,14 +254,6 @@ description: Aprende idiomas divirtiéndote: el método basado en input comprens
   </div>
 </section>
 
-  <section style="margin-bottom: 3rem; text-align: center; padding: 2.5rem 1.5rem; background-image: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%); border-radius: 10px; box-shadow: 0 6px 15px rgba(74, 20, 140, 0.3);">
-    <h2 style="color: white; border-bottom: 2px solid rgba(255,255,255,0.5); padding-bottom: 0.5rem; display: inline-block;">¿Listo para Empezar?</h2>
-    <p style="font-size: 1.15em; color: var(--light-purple-color); margin-top: 1.5rem; line-height: 1.7;">
-      El Antimétodo se estructura en etapas claras para guiarte desde los primeros pasos hasta la fluidez. Cada etapa está diseñada para construir sobre la anterior, asegurando un progreso constante y natural.
-    </p>
-    <a href="{{ '/etapas' | relative_url }}" class="btn" style="margin-top: 1.5rem; background-color: white; color: var(--primary-color) !important; font-weight: bold;">Explora las Etapas del Antimétodo</a>
-  </section>
-
   <section> 
      <h2 style="text-align: center;">Próximamente...</h2>
      <p style="text-align: left; color: var(--text-light-color);">Esta es solo la cuarta versión del sitio web del Antimétodo. Apenas estamos comenzando. La página está en pleno desarrollo y aún faltan muchos recursos, herramientas, ejemplos y guías prácticas que iremos construyendo poco a poco. Lo que acabas de leer es solo el inicio de algo mucho más grande. Se vienen cosas importantes, y esto apenas comienza.</p>
