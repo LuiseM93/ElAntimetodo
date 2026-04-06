@@ -130,6 +130,18 @@ description: Aprende idiomas divirtiéndote: el método basado en input comprens
     </div>
   </section>
 
+  <!-- SECCIÓN DE QUOTE DE AUTORIDAD -->
+  <section style="margin: 4rem 0; text-align: center; padding: 3rem 1rem; border-top: 1px solid var(--light-purple-color); border-bottom: 1px solid var(--light-purple-color);">
+    <blockquote style="border: none; margin: 0; padding: 0;">
+      <p style="font-family: var(--font-primary); font-size: 2.2em; line-height: 1.3; color: var(--primary-color); font-weight: 700; font-style: italic; max-width: 800px; margin: 0 auto;">
+        "La fluidez es el resultado de la adquisición, no del aprendizaje deliberado."
+      </p>
+      <footer style="margin-top: 1.5rem; font-size: 1.2em; color: var(--secondary-color); font-weight: 600;">
+        — El Creador de El Antimétodo
+      </footer>
+    </blockquote>
+  </section>
+
   <section> 
     <h2>Beneficios Clave del Antimétodo</h2>
     <ul style="list-style-type: none; padding-left: 0; font-size: 1.1em;">
@@ -200,6 +212,23 @@ description: Aprende idiomas divirtiéndote: el método basado en input comprens
   </div>
 </section>
 <!-- FIN SECCIÓN APP                                    -->
+
+<!-- SECCIÓN DE CAPTURA DE LEADS (LEAD MAGNET) -->
+<section class="content-section" style="background: linear-gradient(135deg, #f0e6f6 0%, #ffffff 100%); border: 2px solid var(--light-purple-color); text-align: center; padding: 3rem 1.5rem;">
+  <h2 style="margin-top: 0; color: var(--primary-color);">🎁 ¿Quieres mi Guía Esencial + Rutina de 7 meses?</h2>
+  <p style="font-size: 1.2em; color: var(--text-light-color); margin-bottom: 2rem; max-width: 700px; margin-left: auto; margin-right: auto;">
+    Únete a más de 500 autodidactas y recibe gratis el PDF con los pasos exactos que seguí para entender francés en tiempo récord, además de consejos semanales para hackear tu aprendizaje.
+  </p>
+  
+  <!-- Formulario de MailerLite Incrustado -->
+  <div style="max-width: 500px; margin: 0 auto;">
+    <div class="ml-embedded" data-form="RksRhl"></div>
+  </div>
+  
+  <p style="font-size: 0.85em; color: var(--text-light-color); margin-top: 1.5rem;">
+    ✓ 100% Gratis • ✓ Sin Spam • ✓ Cancela cuando quieras
+  </p>
+</section>
 
   <section> 
      <h2 style="text-align: center;">Próximamente...</h2>

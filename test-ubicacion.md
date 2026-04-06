@@ -203,6 +203,20 @@ label {
         <p><strong>Recuerda:</strong> Si la IA te recomienda, por ejemplo, la Etapa 2, pero sientes que tu vocabulario base es aún muy débil, no dudes en dedicar unas semanas a las actividades clave de la Etapa 1 (como Anki con palabras frecuentes) antes de sumergirte de lleno en la inmersión. ¡Tú conoces mejor tu situación y tu ritmo!</p>
         <p>Lo más importante es que te sientas cómodo y motivado. Una vez que tengas una idea clara de tu etapa de inicio, visita nuestra descripción detallada de <a href="{{ '/etapas' | relative_url }}">Las Etapas del Antimétodo</a> y nuestra sección de <a href="{{ '/rutinas' | relative_url }}">Rutinas Flexibles</a> para comenzar a planificar tu emocionante viaje de aprendizaje.</p>
       </div>
+
+      <!-- SECCIÓN DE CAPTURA DE EMAIL DESPUÉS DEL RESULTADO -->
+      <div style="margin-top: 3rem; padding: 2rem; background-color: #f0e6f6; border-radius: 12px; border: 2px dashed var(--secondary-color); text-align: center;">
+        <h3 style="margin-top: 0; color: var(--primary-color);">🎁 ¡Recibe tu Guía de Inicio Personalizada!</h3>
+        <p style="font-size: 1.1em; color: var(--text-light-color);">Para ayudarte a arrancar con éxito en la etapa que te recomendó la IA, te enviaré por correo:</p>
+        <ul style="text-align: left; display: inline-block; margin-bottom: 1.5rem;">
+          <li>✅ El PDF de la <strong>Guía Esencial de El Antimétodo</strong></li>
+          <li>✅ Mi <strong>Rutina Diaria de 7 meses</strong> (con la que aprendí francés)</li>
+          <li>✅ Los <strong>Mazos de Anki recomendados</strong> para empezar</li>
+        </ul>
+        
+        <!-- Formulario de MailerLite Incrustado -->
+        <div class="ml-embedded" data-form="RksRhl"></div>
+      </div>
     </div>
   </section>
 
