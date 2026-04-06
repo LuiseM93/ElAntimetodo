@@ -167,7 +167,7 @@ description: Aprende idiomas divirtiéndote: el método basado en input comprens
     .hero-section { padding: 1.5rem 1rem; }
     .hero-container { flex-direction: column; text-align: center; gap: 1.5rem; }
     .hero-text { text-align: center; }
-    .hero-text h1 { font-size: 2.2em; text-align: center; }
+    .hero-text h1 { font-size: 1.87em; text-align: center; }
     .hero-image { flex: 0 0 100%; text-align: center; order: 4; }
     .hero-buttons { justify-content: center; order: 3; }
     .hero-microcopy { order: 3; margin-bottom: 1rem; }
