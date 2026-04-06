@@ -5,17 +5,25 @@ description: Aprende idiomas divirtiéndote: el método basado en input comprens
 ---
 
 <div class="hero-section">
-  <div class="hero-content">
-    <h1>Olvida la gramática: Habla cualquier idioma con fluidez natural divirtiéndote</h1>
-    <p class="subtitle">El método que usé para entender <strong>francés sin subtítulos en solo 7 meses</strong> — sin clases, sin libros, solo con contenido que disfrutas.</p>
-    <div class="hero-buttons" style="margin-top: 0; margin-bottom: 0.5rem; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
-      <a href="{{ '/etapas' | relative_url }}" class="btn btn-primary" style="font-size: 1.1em;">Quiero empezar gratis →</a>
-      <a href="{{ '/test-ubicacion' | relative_url }}" class="btn">Descubre tu etapa</a>
+  <div class="hero-container">
+    <div class="hero-text">
+      <h1>Olvida la gramática: Habla cualquier idioma con fluidez natural divirtiéndote</h1>
+      <p class="subtitle">El método que usé para entender <strong>francés sin subtítulos en solo 7 meses</strong> — sin clases, sin libros, solo con contenido que disfrutas.</p>
+      <div class="hero-buttons">
+        <a href="#registro-guia" class="btn btn-primary">Quiero empezar gratis →</a>
+        <a href="{{ '/test-ubicacion' | relative_url }}" class="btn btn-outline">Descubre tu etapa</a>
+      </div>
+      <p class="hero-microcopy">
+        ✓ Toma menos de 2 minutos • ✓ Sin tarjeta de crédito
+      </p>
     </div>
-    <p style="font-size: 0.85em; color: var(--text-light-color); margin-top: 0; margin-bottom: 2.5rem;">
-      ✓ Toma menos de 2 minutos • ✓ Sin tarjeta de crédito
-    </p>
+    <div class="hero-image">
+      <img src="{{ '/assets/supremacy.jpg' | relative_url }}" alt="Gráfico sobre la supremacía de El Antimétodo">
+    </div>
   </div>
+</div>
+
+<section class="benefits-highlight">
   <div class="hero-cards-container">
     <div class="hero-card">
       <div class="hero-card-icon">
@@ -37,82 +45,143 @@ description: Aprende idiomas divirtiéndote: el método basado en input comprens
       <p>Usa tu tiempo libre: series, peliculas, videojuegos, ¡lo que te guste!</p>
     </div>
   </div>
+</section>
 
-  <div class="hero-image-container">
-    <img src="{{ '/assets/supremacy.jpg' | relative_url }}" alt="Gráfico sobre la supremacía de El Antimétodo para aprender idiomas" class="hero-main-image">
+<!-- SECCIÓN DE CAPTURA DE LEADS (LEAD MAGNET) - POSICIÓN DE ALTO IMPACTO -->
+<section id="registro-guia" class="content-section" style="background: linear-gradient(135deg, #f0e6f6 0%, #ffffff 100%); border: 2px solid var(--light-purple-color); text-align: center; padding: 3rem 1.5rem; scroll-margin-top: 2rem; margin-top: 0;">
+  <h2 style="margin-top: 0; color: var(--primary-color);">¿Quieres mi Guía de inicio + Mi rutina de idiomas?</h2>
+  <p style="font-size: 1.2em; color: var(--text-light-color); margin-bottom: 2rem; max-width: 700px; margin-left: auto; margin-right: auto;">
+    Únete a la supremacía del aprendizaje autodidacta. Recibe la guía de inicio rápido esencial PDF con los pasos que sigo para aprender idiomas y artículos buenísimos de vez en cuando.
+  </p>
+  <div style="max-width: 500px; margin: 0 auto;">
+    <div class="ml-embedded" data-form="RksRhl"></div>
   </div>
-</div>
+  <p style="font-size: 0.85em; color: var(--text-light-color); margin-top: 1.5rem;">
+    ✓ 100% Gratis • ✓ Sin Spam • ✓ Cancela cuando quieras
+  </p>
+</section>
 
 <style>
-  /* Estilos para la Sección de Promoción de la App */
-.app-promo-section {
-  padding: 3rem 0; 
-  background-color: #f0e6f6; 
-}
-
-
-.app-promo-section .content-wrapper-condensed { 
-    max-width: 900px; 
+  /* HERO REDESIGN */
+  .hero-section {
+    padding: 3rem 2rem;
+    background-color: var(--card-background);
+    border-bottom: 1px solid var(--light-purple-color);
+  }
+  .hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
     margin: 0 auto;
-    padding: 0 1rem; 
-}
-
-.app-promo-image img:hover {
-    transform: scale(1.03);
-    transition: transform 0.3s ease;
-}
-
-.app-promo-text h2 {
-    font-size: 2em; /* Tamaño del título de la promo */
-}
-
-.app-promo-buttons .btn {
-    padding: 0.8rem 1.5rem; /* Ajustar padding de botones si es necesario */
-}
-
-@media (max-width: 768px) {
-  .app-promo-section .content-wrapper-condensed {
-    flex-direction: column; /* Apilar imagen y texto en móvil */
+    gap: 2rem;
   }
-  .app-promo-text {
-    text-align: center; /* Centrar texto en móvil */
+  .hero-text {
+    flex: 1;
+    text-align: left;
   }
-  .app-promo-text h2 {
-    text-align: center; /* Centrar H2 en móvil */
-    display: block; /* Para que el centrado y el borde funcionen bien */
+  .hero-text h1 {
+    font-size: 2.8em;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+    border-bottom: none;
+    text-align: left;
   }
-  .app-promo-buttons {
-    justify-content: center; /* Centrar botones en móvil */
+  .hero-text .subtitle {
+    font-size: 1.25em;
+    margin-bottom: 1.5rem;
+    color: var(--secondary-color);
   }
-}
-/* Estilos del Hero Section (existentes) */
-.hero-section { text-align: center; padding: 2.5rem 1rem 1.8rem 1rem; margin-bottom: 40px; background-color: var(--card-background); border-radius: 12px; box-shadow: 0 8px 25px rgba(74, 20, 140, 0.1); border: 1px solid var(--light-purple-color); }
-.hero-content h1 { font-family: var(--font-primary); border-bottom: none; font-size: 2.8em; margin-bottom: 0.25em; color: var(--primary-color); font-weight: 700; letter-spacing: -1px; }
-.hero-content .subtitle { font-family: var(--font-secondary); font-size: 1.25em; color: var(--secondary-color); margin-bottom: 1.2rem; font-weight: 400; }
-.hero-cards-container { display: flex; gap: 25px; margin-top: 1.8rem; justify-content: center; flex-wrap: wrap; }
-.hero-card { background: linear-gradient(145deg, var(--card-background), #fdfcff); padding: 22px 28px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.07); flex: 1; max-width: 310px; border-top: 4px solid var(--secondary-color); transition: transform 0.3s ease, box-shadow 0.3s ease; display: flex; flex-direction: column; align-items: center; }
-.hero-card:hover { transform: translateY(-8px); box-shadow: 0 10px 20px rgba(123, 31, 162, 0.15); }
-.hero-card-icon { margin-bottom: 0.8rem; color: var(--secondary-color); }
-.hero-card-icon svg { width: 38px; height: 38px; }
-.hero-card h2 { font-family: var(--font-primary); color: var(--primary-color); border-bottom: none; font-size: 1.5em; margin-top: 0; margin-bottom: 0.5rem; font-weight: 600; }
-.hero-card p { font-family: var(--font-secondary); font-size: 0.95em; line-height: 1.55; color: var(--text-light-color); margin-bottom: 0; }
-.hero-image-container { margin-top: 2.2rem; }
-.hero-main-image { max-width: 65%; height: auto; border-radius: 10px; border: 3px solid var(--grey-border-color); box-shadow: 0 6px 18px rgba(0,0,0,0.1); }
+  .hero-image {
+    flex: 0 0 45%;
+    text-align: right;
+  }
+  .hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  }
+  .hero-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .hero-microcopy {
+    font-size: 0.85em;
+    color: var(--text-light-color);
+  }
+  .btn-outline {
+    background: transparent;
+    color: var(--secondary-color) !important;
+    border: 2px solid var(--secondary-color);
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9em;
+  }
+  .btn-outline:hover {
+    background: var(--secondary-color);
+    color: white !important;
+  }
 
-/* Estilos para secciones de contenido (existentes) */
-.content-section { margin-bottom: 3rem; padding: 2rem; background-color: var(--card-background); border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
-.content-section .section-title { text-align: center; margin-bottom: 2rem; }
-.content-section .section-subtitle { text-align: center; font-size: 1.15em; color: var(--text-light-color); margin-top: -1.5rem; margin-bottom: 2rem; }
+  /* BENEFITS SECTION */
+  .benefits-highlight {
+    padding: 2rem 0;
+    background-color: #fcfcfc;
+  }
+  .hero-cards-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  .hero-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    flex: 1;
+    border-top: 3px solid var(--secondary-color);
+    text-align: center;
+  }
+  .hero-card h2 {
+    font-size: 1.3em;
+    margin-bottom: 0.5rem;
+    border-bottom: none;
+  }
 
-@media (max-width: 768px) { 
-    .hero-section { padding: 2rem 1rem 1.5rem 1rem; } 
-    .hero-content h1 { font-size: 2.2em; } 
-    .hero-content .subtitle { font-size: 1.1em; margin-bottom: 1.8rem; } 
-    .hero-cards-container { flex-direction: column; gap: 20px; align-items: center;} 
-    .hero-card { max-width: 90%; padding: 20px; } 
-    .hero-main-image { max-width: 85%; } 
-    .content-section { padding: 1.5rem; }
-}
+  /* APP PROMO */
+  .app-promo-section {
+    padding: 3rem 0; 
+    background-color: #f0e6f6; 
+  }
+  .app-promo-section .content-wrapper-condensed { 
+      max-width: 900px; 
+      margin: 0 auto;
+      padding: 0 1rem; 
+  }
+
+  @media (max-width: 768px) {
+    .hero-section { padding: 1.5rem 1rem; }
+    .hero-container { flex-direction: column; text-align: center; gap: 1.5rem; }
+    .hero-text { text-align: center; }
+    .hero-text h1 { font-size: 2.2em; text-align: center; }
+    .hero-image { flex: 0 0 100%; text-align: center; order: 4; }
+    .hero-buttons { justify-content: center; order: 3; }
+    .hero-microcopy { order: 3; margin-bottom: 1rem; }
+    .hero-cards-container { flex-direction: column; align-items: center; }
+    .hero-card { width: 90%; }
+    .app-promo-section .content-wrapper-condensed { flex-direction: column; }
+    .app-promo-text { text-align: center; }
+    .app-promo-text h2 { text-align: center; display: block; }
+    .app-promo-buttons { justify-content: center; }
+  }
+
+  /* Otros estilos existentes */
+  .content-section { margin-bottom: 3rem; padding: 2rem; background-color: var(--card-background); border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+  .content-section .section-title { text-align: center; margin-bottom: 2rem; }
 </style>
 
 <main class="content-wrapper"> 
@@ -122,15 +191,11 @@ description: Aprende idiomas divirtiéndote: el método basado en input comprens
     <p style="font-size: 1.1em; text-align: center; color: var(--text-light-color); line-height: 1.7;"> 
       El Antimétodo es un enfoque revolucionario para aprender idiomas basado en la teoría del <strong>input comprensible</strong> de Stephen Krashen. A diferencia de los métodos tradicionales, que se centran en la memorización de reglas gramaticales, traducciones y ejercicios formales, el Antimétodo propone aprender un idioma de manera natural, intuitiva y personalizada. Permitiendo que cualquier persona pueda avanzar hasta la fluidez a su propio ritmo, usando herramientas gratuitas y contenido real en el idioma. Todo mientras el estudiante autodidacta hace cosas que le gustan, como ver series, películas, videojuegos. Sin sufrir en el proceso, de manera fácil, placentera, <strong>altamente eficiente</strong> y natural.
     </p>
-    <p style="font-size: 1.1em; text-align: center; color: var(--text-light-color); line-height: 1.7;"> 
-      La idea central es que el aprendizaje ocurre cuando te expones de forma constante y masiva a contenido real y comprensible en el idioma que quieres aprender. De esta forma, el idioma se adquiere igual que aprendimos nuestra lengua materna: entendiendo mensajes, disfrutando el proceso y sin presión por producir desde el principio.
-    </p>
     <div style="text-align: center; margin-top: 1.5rem;">
       <a href="{{ '/fundamentos' | relative_url }}" class="btn btn-primary">Descubre los Fundamentos</a>
     </div>
   </section>
 
-  <!-- SECCIÓN DE QUOTE DE AUTORIDAD -->
   <section style="margin: 4rem 0; text-align: center; padding: 3rem 1rem; border-top: 1px solid var(--light-purple-color); border-bottom: 1px solid var(--light-purple-color);">
     <blockquote style="border: none; margin: 0; padding: 0;">
       <p style="font-family: var(--font-primary); font-size: 2.2em; line-height: 1.3; color: var(--primary-color); font-weight: 700; font-style: italic; max-width: 800px; margin: 0 auto;">
@@ -171,78 +236,27 @@ description: Aprende idiomas divirtiéndote: el método basado en input comprens
     <a href="{{ '/etapas' | relative_url }}" class="btn" style="margin-top: 1.5rem; background-color: white; color: var(--primary-color) !important; font-weight: bold;">Explora las Etapas del Antimétodo</a>
   </section>
 
-<!-- ================================================== -->
-<!--      INICIO: SECCIÓN DE TESTIMONIO DEL CREADOR      -->
-<!-- ================================================== -->
-<section class="content-section" style="background-color: #fdfcff; border-left: 4px solid var(--primary-color); border-radius: 8px; padding-top: 2rem; padding-bottom: 2rem; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
-  <h3 style="text-align: center; font-size: 1.8em; color: var(--primary-color); margin-top: 0; margin-bottom: 1.5rem; border-bottom: none;">Un Testimonio Real</h3>
-  <blockquote style="margin: 0 1.5rem; padding: 0; border-left: none; text-align: center;">
-    <p style="font-style: italic; line-height: 1.7; font-size: 1.1em; color: var(--text-light-color);">
-      “Gracias al Antimétodo, he logrado avances notables en inglés, francés y alemán. En solo 7 meses y 20 días, alcancé en francés la etapa 3: entiendo casi todo al ver series y películas auténticas sin subtítulos, y juego mis videojuegos favoritos en francés. Todo esto disfrutando el proceso y sintiendo el idioma como una segunda lengua materna.”
-    </p>
-  </blockquote>
-  <p style="text-align: center; font-weight: 600; color: var(--primary-color); margin-top: 1.5rem; margin-bottom: 0;">- El Creador de El Antimétodo</p>
-</section>
-<!-- ================================================== -->
-<!--       FIN: SECCIÓN DE TESTIMONIO DEL CREADOR        -->
-<!-- ================================================== -->
-
-<!-- SECCIÓN PRESENTACIÓN APP ANTIMÉTODO TRACKER        -->
 <section class="app-promo-section">
   <div class="content-wrapper-condensed" style="display: flex; align-items: center; gap: 2rem; flex-wrap: wrap;">
     <div class="app-promo-image" style="flex: 1 1 300px; text-align:center;">
-      <a href="https://app.elantimetodo.com" target="_blank" rel="noopener noreferrer" title="Ir a El Antimétodo Tracker">
-        <img src="{{ '/assets/app.png' | relative_url }}" alt="Vista previa de la app El Antimétodo Tracker" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+      <a href="https://app.elantimetodo.com" target="_blank" rel="noopener noreferrer">
+        <img src="{{ '/assets/app.png' | relative_url }}" alt="App El Antimétodo Tracker" style="max-width: 100%; border-radius: 8px;">
       </a>
     </div>
     <div class="app-promo-text" style="flex: 1 1 400px;">
-      <h2 style="text-align:left; border-bottom: 2px solid var(--primary-color); padding-bottom:0.5rem; display:inline-block;">⚠️ Herramienta de Apoyo: Antimétodo Tracker</h2>
-      <p style="font-size: 1.1em; color: var(--text-light-color); line-height: 1.7;"><strong>Importante:</strong> Esta es una herramienta de seguimiento para ayudarte a aplicar el método. La aplicación por sí sola no te enseña el idioma, es un complemento a tu inmersión.</p>
-      <p style="font-size: 1.1em; color: var(--text-light-color); line-height: 1.7;">
-        Lleva tu aprendizaje al siguiente nivel con nuestra aplicación web diseñada para ser tu compañera ideal en la inmersión. Registra tu progreso, construye hábitos sólidos, accede a guías y ¡mucho más!
-      </p>
-      <p style="font-size: 1.1em; color: var(--text-light-color); line-height: 1.7;">
-        Organiza tu viaje hacia la fluidez de una manera natural, eficiente y, sobre todo, disfrutable.
-      </p>
-      <div class="app-promo-buttons" style="margin-top: 1.5rem; display: flex; gap: 1rem; flex-wrap:wrap;">
-        <a href="https://app.elantimetodo.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="font-size: 1em;">🚀 Ir a la App</a>
-        <a href="{{ '/antimetodo-tracker-app' | relative_url }}" class="btn" style="font-size: 1em; background-color: var(--accent-color);">Más Información</a>
+      <h2 style="text-align:left; border-bottom: 2px solid var(--primary-color); padding-bottom:0.5rem; display:inline-block;">⚠️ Antimétodo Tracker</h2>
+      <p style="font-size: 1.1em; color: var(--text-light-color);">Lleva tu aprendizaje al siguiente nivel con nuestra aplicación web diseñada para ser tu compañera ideal en la inmersión.</p>
+      <div class="app-promo-buttons" style="margin-top: 1.5rem; display: flex; gap: 1rem;">
+        <a href="https://app.elantimetodo.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">🚀 Ir a la App</a>
+        <a href="{{ '/antimetodo-tracker-app' | relative_url }}" class="btn" style="background-color: var(--accent-color);">Más Info</a>
       </div>
     </div>
   </div>
 </section>
-<!-- FIN SECCIÓN APP                                    -->
-
-<!-- SECCIÓN DE CAPTURA DE LEADS (LEAD MAGNET) -->
-<section class="content-section" style="background: linear-gradient(135deg, #f0e6f6 0%, #ffffff 100%); border: 2px solid var(--light-purple-color); text-align: center; padding: 3rem 1.5rem;">
-  <h2 style="margin-top: 0; color: var(--primary-color);">🎁 ¿Quieres mi Guía Esencial + Rutina de 7 meses?</h2>
-  <p style="font-size: 1.2em; color: var(--text-light-color); margin-bottom: 2rem; max-width: 700px; margin-left: auto; margin-right: auto;">
-    Únete a más de 500 autodidactas y recibe gratis el PDF con los pasos exactos que seguí para entender francés en tiempo récord, además de consejos semanales para hackear tu aprendizaje.
-  </p>
-  
-  <!-- Formulario de MailerLite Incrustado -->
-  <div style="max-width: 500px; margin: 0 auto;">
-    <div class="ml-embedded" data-form="RksRhl"></div>
-  </div>
-  
-  <p style="font-size: 0.85em; color: var(--text-light-color); margin-top: 1.5rem;">
-    ✓ 100% Gratis • ✓ Sin Spam • ✓ Cancela cuando quieras
-  </p>
-</section>
 
   <section> 
      <h2 style="text-align: center;">Próximamente...</h2>
-     <p style="text-align: left; color: var(--text-light-color);">Esta es sólamente una versión del sitio web del Antimétodo. Apenas estamos comenzando. La página está en pleno desarrollo y aún faltan muchos recursos, herramientas, ejemplos y guías prácticas que iremos construyendo poco a poco. Lo que acabas de leer es solo el inicio de algo mucho más grande. Se vienen cosas importantes, y esto apenas comienza.</p>
-     <p style="text-align: left; color: var(--text-light-color);"><strong>Resultados esperados:</strong> fluidez real y un alto nivel en el idioma, comprensión a nivel nativo y hablar desde el instinto.</p>
-     <div style="margin-top: 2rem; text-align: center;">
-      <img src="{{ '/assets/gato_arquitecto_construccion.jpg' | relative_url }}" 
-           alt="Gato arquitecto trabajando en el sitio" 
-           style="width: 250px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); border: 3px solid var(--light-purple-color);">
-        <p style="font-size:0.85em; color: #777; margin-top: 0.5rem;"><em>Paciencia, estamos construyendo algo genial...</em></p>
-    </div>
-     <p style="text-align: center; font-size: 0.9em; color: #888; margin-top: 3rem; border-top: 1px dashed var(--light-purple-color); padding-top: 1rem;">
-       <em>Última actualización del sitio: 2 de febrero del 2026 2:14pm (articulo)</em>
-     </p>
+     <p style="text-align: left; color: var(--text-light-color);">Esta es sólamente una versión del sitio web del Antimétodo. Apenas estamos comenzando.</p>
   </section>
 
 </main>
