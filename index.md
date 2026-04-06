@@ -51,7 +51,7 @@ description: Aprende idiomas divirtiéndote: el método basado en input comprens
 <section id="registro-guia" class="content-section" style="background: linear-gradient(135deg, #f0e6f6 0%, #ffffff 100%); border: 2px solid var(--light-purple-color); text-align: center; padding: 3rem 1.5rem; scroll-margin-top: 2rem; margin-top: 0;">
   <h2 style="margin-top: 0; color: var(--primary-color);">¿Quieres mi Guía de inicio + Mi rutina de idiomas?</h2>
   <p style="font-size: 1.2em; color: var(--text-light-color); margin-bottom: 2rem; max-width: 700px; margin-left: auto; margin-right: auto;">
-    Únete a la supremacía del aprendizaje autodidacta. Recibe la guía de inicio rápido esencial PDF con los pasos que sigo para aprender idiomas y artículos buenísimos de vez en cuando.
+    Recibe la guía de inicio rápido esencial PDF con los pasos que sigo para aprender idiomas y artículos buenísimos de vez en cuando.
   </p>
   <div style="max-width: 500px; margin: 0 auto;">
     <div class="ml-embedded" data-form="RksRhl"></div>
