@@ -14,7 +14,7 @@ description: Respuestas a las dudas más comunes sobre El Antimétodo, el aprend
       "name": "¿Cuánto tiempo tardaré en aprender un idioma con el Antimétodo?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Alcanzar un nivel alto suele tomar alrededor de 2 años en promedio. Sin embargo, esto varía según el idioma y la dedicación. Al ser un método basado en disfrutar contenido real, es fácil dedicarle más tiempo y acelerar el proceso de adquisición natural."
+        "text": "Alcanzar un nivel alto (fluidez total) suele tomar alrededor de 2 años en promedio. Sin embargo, esto es la meta final. La realidad es que en solo un par de meses aplicando el Antimétodo ya estarás viendo series y contenido en tu idioma objetivo con subtítulos de forma cómoda, disfrutando del proceso desde el inicio."
       }
     },
     {
@@ -117,6 +117,7 @@ description: Respuestas a las dudas más comunes sobre El Antimétodo, el aprend
       <h3 class="faq-question">¿Cuánto tiempo tardare en aprender un idioma con el Antimétodo?</h3>
       <div class="faq-answer">
         <p><strong>No existe una respuesta exacta</strong> porque depende mucho del idioma, la dedicación y el tiempo que le dediques. Como referencia común y meta realista, alcanzar un nivel alto en un idioma suele tomar alrededor de <strong>2 años en promedio</strong> con el Antimétodo. Sin embargo, esto puede variar mucho según cada persona. Además, con el Antimétodo es bastante fácil superar el tiempo diario de estudio planeado, lo que puede <strong>acelerar mucho el proceso</strong>. Lo más importante es la <strong>constancia y confiar en el método</strong>, porque aquí buscamos un aprendizaje natural y duradero. Además, disfrutarás el camino sin frustrarte, enfocándote en conectar con el idioma desde el primer día.</p>
+        <p>Ten en cuenta que esos 2 años son para alcanzar la fluidez total; la realidad es que <strong>en solo un par de meses</strong> ya estarás viendo series y contenido en tu idioma objetivo con subtítulos de forma cómoda, disfrutando del proceso desde el inicio.</p>
       </div>
     </div>
 

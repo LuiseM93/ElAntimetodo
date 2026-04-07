@@ -207,7 +207,27 @@ description: Mide tu progreso, compite con amigos y únete a una comunidad que a
   </section>
 
   <section class="how-it-works">
-    <h2 style="text-align: center; border-bottom: none; margin-top: 0; margin-bottom: 2rem;">Tutorial Completo de la App</h2>
+    <h2 style="text-align: center; border-bottom: none; margin-top: 0; margin-bottom: 2rem;">¿Cómo empezar? Tu viaje en 3 pasos</h2>
+    
+    <div class="steps-container" style="margin-bottom: 4rem;">
+      <div class="step-card">
+        <div style="font-size: 2.5em; margin-bottom: 1rem;">🚀</div>
+        <h3>1. Crea tu Cuenta</h3>
+        <p>Solo necesitas un email. Completamente gratis, sin tarjetas y sincronizado en la nube para siempre.</p>
+      </div>
+      <div class="step-card">
+        <div style="font-size: 2.5em; margin-bottom: 1rem;">🎯</div>
+        <h3>2. Elige tu Idioma</h3>
+        <p>Selecciona tu objetivo y tu etapa actual. La App te dará consejos específicos para tu nivel de adquisición.</p>
+      </div>
+      <div class="step-card">
+        <div style="font-size: 2.5em; margin-bottom: 1rem;">🔥</div>
+        <h3>3. Registra tu Inmersión</h3>
+        <p>Lo que no se mide, no se mejora. Registra tus series, juegos y podcasts para ver cómo crece tu fluidez real.</p>
+      </div>
+    </div>
+
+    <h2 style="text-align: center; border-bottom: none; margin-top: 0; margin-bottom: 2rem;">Tutorial Completo en Video</h2>
     <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000; border-radius: 12px; box-shadow: var(--shadow-lg); margin: 0 auto; max-width: 800px;">
       <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1129093756001734%2F&show_text=false&width=560&t=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
     </div>

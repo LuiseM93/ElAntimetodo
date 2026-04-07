@@ -200,8 +200,8 @@ label {
       </h3>
       <p>La Inteligencia Artificial te dará una sugerencia de etapa basada en tus respuestas. ¡Úsala como una guía valiosa!</p>
       <div class="final-advice">
-        <p><strong>Recuerda:</strong> Si la IA te recomienda, por ejemplo, la Etapa 2, pero sientes que tu vocabulario base es aún muy débil, no dudes en dedicar unas semanas a las actividades clave de la Etapa 1 (como Anki con palabras frecuentes) antes de sumergirte de lleno en la inmersión. ¡Tú conoces mejor tu situación y tu ritmo!</p>
-        <p>Lo más importante es que te sientas cómodo y motivado. Una vez que tengas una idea clara de tu etapa de inicio, visita nuestra descripción detallada de <a href="{{ '/etapas' | relative_url }}">Las Etapas del Antimétodo</a> y nuestra sección de <a href="{{ '/rutinas' | relative_url }}">Rutinas Flexibles</a> para comenzar a planificar tu emocionante viaje de aprendizaje.</p>
+        <p><strong>Recuerda:</strong> Si la IA te recomienda la Etapa 2, pero sientes que tu vocabulario base es aún muy débil, no dudes en dedicar unas semanas a las actividades clave de la Etapa 1 antes de sumergirte de lleno en la inmersión. ¡Tú conoces mejor tu situación!</p>
+        <p>Una vez que tengas tu etapa, revisa los detalles en <a href="{{ '/etapas' | relative_url }}">Las Etapas del Antimétodo</a> para comenzar tu viaje.</p>
       </div>
 
       <!-- SECCIÓN DE CAPTURA DE EMAIL DESPUÉS DEL RESULTADO -->
@@ -273,21 +273,40 @@ function generarYMostrarPrompt() {
   let tempPrompt = promptPlantilla.replace(/\[IDIOMA META\]/g, idiomaMeta);
   let promptPersonalizado = tempPrompt.replace('[EXPERIENCIA PREVIA GENERAL]', experienciaPrevia);
 
-  promptOutputSpan.innerText = promptPersonalizado; 
+  promptOutputSpan.value = promptPersonalizado; 
 
   document.getElementById('paso2IA').style.display = 'block';
   document.getElementById('paso3Interpreta').style.display = 'block';
+  
+  // Desplazar suavemente hasta el prompt generado
+  document.getElementById('paso2IA').scrollIntoView({ behavior: 'smooth' });
 }
 
 function copyUbicacionPromptToClipboard() { 
-  const promptText = document.getElementById('ubicacionPromptToCopy').innerText;
+  const promptText = document.getElementById('ubicacionPromptToCopy').value;
+  const btn = document.getElementById('btnCopiarPrompt');
+  const btnText = btn.querySelector('span');
+
   if (!promptText) {
       alert("Primero genera el prompt ingresando tu información en el Paso 1.");
       return;
   }
+  
   navigator.clipboard.writeText(promptText).then(() => {
-    alert('¡Prompt de Ubicación copiado al portapapeles!');
+    const originalText = btnText.innerText;
+    btnText.innerText = '¡Copiado con éxito! ✅';
+    btn.style.background = '#28a745';
+    
+    setTimeout(() => {
+      btnText.innerText = originalText;
+      btn.style.background = '';
+    }, 2000);
   }).catch(err => {
+    alert('Error al copiar. Por favor selecciona el texto manualmente.');
+  });
+}
+</script>
+).catch(err => {
     const textArea = document.createElement("textarea");
     textArea.value = promptText;
     document.body.appendChild(textArea);
