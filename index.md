@@ -348,6 +348,9 @@ description: Aprende idiomas divirtiéndote: el método basado en input comprens
         <a href="https://app.elantimetodo.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">🚀 Ir a la App</a>
         <a href="{{ '/antimetodo-tracker-app' | relative_url }}" class="btn" style="background-color: var(--accent-color);">Más Info</a>
       </div>
+      <p style="font-size: 0.85em; color: var(--text-light-color); margin-top: 1rem;">
+        ✓ Completamente gratis y para siempre • ✓ Sincronizado en la nube
+      </p>
     </div>
   </div>
 </section>

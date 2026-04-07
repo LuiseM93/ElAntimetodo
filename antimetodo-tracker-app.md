@@ -201,6 +201,9 @@ description: Mide tu progreso, compite con amigos y únete a una comunidad que a
       <a href="https://app.elantimetodo.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="font-size: 1.1em; padding: 1rem 2.5rem;">🚀 Ir a la App Ahora</a>
       <a href="#features" class="btn btn-secondary" style="font-size: 1.1em; padding: 1rem 2.5rem;">Ver Funcionalidades</a>
     </div>
+    <p style="font-size: 0.9em; color: var(--text-light-color); margin-top: 1.5rem;">
+      ✓ Completamente gratis • ✓ Sin anuncios • ✓ Sincronizado en la nube
+    </p>
   </section>
 
   <section class="how-it-works">
