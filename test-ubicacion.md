@@ -79,44 +79,6 @@ label {
     color: var(--text-color);
 }
 
-
-.prompt-box-ubicacion { 
-  background-color: #2d2d2d; 
-  color: #f0f0f0;
-  padding: 1.5rem; 
-  border-radius: 8px; 
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 0.95em; 
-  line-height: 1.7;
-  white-space: pre-wrap; 
-  word-wrap: break-word;
-  margin-top: 1rem;
-  position: relative;
-  border: 1px solid #444;
-}
-.prompt-box-ubicacion .copy-button {
-    position: absolute;
-    top: 12px;
-    right: 12px;
-    background-color: var(--secondary-color);
-    color: white;
-    border: none;
-    padding: 0.5rem 0.9rem; 
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 0.85em;
-    font-family: var(--font-primary);
-}
-.prompt-box-ubicacion .copy-button:hover {
-    background-color: var(--accent-color);
-}
-.prompt-box-ubicacion .placeholder-text { /* Estilo para el texto a reemplazar */
-    color: #87CEFA; /* Azul claro */
-    font-weight: bold;
-    background-color: rgba(135, 206, 250, 0.1); /* Fondo muy sutil para el placeholder */
-    padding: 0.1em 0.2em;
-    border-radius: 3px;
-}
 .final-advice {
     background-color: #e9d8f8; 
     padding: 1.2rem; 
@@ -128,7 +90,7 @@ label {
 .final-advice p { margin-bottom: 0.8rem; }
 .final-advice p:last-child { margin-bottom: 0; }
   
-  .interactive-button {
+.interactive-button {
   background: linear-gradient(135deg, var(--secondary-color), var(--accent-color));
   color: #fff;
   font-size: 1em;
@@ -180,20 +142,23 @@ label {
       <button class="interactive-button" onclick="generarYMostrarPrompt()">✨ Generar Prompt para la IA</button>
     </div>
 
-    <div class="step-container" id="paso2IA" style="display:none;"> <!-- Paso 2 inicialmente oculto -->
+    <div class="step-container" id="paso2IA" style="display:none;">
       <h3 class="step-title">
         <img src="{{ '/assets/rutinas-paso2-prompt-ia.png' | relative_url }}" alt="Paso 2" class="step-icon">
         Paso 2: Interactúa con la IA Diagnóstica
       </h3>
-      <p>¡Excelente! Hemos generado un prompt personalizado para ti. Ahora, copia TODO el siguiente prompt y pégalo en ChatGPT (o una IA similar).</p>
-      <p>La IA te presentará tres pequeños estímulos (textos o descripciones de escenas) de dificultad creciente y te hará preguntas sobre ellos. Responde cada pregunta con la mayor honestidad posible.</p>
-      <div class="prompt-box-ubicacion">
-        <button class="copy-button" onclick="copyUbicacionPromptToClipboard()">Copiar Prompt</button>
-        <span id="ubicacionPromptToCopy"></span> <!-- El prompt se insertará aquí por JavaScript -->
+      <p>¡Excelente! Hemos generado un prompt personalizado para ti. La IA te presentará tres pequeños estímulos de dificultad creciente y te hará preguntas sobre ellos. Responde con honestidad.</p>
+      <p><strong>Instrucciones:</strong> Copia el texto de abajo, pégalo en ChatGPT y vuelve aquí para completar el Paso 3.</p>
+      
+      <div style="position: relative; margin-top: 1rem;">
+        <textarea id="ubicacionPromptToCopy" readonly class="user-input-field" style="height: 150px; font-family: monospace; font-size: 0.85em; background-color: #f8f9fa; border: 2px solid var(--secondary-color); color: #333; resize: none;"></textarea>
+        <button id="btnCopiarPrompt" class="interactive-button" onclick="copyUbicacionPromptToClipboard()" style="margin-top: 0.5rem; width: 100%;">
+          <span>📋 Copiar Prompt</span>
+        </button>
       </div>
     </div>
 
-    <div class="step-container" id="paso3Interpreta" style="display:none; border-bottom:none; margin-bottom:0;"> <!-- Paso 3 inicialmente oculto -->
+    <div class="step-container" id="paso3Interpreta" style="display:none; border-bottom:none; margin-bottom:0;">
       <h3 class="step-title">
         <img src="{{ '/assets/rutinas-paso3-revisar-adaptar.png' | relative_url }}" alt="Paso 3" class="step-icon">
         Paso 3: Interpreta la Recomendación y ¡Empieza!
@@ -214,7 +179,6 @@ label {
           <li>✅ Los <strong>Mazos de Anki recomendados</strong> para empezar</li>
         </ul>
         
-        <!-- Formulario de MailerLite Incrustado -->
         <div class="ml-embedded" data-form="RksRhl"></div>
       </div>
     </div>
@@ -223,62 +187,39 @@ label {
 </main>
 
 <script>
-// Plantilla del Prompt para la IA (el que no quieres que modifique)
 const promptPlantilla = `Hola ChatGPT, necesito tu ayuda para determinar en qué etapa del "El Antimétodo" debería empezar a estudiar [IDIOMA META]. El Antimétodo es un método de aprendizaje de idiomas basado en input comprensible masivo.
 
 Primero, necesito que actúes como un evaluador. Te describiré brevemente mi experiencia general con [IDIOMA META]: [EXPERIENCIA PREVIA GENERAL].
 
 Luego, por favor, haz lo siguiente:
 1.  Preséntame TRES textos cortos en [IDIOMA META], uno de nivel BÁSICO, uno INTERMEDIO y uno AVANZADO.
-    *   Texto Básico: 2-3 frases muy simples sobre un tema cotidiano.
-    *   Texto Intermedio: Un párrafo de 3-4 frases con vocabulario un poco más variado y estructuras ligeramente más complejas, sobre un tema general.
-    *   Texto Avanzado: Un párrafo de 3-4 frases que podría incluir alguna expresión idiomática o jerga común (si es apropiado para [IDIOMA META]), o tratar un tema un poco más abstracto.
-    (Si no puedes generar los textos directamente en [IDIOMA META] de forma fiable, describe detalladamente el contenido y la complejidad de tres escenas de video/audio distintas: una muy básica, una intermedia y una avanzada).
+2.  Después de presentarme los TRES textos/escenas, hazme las siguientes preguntas UNA POR UNA para CADA TEXTO/ESCENA, esperando mi respuesta antes de pasar al siguiente.
+3.  Finalmente, recomiéndame en qué etapa del Antimétodo (1, 2, 3 o 4) debería enfocarme y dame una breve justificación.
 
-2.  Después de presentarme los TRES textos/escenas, hazme las siguientes preguntas UNA POR UNA para CADA TEXTO/ESCENA (empezando por el básico, luego intermedio, luego avanzado), esperando mi respuesta antes de pasar al siguiente texto o pregunta:
-    *   a. Para el texto [BÁSICO/INTERMEDIO/AVANZADO]: "De lo que acabas de leer/ver descrito, ¿qué tan bien sientes que entendiste el mensaje general? (Opciones: Nada/Muy Poco, Algunas Ideas Sueltas, La Idea Principal, Bastante Bien, Perfectamente)"
-    *   b. Para el texto [BÁSICO/INTERMEDIO/AVANZADO]: "Si este texto/video tuviera subtítulos en [IDIOMA META], ¿cuánto te ayudarían? (Opciones: Muchísimo/Indispensables, Bastante, Un Poco, No los necesitaría)"
-    *   c. Para el texto [BÁSICO/INTERMEDIO/AVANZADO]: (Solo si hubo algo de comprensión) "¿Hubo palabras o frases específicas que NO entendiste en absoluto?"
+Aquí están las etapas del Antimétodo:
+- Etapa 1: Preparación (Vocabulario base).
+- Etapa 2: Inmersión Total (Contenido con subtítulos).
+- Etapa 3: Free Flow (Contenido sin subtítulos).
+- Etapa 4: Producción (Hablar y escribir).
 
-3.  Después de mis respuestas a todas las preguntas sobre los tres textos, y considerando mi experiencia previa que te di al inicio, por favor, recomiéndame en qué etapa del Antimétodo debería enfocarme principalmente ahora y dame una breve justificación. También, si consideras que podría beneficiarme de repasar algún aspecto de una etapa anterior brevemente antes de saltar, menciónalo.
-
-Aquí están las 4 etapas del Antimétodo para tu referencia:
-*   **Etapa 1: Preparación Previa** (Foco: Vocabulario base ~1000 palabras con Anki, familiarización sonidos/estructuras. Objetivo: Rampa para la inmersión. Ideal si la comprensión del texto BÁSICO es muy baja incluso con la idea de subtítulos, o si el usuario es principiante absoluto).
-*   **Etapa 2: Inmersión Total en el Idioma** (Foco: Consumir mucho contenido auténtico CON subtítulos en idioma meta. Objetivo: Mejorar comprensión, expandir vocabulario. Entrada ideal si: la comprensión del texto BÁSICO e INTERMEDIO mejora significativamente CON subtítulos, y se puede disfrutar contenido simple/intermedio de esta forma. El texto AVANZADO aún puede ser difícil).
-*   **Etapa 3: Free Flow Listening** (Foco: Consumir contenido SIN subtítulos, minado de oraciones i+1. Objetivo: Independizarse de subtítulos. Ideal si la comprensión del texto INTERMEDIO es buena o muy buena SIN subtítulos, y se puede seguir la idea principal del texto AVANZADO aunque no se entienda todo. Si la comprensión CON subtítulos en Etapa 2 ya es consistentemente alta (ej. >80-90%) en contenido variado, es momento de pasar aquí).
-*   **Etapa 4: Producción del Idioma** (Foco: Activar conocimiento pasivo hablando y escribiendo. Objetivo: Fluidez. Entrada ideal si: la comprensión SIN subtítulos del contenido AVANZADO es muy alta (ej. >85-95%) y hay un fuerte deseo de empezar a producir activamente).
-
-Por favor, basa tu recomendación final de etapa en mi rendimiento general a través de los tres niveles de texto y mis respuestas. Si estoy entre dos etapas, sugiere la más temprana o una transición.
-Espera a que te dé mi experiencia previa antes de empezar con el texto/escena y las preguntas.`;
+Espera a que te dé mi experiencia previa antes de empezar.`;
 
 function generarYMostrarPrompt() {
-  const idiomaMetaInput = document.getElementById('idiomaMeta');
-  const experienciaPreviaInput = document.getElementById('experienciaPrevia');
-  const promptOutputSpan = document.getElementById('ubicacionPromptToCopy');
-  
-  const idiomaMeta = idiomaMetaInput.value.trim();
-  const experienciaPrevia = experienciaPreviaInput.value.trim();
+  const idiomaMeta = document.getElementById('idiomaMeta').value.trim();
+  const experienciaPrevia = document.getElementById('experienciaPrevia').value.trim();
+  const promptOutput = document.getElementById('ubicacionPromptToCopy');
 
-  if (!idiomaMeta) {
-    alert("Por favor, ingresa el idioma que quieres aprender.");
-    idiomaMetaInput.focus();
-    return;
-  }
-  if (!experienciaPrevia) {
-    alert("Por favor, describe tu experiencia previa con el idioma.");
-    experienciaPreviaInput.focus();
+  if (!idiomaMeta || !experienciaPrevia) {
+    alert("Por favor, completa todos los campos.");
     return;
   }
 
-  let tempPrompt = promptPlantilla.replace(/\[IDIOMA META\]/g, idiomaMeta);
-  let promptPersonalizado = tempPrompt.replace('[EXPERIENCIA PREVIA GENERAL]', experienciaPrevia);
+  let promptPersonalizado = promptPlantilla.replace(/\[IDIOMA META\]/g, idiomaMeta)
+                                           .replace('[EXPERIENCIA PREVIA GENERAL]', experienciaPrevia);
 
-  promptOutputSpan.value = promptPersonalizado; 
-
+  promptOutput.value = promptPersonalizado; 
   document.getElementById('paso2IA').style.display = 'block';
   document.getElementById('paso3Interpreta').style.display = 'block';
-  
-  // Desplazar suavemente hasta el prompt generado
   document.getElementById('paso2IA').scrollIntoView({ behavior: 'smooth' });
 }
 
@@ -287,39 +228,18 @@ function copyUbicacionPromptToClipboard() {
   const btn = document.getElementById('btnCopiarPrompt');
   const btnText = btn.querySelector('span');
 
-  if (!promptText) {
-      alert("Primero genera el prompt ingresando tu información en el Paso 1.");
-      return;
-  }
+  if (!promptText) return;
   
   navigator.clipboard.writeText(promptText).then(() => {
     const originalText = btnText.innerText;
     btnText.innerText = '¡Copiado con éxito! ✅';
     btn.style.background = '#28a745';
-    
     setTimeout(() => {
       btnText.innerText = originalText;
       btn.style.background = '';
     }, 2000);
-  }).catch(err => {
+  }).catch(() => {
     alert('Error al copiar. Por favor selecciona el texto manualmente.');
-  });
-}
-</script>
-).catch(err => {
-    const textArea = document.createElement("textarea");
-    textArea.value = promptText;
-    document.body.appendChild(textArea);
-    textArea.focus();
-    textArea.select();
-    try {
-      document.execCommand('copy');
-      alert('¡Prompt de Ubicación copiado al portapapeles! (fallback)');
-    } catch (e) {
-      alert('Error al copiar el prompt. Por favor, cópialo manualmente.');
-      console.error('Error al copiar con fallback: ', e);
-    }
-    document.body.removeChild(textArea);
   });
 }
 </script>
