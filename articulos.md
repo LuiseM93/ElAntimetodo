@@ -112,7 +112,7 @@ description: Artículos que desafían lo que creías saber sobre aprender idioma
 
       <!-- Artículo: Antimetodo vs Duolingo -->
       <a href="{{ '/antimetodo-vs-duolingo' | relative_url }}" class="article-card">
-        <img src="{{ '/assets/duo.jpg' | relative_url }}" alt="Antimetodo vs Duolingo" class="featured-image">
+        <img src="{{ '/assets/duo.jpeg' | relative_url }}" alt="Antimetodo vs Duolingo" class="featured-image">
         <div class="article-card-content">
           <div class="article-tags">
             <span class="tag tag-antimetodo">ANTIMÉTODO</span>

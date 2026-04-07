@@ -204,10 +204,83 @@ description: Aprende idiomas divirtiéndote: el método basado en input comprens
     .app-promo-buttons .btn { width: 100%; max-width: 300px; }
   }
 
-  /* Otros estilos existentes */
-  .content-section { margin-bottom: 3rem; padding: 2rem; background-color: var(--card-background); border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
-  .content-section .section-title { text-align: center; margin-bottom: 2rem; }
+  /* 3-STEP GUIDE STYLES */
+  .step-guide-section {
+    padding: 4rem 1.5rem;
+    background-color: white;
+    text-align: center;
+    border-bottom: 1px solid var(--light-purple-color);
+  }
+  .step-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .step-card-new {
+    background: #fdfbff;
+    padding: 2.5rem 2rem;
+    border-radius: 12px;
+    border: 1px solid var(--light-purple-color);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+  }
+  .step-card-new:hover {
+    transform: translateY(-5px);
+  }
+  .step-icon {
+    font-size: 2.8em;
+    margin-bottom: 1rem;
+  }
+  .step-card-new h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    border-bottom: none;
+    font-size: 1.4em;
+  }
+  .step-card-new p {
+    color: var(--text-light-color);
+    font-size: 0.95em;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    flex-grow: 1;
+  }
+  @media (max-width: 768px) {
+    .step-guide-section { padding: 3rem 1rem; }
+  }
 </style>
+
+<section class="step-guide-section">
+  <h2 style="margin-bottom: 3.5rem; color: var(--primary-color); font-size: 2.2em; border-bottom: none;">¿Por dónde empiezo?</h2>
+  <div class="step-grid">
+    
+    <div class="step-card-new">
+      <div class="step-icon">🎯</div>
+      <h3>1. Descubre tu Etapa</h3>
+      <p>El Antimétodo se divide en 4 etapas claras. Haz el <strong>Test de Ubicación</strong> para saber exactamente en qué punto de tu viaje estás y qué tipo de contenido debes consumir hoy.</p>
+      <a href="{{ '/test-ubicacion' | relative_url }}" class="btn btn-outline" style="width: 100%;">Hacer el Test →</a>
+    </div>
+
+    <div class="step-card-new">
+      <div class="step-icon">🗺️</div>
+      <h3>2. Obtén tu Guía Rápida</h3>
+      <p>Regístrate arriba para bajar la <strong>Guía de Inicio PDF</strong> y lee los <strong>Fundamentos</strong> científicos. Entender por qué el input funciona es lo que te dará la ventaja real.</p>
+      <a href="{{ '/fundamentos' | relative_url }}" class="btn btn-outline" style="width: 100%;">Leer Fundamentos →</a>
+    </div>
+
+    <div class="step-card-new">
+      <div class="step-icon">🚀</div>
+      <h3>3. Activa tu Inmersión</h3>
+      <p>Abre la <strong>Tracker App</strong> y registra tu primera sesión hoy mismo. Recuerda: <strong>la magia es la constancia</strong>, y medir tus horas es el secreto para no detenerte.</p>
+      <a href="https://app.elantimetodo.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width: 100%;">Abrir la App →</a>
+    </div>
+
+  </div>
+</section>
 
 <main class="content-wrapper"> 
 
