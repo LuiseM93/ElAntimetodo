@@ -79,7 +79,7 @@ image: /assets/duo.jpeg
   </p>
 
   <div style="text-align: center; margin-top: 3rem;">
-    <a href="{{ '/etapas' | relative_url }}" class="btn btn-primary" style="font-size: 1.2em; padding: 1.2rem 2.5rem;">Descubre cómo empezar el proceso real →</a>
+    <a href="{{ '/' | relative_url }}" class="btn btn-primary" style="font-size: 1.2em; padding: 1.2rem 2.5rem;">Descubre cómo empezar el proceso real →</a>
   </div>
 </div>
 

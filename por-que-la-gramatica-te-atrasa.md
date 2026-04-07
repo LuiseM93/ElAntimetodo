@@ -71,7 +71,7 @@ image: /assets/ciencia.png
   </p>
 
   <div style="text-align: center; margin-top: 3rem;">
-    <a href="{{ '/fundamentos' | relative_url }}" class="btn btn-primary" style="font-size: 1.2em; padding: 1.2rem 2.5rem;">Entiende los Fundamentos Científicos →</a>
+    <a href="{{ '/' | relative_url }}" class="btn btn-primary" style="font-size: 1.2em; padding: 1.2rem 2.5rem;">Empieza a adquirir idiomas correctamente →</a>
   </div>
 </div>
 
