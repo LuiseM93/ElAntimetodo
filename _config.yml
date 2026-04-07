@@ -1,2 +1,5 @@
 title: El Antimétodo
 description: Adquiere idiomas de manera fácil, eficiente, natural y divertida 
+url: "https://elantimetodo.com"
+baseurl: ""
+permalink: /:title
