@@ -204,23 +204,23 @@ description: Aprende idiomas divirtiéndote: el método basado en input comprens
     .app-promo-buttons .btn { width: 100%; max-width: 300px; }
   }
 
-  /* 3-STEP GUIDE STYLES */
+  /* 3-STEP GUIDE STYLES - REFINED FOR PC */
   .step-guide-section {
-    padding: 4rem 1.5rem;
+    padding: 3rem 1.5rem;
     background-color: white;
     text-align: center;
     border-bottom: 1px solid var(--light-purple-color);
   }
   .step-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
-    max-width: 1100px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    max-width: 1000px; /* Reducido de 1100px para PC */
     margin: 0 auto;
   }
   .step-card-new {
     background: #fdfbff;
-    padding: 2.5rem 2rem;
+    padding: 1.5rem 1.2rem; /* Espaciado interno más equilibrado */
     border-radius: 12px;
     border: 1px solid var(--light-purple-color);
     box-shadow: 0 4px 12px rgba(0,0,0,0.03);
@@ -233,50 +233,60 @@ description: Aprende idiomas divirtiéndote: el método basado en input comprens
     transform: translateY(-5px);
   }
   .step-icon {
-    font-size: 2.8em;
-    margin-bottom: 1rem;
+    font-size: 2.2em; /* Reducido de 2.8em */
+    margin-bottom: 0.8rem;
   }
   .step-card-new h3 {
     color: var(--primary-color);
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
     border-bottom: none;
-    font-size: 1.4em;
+    font-size: 1.3em;
   }
   .step-card-new p {
     color: var(--text-light-color);
-    font-size: 0.95em;
-    line-height: 1.6;
-    margin-bottom: 2rem;
+    font-size: 0.9em;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
     flex-grow: 1;
+  }
+  .step-buttons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    width: 100%;
   }
   @media (max-width: 768px) {
     .step-guide-section { padding: 3rem 1rem; }
+    .step-icon { font-size: 2.5em; }
   }
 </style>
 
 <section class="step-guide-section">
-  <h2 style="margin-bottom: 3.5rem; color: var(--primary-color); font-size: 2.2em; border-bottom: none;">¿Por dónde empiezo?</h2>
+  <h2 style="margin-bottom: 2.5rem; color: var(--primary-color); font-size: 2em; border-bottom: none; text-align: center;">¿Por dónde empiezo?</h2>
   <div class="step-grid">
     
     <div class="step-card-new">
       <div class="step-icon">🎯</div>
       <h3>1. Descubre tu Etapa</h3>
-      <p>El Antimétodo se divide en 4 etapas claras. Haz el <strong>Test de Ubicación</strong> para saber exactamente en qué punto de tu viaje estás y qué tipo de contenido debes consumir hoy.</p>
-      <a href="{{ '/test-ubicacion' | relative_url }}" class="btn btn-outline" style="width: 100%;">Hacer el Test →</a>
+      <p>El Antimétodo se divide en 4 etapas claras. Haz el <strong>Test de Ubicación</strong> para saber exactamente en qué punto de tu viaje estás.</p>
+      <a href="{{ '/test-ubicacion' | relative_url }}" onclick="gtag('event', 'click_test', {'event_category': 'conversion'});" class="btn btn-outline" style="width: 100%;">Hacer el Test →</a>
     </div>
 
     <div class="step-card-new">
       <div class="step-icon">🗺️</div>
       <h3>2. Obtén tu Guía Rápida</h3>
-      <p>Regístrate arriba para bajar la <strong>Guía de Inicio PDF</strong> y lee los <strong>Fundamentos</strong> científicos. Entender por qué el input funciona es lo que te dará la ventaja real.</p>
-      <a href="{{ '/fundamentos' | relative_url }}" class="btn btn-outline" style="width: 100%;">Leer Fundamentos →</a>
+      <p>Baja la <strong>Guía de Inicio PDF</strong> y lee los <strong>Fundamentos</strong>. Entender por qué el input funciona es lo que te dará la ventaja real.</p>
+      <div class="step-buttons-container">
+        <a href="#registro-guia" onclick="gtag('event', 'click_guia_pdf', {'event_category': 'leads'});" class="btn btn-primary" style="width: 100%; font-size: 0.9em;">Quiero la Guía →</a>
+        <a href="{{ '/fundamentos' | relative_url }}" onclick="gtag('event', 'click_fundamentos', {'event_category': 'info'});" class="btn btn-outline" style="width: 100%; font-size: 0.9em;">Leer Fundamentos →</a>
+      </div>
     </div>
 
     <div class="step-card-new">
       <div class="step-icon">🚀</div>
       <h3>3. Activa tu Inmersión</h3>
-      <p>Abre la <strong>Tracker App</strong> y registra tu primera sesión hoy mismo. Recuerda: <strong>la magia es la constancia</strong>, y medir tus horas es el secreto para no detenerte.</p>
-      <a href="https://app.elantimetodo.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width: 100%;">Abrir la App →</a>
+      <p>Abre la <strong>Tracker App</strong> y registra tu primera sesión hoy mismo. Recuerda: <strong>la magia es la constancia</strong>.</p>
+      <a href="https://app.elantimetodo.com" target="_blank" rel="noopener noreferrer" onclick="gtag('event', 'click_app_externa', {'event_category': 'app'});" class="btn btn-primary" style="width: 100%;">Abrir la App →</a>
     </div>
 
   </div>
@@ -284,13 +294,13 @@ description: Aprende idiomas divirtiéndote: el método basado en input comprens
 
 <main class="content-wrapper"> 
 
-  <section class="content-section"> 
-    <h2 class="section-title">Bienvenido al Antimétodo</h2>
-    <p style="font-size: 1.1em; text-align: center; color: var(--text-light-color); line-height: 1.7;"> 
+  <section class="content-section" style="text-align: center;"> 
+    <h2 class="section-title" style="text-align: center; border-bottom: none;">Bienvenido al Antimétodo</h2>
+    <p style="font-size: 1.1em; text-align: center; color: var(--text-light-color); line-height: 1.7; max-width: 800px; margin: 0 auto;"> 
       El Antimétodo es un enfoque revolucionario para aprender idiomas basado en la teoría del <strong>input comprensible</strong> de Stephen Krashen. A diferencia de los métodos tradicionales, que se centran en la memorización de reglas gramaticales, traducciones y ejercicios formales, el Antimétodo propone aprender un idioma de manera natural, intuitiva y personalizada. Permitiendo que cualquier persona pueda avanzar hasta la fluidez a su propio ritmo, usando herramientas gratuitas y contenido real en el idioma. Todo mientras el estudiante autodidacta hace cosas que le gustan, como ver series, películas, videojuegos. Sin sufrir en el proceso, de manera fácil, placentera, <strong>altamente eficiente</strong> y natural.
     </p>
     <div style="text-align: center; margin-top: 1.5rem;">
-      <a href="{{ '/fundamentos' | relative_url }}" class="btn btn-primary">Descubre los Fundamentos</a>
+      <a href="{{ '/fundamentos' | relative_url }}" onclick="gtag('event', 'click_fundamentos_welcome', {'event_category': 'info'});" class="btn btn-primary">Descubre los Fundamentos</a>
     </div>
   </section>
 
