@@ -193,16 +193,26 @@ Primero, necesito que actúes como un evaluador. Te describiré brevemente mi ex
 
 Luego, por favor, haz lo siguiente:
 1.  Preséntame TRES textos cortos en [IDIOMA META], uno de nivel BÁSICO, uno INTERMEDIO y uno AVANZADO.
-2.  Después de presentarme los TRES textos/escenas, hazme las siguientes preguntas UNA POR UNA para CADA TEXTO/ESCENA, esperando mi respuesta antes de pasar al siguiente.
-3.  Finalmente, recomiéndame en qué etapa del Antimétodo (1, 2, 3 o 4) debería enfocarme y dame una breve justificación.
+    *   Texto Básico: 2-3 frases muy simples sobre un tema cotidiano.
+    *   Texto Intermedio: Un párrafo de 3-4 frases con vocabulario un poco más variado y estructuras ligeramente más complejas, sobre un tema general.
+    *   Texto Avanzado: Un párrafo de 3-4 frases que podría incluir alguna expresión idiomática o jerga común (si es apropiado para [IDIOMA META]), o tratar un tema un poco más abstracto.
+    (Si no puedes generar los textos directamente en [IDIOMA META] de forma fiable, describe detalladamente el contenido y la complejidad de tres escenas de video/audio distintas: una muy básica, una intermedia y una avanzada).
 
-Aquí están las etapas del Antimétodo:
-- Etapa 1: Preparación (Vocabulario base).
-- Etapa 2: Inmersión Total (Contenido con subtítulos).
-- Etapa 3: Free Flow (Contenido sin subtítulos).
-- Etapa 4: Producción (Hablar y escribir).
+2.  Después de presentarme los TRES textos/escenas, hazme las siguientes preguntas UNA POR UNA para CADA TEXTO/ESCENA (empezando por el básico, luego intermedio, luego avanzado), esperando mi respuesta antes de pasar al siguiente texto o pregunta:
+    *   a. Para el texto [BÁSICO/INTERMEDIO/AVANZADO]: "De lo que acabas de leer/ver descrito, ¿qué tan bien sientes que entendiste el mensaje general? (Opciones: Nada/Muy Poco, Algunas Ideas Sueltas, La Idea Principal, Bastante Bien, Perfectamente)"
+    *   b. Para el texto [BÁSICO/INTERMEDIO/AVANZADO]: "Si este texto/video tuviera subtítulos en [IDIOMA META], ¿cuánto te ayudarían? (Opciones: Muchísimo/Indispensables, Bastante, Un Poco, No los necesitaría)"
+    *   c. Para el texto [BÁSICO/INTERMEDIO/AVANZADO]: (Solo si hubo algo de comprensión) "¿Hubo palabras o frases específicas que NO entendiste en absoluto?"
 
-Espera a que te dé mi experiencia previa antes de empezar.`;
+3.  Después de mis respuestas a todas las preguntas sobre los tres textos, y considerando mi experiencia previa que te di al inicio, por favor, recomiéndame en qué etapa del Antimétodo debería enfocarme principalmente ahora y dame una breve justificación. También, si consideras que podría beneficiarme de repasar algún aspecto de una etapa anterior brevemente antes de saltar, menciónalo.
+
+Aquí están las 4 etapas del Antimétodo para tu referencia:
+*   **Etapa 1: Preparación Previa** (Foco: Vocabulario base ~1000 palabras con Anki, familiarización sonidos/estructuras. Objetivo: Rampa para la inmersión. Ideal si la comprensión del texto BÁSICO es muy baja incluso con la idea de subtítulos, o si el usuario es principiante absoluto).
+*   **Etapa 2: Inmersión Total en el Idioma** (Foco: Consumir mucho contenido auténtico CON subtítulos en idioma meta. Objetivo: Mejorar comprensión, expandir vocabulario. Entrada ideal si: la comprensión del texto BÁSICO e INTERMEDIO mejora significativamente CON subtítulos, y se puede disfrutar contenido simple/intermedio de esta forma. El texto AVANZADO aún puede ser difícil).
+*   **Etapa 3: Free Flow Listening** (Foco: Consumir contenido SIN subtítulos, minado de oraciones i+1. Objetivo: Independizarse de subtítulos. Ideal si la comprensión del texto INTERMEDIO es buena o muy buena SIN subtítulos, y se puede seguir la idea principal del texto AVANZADO aunque no se entienda todo. Si la comprensión CON subtítulos en Etapa 2 ya es consistentemente alta (ej. >80-90%) en contenido variado, es momento de pasar aquí).
+*   **Etapa 4: Producción del Idioma** (Foco: Activar conocimiento pasivo hablando y escribiendo. Objetivo: Fluidez. Entrada ideal si: la comprensión SIN subtítulos del contenido AVANZADO es muy alta (ej. >85-95%) y hay un fuerte deseo de empezar a producir activamente).
+
+Por favor, basa tu recomendación final de etapa en mi rendimiento general a través de los tres niveles de texto y mis respuestas. Si estoy entre dos etapas, sugiere la más temprana o una transición.
+Espera a que te dé mi experiencia previa antes de empezar con el texto/escena y las preguntas.`;
 
 function generarYMostrarPrompt() {
   const idiomaMeta = document.getElementById('idiomaMeta').value.trim();
@@ -214,8 +224,8 @@ function generarYMostrarPrompt() {
     return;
   }
 
-  let promptPersonalizado = promptPlantilla.replace(/\[IDIOMA META\]/g, idiomaMeta)
-                                           .replace('[EXPERIENCIA PREVIA GENERAL]', experienciaPrevia);
+  let tempPrompt = promptPlantilla.replace(/\[IDIOMA META\]/g, idiomaMeta);
+  let promptPersonalizado = tempPrompt.replace('[EXPERIENCIA PREVIA GENERAL]', experienciaPrevia);
 
   promptOutput.value = promptPersonalizado; 
   document.getElementById('paso2IA').style.display = 'block';
