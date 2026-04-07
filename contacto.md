@@ -136,4 +136,81 @@ description: Conoce a José Luis Hernández, el creador de El Antimétodo. Descu
     </div>
   </section>
 
+  <section class="content-section" style="margin-top: 4rem;">
+    <h2 style="text-align: center; color: var(--primary-color);">Mi Contenido en Inmersión: Aprendiendo con Joyas en RTX</h2>
+    <p style="text-align: center; font-size: 1.1em; color: var(--text-light-color); margin-bottom: 2rem;">
+      Disfrutando jugando videojuegos buenisimos con gráficos RTX (una joya). Aquí tienes <strong>ALGUNAS</strong> de las cosas que he terminado usando el Antimétodo (siempre en mi idioma favorito o el que esté estudiando en ese momento):
+    </p>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-bottom: 3rem;">
+      <div style="border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.2); border: 2px solid var(--light-purple-color);">
+        <img src="{{ '/assets/capturas/cyberpunk.png' | relative_url }}" alt="Cyberpunk 2077 RTX" style="width: 100%; height: 180px; object-fit: cover; display: block;">
+      </div>
+      <div style="border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.2); border: 2px solid var(--light-purple-color);">
+        <img src="{{ '/assets/capturas/ff7rebirth.png' | relative_url }}" alt="Final Fantasy VII Rebirth RTX" style="width: 100%; height: 180px; object-fit: cover; display: block;">
+      </div>
+      <div style="border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.2); border: 2px solid var(--light-purple-color);">
+        <img src="{{ '/assets/capturas/metroexodus.png' | relative_url }}" alt="Metro Exodus RTX" style="width: 100%; height: 180px; object-fit: cover; display: block;">
+      </div>
+      <div style="border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.2); border: 2px solid var(--light-purple-color);">
+        <img src="{{ '/assets/capturas/sw-survivor.png' | relative_url }}" alt="Star Wars Jedi Survivor RTX" style="width: 100%; height: 180px; object-fit: cover; display: block;">
+      </div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+      <div style="background: white; padding: 1.5rem; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); border-top: 4px solid #007bff;">
+        <h3 style="margin-top: 0; color: #007bff;">🇺🇸 Inglés</h3>
+        <ul style="padding-left: 1.2rem;">
+          <li>Metro Exodus</li>
+          <li>Final Fantasy VII Rebirth</li>
+          <li><strong>TODA</strong> la saga de Resident Evil (0, 1, 2, 3, 4, 5, 6, 7, Umbrella Chronicles, Dark Chronicles, Code Veronica)</li>
+        </ul>
+      </div>
+
+      <div style="background: white; padding: 1.5rem; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); border-top: 4px solid #28a745;">
+        <h3 style="margin-top: 0; color: #28a745;">🇫🇷 Francés</h3>
+        <ul style="padding-left: 1.2rem;">
+          <li>Hogwarts Legacy (Estaba estudiando inglés, pero como no me gusta el acento británico lo jugué en francés JAJAJ)</li>
+          <li>Cyberpunk 2077</li>
+          <li>Trilogía Mass Effect (1, 2, 3)</li>
+          <li>Star Wars Survivor</li>
+          <li>Assassin's Creed Unity (si, el de parís jajajaj)</li>
+          <li>Saga A Plague Tale (Innocence y Requiem)</li>
+          <li>Marvel's Spider-Man (Miles Morales y 2)</li>
+          <li>The Last of Us Part II</li>
+        </ul>
+      </div>
+
+      <div style="background: white; padding: 1.5rem; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); border-top: 4px solid var(--accent-color);">
+        <h3 style="margin-top: 0; color: var(--accent-color);">📺 Series y TV</h3>
+        <ul style="padding-left: 1.2rem;">
+          <li>Better Call Saul (el mejor tv show de la historia jajaj)</li>
+          <li>Breaking Bad</li>
+          <li>Saga Dexter (Original, New Blood, Resurrection y Original Sin)</li>
+          <li>The Flash</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 style="text-align: center; color: var(--primary-color); margin-top: 4rem;">Mi Progreso Real (Datos del Tracker)</h2>
+    <p style="text-align: center; font-size: 1.1em; color: var(--text-light-color); margin-bottom: 2rem;">
+      La magia es la constancia. Aquí puedes ver mis días adquiriendo y horas de inmersión acumuladas directamente en la App del Antimétodo:
+    </p>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-bottom: 3rem; align-items: start;">
+      <div style="text-align: center;">
+        <img src="{{ '/assets/capturas/diaseng.JPG' | relative_url }}" alt="Días de inmersión en Inglés" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); border: 1px solid var(--grey-border-color);">
+        <p style="font-size: 0.85em; color: #666; margin-top: 0.5rem;">Días adquiriendo Inglés</p>
+      </div>
+      <div style="text-align: center;">
+        <img src="{{ '/assets/capturas/diasjp.JPG' | relative_url }}" alt="Días de inmersión en Japonés" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); border: 1px solid var(--grey-border-color);">
+        <p style="font-size: 0.85em; color: #666; margin-top: 0.5rem;">Días adquiriendo Japonés</p>
+      </div>
+      <div style="text-align: center;">
+        <img src="{{ '/assets/capturas/horas-eng.JPG' | relative_url }}" alt="Horas totales de Inglés" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); border: 1px solid var(--grey-border-color);">
+        <p style="font-size: 0.85em; color: #666; margin-top: 0.5rem;">Horas de inmersión</p>
+      </div>
+    </div>
+  </section>
+
 </main>

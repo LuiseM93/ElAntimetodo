@@ -13,6 +13,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="{{ page.description | default: site.description }}">
   
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "El Antimétodo",
+    "url": "https://elantimetodo.com/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://elantimetodo.com/articulos/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "El Antimétodo",
+    "url": "https://elantimetodo.com/",
+    "logo": "https://elantimetodo.com/assets/favicon-32x32.png",
+    "sameAs": [
+      "https://www.facebook.com/people/El-Antimétodo/61579943335092",
+      "https://www.instagram.com/joseluis.hdz.3/"
+    ],
+    "founder": {
+      "@type": "Person",
+      "name": "José Luis Hernández Ramírez"
+    }
+  }
+  </script>
+
   <link rel="icon" href="{{ '/assets/favicon.ico?v=2' | relative_url }}">
   <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/favicon-32x32.png?v=2' | relative_url }}">
   <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/favicon-16x16.png?v=2' | relative_url }}">

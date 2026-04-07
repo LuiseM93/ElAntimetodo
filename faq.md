@@ -4,6 +4,55 @@ title: Preguntas Frecuentes (FAQ) - El Antimétodo
 description: Respuestas a las dudas más comunes sobre El Antimétodo, el aprendizaje de idiomas mediante input comprensible y la adquisición natural.
 ---
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Cuánto tiempo tardaré en aprender un idioma con el Antimétodo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Alcanzar un nivel alto suele tomar alrededor de 2 años en promedio. Sin embargo, esto varía según el idioma y la dedicación. Al ser un método basado en disfrutar contenido real, es fácil dedicarle más tiempo y acelerar el proceso de adquisición natural."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuántas horas al día necesito dedicarle?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Se recomienda dedicar alrededor de 2 horas diarias de exposición activa. La clave es la constancia: es mejor poco todos los días que mucho en una sola sesión esporádica."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Existe el talento para los idiomas?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "El talento para los idiomas no existe. Aprender un idioma es pura práctica, constancia e input comprensible. Todos pueden aprender si utilizan el método correcto de adquisición natural."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuándo es el momento de empezar a hablar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "El momento ideal es cuando ya entiendas casi todo el contenido sin necesidad de subtítulos. Intentar hablar antes puede generar frustración; la producción oral fluida viene naturalmente después de una base sólida de comprensión auditiva."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Por qué se llama El Antimétodo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Porque va en contra de los sistemas tradicionales rígidos y aburridos. Apostamos por el aprendizaje autodidacta, natural y libre, donde tú eres el dueño de tu proceso a través del disfrute del contenido real."
+      }
+    }
+  ]
+}
+</script>
+
 <style>
 .faq-header-image {
   display: block;

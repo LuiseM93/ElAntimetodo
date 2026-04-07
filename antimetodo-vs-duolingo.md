@@ -3,14 +3,14 @@ layout: default
 title: Antimetodo vs Duolingo ¿Cual es mejor? | El Antimétodo
 description: Estuve encadenado a una racha de más de 600 días sin propósito. Descubre por qué Duolingo es un "gancho amenazante" y cómo logré dominar 3 idiomas al abandonarlo.
 tags: ["ANTIMÉTODO", "CASO DE ÉXITO"]
-image: /assets/duo.jpg
+image: /assets/duo.jpeg
 ---
 
 <div class="content-section">
   <h1 style="text-align: center; line-height: 1.2;">Mi racha de más de 600 días en Duolingo: Por qué la borré para empezar a hablar de verdad</h1>
 
   <div style="text-align: center; margin: 2.5rem 0;">
-    <img src="{{ '/assets/duo.jpg' | relative_url }}" alt="Captura de racha de más de 600 días en Duolingo" style="max-width: 350px; width: 100%; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); border: 4px solid #58cc02;">
+    <img src="{{ '/assets/duo.jpeg' | relative_url }}" alt="Captura de racha de más de 600 días en Duolingo" style="max-width: 350px; width: 100%; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); border: 4px solid #58cc02;">
     <p style="font-size: 0.9em; color: #666; margin-top: 1rem; font-style: italic;">"Sí, esa era mi racha. Fue una pérdida de tiempo dolorosa y estresante."</p>
   </div>
 
