@@ -8,7 +8,6 @@ description: Artículos que desafían lo que creías saber sobre aprender idioma
 .article-card-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  /* grid-template-columns: minmax(0, 1fr); */ /* Para que una sola tarjeta pueda centrarse o tener un max-width */
   gap: 1.5rem;
   margin-top: 2rem;
   justify-items: center;
@@ -23,8 +22,8 @@ description: Artículos que desafían lo que creías saber sobre aprender idioma
   text-decoration: none; 
   color: var(--text-color); 
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  max-width: 450px; /* Ancho máximo para una sola tarjeta, para que no sea demasiado ancha */
-  width: 100%; /* Asegurar que use el espacio disponible hasta el max-width */
+  max-width: 450px;
+  width: 100%;
 }
 .article-card:hover {
   transform: translateY(-5px);
@@ -32,7 +31,7 @@ description: Artículos que desafían lo que creías saber sobre aprender idioma
 }
 .article-card img.featured-image {
   width: 100%;
-  height: 200px; /* Aumentada ligeramente la altura para la imagen destacada */
+  height: 200px;
   object-fit: cover; 
 }
 .article-card-content {
@@ -40,12 +39,29 @@ description: Artículos que desafían lo que creías saber sobre aprender idioma
   flex-grow: 1; 
 }
 .article-card-content h3 {
-  margin-top: 0;
+  margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   color: var(--primary-color);
   font-size: 1.3em;
-  line-height: 1.3; /* Mejorar espaciado del título si es largo */
+  line-height: 1.3;
 }
+.article-tags {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.tag {
+  font-size: 0.7em;
+  font-weight: bold;
+  padding: 2px 8px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+.tag-antimetodo { background-color: var(--light-purple-color); color: var(--primary-color); }
+.tag-exito { background-color: #dcfce7; color: #166534; }
+.tag-guia { background-color: #fef9c3; color: #854d0e; }
+.tag-ciencia { background-color: #e0f2fe; color: #075985; }
+
 .article-card-content p.excerpt {
   font-size: 0.95em;
   line-height: 1.5;
@@ -78,12 +94,46 @@ description: Artículos que desafían lo que creías saber sobre aprender idioma
   <section style="margin-bottom: 3rem;">
     <h3 style="margin-top: 3rem; text-align: center; color: var(--secondary-color);">Artículos Recientes:</h3>
     <div class="article-card-list">
+      
+      <!-- Artículo: Por qué la gramática te atrasa -->
+      <a href="{{ '/por-que-la-gramatica-te-atrasa' | relative_url }}" class="article-card">
+        <img src="{{ '/assets/ciencia.png' | relative_url }}" alt="La neurociencia de la gramática" class="featured-image">
+        <div class="article-card-content">
+          <div class="article-tags">
+            <span class="tag tag-antimetodo">ANTIMÉTODO</span>
+            <span class="tag tag-ciencia">CIENCIA</span>
+          </div>
+          <h3>¿Por qué estudiar gramática te impide hablar? (La ciencia del fracaso)</h3>
+          <p class="excerpt">La neurociencia explica por qué el estudio tradicional bloquea la fluidez. Descubre la diferencia biológica entre adquirir y aprender idiomas.</p>
+          <span class="read-more">Leer más →</span>
+          <p class="article-meta">Publicado: 6 de Abril de 2026</p>
+        </div>
+      </a>
+
+      <!-- Artículo: Antimetodo vs Duolingo -->
+      <a href="{{ '/antimetodo-vs-duolingo' | relative_url }}" class="article-card">
+        <img src="{{ '/assets/duo.jpg' | relative_url }}" alt="Antimetodo vs Duolingo" class="featured-image">
+        <div class="article-card-content">
+          <div class="article-tags">
+            <span class="tag tag-antimetodo">ANTIMÉTODO</span>
+            <span class="tag tag-exito">CASO DE ÉXITO</span>
+          </div>
+          <h3>Antimétodo vs Duolingo: ¿Por qué borré mi racha de más de 600 días?</h3>
+          <p class="excerpt">Estuve encadenado a una racha de más de 600 días sin propósito. Descubre por qué Duolingo es un "gancho amenazante" y cómo logré dominar 3 idiomas al abandonarlo.</p>
+          <span class="read-more">Leer más →</span>
+          <p class="article-meta">Publicado: 6 de Abril de 2026</p>
+        </div>
+      </a>
+
       <!-- Artículo: Cómo Adquirir un Idioma el Triple de Rápido -->
       <a href="{{ '/como-adquirir-un-idioma-el-triple-de-rapido' | relative_url }}" class="article-card">
         <img src="{{ '/assets/openear.png' | relative_url }}" alt="Cómo Adquirir un Idioma el Triple de Rápido" class="featured-image">
         <div class="article-card-content">
+          <div class="article-tags">
+            <span class="tag tag-antimetodo">ANTIMÉTODO</span>
+          </div>
           <h3>Cómo Adquirir un Idioma el Triple de Rápido y Acumular Horas Masivas</h3>
-          <p class="excerpt">Si eres una persona OCUPADÍSIMA y quieres aprender idiomas acumulando muchas horas fácilmente, este es el hack que tienes que saber. Te explico cómo aprovechar cada momento de tu día salvajemente para triplicar tu contacto con el idioma sin que nadie se dé cuenta.</p>
+          <p class="excerpt">Si eres una persona OCUPADÍSIMA y quieres aprender idiomas acumulando muchas horas fácilmente, este es el hack que tienes que saber.</p>
           <span class="read-more">Leer más →</span>
           <p class="article-meta">Publicado: 1 de Febrero de 2026</p>
         </div>
@@ -93,8 +143,11 @@ description: Artículos que desafían lo que creías saber sobre aprender idioma
       <a href="{{ '/experimento-one-piece' | relative_url }}" class="article-card">
         <img src="{{ '/assets/one-piece.jpg' | relative_url }}" alt="El Experimento One Piece" class="featured-image">
         <div class="article-card-content">
+          <div class="article-tags">
+            <span class="tag tag-antimetodo">ANTIMÉTODO</span>
+          </div>
           <h3>El Experimento One Piece: De Cero a Entender Japonés</h3>
-          <p class="excerpt">Un análisis teórico sobre cuánto japonés se podría aprender utilizando únicamente el anime One Piece como fuente de input comprensible, explorando las horas necesarias y el impacto del "efecto bola de nieve" en el aprendizaje.</p>
+          <p class="excerpt">Un análisis teórico sobre cuánto japonés se podría aprender utilizando únicamente el anime One Piece como fuente de input comprensible.</p>
           <span class="read-more">Leer más →</span>
           <p class="article-meta">Publicado: 3 de Enero de 2026</p>
         </div>
@@ -103,21 +156,13 @@ description: Artículos que desafían lo que creías saber sobre aprender idioma
       <a href="{{ '/guia-aprendizaje-efectivo' | relative_url }}" class="article-card">
         <img src="{{ '/assets/estudiar-guia.png' | relative_url }}" alt="Libro de guia de estudio" class="featured-image">
         <div class="article-card-content">
+          <div class="article-tags">
+            <span class="tag tag-guia">GUÍA MAESTRA</span>
+          </div>
           <h3>Recurso Extra: Un Sistema Universal para Aprender y Estudiar Cualquier Cosa</h3>
-          <p class="excerpt">Una guía científica y paso a paso para aprender cualquier materia. Este manual NO es parte del Antimétodo, es un recurso universal de estudio que compartimos para nuestra comunidad.</p>
+          <p class="excerpt">Una guía científica y paso a paso para aprender cualquier materia. Recurso universal de estudio compartido para nuestra comunidad.</p>
           <span class="read-more">Leer más →</span>
           <p class="article-meta">Publicado: 29 de Agosto de 2025</p>
-        </div>
-      </a>
-
-      <!-- Tarjeta de ejemplo 1 actualizada -->
-      <a href="#" class="article-card"> <!-- El href="#" es un placeholder, luego enlazaría al artículo real -->
-        <img src="{{ '/assets/adul.png' | relative_url }}" alt="Adultos aprendiendo idiomas" class="featured-image">
-        <div class="article-card-content">
-          <h3>Los adultos son mejores aprendiendo idiomas que los niños</h3>
-          <p class="excerpt">En contraste con lo que siempre se ha dicho, los adultos pueden aprender un idioma mucho más rápido que un niño. Mientras ellos tardan años sin siquiera saber leer o escribir, tú puedes avanzar en meses aplicando El Antimétodo...</p>
-          <span class="read-more">Leer más →</span>
-          <p class="article-meta">Publicado: Próximamente</p>
         </div>
       </a>
 

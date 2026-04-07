@@ -440,6 +440,37 @@
       setActiveLink(desktopNavLinks);
       setActiveLink(mobileNavLinks);
     });
+
+    // Script para el Sticky CTA en Móvil
+    const stickyCTA = document.getElementById("mobileStickyCTA");
+    if (stickyCTA) {
+      window.addEventListener("scroll", () => {
+        if (window.innerWidth <= 768) {
+          // Mostrar después de 400px de scroll
+          if (window.scrollY > 400) {
+            stickyCTA.classList.add("visible");
+          } else {
+            stickyCTA.classList.remove("visible");
+          }
+        }
+      });
+      
+      // Ocultar si el usuario llega al footer para que no se encime
+      const footer = document.querySelector('footer');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            stickyCTA.style.opacity = "0";
+            stickyCTA.style.pointerEvents = "none";
+          } else {
+            stickyCTA.style.opacity = "1";
+            stickyCTA.style.pointerEvents = "auto";
+          }
+        });
+      }, { threshold: 0.1 });
+      
+      if (footer) observer.observe(footer);
+    }
   </script>
 </body>
 </html>

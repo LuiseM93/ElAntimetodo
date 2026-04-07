@@ -164,19 +164,44 @@ description: Aprende idiomas divirtiéndote: el método basado en input comprens
   }
 
   @media (max-width: 768px) {
-    .hero-section { padding: 1.5rem 1rem; }
-    .hero-container { flex-direction: column; text-align: center; gap: 1.5rem; }
-    .hero-text { text-align: center; }
-    .hero-text h1 { font-size: 1.87em; text-align: center; }
-    .hero-image { flex: 0 0 100%; text-align: center; order: 4; }
-    .hero-buttons { justify-content: center; order: 3; }
-    .hero-microcopy { order: 3; margin-bottom: 1rem; }
-    .hero-cards-container { flex-direction: column; align-items: center; }
-    .hero-card { width: 90%; }
+    .hero-section { padding: 2rem 1rem; }
+    .hero-container { flex-direction: column; text-align: center; gap: 1rem; }
+    .hero-text { flex: 0 0 100%; text-align: center; }
+    .hero-text h1 { 
+      font-size: 1.8em; 
+      text-align: center; 
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+    .hero-text .subtitle {
+      font-size: 1.1em;
+      margin-bottom: 1.5rem;
+    }
+    .hero-image { flex: 0 0 100%; text-align: center; order: 4; margin-top: 1rem; }
+    .hero-buttons { 
+      flex-direction: column;
+      gap: 0.8rem;
+      align-items: center;
+      order: 3; 
+    }
+    .hero-buttons .btn {
+      width: 100%;
+      max-width: 300px;
+      margin: 0;
+    }
+    .hero-microcopy { 
+      order: 3; 
+      margin-bottom: 1.5rem; 
+      font-weight: 500;
+      color: var(--text-color);
+    }
+    .hero-cards-container { flex-direction: column; align-items: center; gap: 15px; }
+    .hero-card { width: 100%; }
     .app-promo-section .content-wrapper-condensed { flex-direction: column; }
     .app-promo-text { text-align: center; }
     .app-promo-text h2 { text-align: center; display: block; }
-    .app-promo-buttons { justify-content: center; }
+    .app-promo-buttons { flex-direction: column; align-items: center; }
+    .app-promo-buttons .btn { width: 100%; max-width: 300px; }
   }
 
   /* Otros estilos existentes */
