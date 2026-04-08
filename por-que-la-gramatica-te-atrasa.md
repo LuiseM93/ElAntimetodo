@@ -66,17 +66,61 @@ image: /assets/ciencia.png
   <p>
     No puedes planificar un pensamiento espontáneo usando una tabla de verbos. Si quieres que el idioma fluya desde tu interior, necesitas dejar de tratarlo como una fórmula matemática y empezar a tratarlo como una habilidad biológica.
   </p>
-  <p>
-    Alimenta tu lóbulo temporal con contenido que disfrutes, apaga el interruptor analítico de tu corteza cerebral y permite que la adquisición haga el trabajo sucio.
+  <p>Alimenta tu lóbulo temporal con contenido que disfrutes, apaga el interruptor analítico de tu corteza cerebral y permite que la adquisición haga el trabajo sucio.
   </p>
 
   <div style="text-align: center; margin-top: 3rem;">
     <a href="{{ '/' | relative_url }}" class="btn btn-primary" style="font-size: 1.2em; padding: 1.2rem 2.5rem;">Empieza a adquirir idiomas correctamente →</a>
   </div>
-</div>
+  </div>
 
-<style>
+  <style>
   .content-section h2 { margin-top: 2.5rem; }
   .content-section p { font-size: 1.1em; margin-bottom: 1.5rem; }
   .content-section li { font-family: var(--font-secondary); line-height: 1.6; }
-</style>
+  </style>
+
+  ⚠️ NOTA TÉCNICA: Este artículo solo cubre el 15% de problemas estructurales que conozco del modelo tradicional. El fracaso no es simplemente del "programa" si no que es un problema mas profundo abarcando incentivos económicos y diseño del Estado como institución. Si quieres ver el Mapa de temas que voy a desarrollar en el futuro, Aqui tienes un adelanto:
+
+  - Horas insuficientes
+  - Input de mala calidad y poco constante
+  - Baja eficiencia en relación al tiempo
+  - Ignorancia a la curva de olvido
+  - Problemas en la medición que sueltan resultados convenientes:
+  - Reduccionismo excesivo
+  - Efecto del observador
+  - Falsas comparaciones convenientes
+  - Mediciones convenientes
+  - Mecanización del aprendizaje para mejorar "métricas mecánicas"
+  - Riesgo alto de fosilización de problemas incomunes
+  - Posibilidad de aplicar mal la gramática
+  - Ignorancia del aprendizaje fonético del idioma
+  - Confusión entre aprendizaje y adquisición, cuando suceden en diferentes zonas del cerebro
+  - Alto precio
+  - Ilusión de competencia
+  - No diferenciar vocabulario común a básico
+  - Homogeneización del aprendizaje
+  - Dependencia de una sola autoridad
+  - Ignorancia a cualquier conocimiento sobre la lingüística
+  - Nulos resultados
+  - Incentivos al fracaso
+  - La rigidez sobre el espacio de aprendizaje
+  - Ausencia de aplicación de herramientas tecnológicas
+  - Falacia del aprendizaje "Lineal, constante y continuo"
+  - Falacia de la "Dificultad progresiva"
+
+  Problemas en la enseñanza pública de idiomas
+  - Imposibilidad del cálculo económico
+  - Problema de la información
+  - Falta de libertad
+  - Incentivos inexistentes a mejorar
+  - Irreversible
+  - Lastre económico
+  - Corrupción endógena
+  - Búsqueda de rentas
+  - Ausencia de competencia
+  - Destrucción de emprendimiento e incentivos
+  - Los recursos van de donde funcionan mejor a peor
+  - Incentivos a funcionar peor
+
+  CONCLUSION
