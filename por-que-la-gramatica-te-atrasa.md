@@ -82,7 +82,7 @@ image: /assets/ciencia.png
       <div class="ml-embedded" data-form="RksRhl"></div>
     </div>
     <p style="font-size: 0.85em; color: var(--text-light-color); margin-top: 1.5rem;">
-      ✓ 100% Gratis • ✓ Sin Spam • ✓ Cancela cuando quieras
+      ✓ TOTALMENTE GRATIS • ✓ Sin Spam • ✓ Cancela cuando quieras
     </p>
   </section>
   </div>
