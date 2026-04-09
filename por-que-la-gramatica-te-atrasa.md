@@ -18,6 +18,10 @@ image: /assets/ciencia.png
     Has pasado años memorizando tablas de verbos, reglas de concordancia y excepciones gramaticales. Sin embargo, cuando intentas hablar, te quedas en blanco o tu cerebro se "congela" intentando procesar la frase perfecta. La respuesta a este problema no está en tu falta de inteligencia, sino en la <strong>biología de tu cerebro</strong>.
   </p>
 
+  <div style="text-align: center; margin: 2rem 0;">
+    <a href="#registro-guia" class="btn btn-primary" style="font-size: 1.1em; padding: 1rem 2rem;">No quiero leer más, enséñame a adquirir idiomas correctamente</a>
+  </div>
+
   <div style="margin: 3rem 0; padding: 2rem; background-color: #f8f0ff; border-radius: 12px; border-left: 5px solid var(--secondary-color);">
     <h2 style="margin-top: 0; color: var(--primary-color);">La Batalla de los Dos Cerebros</h2>
     <p>La neurociencia moderna ha identificado que el "aprendizaje consciente" y la "adquisición subconsciente" ocurren en regiones cerebrales totalmente distintas:</p>
@@ -69,9 +73,18 @@ image: /assets/ciencia.png
   <p>Alimenta tu lóbulo temporal con contenido que disfrutes, apaga el interruptor analítico de tu corteza cerebral y permite que la adquisición haga el trabajo sucio.
   </p>
 
-  <div style="text-align: center; margin-top: 3rem;">
-    <a href="{{ '/' | relative_url }}" class="btn btn-primary" style="font-size: 1.2em; padding: 1.2rem 2.5rem;">Empieza a adquirir idiomas correctamente →</a>
-  </div>
+  <section id="registro-guia" class="content-section" style="background: linear-gradient(135deg, #f0e6f6 0%, #ffffff 100%); border: 2px solid var(--light-purple-color); text-align: center; padding: 3rem 1.5rem; scroll-margin-top: 2rem; margin-top: 2rem; border-radius: 12px;">
+    <h2 style="margin-top: 0; color: var(--primary-color); border-bottom: none;">¿Quieres empezar a adquirir idiomas correctamente?</h2>
+    <p style="font-size: 1.2em; color: var(--text-light-color); margin-bottom: 2rem; max-width: 700px; margin-left: auto; margin-right: auto;">
+      Recibe la guía de inicio rápido esencial (PDF) con los pasos que sigo para aprender idiomas más mi rutina y artículos buenísimos de vez en cuando.
+    </p>
+    <div style="max-width: 500px; margin: 0 auto;">
+      <div class="ml-embedded" data-form="RksRhl"></div>
+    </div>
+    <p style="font-size: 0.85em; color: var(--text-light-color); margin-top: 1.5rem;">
+      ✓ 100% Gratis • ✓ Sin Spam • ✓ Cancela cuando quieras
+    </p>
+  </section>
   </div>
 
   <style>
