@@ -19,7 +19,7 @@ image: /assets/ciencia.png
   </p>
 
   <div style="text-align: center; margin: 2rem 0;">
-    <a href="#registro-guia" class="btn btn-primary" style="font-size: 1.1em; padding: 1rem 2rem;">No quiero leer más, enséñame a adquirir idiomas correctamente</a>
+    <a href="#registro-guia" class="btn btn-primary" style="font-size: 1.1em; padding: 1rem 2rem; line-height: 1.4; display: inline-block;">No quiero leer más,<br>enséñame a adquirir correctamente ↓</a>
   </div>
 
   <div style="margin: 3rem 0; padding: 2rem; background-color: #f8f0ff; border-radius: 12px; border-left: 5px solid var(--secondary-color);">
