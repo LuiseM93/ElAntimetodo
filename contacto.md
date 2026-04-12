@@ -97,7 +97,7 @@ description: Conoce a José Luis Hernández, el creador de El Antimétodo. Descu
       <img src="{{ '/assets/yo.jpg' | relative_url }}" alt="Foto de José Luis Hernández, creador de El Antimétodo">
     </div>
     <div class="about-me-text">
-      <h2 style="margin-top:0; font-size: 1.8em;">¡Hola! Soy José Luis</h2>
+      <h2 style="margin-top:0; font-size: 1.8em;">¡Hola! Soy el creador de El Antimétodo</h2>
       <p style="font-size: 1.1em; line-height: 1.7; color: var(--text-light-color);">
         Un joven de 18 años de Tepic, Nayarit. Estudiante de Economía en la UAN
         <br><br>
@@ -210,7 +210,7 @@ description: Conoce a José Luis Hernández, el creador de El Antimétodo. Descu
       </a>
       <a href="mailto:joseluishernandeztareas@gmail.com" class="email-link">
         <svg class="email-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm0 2l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"/></svg>
-        joseluishernandeztareas@gmail.com
+        Correo
       </a>
     </div>
   </section>
