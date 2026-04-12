@@ -10,7 +10,7 @@ description: Aprende idiomas divirtiéndote: el método basado en input comprens
       <h1>Olvida la gramática: Habla cualquier idioma con fluidez natural divirtiéndote</h1>
       <p class="subtitle">El método que usé para entender <strong>francés sin subtítulos en solo 7 meses</strong> — sin clases, sin libros, solo con contenido que disfrutas.</p>
       <div class="hero-buttons">
-        <a href="#registro-guia" class="btn btn-primary">Quiero empezar gratis →</a>
+        <a href="#registro-guia" class="btn btn-primary">Descargar mi Guía Gratuita →</a>
         <a href="{{ '/test-ubicacion' | relative_url }}" class="btn btn-outline">Descubre tu etapa</a>
       </div>
       <p class="hero-microcopy">
@@ -50,8 +50,10 @@ description: Aprende idiomas divirtiéndote: el método basado en input comprens
 <!-- SECCIÓN DE CAPTURA DE LEADS (LEAD MAGNET) - POSICIÓN DE ALTO IMPACTO -->
 <section id="registro-guia" class="content-section" style="background: linear-gradient(135deg, #f0e6f6 0%, #ffffff 100%); border: 2px solid var(--light-purple-color); text-align: center; padding: 3rem 1.5rem; scroll-margin-top: 2rem; margin-top: 0;">
   <h2 style="margin-top: 0; color: var(--primary-color);">¿Quieres mi Guía de inicio + Mi rutina de idiomas?</h2>
-  <p style="font-size: 1.2em; color: var(--text-light-color); margin-bottom: 2rem; max-width: 700px; margin-left: auto; margin-right: auto;">
-    Recibe la guía de inicio rápido esencial PDF con los pasos que sigo para aprender idiomas y artículos buenísimos de vez en cuando.
+  <p style="font-size: 1.1em; color: var(--text-light-color); margin-bottom: 2rem; max-width: 700px; margin-left: auto; margin-right: auto; line-height: 1.6;">
+    ⚡ <strong>¿Es realmente gratis?</strong> → Sí, 100%. Cero letras chiquitas.<br>
+    ⚡ <strong>¿Funciona si estoy en cero?</strong> → Sí, la guía te da el paso a paso.<br>
+    ⚡ <strong>¿Qué necesito para empezar?</strong> → Una serie que te guste, internet y ganas de soltar los libros.
   </p>
   <div style="max-width: 500px; margin: 0 auto;">
     <div class="ml-embedded" data-form="RksRhl"></div>
