@@ -94,7 +94,20 @@ description: Artículos que desafían lo que creías saber sobre aprender idioma
   <section style="margin-bottom: 3rem;">
     <h3 style="margin-top: 3rem; text-align: center; color: var(--secondary-color);">Artículos Recientes:</h3>
     <div class="article-card-list">
-      
+
+      <!-- Artículo: Aprendiendo coreano en 180 días -->
+      <a href="{{ '/experimento-coreano' | relative_url }}" class="article-card">
+        <div class="article-card-content">
+          <div class="article-tags">
+            <span class="tag tag-antimetodo">ANTIMÉTODO</span>
+          </div>
+          <h3>Aprendiendo coreano en 180 días</h3>
+          <p class="excerpt">Próximamente.</p>
+          <span class="read-more">Ver desarrollo →</span>
+          <p class="article-meta">Publicado: Próximamente</p>
+        </div>
+      </a>
+
       <!-- Artículo: Por qué la gramática te atrasa -->
       <a href="{{ '/por-que-la-gramatica-te-atrasa' | relative_url }}" class="article-card">
         <img src="{{ '/assets/ciencia.png' | relative_url }}" alt="La neurociencia de la gramática" class="featured-image">
